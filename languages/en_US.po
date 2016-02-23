@@ -1,0 +1,1069 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Jessica\n"
+"POT-Creation-Date: 2016-01-14 14:42-0700\n"
+"PO-Revision-Date: 2016-01-14 14:42-0700\n"
+"Last-Translator: Web Savvy Marketing <noreply@web-savvy-marketing.com>\n"
+"Language-Team: Web Savvy Marketing <noreply@web-savvy-marketing.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: functions.php:39
+msgid "Pink"
+msgstr "Pink"
+
+#: functions.php:40
+msgid "Red"
+msgstr "Red"
+
+#: functions.php:41
+msgid "Brown"
+msgstr "Brown"
+
+#: functions.php:42
+msgid "Green"
+msgstr "Green"
+
+#: functions.php:43
+msgid "Purple"
+msgstr "Purple"
+
+#: functions.php:76 lib/shop/woocommerce.php:94
+msgid "Go"
+msgstr "Go"
+
+#: functions.php:87
+msgid "About the Author"
+msgstr "About the Author"
+
+#: functions.php:111
+msgid "Tags:"
+msgstr "Tags:"
+
+#: functions.php:111
+msgid "Categories:"
+msgstr "Categories:"
+
+#: functions.php:121
+msgid "[Read More]"
+msgstr "[Read More]"
+
+#: functions.php:148
+msgid "Primary Navigation Menu"
+msgstr "Primary Navigation Menu"
+
+#: functions.php:149
+msgid "Secondary Navigation Menu"
+msgstr "Secondary Navigation Menu"
+
+#: functions.php:180
+msgid "Rotator"
+msgstr "Rotator"
+
+#: functions.php:181
+msgid "This is the image rotator section."
+msgstr "This is the image rotator section."
+
+#: functions.php:185
+msgid "Home Categories Menu"
+msgstr "Home Categories Menu"
+
+#: functions.php:186
+msgid "This is the home middle navigation section."
+msgstr "This is the home middle navigation section."
+
+#: functions.php:190
+msgid "Home CTA Left"
+msgstr "Home CTA Left"
+
+#: functions.php:191 functions.php:196
+msgid "This is the home call to action section."
+msgstr "This is the home call to action section."
+
+#: functions.php:195
+msgid "Home CTA Right"
+msgstr "Home CTA Right"
+
+#: functions.php:200
+msgid "Home Mid Left"
+msgstr "Home Mid Left"
+
+#: functions.php:201 functions.php:206
+msgid "This is the home middle section."
+msgstr "This is the home middle section."
+
+#: functions.php:205
+msgid "Home Mid Right"
+msgstr "Home Mid Right"
+
+#: functions.php:210
+msgid "Home Bottom Ad"
+msgstr "Home Bottom Ad"
+
+#: functions.php:211
+msgid "This is the home page ad section."
+msgstr "This is the home page ad section."
+
+#: functions.php:215
+msgid "Home Bottom 1"
+msgstr "Home Bottom 1"
+
+#: functions.php:216 functions.php:221 functions.php:226 functions.php:231
+msgid "This is the before footer section."
+msgstr "This is the before footer section."
+
+#: functions.php:220
+msgid "Home Bottom 2"
+msgstr "Home Bottom 2"
+
+#: functions.php:225
+msgid "Home Bottom 3"
+msgstr "Home Bottom 3"
+
+#: functions.php:230
+msgid "Home Bottom 4"
+msgstr "Home Bottom 4"
+
+#: functions.php:235
+msgid "Blog Sidebar"
+msgstr "Blog Sidebar"
+
+#: functions.php:236
+msgid "This is the Blog Page Sidebar."
+msgstr "This is the Blog Page Sidebar."
+
+#: functions.php:240
+msgid "Page Sidebar"
+msgstr "Page Sidebar"
+
+#: functions.php:241
+msgid "This is the Page Sidebar."
+msgstr "This is the Page Sidebar."
+
+#: functions.php:245
+msgid "Store Sidebar"
+msgstr "Store Sidebar"
+
+#: functions.php:246
+msgid "This is the Store Page Sidebar."
+msgstr "This is the Store Page Sidebar."
+
+#: lib/admin/jessica-theme-settings.php:35
+#: lib/admin/jessica-theme-settings.php:36
+msgid "Jessica Settings"
+msgstr "Jessica Settings"
+
+#: lib/admin/jessica-theme-settings.php:107
+msgid "Header Info"
+msgstr "Header Info"
+
+#: lib/admin/jessica-theme-settings.php:108
+msgid "Footer Info"
+msgstr "Footer Info"
+
+#: lib/admin/jessica-theme-settings.php:109
+msgid "Update Notifications"
+msgstr "Update Notifications"
+
+#: lib/admin/jessica-theme-settings.php:120
+msgid "Header Search:"
+msgstr "Header Search:"
+
+#: lib/admin/jessica-theme-settings.php:122
+msgid "By default, leaving this unchecked will display header search"
+msgstr "By default, leaving this unchecked will display header search"
+
+#: lib/admin/jessica-theme-settings.php:132
+msgid "Copyright Info:"
+msgstr "Copyright Info:"
+
+#: lib/admin/jessica-theme-settings.php:135
+msgid "Credit Info:"
+msgstr "Credit Info:"
+
+#: lib/admin/jessica-theme-settings.php:146
+msgid ""
+"Please check the box below if you wish to ignore/hide the theme update "
+"notification.<br/>Uncheck the box if you wish to be notified of theme "
+"updates."
+msgstr ""
+"Please check the box below if you wish to ignore/hide the theme update "
+"notification.<br/>Uncheck the box if you wish to be notified of theme "
+"updates."
+
+#: lib/admin/jessica-theme-settings.php:150
+msgid "Ignore Theme Updates?"
+msgstr "Ignore Theme Updates?"
+
+#: lib/plugins/class-tgm-plugin-activation.php:161 lib/plugins/plugins.php:80
+msgid "Install Required Plugins"
+msgstr "Install Required Plugins"
+
+#: lib/plugins/class-tgm-plugin-activation.php:162 lib/plugins/plugins.php:81
+msgid "Install Plugins"
+msgstr "Install Plugins"
+
+#: lib/plugins/class-tgm-plugin-activation.php:163 lib/plugins/plugins.php:82
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Installing Plugin: %s"
+
+#: lib/plugins/class-tgm-plugin-activation.php:164
+msgid "Something went wrong."
+msgstr "Something went wrong."
+
+#: lib/plugins/class-tgm-plugin-activation.php:165 lib/plugins/plugins.php:84
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] "This theme requires the following plugin: %1$s."
+msgstr[1] "This theme requires the following plugins: %1$s."
+
+#: lib/plugins/class-tgm-plugin-activation.php:166 lib/plugins/plugins.php:85
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] "This theme recommends the following plugin: %1$s."
+msgstr[1] "This theme recommends the following plugins: %1$s."
+
+#: lib/plugins/class-tgm-plugin-activation.php:167 lib/plugins/plugins.php:86
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgstr[1] ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+
+#: lib/plugins/class-tgm-plugin-activation.php:168 lib/plugins/plugins.php:87
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] "The following required plugin is currently inactive: %1$s."
+msgstr[1] "The following required plugins are currently inactive: %1$s."
+
+#: lib/plugins/class-tgm-plugin-activation.php:169 lib/plugins/plugins.php:88
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] "The following recommended plugin is currently inactive: %1$s."
+msgstr[1] "The following recommended plugins are currently inactive: %1$s."
+
+#: lib/plugins/class-tgm-plugin-activation.php:170 lib/plugins/plugins.php:89
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgstr[1] ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+
+#: lib/plugins/class-tgm-plugin-activation.php:171 lib/plugins/plugins.php:90
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[1] ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+
+#: lib/plugins/class-tgm-plugin-activation.php:172 lib/plugins/plugins.php:91
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgstr[1] ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+
+#: lib/plugins/class-tgm-plugin-activation.php:173 lib/plugins/plugins.php:92
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "Begin installing plugin"
+msgstr[1] "Begin installing plugins"
+
+#: lib/plugins/class-tgm-plugin-activation.php:174
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "Begin activating plugin"
+msgstr[1] "Begin activating plugins"
+
+#: lib/plugins/class-tgm-plugin-activation.php:175 lib/plugins/plugins.php:94
+msgid "Return to Required Plugins Installer"
+msgstr "Return to Required Plugins Installer"
+
+#: lib/plugins/class-tgm-plugin-activation.php:176
+msgid "Return to the dashboard"
+msgstr "Return to the dashboard"
+
+#: lib/plugins/class-tgm-plugin-activation.php:177
+#: lib/plugins/class-tgm-plugin-activation.php:1945 lib/plugins/plugins.php:95
+msgid "Plugin activated successfully."
+msgstr "Plugin activated successfully."
+
+#: lib/plugins/class-tgm-plugin-activation.php:178
+#: lib/plugins/class-tgm-plugin-activation.php:1636
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "The following plugin was activated successfully:"
+msgstr[1] "The following plugins were activated successfully:"
+
+#: lib/plugins/class-tgm-plugin-activation.php:179
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "All plugins installed and activated successfully. %1$s"
+
+#: lib/plugins/class-tgm-plugin-activation.php:180
+msgid "Dismiss this notice"
+msgstr "Dismiss this notice"
+
+#: lib/plugins/class-tgm-plugin-activation.php:534
+#: lib/plugins/class-tgm-plugin-activation.php:2162
+msgid "Return to the Dashboard"
+msgstr "Return to the Dashboard"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1169
+msgid "Private Repository"
+msgstr "Private Repository"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1172
+msgid "Pre-Packaged"
+msgstr "Pre-Packaged"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1177
+msgid "WordPress Repository"
+msgstr "WordPress Repository"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1180
+msgid "Required"
+msgstr "Required"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1180
+msgid "Recommended"
+msgstr "Recommended"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1183
+msgid "Not Installed"
+msgstr "Not Installed"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1185
+msgid "Installed But Not Activated"
+msgstr "Installed But Not Activated"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1290
+#: lib/plugins/class-tgm-plugin-activation.php:1398
+msgid "Install"
+msgstr "Install"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1312
+#: lib/plugins/class-tgm-plugin-activation.php:1399
+msgid "Activate"
+msgstr "Activate"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1361
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1377
+msgid "Plugin"
+msgstr "Plugin"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1378
+msgid "Source"
+msgstr "Source"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1379
+msgid "Type"
+msgstr "Type"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1380
+msgid "Status"
+msgstr "Status"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1928
+msgid "Install package not available."
+msgstr "Install package not available."
+
+#: lib/plugins/class-tgm-plugin-activation.php:1929
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1930
+msgid "Unpacking the package&#8230;"
+msgstr "Unpacking the package&#8230;"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1931
+msgid "Installing the plugin&#8230;"
+msgstr "Installing the plugin&#8230;"
+
+#: lib/plugins/class-tgm-plugin-activation.php:1932
+msgid "Plugin install failed."
+msgstr "Plugin install failed."
+
+#: lib/plugins/class-tgm-plugin-activation.php:1933
+msgid "Plugin installed successfully."
+msgstr "Plugin installed successfully."
+
+#: lib/plugins/class-tgm-plugin-activation.php:1944
+msgid "Plugin activation failed."
+msgstr "Plugin activation failed."
+
+#: lib/plugins/class-tgm-plugin-activation.php:2058
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+
+#: lib/plugins/class-tgm-plugin-activation.php:2059
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s installed and activated successfully."
+
+#: lib/plugins/class-tgm-plugin-activation.php:2059
+#: lib/plugins/class-tgm-plugin-activation.php:2068
+msgid "Show Details"
+msgstr "Show Details"
+
+#: lib/plugins/class-tgm-plugin-activation.php:2059
+#: lib/plugins/class-tgm-plugin-activation.php:2068
+msgid "Hide Details"
+msgstr "Hide Details"
+
+#: lib/plugins/class-tgm-plugin-activation.php:2060
+msgid "All installations and activations have been completed."
+msgstr "All installations and activations have been completed."
+
+#: lib/plugins/class-tgm-plugin-activation.php:2061
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+
+#: lib/plugins/class-tgm-plugin-activation.php:2065
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+
+#: lib/plugins/class-tgm-plugin-activation.php:2066
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "An error occurred while installing %1$s: <strong>%2$s</strong>."
+
+#: lib/plugins/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "The installation of %1$s failed."
+
+#: lib/plugins/class-tgm-plugin-activation.php:2068
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s installed successfully."
+
+#: lib/plugins/class-tgm-plugin-activation.php:2069
+msgid "All installations have been completed."
+msgstr "All installations have been completed."
+
+#: lib/plugins/class-tgm-plugin-activation.php:2070
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Installing Plugin %1$s (%2$d/%3$d)"
+
+#: lib/plugins/plugins.php:83
+msgid "Something went wrong with the plugin API."
+msgstr "Something went wrong with the plugin API."
+
+#: lib/plugins/plugins.php:93
+msgid "Activate installed plugin"
+msgid_plural "Activate installed plugins"
+msgstr[0] "Activate installed plugin"
+msgstr[1] "Activate installed plugins"
+
+#: lib/plugins/plugins.php:96
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr "All plugins installed and activated successfully. %s"
+
+#: lib/shop/woocommerce.php:45 taxonomy-product_tag.php:61
+#: taxonomy-product_tag.php:98 taxonomy-wpsc_product_category.php:94
+#: taxonomy-wpsc_product_category.php:131 wpsc-grid_view.php:79
+#: wpsc-grid_view.php:116 wpsc-single_product.php:177
+#: wpsc-single_product.php:179
+msgid "Buy"
+msgstr "Buy"
+
+#: lib/shop/woocommerce.php:52 taxonomy-product_tag.php:79
+#: taxonomy-product_tag.php:113 taxonomy-wpsc_product_category.php:112
+#: taxonomy-wpsc_product_category.php:146 wpsc-grid_view.php:97
+#: wpsc-grid_view.php:131
+msgid "Info"
+msgstr "Info"
+
+#: lib/shop/woocommerce.php:92 lib/shop/woocommerce.php:107
+msgid "Search Here"
+msgstr "Search Here"
+
+#: lib/shop/woocommerce.php:127
+msgid "Search Here..."
+msgstr "Search Here..."
+
+#: lib/shop/woocommerce.php:128
+msgid "GO"
+msgstr "GO"
+
+#: lib/structure/comment-form.php:27 lib/structure/comment-form.php:28
+msgid "Name"
+msgstr "Name"
+
+#: lib/structure/comment-form.php:32 lib/structure/comment-form.php:33
+msgid "Email"
+msgstr "Email"
+
+#: lib/structure/comment-form.php:37 lib/structure/comment-form.php:38
+msgid "Website"
+msgstr "Website"
+
+#: lib/structure/comment-form.php:42 lib/structure/comment-form.php:43
+msgid "Comment"
+msgstr "Comment"
+
+#: lib/structure/comment-form.php:53
+msgid "Leave a Comment"
+msgstr "Leave a Comment"
+
+#: lib/structure/comment-form.php:54
+msgid "Post"
+msgstr "Post"
+
+#: lib/structure/comment-form.php:55
+msgid "Reply"
+msgstr "Reply"
+
+#: lib/structure/comment-form.php:56
+msgid "Cancel"
+msgstr "Cancel"
+
+#: lib/widgets/call-to-action.php:18 lib/widgets/wsm-banner.php:18
+msgid "Displays backgrounds and customizable headline and Link"
+msgstr "Displays backgrounds and customizable headline and Link"
+
+#: lib/widgets/call-to-action.php:20
+msgid "Web Savvy - CTA Widget"
+msgstr "Web Savvy - CTA Widget"
+
+#: lib/widgets/call-to-action.php:141
+msgid "Title "
+msgstr "Title "
+
+#: lib/widgets/call-to-action.php:144
+msgid "More Text "
+msgstr "More Text "
+
+#: lib/widgets/call-to-action.php:147
+msgid "Link "
+msgstr "Link "
+
+#: lib/widgets/call-to-action.php:150
+msgid "Image "
+msgstr "Image "
+
+#: lib/widgets/call-to-action.php:154
+msgid "Target"
+msgstr "Target"
+
+#: lib/widgets/call-to-action.php:156
+msgid "_blank"
+msgstr "_blank"
+
+#: lib/widgets/call-to-action.php:157
+msgid "_parent"
+msgstr "_parent"
+
+#: lib/widgets/call-to-action.php:158
+msgid "_self"
+msgstr "_self"
+
+#: lib/widgets/call-to-action.php:159
+msgid "_top"
+msgstr "_top"
+
+#: lib/widgets/widget-social.php:16
+msgid "Social icon widget"
+msgstr "Social icon widget"
+
+#: lib/widgets/widget-social.php:17
+msgid "Web Savvy - Social Widget"
+msgstr "Web Savvy - Social Widget"
+
+#: lib/widgets/widget-social.php:112 lib/widgets/wsm-banner.php:157
+#: lib/widgets/wsm-featured-page.php:272
+msgid "Custom Text:"
+msgstr "Custom Text:"
+
+#: lib/widgets/widget-social.php:116
+msgid "Facebook URL:"
+msgstr "Facebook URL:"
+
+#: lib/widgets/widget-social.php:118
+msgid "Twitter URL:"
+msgstr "Twitter URL:"
+
+#: lib/widgets/widget-social.php:120
+msgid "LinkedIn URL:"
+msgstr "LinkedIn URL:"
+
+#: lib/widgets/widget-social.php:122
+msgid "Youtube URL:"
+msgstr "Youtube URL:"
+
+#: lib/widgets/widget-social.php:124
+msgid "Google+ URL:"
+msgstr "Google+ URL:"
+
+#: lib/widgets/widget-social.php:126
+msgid "Pinterest URL:"
+msgstr "Pinterest URL:"
+
+#: lib/widgets/widget-social.php:128
+msgid "Instagram URL:"
+msgstr "Instagram URL:"
+
+#: lib/widgets/wsm-banner.php:20
+msgid "Web Savvy - On Sale Widget"
+msgstr "Web Savvy - On Sale Widget"
+
+#: lib/widgets/wsm-banner.php:65
+msgid "off"
+msgstr "off"
+
+#: lib/widgets/wsm-banner.php:155
+msgid "% OFF"
+msgstr "% OFF"
+
+#: lib/widgets/wsm-banner.php:160
+msgid "More Text:"
+msgstr "More Text:"
+
+#: lib/widgets/wsm-banner.php:163
+msgid "More URL:"
+msgstr "More URL:"
+
+#: lib/widgets/wsm-banner.php:166
+msgid "Image URL:"
+msgstr "Image URL:"
+
+#: lib/widgets/wsm-featured-page.php:43
+msgid "Displays featured page with thumbnails"
+msgstr "Displays featured page with thumbnails"
+
+#: lib/widgets/wsm-featured-page.php:52
+msgid "Web Savvy - Featured Page"
+msgstr "Web Savvy - Featured Page"
+
+#: lib/widgets/wsm-featured-page.php:218 lib/widgets/wsm-featured-post.php:295
+#: lib/widgets/wsm-featured-post.php:331 lib/widgets/wsm-featured-post.php:456
+msgid "Title"
+msgstr "Title"
+
+#: lib/widgets/wsm-featured-page.php:223
+msgid "Page"
+msgstr "Page"
+
+#: lib/widgets/wsm-featured-page.php:231 lib/widgets/wsm-featured-post.php:386
+msgid "Show Featured Image"
+msgstr "Show Featured Image"
+
+#: lib/widgets/wsm-featured-page.php:235 lib/widgets/wsm-featured-post.php:390
+msgid "Image Size"
+msgstr "Image Size"
+
+#: lib/widgets/wsm-featured-page.php:247 lib/widgets/wsm-featured-post.php:402
+msgid "Image Alignment"
+msgstr "Image Alignment"
+
+#: lib/widgets/wsm-featured-page.php:249 lib/widgets/wsm-featured-post.php:374
+#: lib/widgets/wsm-featured-post.php:404
+msgid "None"
+msgstr "None"
+
+#: lib/widgets/wsm-featured-page.php:250 lib/widgets/wsm-featured-post.php:375
+#: lib/widgets/wsm-featured-post.php:405
+msgid "Left"
+msgstr "Left"
+
+#: lib/widgets/wsm-featured-page.php:251 lib/widgets/wsm-featured-post.php:376
+#: lib/widgets/wsm-featured-post.php:406
+msgid "Right"
+msgstr "Right"
+
+#: lib/widgets/wsm-featured-page.php:259
+msgid "Show Page Title"
+msgstr "Show Page Title"
+
+#: lib/widgets/wsm-featured-page.php:264
+msgid "Show Page Content"
+msgstr "Show Page Content"
+
+#: lib/widgets/wsm-featured-page.php:268
+msgid "Content Character Limit"
+msgstr "Content Character Limit"
+
+#: lib/widgets/wsm-featured-page.php:274
+msgid "Automatically add paragraphs"
+msgstr "Automatically add paragraphs"
+
+#: lib/widgets/wsm-featured-page.php:278
+msgid "More Text"
+msgstr "More Text"
+
+#: lib/widgets/wsm-featured-post.php:51
+msgid "By"
+msgstr "By"
+
+#: lib/widgets/wsm-featured-post.php:54
+msgid "[Read More...]"
+msgstr "[Read More...]"
+
+#: lib/widgets/wsm-featured-post.php:58
+msgid "More Posts from this Category"
+msgstr "More Posts from this Category"
+
+#: lib/widgets/wsm-featured-post.php:63
+msgid "Displays featured posts with thumbnails"
+msgstr "Displays featured posts with thumbnails"
+
+#: lib/widgets/wsm-featured-post.php:72
+msgid "Web Savvy - Featured Posts"
+msgstr "Web Savvy - Featured Posts"
+
+#: lib/widgets/wsm-featured-post.php:304
+msgid "Category"
+msgstr "Category"
+
+#: lib/widgets/wsm-featured-post.php:311
+msgid "All Categories"
+msgstr "All Categories"
+
+#: lib/widgets/wsm-featured-post.php:318 lib/widgets/wsm-featured-post.php:461
+msgid "Number of Posts to Show"
+msgstr "Number of Posts to Show"
+
+#: lib/widgets/wsm-featured-post.php:323
+msgid "Number of Posts to Offset"
+msgstr "Number of Posts to Offset"
+
+#: lib/widgets/wsm-featured-post.php:328
+msgid "Order By"
+msgstr "Order By"
+
+#: lib/widgets/wsm-featured-post.php:330
+msgid "Date"
+msgstr "Date"
+
+#: lib/widgets/wsm-featured-post.php:332
+msgid "Parent"
+msgstr "Parent"
+
+#: lib/widgets/wsm-featured-post.php:333
+msgid "ID"
+msgstr "ID"
+
+#: lib/widgets/wsm-featured-post.php:334
+msgid "Comment Count"
+msgstr "Comment Count"
+
+#: lib/widgets/wsm-featured-post.php:335
+msgid "Random"
+msgstr "Random"
+
+#: lib/widgets/wsm-featured-post.php:340
+msgid "Sort Order"
+msgstr "Sort Order"
+
+#: lib/widgets/wsm-featured-post.php:342
+msgid "Descending (3, 2, 1)"
+msgstr "Descending (3, 2, 1)"
+
+#: lib/widgets/wsm-featured-post.php:343
+msgid "Ascending (1, 2, 3)"
+msgstr "Ascending (1, 2, 3)"
+
+#: lib/widgets/wsm-featured-post.php:349
+msgid "Exclude Previously Displayed Posts?"
+msgstr "Exclude Previously Displayed Posts?"
+
+#: lib/widgets/wsm-featured-post.php:358
+msgid "Show Author Gravatar"
+msgstr "Show Author Gravatar"
+
+#: lib/widgets/wsm-featured-post.php:362
+msgid "Gravatar Size"
+msgstr "Gravatar Size"
+
+#: lib/widgets/wsm-featured-post.php:364
+msgid "Small (45px)"
+msgstr "Small (45px)"
+
+#: lib/widgets/wsm-featured-post.php:365
+msgid "Medium (65px)"
+msgstr "Medium (65px)"
+
+#: lib/widgets/wsm-featured-post.php:366
+msgid "Large (85px)"
+msgstr "Large (85px)"
+
+#: lib/widgets/wsm-featured-post.php:367
+msgid "Extra Large (125px)"
+msgstr "Extra Large (125px)"
+
+#: lib/widgets/wsm-featured-post.php:372
+msgid "Gravatar Alignment"
+msgstr "Gravatar Alignment"
+
+#: lib/widgets/wsm-featured-post.php:420
+msgid "Show Post Title"
+msgstr "Show Post Title"
+
+#: lib/widgets/wsm-featured-post.php:425
+msgid "Show Post Info"
+msgstr "Show Post Info"
+
+#: lib/widgets/wsm-featured-post.php:430
+msgid "Content Type"
+msgstr "Content Type"
+
+#: lib/widgets/wsm-featured-post.php:432
+msgid "Show Content"
+msgstr "Show Content"
+
+#: lib/widgets/wsm-featured-post.php:433
+msgid "Show Excerpt"
+msgstr "Show Excerpt"
+
+#: lib/widgets/wsm-featured-post.php:434
+msgid "Show Content Limit"
+msgstr "Show Content Limit"
+
+#: lib/widgets/wsm-featured-post.php:435
+msgid "No Content"
+msgstr "No Content"
+
+#: lib/widgets/wsm-featured-post.php:438
+msgid "Limit content to"
+msgstr "Limit content to"
+
+#: lib/widgets/wsm-featured-post.php:440
+msgid "characters"
+msgstr "characters"
+
+#: lib/widgets/wsm-featured-post.php:445
+msgid "More Text (if applicable)"
+msgstr "More Text (if applicable)"
+
+#: lib/widgets/wsm-featured-post.php:453
+msgid ""
+"To display an unordered list of more posts from this category, please fill "
+"out the information below"
+msgstr ""
+"To display an unordered list of more posts from this category, please fill "
+"out the information below"
+
+#: lib/widgets/wsm-featured-post.php:471
+msgid "Show Category Archive Link"
+msgstr "Show Category Archive Link"
+
+#: lib/widgets/wsm-featured-post.php:475
+msgid "Link Text"
+msgstr "Link Text"
+
+#: taxonomy-it_exchange_category.php:47 taxonomy-it_exchange_tag.php:47
+msgid "View Details"
+msgstr "View Details"
+
+#: taxonomy-product_tag.php:66 taxonomy-product_tag.php:103
+#: taxonomy-wpsc_product_category.php:99 taxonomy-wpsc_product_category.php:136
+#: wpsc-grid_view.php:84 wpsc-grid_view.php:121 wpsc-products_page.php:198
+msgid "Loading"
+msgstr "Loading"
+
+#: taxonomy-product_tag.php:67 taxonomy-product_tag.php:104
+#: taxonomy-wpsc_product_category.php:100
+#: taxonomy-wpsc_product_category.php:137 wpsc-grid_view.php:85
+#: wpsc-grid_view.php:122 wpsc-products_page.php:199
+#: wpsc-single_product.php:183
+msgid "Updating cart..."
+msgstr "Updating cart..."
+
+#: taxonomy-product_tag.php:87 taxonomy-wpsc_product_category.php:120
+#: wpsc-grid_view.php:105 wpsc-products_page.php:80
+msgid "No Image"
+msgstr "No Image"
+
+#: taxonomy-product_tag.php:119 taxonomy-wpsc_product_category.php:152
+#: wpsc-grid_view.php:137 wpsc-products_page.php:222
+msgid "Sale"
+msgstr "Sale"
+
+#: taxonomy-product_tag.php:148 taxonomy-wpsc_product_category.php:181
+#: wpsc-grid_view.php:163 wpsc-products_page.php:229
+msgid "There are no products in this group."
+msgstr "There are no products in this group."
+
+#: woocommerce/single-product/meta.php:26
+msgid "<b>SKU:</b>"
+msgstr "<b>SKU:</b>"
+
+#: woocommerce/single-product/meta.php:26
+msgid "N/A"
+msgstr "N/A"
+
+#: woocommerce/single-product/meta.php:30
+msgid "<b>Category:</b>"
+msgid_plural "<b>Categories:</b>"
+msgstr[0] "<b>Category:</b>"
+msgstr[1] "<b>Categories:</b>"
+
+#: woocommerce/single-product/meta.php:32
+msgid "<b>Tag:</b>"
+msgid_plural "<b>Tags:</b>"
+msgstr[0] "<b>Tag:</b>"
+msgstr[1] "<b>Tags:</b>"
+
+#: wpsc-products_page.php:114
+msgid "Additional Description"
+msgstr "Additional Description"
+
+#: wpsc-products_page.php:114
+msgid "More Details"
+msgstr "More Details"
+
+#: wpsc-products_page.php:131 wpsc-single_product.php:101
+msgid "Product Options"
+msgstr "Product Options"
+
+#: wpsc-products_page.php:144 wpsc-single_product.php:114
+msgid "Combination of product variants is not available"
+msgstr "Combination of product variants is not available"
+
+#: wpsc-products_page.php:153 wpsc-single_product.php:129
+msgid "Product in stock"
+msgstr "Product in stock"
+
+#: wpsc-products_page.php:155 wpsc-single_product.php:131
+msgid "Product not in stock"
+msgstr "Product not in stock"
+
+#: wpsc-products_page.php:159 wpsc-single_product.php:135
+msgid "Donation"
+msgstr "Donation"
+
+#: wpsc-products_page.php:171 wpsc-single_product.php:144
+msgid "Shipping"
+msgstr "Shipping"
+
+#: wpsc-products_page.php:180
+msgid "Quantity: "
+msgstr "Quantity: "
+
+#: wpsc-products_page.php:203
+msgid "Buy Now"
+msgstr "Buy Now"
+
+#: wpsc-products_page.php:205
+msgid "Add To Cart"
+msgstr "Add To Cart"
+
+#: wpsc-products_page.php:211
+msgid "Edit"
+msgstr "Edit"
+
+#: wpsc-single_product.php:85
+msgid "Personalize Your Product"
+msgstr "Personalize Your Product"
+
+#: wpsc-single_product.php:86
+msgid ""
+"Complete this form to include a personalized message with your purchase."
+msgstr ""
+"Complete this form to include a personalized message with your purchase."
+
+#: wpsc-single_product.php:94
+msgid "Upload a File"
+msgstr "Upload a File"
+
+#: wpsc-single_product.php:95
+msgid "Select a file from your computer to include with this purchase."
+msgstr "Select a file from your computer to include with this purchase."
+
+#: wpsc-single_product.php:150
+msgid "Quantity"
+msgstr "Quantity"
+
+#: wpsc-single_product.php:187
+msgid "This product has sold out."
+msgstr "This product has sold out."
+
+#~ msgid "This product is currently out of stock and unavailable."
+#~ msgstr "This product is currently out of stock and unavailable."
+
+#~ msgid "Choose an option"
+#~ msgstr "Choose an option"
+
+#~ msgid "Clear selection"
+#~ msgstr "Clear selection"

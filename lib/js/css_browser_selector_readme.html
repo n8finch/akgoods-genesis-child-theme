@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" id="html">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<title>CSS Browser Selector</title>
+		<style type="text/css">
+		.ie .example {
+			background-color: yellow
+		}
+		.ie7 .example {
+			background-color: orange
+		}
+		.gecko .example {
+			background-color: gray
+		}
+		.win.gecko .example {
+			background-color: red
+		}
+		.linux.gecko .example {
+			background-color: pink
+		}
+		.opera .example {
+			background-color: green
+		}
+		.konqueror .example {
+			background-color: blue
+		}
+		.safari .example {
+			background-color: black
+		}
+		.chrome .example {
+			background-color: cyan
+		}
+		.example {
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+		}
+		.no_js { display: block }
+		.has_js { display: none }
+		.js .no_js { display: none }
+		.js .has_js { display: block }
+		</style>
+		<script type="text/javascript" charset="utf-8">
+		/*
+		CSS Browser Selector v0.4.0 (Nov 02, 2010)
+		Rafael Lima (http://rafael.adm.br)
+		http://rafael.adm.br/css_browser_selector
+		License: http://creativecommons.org/licenses/by/2.5/
+		Contributors: http://rafael.adm.br/css_browser_selector#contributors
+		*/
+		function css_browser_selector(u){var ua=u.toLowerCase(),is=function(t){return ua.indexOf(t)>-1},g='gecko',w='webkit',s='safari',o='opera',m='mobile',h=document.documentElement,b=[(!(/opera|webtv/i.test(ua))&&/msie\s(\d)/.test(ua))?('ie ie'+RegExp.$1):is('firefox/2')?g+' ff2':is('firefox/3.5')?g+' ff3 ff3_5':is('firefox/3.6')?g+' ff3 ff3_6':is('firefox/3')?g+' ff3':is('gecko/')?g:is('opera')?o+(/version\/(\d+)/.test(ua)?' '+o+RegExp.$1:(/opera(\s|\/)(\d+)/.test(ua)?' '+o+RegExp.$2:'')):is('konqueror')?'konqueror':is('blackberry')?m+' blackberry':is('android')?m+' android':is('chrome')?w+' chrome':is('iron')?w+' iron':is('applewebkit/')?w+' '+s+(/version\/(\d+)/.test(ua)?' '+s+RegExp.$1:''):is('mozilla/')?g:'',is('j2me')?m+' j2me':is('iphone')?m+' iphone':is('ipod')?m+' ipod':is('ipad')?m+' ipad':is('mac')?'mac':is('darwin')?'mac':is('webtv')?'webtv':is('win')?'win'+(is('windows nt 6.0')?' vista':''):is('freebsd')?'freebsd':(is('x11')||is('linux'))?'linux':'','js']; c = b.join(' '); h.className += ' '+c; return c;}; css_browser_selector(navigator.userAgent);
+		</script>
+	</head>
+
+    <body>
+
+
+<!--
+<script type="text/javascript" charset="utf-8">
+  GITHUB_USERNAME="rafaelp";
+  GITHUB_LIST_LENGTH=10;
+  GITHUB_HEAD="div"; // e.g. change to "h2" for wordpress sidebars
+  GITHUB_THEME="white"; // try 'black'
+  GITHUB_TITLE = "<strong>Meus Projetos</strong>"
+  GITHUB_SHOW_ALL = "Show all"
+</script>
+<script src="http://drnicjavascript.rubyforge.org/github_badge/dist/github-badge-launcher.js" type="text/javascript"></script>
+-->
+<h1>CSS Browser Selector</h1>
+
+<h2>Clever technique to help you on CSS hacks.</h2>
+<h3 style="color: #f00">Last updated: November 02, 2010 (v0.4.0)</span></h3>
+
+
+<p>CSS Browser Selector is a very small javascript with just one line which empower CSS selectors. It gives you the ability to write specific CSS code for each operating system and each browser.
+
+<h2>EXAMPLE</h2>
+<div class="no_js" style="color: red; font-weight: bold">
+	<p>The JavaScript support is disabled on your browser. Please, enable JavaScript and refresh this page.</p>
+</div>
+<div class="has_js">
+	<div class="example"></div>
+
+	
+	<p>The color of this box will change on different os/browsers:</p>
+	<ul>
+	<li>Internet Explorer - yellow</li>
+	<li>Internet Explorer 7 - orange</li>
+	<li>Gecko Engine on Windows (Firefox, Mozilla, Camino) - red</li>
+	<li>Gecko Engine on Linux (Firefox, Mozilla, Camino) - pink</li>
+
+	<li>Gecko Engine on Other OS (Firefox, Mozilla, Camino) - gray</li>
+	<li>Opera - green</li>
+	<li>Konqueror - blue</li>
+	<li>Safari - black</li>
+	<li>Chrome - cyan</li>
+	</ul>
+
+	<p>If the box is white, and you are using one of browsers above, something is wrong :-/<br/>
+	<a href="debug.html">Help us in this case!</a></p>
+</div>
+
+<h3>Source of this example:</h3>
+<pre>
+&lt;style type="text/css"&gt;
+.ie .example {
+  background-color: yellow
+}
+.ie7 .example {
+  background-color: orange
+}
+.gecko .example {
+  background-color: gray
+}
+.win.gecko .example {
+  background-color: red
+}
+.linux.gecko .example {
+  background-color: pink
+}
+.opera .example {
+  background-color: green
+}
+.konqueror .example {
+  background-color: blue
+}
+.webkit .example {
+  background-color: black
+}
+.example {
+  width: 100px;
+  height: 100px;
+}
+.no_js { display: block }
+.has_js { display: none }
+.js .no_js { display: none }
+.js .has_js { display: block }
+&lt;/style&gt;
+</pre>
+
+
+<h2>DOWNLOAD</h2>
+
+<p><a href="http://github.com/rafaelp/css_browser_selector/raw/master/css_browser_selector.js">http://github.com/rafaelp/css_browser_selector/raw/master/css_browser_selector.js</a></p>
+<p>git clone git://github.com/rafaelp/css_browser_selector.git</p>
+
+<h2>USAGE</h2>
+<h3>1. Copy and paste the line below, inside &lt;head&gt; and &lt;/head&gt; tag</h3>
+
+<p>&lt;script src="css_browser_selector.js" type="text/javascript"&gt;&lt;/script&gt;</p>
+
+<h3>2. Set CSS attributes with the code of each browser/os you want to hack</h3>
+<p>Examples:</p>
+<ul>
+<li>html.gecko div#header { margin: 1em; }</li>
+<li>.opera #header { margin: 1.2em; }</li>
+<li>.ie .mylink { font-weight: bold; }</li>
+<li>.mac.ie .mylink { font-weight: bold; }</li>
+
+<li style="color: #f00">.[os].[browser] .mylink { font-weight: bold; } -> without space between .[os] and .[browser]</li>
+</ul>
+
+<h3>Available OS Codes [os]:</h3>
+<ul>
+<li>win - Microsoft Windows (all versions)</li>
+<li>vista - Microsoft Windows Vista <sup><small style="color: red">new</small></sup></li>
+<li>linux - Linux (x11 and linux)</li>
+<li>mac - Mac OS</li>
+<li>freebsd - FreeBSD</li>
+
+<li>ipod - iPod Touch</li>
+<li>iphone - iPhone</li>
+<li>ipad - iPad <sup><small style="color: red">new</small></sup></li>
+<li>webtv - WebTV</li>
+<li>j2me - J2ME Devices (ex: Opera mini) <sup><small style="color: red">changed from mobile to j2me</small></sup></li>
+<li>blackberry - BlackBerry <sup><small style="color: red">new</small></sup></li>
+<li>android - Google Android <sup><small style="color: red">new</small></sup></li>
+
+<li>mobile - All mobile devices <sup><small style="color: red">new</small></sup></li>
+</ul>
+
+<h3>Available Browser Codes [browser]:</h3>
+<ul>
+<li>ie - Internet Explorer (All versions)</li>
+<li>ie8 - Internet Explorer 8.x</li>
+<li>ie7 - Internet Explorer 7.x</li>
+<li>ie6 - Internet Explorer 6.x</li>
+<li>ie5 - Internet Explorer 5.x</li>
+
+<li>gecko - Mozilla, Firefox (all versions), Camino</li>
+<li>ff2 - Firefox 2</li>
+<li>ff3 - Firefox 3</li>
+<li>ff3_5 - Firefox 3.5</li>
+<li>ff3_6 - Firefox 3.6 <sup><small style="color: red">new</small></sup></li>
+<li>opera - Opera (All versions)</li>
+<li>opera8 - Opera 8.x</li>
+<li>opera9 - Opera 9.x</li>
+
+<li>opera10 - Opera 10.x</li>
+<li>konqueror - Konqueror</li>
+<li>webkit or safari - Safari, NetNewsWire, OmniWeb, Shiira, Google Chrome</li>
+<li>safari3 - Safari 3.x</li>
+<li>chrome - Google Chrome</li>
+<li>iron - SRWare Iron</li>
+</ul>
+
+<h3>Extra Codes:</h3>
+<ul>
+
+<li>js - Will be available when js is enable, so you can show/hide some stuffs</li>
+</ul>
+
+<h2>INSPIRATION</h2>
+<p>Original idea by 37signals.</p>
+<p><a href="http://37signals.com/svn/archives2/browser_selectors_in_css.php">http://37signals.com/svn/archives2/browser_selectors_in_css.php</a></p>
+
+<h2>EXTRAS</h2>
+<h3>Ruby on Rails Plugin by Reid MacDonald</h3>
+<p><a href="http://latimes.rubyforge.org/svn/plugins/css_browser_selector/">http://latimes.rubyforge.org/svn/plugins/css_browser_selector/</a></p>
+
+<h3>PHP CSS Browser Selector by Bastian Allgeier</h3>
+<p><a href="http://bastian-allgeier.de/css_browser_selector/">http://bastian-allgeier.de/css_browser_selector/</a></p>
+
+<h3>Wordpress Plugin by Adrian hanft</h3>
+<p><a href="http://wordpress.org/extend/plugins/browser-specific-css/">http://wordpress.org/extend/plugins/browser-specific-css/</a></p>
+
+
+
+<h2>CHANGELOG</h2>
+<ul>
+	<li>0.4.0 - (November 02, 2010) Adding 'vista', 'j2me', 'ff3_6', 'ipad', 'blackberry' and 'android' codes <a href="http://github.com/rafaelp/css_browser_selector/commit/1d3c1514342a1dfd34961ca3871312d40359bb8a">See commit on Github</a></li>
+	<li>0.3.5 - (February 05, 2010) Implementing paulirish suggestion os issue #1</li>
+	<li>0.3.4 - (September 29, 2009) Fix support of Opera 10.10</li>
+	<li>0.3.3 - (September 06, 2009) Adding 'iron' code for SRWare Iron browser and 'ff3_5' for Firefox 3.5 because it renders litle bit different from Firefox 3.0x</li>
+
+	<li>0.3.2 - (April 22, 2009) Removing 'safari' code for Chrome browser</li>
+	<li>0.3.1 - (January 04, 2009) 'mobile' selector for j2me devices</li>
+	<li>0.3.0 - (January 04, 2009) Complete rewrite, now with tests and new OS selectors</li>
+	<li>0.2.9 - (September 17, 2008) Changes whitespace to \s on regexp to avoid problems on minifier process</li>
+	<li>0.2.8 - (September 03, 2008) Added 'chrome' browser code for Google Chrome</li>
+	<li>0.2.7 - (May 21, 2008) Added 'ff2' and 'ff3' browser codes</li>
+
+	<li>0.2.6 - (April 11, 2008) Removed unecessary spaces</li>
+	<li>0.2.5 - (October 5, 2006) Removed permanently ieMac code, bug on Opera 9 detection and now you must use ".[os].[browser]" instead of ".os .browser"</li>
+	<li>0.2.4 - Added support for opera versions: 'opera8', 'opera9', etc</li>
+	<li>0.2.3 - Added 'js' code to know when JS is disabled or not</li>
+	<li>0.2.2 - Added OS codes to be used with browser codes - M@ McCray</li>
+	<li>0.2.1 - Corrected small javascript bug in IE 5.01 - Daniel Westermann-Clark</li>
+
+	<li>0.2.0 - Good refactoring, small and fast script! - Steve Clay</li>
+	<li>0.1.8 - Added support for Internet Explorer on Mac OS (ieMac) - Jeff Bellsey</li>
+	<li>0.1.7 - Added 'webkit' as alias of 'safari' and well written syntax with less bytes - Jean Pierre and Micah Snyder</li>
+	<li>0.1.6 - Striped some spaces to make the file smaller and solved IE for Mac bug - Derek</li>
+	<li>0.1.5 - Added support for ie6 and appends the class names to be non-destructive - Jesse Scott</li>
+	<li>0.1.4 - Working on Safari, applewebkit was misspelled, without an p - Alex Wiltschko and Moises Kirsch</li>
+
+	<li>0.1.3 - Changed the js a litle to get the html tag by TagName instead of having one id - Chris Warren and Tony Nelson</li>
+	<li>0.1.2 - Changed from 'safari' to 'applewebkit/' and from 'firefox' to 'gecko/' - glasser</li>
+	<li>0.1.1 - Initial release (2006-07-19)</li>
+</ul>
+
+<h2>LICENSE</h2>
+<p><a href="http://creativecommons.org/licenses/by/2.5/">http://creativecommons.org/licenses/by/2.5/</a></p>
+
+<h2>AUTHOR</h2>
+
+<p>Rafael Lima</p>
+<p><a href="http://rafael.adm.br">http://rafael.adm.br</a><br/>
+	<a href="http://twitter.com/rafaelp">http://twitter.com/rafaelp</a></p>
+
+<a name="contributors">
+<h2>CONTRIBUTORS</h2>
+<ul>
+	<li>Niyaz (http://github.com/niyazpk)</li>
+	<li>Marcio Trindade (http://github.com/marciotrindade)</li>
+
+	<li>rbottarelli (http://github.com/rbottarelli)</li>
+	<li>Bryan Chow (http://github.com/bryanchow)</li>
+	<li>Derek Lio (http://github.com/dereklio)</li>
+	<li>Paul Irish (http://github.com/paulirish)</li>
+	<li>Preston Badeer</li>
+	<li>Upekshapriya</li>
+
+	<li>André Lopes</li>
+	<li>Tazio Mirandola - copiaincolla pubblicità</li>
+	<li>Reid MacDonald (http://geminstallthat.wordpress.com)</li>
+	<li>Vinicius Braga (http://viniciusbraga.com)</li>
+	<li>Chris Preece (http://www.mmtdigital.co.uk)</li>
+	<li>Dominykas</li>
+
+	<li>M@ McCray</li>
+	<li>Daniel Westermann-Clark</li>
+	<li>Steve Clay (http://mrclay.org/)</li>
+	<li>Jeff Bellsey</li>
+	<li>Jean Pierre</li>
+	<li>Micah Snyder</li>
+
+	<li>Derek (http://amphibian.info)</li>
+	<li>Jesse Scott</li>
+	<li>Moises Kirsch (http://www.moiblog.com/)</li>
+	<li>Alex Wiltschko</li>
+	<li>Chris Warren and Tony Nelson (http://www.imagetrend.com)</li>
+	<li>glasser</li>
+
+</ul>
+
+    </body>
+
+</html>

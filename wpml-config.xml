@@ -1,0 +1,8 @@
+<wpml-config>
+  <admin-texts>
+    <key name="jessica-settings">
+      <key name="wsm_copyright"/>
+      <key name="wsm_credit"/>
+    </key>
+  </admin-texts>
+</wpml-config>
