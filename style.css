@@ -17,7 +17,7 @@
 ---------------------------------------------------------------------------------------------------- */
 
 /*
-	Roboto, and Roboto Slab fonts are enqueued from Google Fonts
+	Roboto, and Ubuntu fonts are enqueued from Google Fonts
 	in the /jessica/lib/init.php file.
 */
 
@@ -103,7 +103,7 @@ html {
 body {
 	background-color: #fff;
 	color: #20221d;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 300;
@@ -223,7 +223,7 @@ h4,
 h5,
 h6 {
 	color: #20221d;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Ubuntu', serif;
 	font-weight:300;
 	line-height: 1.2;
 	margin: 0 0 10px;
@@ -768,7 +768,7 @@ th {
 }
 
 input[type="search"] {
-	font-family: 'Roboto Slab',serif;
+	font-family: 'Ubuntu',serif;
 }
 
 .before-header .genesis-nav-menu li.search input[type="search"] {
@@ -829,7 +829,7 @@ input[type="search"] {
 .bottom-widgets .widget-title,
 .footer-widgets .widget-title {
 	color: #20221d;
-	font-family: 'Roboto',sans-serif;
+	font-family: 'Open Sans',sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 500;
@@ -1005,7 +1005,7 @@ img.alignright {
 }
 
 .featured-content .entry-title {
-	font-family: 'Roboto',sans-serif;
+	font-family: 'Open Sans',sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	overflow: hidden;
@@ -1020,7 +1020,7 @@ img.alignright {
 	border-radius: 8px;
 	color: #fff;
 	float: left;
-	font-family: 'Roboto Slab',serif;
+	font-family: 'Ubuntu',serif;
 	font-size: 13px;
 	font-size: 1.3rem;
 	line-height: 1;
@@ -1122,7 +1122,7 @@ Call To Action
 
 .cta-box .more-link {
 	bottom: 30px;
-	font-family: 'Roboto Slab',serif;
+	font-family: 'Ubuntu',serif;
 	font-size: 25px;
 	font-size: 2.5rem;
 	font-weight: 700;
@@ -1163,7 +1163,7 @@ WSM Banner
 h3.banner-title {
 	color: #fff;
 	display: inline-block;
-	font-family: 'Roboto Slab',serif;
+	font-family: 'Ubuntu',serif;
 	font-size: 26px;
 	font-size: 2.6rem;
 	font-weight: 700;
@@ -1210,7 +1210,7 @@ h3.banner-title {
 .wsm-banner .custom-text .more-link {
 	clear: both;
 	display: block;
-	font-family: 'Roboto',sans-serif;
+	font-family: 'Open Sans',sans-serif;
 	font-size: 18px;
 	font-size: 1.8rem;
 	margin: 20px 0 0;
@@ -1548,7 +1548,7 @@ body.woocommerce-page span.onsale {
 }
 
 body.woocommerce-page ul.products li.product h3 {
-	font-family: 'Roboto',sans-serif;
+	font-family: 'Open Sans',sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
 	margin-top: 30px;
@@ -1680,7 +1680,7 @@ body.woocommerce-page div.product div.summary {
 
 body.woocommerce-page div.product .product_title,
 body.woocommerce-page #content div.product .product_title {
-	font-family: 'Roboto',sans-serif;
+	font-family: 'Open Sans',sans-serif;
 	font-size: 28px;
 	font-size: 2.8rem;
 	margin-bottom: 0;
@@ -1721,7 +1721,7 @@ body.woocommerce-page #content input.button.alt:hover {
 
 body.woocommerce-page div.product form.cart .button,
 body.woocommerce-page #content div.product form.cart .button {
-	font-family: 'Roboto Slab',serif;
+	font-family: 'Ubuntu',serif;
 	font-size: 25px;
 	font-size: 2.5rem;
 	font-weight: 700;
@@ -2167,7 +2167,7 @@ div.it-exchange-super-widget .it-exchange-sw-product .add-to-cart-button {
     background-image: none;
     box-shadow: none;
     color: #fff;
-	font-family: "Roboto Slab",serif;
+	font-family: "Ubuntu",serif;
     font-size: 25px;
 	font-size: 2.5rem;
     font-weight: 700;
@@ -3039,7 +3039,7 @@ div.single_product_display form.product_form .wpsc_buy_button {
     background-image: none;
     box-shadow: none;
     color: #fff;
-	font-family: "Roboto Slab",serif;
+	font-family: "Ubuntu",serif;
     font-size: 25px;
 	font-size: 2.5rem;
     font-weight: 700;
@@ -3470,7 +3470,7 @@ div.shopping-cart-wrapper .shoppingcart table .cart-widget-count {
 }
 
 .site-title {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Ubuntu', serif;
 	font-size: 51px;
 	font-size: 5.1rem;
 	font-weight: 300;
@@ -3554,7 +3554,7 @@ div.shopping-cart-wrapper .shoppingcart table .cart-widget-count {
 
 .genesis-nav-menu .menu-item {
 	display: inline-block;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Ubuntu', serif;
 	font-size: 17px;
 	font-size: 1.7rem;
 	font-weight: 300;
@@ -3712,6 +3712,14 @@ div.shopping-cart-wrapper .shoppingcart table .cart-widget-count {
 
 /* ## Secondary Navigation
 --------------------------------------------- */
+
+.header-conact-left {
+	float: left;
+}
+
+.nav-secondary {
+	float: right;
+}
 
 .nav-secondary .genesis-nav-menu a {
 	color: #fff;
@@ -3876,7 +3884,7 @@ div.soliloquy-container h5 {
 
 .home-mid-nav .menu .menu-item {
 	display: inline-block;
-	font-family: 'Roboto',sans-serif;
+	font-family: 'Open Sans',sans-serif;
     font-size: 16px;
 	font-size: 1.6rem;
     font-weight: 500;
@@ -4041,7 +4049,7 @@ div.soliloquy-container h5 {
 
 .more-link {
 	display: block;
-	font-family: 'Roboto Slab',serif;
+	font-family: 'Ubuntu',serif;
 }
 
 .content .entry-content .more-link a {

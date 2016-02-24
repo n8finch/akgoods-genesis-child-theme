@@ -18,6 +18,9 @@ add_action( 'wp_enqueue_scripts', 'wsm_enqueue_assets' );
  * Enqueue theme assets.
  */
 function wsm_enqueue_assets() {
+
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Ubuntu:400,700,300|Ubuntu+Condensed|Open+Sans:400,300,700', array() );
+
 	wp_enqueue_style( 'jessica', get_stylesheet_uri() );
 	wp_style_add_data( 'jessica', 'rtl', 'replace' );
 }

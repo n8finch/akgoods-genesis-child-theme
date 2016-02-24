@@ -21,6 +21,19 @@ function jessica_do_before_header() {
 
 	echo '<aside class="before-header"><div class="wrap">';
 
+	//	Adding Contact Values
+
+	$phone = genesis_get_option( 'wsm_header_phone', 'jessica-settings' );
+	$fax = genesis_get_option( 'wsm_header_fax', 'jessica-settings' );
+	$email = genesis_get_option( 'wsm_header_email', 'jessica-settings' );
+
+	echo '<div class="header-conact-left">'. '<span class="dashicons dashicons-phone"></span> ' . $phone . ' | <span class="dashicons dashicons-format-aside""></span> ' . $fax . ' | <span class="dashicons dashicons-email-alt"></span> ' . $email . '</div>' ;
+
+
+
+
+
+
 	if ( has_nav_menu( 'secondary' ) ) {
 
 			$args = array(
