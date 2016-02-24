@@ -120,6 +120,13 @@ class Jessica_Settings extends Genesis_Admin_Boxes {
 		echo '<p><strong>' . __( 'Header Search:', 'jessica' ) . '</strong><br/><input type="checkbox" name="' . $this->get_field_name( 'wsm_top_search' ) . '" id="' . $this->get_field_id( 'wsm_top_search' ) . '" value="1"';
         checked( 1, $this->get_field_value( 'wsm_top_search' ) ); echo '/>';
 		echo '<em>' . __( 'By default, leaving this unchecked will display header search', 'jessica' ) . '</em></p>';
+		// Add Contact Information
+		echo '<p><strong>' . __( 'Phone:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_phone' ) . '" id="' . $this->get_field_id( 'wsm_header_phone' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_phone' ) ) . '" size="70" /></p>';
+		echo '<p><strong>' . __( 'Fax:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_fax' ) . '" id="' . $this->get_field_id( 'wsm_header_fax' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_fax' ) ) . '" size="70" /></p>';
+		echo '<p><strong>' . __( 'Email:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_email' ) . '" id="' . $this->get_field_id( 'wsm_header_email' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_email' ) ) . '" size="70" /></p>';
 
 	}
 
