@@ -3680,6 +3680,8 @@ div.shopping-cart-wrapper .shoppingcart table .cart-widget-count {
 	padding: 0;
 }
 
+
+
 /* ## Accessible Menu
 --------------------------------------------- */
 
@@ -3710,11 +3712,33 @@ div.shopping-cart-wrapper .shoppingcart table .cart-widget-count {
 }
 
 
+.subheader-area {
+	border-top: 1px solid #cdd1d2;
+}
+
 /* ## Secondary Navigation
 --------------------------------------------- */
 
 .header-conact-left {
 	float: left;
+}
+
+.header-social-right {
+	float: right;
+}
+
+.header-social-right > a > *{
+	color: white;
+	margin: 0 5px;
+}
+
+.header-social-right > a > *:hover{
+	color: black;
+}
+
+.header-social-right > a:hover{
+	background-color: white;
+	border-radius: 3px;
 }
 
 .nav-secondary {
@@ -3766,6 +3790,10 @@ div.shopping-cart-wrapper .shoppingcart table .cart-widget-count {
 .genesis-nav-menu .cart a {
 	background: url(images/cart-icon.png) no-repeat right center !important;
 	padding-right: 24px;
+}
+
+.fontawesome-text {
+	display: none;
 }
 
 /* ## Navigation toggles
@@ -3916,9 +3944,10 @@ div.soliloquy-container h5 {
 }
 
 .menu-description {
-	display: block;
+	/*display: block;*/
 	font-weight: 300;
 	text-transform: none;
+	display: none;
 }
 
 

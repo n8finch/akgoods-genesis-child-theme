@@ -105,6 +105,7 @@ class Jessica_Settings extends Genesis_Admin_Boxes {
 	function metaboxes() {
 
 		add_meta_box('wsm_header_metabox', __( 'Header Info', 'jessica' ), array( $this, 'wsm_header_metabox' ), $this->pagehook, 'main', 'high');
+		add_meta_box('wsm_subheader_metabox', __( 'Sub Header', 'jessica' ), array( $this, 'wsm_subheader_metabox' ), $this->pagehook, 'main', 'high');
 		add_meta_box('wsm_footer_info_metabox', __( 'Footer Info', 'jessica' ), array( $this, 'wsm_footer_info_metabox' ), $this->pagehook, 'main', 'high');
 		add_meta_box('wsm_upate_notifications_metabox', __( 'Update Notifications', 'jessica' ), array( $this, 'wsm_upate_notifications_metabox' ), $this->pagehook, 'main', 'high');
 
@@ -127,7 +128,42 @@ class Jessica_Settings extends Genesis_Admin_Boxes {
 		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_fax' ) . '" id="' . $this->get_field_id( 'wsm_header_fax' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_fax' ) ) . '" size="70" /></p>';
 		echo '<p><strong>' . __( 'Email:', 'jessica' ) . '</strong></p>';
 		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_email' ) . '" id="' . $this->get_field_id( 'wsm_header_email' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_email' ) ) . '" size="70" /></p>';
+		// Add Social Media Information
+		echo '<h3><strong>' . __( 'Social Media Links:', 'jessica' ) . '</strong></h3>';
+		echo '<p><strong>' . __( 'Facebook:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_facebook' ) . '" id="' . $this->get_field_id( 'wsm_header_facebook' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_facebook' ) ) . '" size="70" /></p>';
+		echo '<p><strong>' . __( 'Twiter:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_twitter' ) . '" id="' . $this->get_field_id( 'wsm_header_twitter' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_twitter' ) ) . '" size="70" /></p>';
+		echo '<p><strong>' . __( 'Pinterest:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_pinterest' ) . '" id="' . $this->get_field_id( 'wsm_header_pinterest' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_pinterest' ) ) . '" size="70" /></p>';
+		echo '<p><strong>' . __( 'Houzz:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_houzz' ) . '" id="' . $this->get_field_id( 'wsm_header_houzz' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_houzz' ) ) . '" size="70" /></p>';
+		echo '<p><strong>' . __( 'Google+:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_google_plus' ) . '" id="' . $this->get_field_id( 'wsm_header_google_plus' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_google_plus' ) ) . '" size="70" /></p>';
+		echo '<p><strong>' . __( 'Instagram:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_instagram' ) . '" id="' . $this->get_field_id( 'wsm_header_instagram' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_instagram' ) ) . '" size="70" /></p>';
+		echo '<p><strong>' . __( 'YouTube:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_youtube' ) . '" id="' . $this->get_field_id( 'wsm_header_youtube' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_youtube' ) ) . '" size="70" /></p>';
 
+	}
+
+	/**
+	 * Sub Header Metabox
+	 * @since 1.0.0
+	 */
+
+	function wsm_subheader_metabox() {
+		echo '<p><strong>' . __( 'Lead Text:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_subheader_leadtext' ) . '" id="' . $this->get_field_id( 'wsm_subheader_leadtext' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_subheader_leadtext' ) ) . '" size="70" /></p>';
+
+		echo '<p><strong>' . __( 'Hover Text 1:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_subheader_hovertext1' ) . '" id="' . $this->get_field_id( 'wsm_subheader_hovertext1' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_subheader_hovertext1' ) ) . '" size="70" /></p>';
+
+		echo '<p><strong>' . __( 'Hover Text 2:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_subheader_hovertext2' ) . '" id="' . $this->get_field_id( 'wsm_subheader_hovertext2' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_subheader_hovertext2' ) ) . '" size="70" /></p>';
+
+		echo '<p><strong>' . __( 'Hover Text 3:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="texta" name="' . $this->get_field_name( 'wsm_subheader_hovertext3' ) . '" id="' . $this->get_field_id( 'wsm_subheader_hovertext3' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_subheader_hovertext3' ) ) . '" size="70" /></p>';
 	}
 
 	/**

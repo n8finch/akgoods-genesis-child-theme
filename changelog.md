@@ -1,3 +1,26 @@
+#Changelog
+started  Feb. 23, 2016
+
+###Feb. 25, 2016
+
+- added social media area to header right. coptions in Jessica header settings and the before-header.php and jessica-theme-settings.php files
+-
+
+###Feb. 24, 2016
+
+- changed primary menu font size
+- enqueued Google Ubuntu and Open Sans fonts, changed stylings on the main fonts, added header info
+- added options to Jessica Theme settings for contact info
+
+
+
+
+
+
+
+
+===============================
+
 # Jessica Changelog
 
 ## 1.2.9 - 14 Jan 2016

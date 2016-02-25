@@ -15,7 +15,7 @@
  *
  */
 
-add_action( 'genesis_before_header' , 'jessica_do_before_header' );
+add_action( 'genesis_before_header', 'jessica_do_before_header' );
 
 function jessica_do_before_header() {
 
@@ -24,32 +24,56 @@ function jessica_do_before_header() {
 	//	Adding Contact Values
 
 	$phone = genesis_get_option( 'wsm_header_phone', 'jessica-settings' );
-	$fax = genesis_get_option( 'wsm_header_fax', 'jessica-settings' );
+	$fax   = genesis_get_option( 'wsm_header_fax', 'jessica-settings' );
 	$email = genesis_get_option( 'wsm_header_email', 'jessica-settings' );
+	$facebook = genesis_get_option( 'wsm_header_facebook', 'jessica-settings' );
+	$twitter = genesis_get_option( 'wsm_header_twitter', 'jessica-settings' );
+	$pinterest = genesis_get_option( 'wsm_header_pinterest', 'jessica-settings' );
+	$houzz = genesis_get_option( 'wsm_header_houzz', 'jessica-settings' );
+	$google_plus = genesis_get_option( 'wsm_header_google_plus', 'jessica-settings' );
+	$instagram = genesis_get_option( 'wsm_header_instagram', 'jessica-settings' );
+	$youtube = genesis_get_option( 'wsm_header_youtube', 'jessica-settings' );
 
-	echo '<div class="header-conact-left">'. '<span class="dashicons dashicons-phone"></span> ' . $phone . ' | <span class="dashicons dashicons-format-aside""></span> ' . $fax . ' | <span class="dashicons dashicons-email-alt"></span> ' . $email . '</div>' ;
+	//Left Header Info Section
+
+	echo '<div class="header-conact-left">' .
+	     '<span class="fa fa-phone"></span> ' .
+	     $phone .
+	     ' | <span class="fa fa-fax""></span> ' .
+	     $fax .
+	     ' | <span class="fa fa-envelope"></span> ' .
+	     $email .
+	     '</div>';
+
+	//Right Header Social Media Icons
+
+	echo '<div class="header-social-right">' .
+	     '<a href="'. $facebook .'" target="_blank"><span class="fa fa-facebook"></span></a> ' .
+	     '<a href="'. $twitter .'" target="_blank"><span class="fa fa-twitter"></span></a> ' .
+	     '<a href="'. $pinterest .'" target="_blank"><span class="fa fa-pinterest"></span></a> ' .
+	     '<a href="'. $houzz .'" target="_blank"><span class="fa fa-houzz"></span></a> ' .
+	     '<a href="'. $google_plus .'" target="_blank"><span class="fa fa-google-plus"></span></a> ' .
+	     '<a href="'. $instagram .'" target="_blank"><span class="fa fa-instagram"></span></a> ' .
+	     '<a href="'. $youtube .'" target="_blank"><span class="fa fa-youtube"></span></a> ' .
+	     '</div>';
 
 
-
-
-
-
-	if ( has_nav_menu( 'secondary' ) ) {
-
-			$args = array(
-				'theme_location' => 'secondary',
-				'container' => '',
-				'menu_class' => genesis_get_option('nav_superfish') ? 'nav genesis-nav-menu superfish' : 'nav genesis-nav-menu',
-				'echo' => 0
-			);
-
-			$nav = wp_nav_menu( $args );
-
-			$nav_output = sprintf( '<nav class="nav-secondary">%1$s</nav>', $nav);
-
-			echo apply_filters( 'jessica_do_secondary_nav', $nav_output, $nav, $args );
-
-		}
+//	if ( has_nav_menu( 'secondary' ) ) {
+//
+//			$args = array(
+//				'theme_location' => 'secondary',
+//				'container' => '',
+//				'menu_class' => genesis_get_option('nav_superfish') ? 'nav genesis-nav-menu superfish' : 'nav genesis-nav-menu',
+//				'echo' => 0
+//			);
+//
+//			$nav = wp_nav_menu( $args );
+//
+//			$nav_output = sprintf( '<nav class="nav-secondary">%1$s</nav>', $nav);
+//
+//			echo apply_filters( 'jessica_do_secondary_nav', $nav_output, $nav, $args );
+//
+//		}
 
 	echo '</div></aside>';
 
@@ -62,19 +86,19 @@ add_filter( 'wp_nav_menu_items', 'wsm_top_search_form', 10, 2 );
 /**
  * Secondary Nav Search Form
  */
-function wsm_top_search_form($menu, $args) {
+function wsm_top_search_form( $menu, $args ) {
 
 
-	$args = (array)$args;
-	if ( 'secondary' !== $args['theme_location']  )
+	$args = (array) $args;
+	if ( 'secondary' !== $args['theme_location'] ) {
+		return $menu;
+	}
 
-	return $menu;
+	$hide_search = genesis_get_option( 'wsm_top_search', 'jessica-settings' );
 
-	$hide_search= genesis_get_option( 'wsm_top_search', 'jessica-settings' );
-
-			ob_start();
-			get_search_form();
-			$search = ob_get_clean();
+	ob_start();
+	get_search_form();
+	$search = ob_get_clean();
 
 	$menu_right = '';
 
@@ -82,7 +106,17 @@ function wsm_top_search_form($menu, $args) {
 		$menu_right .= '<li class="right search">' . $search . '</li>';
 	}
 
-			return $menu . $menu_right;
+	return $menu . $menu_right;
 
 
 }
+
+function do_subheader_area() {
+	echo '<div class="wrap">'.
+	        '<div class="subheader-area">' .
+	            '<div class="wrap">HEYHEYHEY!</div>' .
+	        '</div>' .
+	     '</div>';
+}
+
+add_action( 'genesis_after_header', 'do_subheader_area');
