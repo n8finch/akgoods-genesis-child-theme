@@ -12,40 +12,40 @@ module.exports = function(grunt) {
     //  }
     //},
 
-    copy: {
-      main: {
-        expand: true,
-        cwd: 'bower_components/bootstrap/dist/fonts/',
-        src: '**',
-        dest: 'bsfonts/',
-        flatten: true,
-        filter: 'isFile'
+    //copy: {
+    //  main: {
+    //    expand: true,
+    //    cwd: 'bower_components/bourbon/app/assets/stylesheets/',
+    //    src: '**',
+    //    dest: 'sass/bourbon',
+    //    flatten: false,
+    //    filter: 'isFile'
+    //  }
+    //},
+
+    sass: {                              // Task
+      dist: {                            // Target
+        options: {                       // Target options
+          style: 'expanded'
+        },
+        files: {                         // Dictionary of files
+          'css/sass-styles.css': 'sass/style.scss'       // 'destination': 'source'
+        }
       }
     },
 
-    //sass: {                              // Task
-    //  dist: {                            // Target
-    //    options: {                       // Target options
-    //      style: 'expanded'
-    //    },
-    //    files: {                         // Dictionary of files
-    //      'css/main-style.css': 'sass/style.scss',       // 'destination': 'source'
-    //    }
-    //  }
-    //},
-
-    //concat: {
-    //  options: {
-    //  },
-    //  javascript: {
-    //    src: [ 'bower_components/bootstrap/dist/js/bootstrap.min.js', 'bower_components/jquery-backstretch/jquery.backstretch.min.js', 'js/custom.js' ],
-    //    dest: 'js/compiled.js'
-    //  },
-    //  css: {
-    //    src: ['css/theme-header.css', 'bower_components/bootstrap/dist/css/bootstrap.min.css', 'css/main-style.css' ],
-    //    dest: 'style.css'
-    //  }
-    //},
+    concat: {
+      options: {
+      },
+      //javascript: {
+      //  src: [ 'bower_components/bootstrap/dist/js/bootstrap.min.js', 'bower_components/jquery-backstretch/jquery.backstretch.min.js', 'js/custom.js' ],
+      //  dest: 'js/compiled.js'
+      //},
+      css: {
+        src: ['css/theme-header.css', 'css/sass-styles.css', 'css/main-style.css' ],
+        dest: 'style.css'
+      }
+    },
 
     //uglify: {
     //  javascript: {
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
 
     watch: {
       files: ['css/*.css', 'js/*.js', 'sass/**/*.scss'],
-      tasks: ['jshint', 'concat', 'sass']
+      tasks: ['concat', 'sass']
     }
   });
 
@@ -68,6 +68,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
 
-  grunt.registerTask('default', ['copy', 'watch']);
+  grunt.registerTask('default', ['sass', 'concat', 'watch']);
 
 };

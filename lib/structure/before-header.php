@@ -112,11 +112,40 @@ function wsm_top_search_form( $menu, $args ) {
 }
 
 function do_subheader_area() {
-	echo '<div class="wrap">'.
-	        '<div class="subheader-area">' .
-	            '<div class="wrap">HEYHEYHEY!</div>' .
-	        '</div>' .
-	     '</div>';
+	echo '<div class="wrap"><div class="subheader-area wrap">';
+
+	echo '	<div class="subheader-text-area">
+				<h2>Artisan Krafts</h2>
+			</div>';
+	echo '	<div class="hover-tile-outer">
+				<div class="hover-tile-container">
+					<div class="hover-tile hover-tile-visible"></div>
+					<div class="hover-tile hover-tile-hidden">
+						<h4>Hidden Copy</h4>
+						<p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+					</div>
+				</div>
+			</div>';
+	echo '	<div class="hover-tile-outer">
+				<div class="hover-tile-container">
+					<div class="hover-tile hover-tile-visible"></div>
+					<div class="hover-tile hover-tile-hidden">
+						<h4>Hidden Copy</h4>
+						<p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+					</div>
+				</div>
+			</div>';
+	echo '	<div class="hover-tile-outer">
+				<div class="hover-tile-container">
+					<div class="hover-tile hover-tile-visible"></div>
+					<div class="hover-tile hover-tile-hidden">
+						<h4>Hidden Copy</h4>
+						<p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+					</div>
+				</div>
+			</div>';
+
+	echo '</div></div>';
 }
 
 add_action( 'genesis_after_header', 'do_subheader_area');

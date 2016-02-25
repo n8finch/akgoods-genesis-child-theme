@@ -26,8 +26,6 @@ function wsm_enqueue_assets() {
 
 	wp_enqueue_style( 'jessica', get_stylesheet_uri() );
 	wp_style_add_data( 'jessica', 'rtl', 'replace' );
-
-	wp_enqueue_script( 'custom-js', get_template_directory() . '/js/custom.js', array( 'jQuery' ) );
 }
 
 // Start the engine
@@ -140,6 +138,7 @@ function jessica_add_excerpt_more( $more ) {
 add_action( 'get_header', 'jessica_load_scripts' );
 function jessica_load_scripts() {
 	wp_enqueue_script( 'browserselect', CHILD_URL . '/lib/js/css_browser_selector.js', array( 'jquery' ), '0.4.0', true );
+	wp_enqueue_script( 'customjs', CHILD_URL . '/lib/js/custom.js', array( 'jquery' ), '1.0.0', true );
 }
 
 // Structural Wrap
