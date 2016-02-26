@@ -7,6 +7,7 @@ started  Feb. 23, 2016
 
 - added search form and stylings to primary nav, added cart to top menu area
 - added menu background as red, changed submenu backgrounds, changed fonts
+- footer elements added
 
 ###Feb. 25, 2016
 
