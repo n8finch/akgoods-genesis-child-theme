@@ -24,6 +24,27 @@ function jessica_do_footer() {
 	$copyright = genesis_get_option( 'wsm_copyright', 'jessica-settings' );
 	$credit= genesis_get_option( 'wsm_credit', 'jessica-settings' );
 
+	//	Adding Contact Values
+	$facebook    = genesis_get_option( 'wsm_header_facebook', 'jessica-settings' );
+	$twitter     = genesis_get_option( 'wsm_header_twitter', 'jessica-settings' );
+	$pinterest   = genesis_get_option( 'wsm_header_pinterest', 'jessica-settings' );
+	$houzz       = genesis_get_option( 'wsm_header_houzz', 'jessica-settings' );
+	$google_plus = genesis_get_option( 'wsm_header_google_plus', 'jessica-settings' );
+	$instagram   = genesis_get_option( 'wsm_header_instagram', 'jessica-settings' );
+	$youtube     = genesis_get_option( 'wsm_header_youtube', 'jessica-settings' );
+
+
+	echo '<div class="footer-social-icons">' .
+	     '<a href="' . $pinterest . '" target="_blank"><span class="fa fa-pinterest"></span></a> ' .
+	     '<a href="' . $instagram . '" target="_blank"><span class="fa fa-instagram"></span></a> ' .
+	     '<a href="' . $houzz . '" target="_blank"><span class="fa fa-houzz"></span></a> ' .
+	     '<a href="' . $google_plus . '" target="_blank"><span class="fa fa-google-plus"></span></a> ' .
+	     '<a href="' . $facebook . '" target="_blank"><span class="fa fa-facebook"></span></a> ' .
+	     '<a href="' . $twitter . '" target="_blank"><span class="fa fa-twitter"></span></a> ' .
+	     '<a href="' . $youtube . '" target="_blank"><span class="fa fa-youtube"></span></a>' .
+	     '</div>';
+
+
 	if ( !empty($credit ) ) {
 		echo '<p class="credit">' . do_shortcode( genesis_get_option( 'wsm_credit', 'jessica-settings' ) ) . '</p>';
 	}

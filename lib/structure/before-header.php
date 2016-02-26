@@ -23,16 +23,16 @@ function jessica_do_before_header() {
 
 	//	Adding Contact Values
 
-	$phone = genesis_get_option( 'wsm_header_phone', 'jessica-settings' );
-	$fax   = genesis_get_option( 'wsm_header_fax', 'jessica-settings' );
-	$email = genesis_get_option( 'wsm_header_email', 'jessica-settings' );
-	$facebook = genesis_get_option( 'wsm_header_facebook', 'jessica-settings' );
-	$twitter = genesis_get_option( 'wsm_header_twitter', 'jessica-settings' );
-	$pinterest = genesis_get_option( 'wsm_header_pinterest', 'jessica-settings' );
-	$houzz = genesis_get_option( 'wsm_header_houzz', 'jessica-settings' );
+	$phone       = genesis_get_option( 'wsm_header_phone', 'jessica-settings' );
+	$fax         = genesis_get_option( 'wsm_header_fax', 'jessica-settings' );
+	$email       = genesis_get_option( 'wsm_header_email', 'jessica-settings' );
+	$facebook    = genesis_get_option( 'wsm_header_facebook', 'jessica-settings' );
+	$twitter     = genesis_get_option( 'wsm_header_twitter', 'jessica-settings' );
+	$pinterest   = genesis_get_option( 'wsm_header_pinterest', 'jessica-settings' );
+	$houzz       = genesis_get_option( 'wsm_header_houzz', 'jessica-settings' );
 	$google_plus = genesis_get_option( 'wsm_header_google_plus', 'jessica-settings' );
-	$instagram = genesis_get_option( 'wsm_header_instagram', 'jessica-settings' );
-	$youtube = genesis_get_option( 'wsm_header_youtube', 'jessica-settings' );
+	$instagram   = genesis_get_option( 'wsm_header_instagram', 'jessica-settings' );
+	$youtube     = genesis_get_option( 'wsm_header_youtube', 'jessica-settings' );
 
 	//Left Header Info Section
 
@@ -45,35 +45,55 @@ function jessica_do_before_header() {
 	     $email .
 	     '</div>';
 
-	//Right Header Social Media Icons
+	//Right Header Cart and Social Media Icons
+
+	global $woocommerce;
+
+	// get cart quantity
+	$qty = $woocommerce->cart->get_cart_contents_count();
+
+	// get cart url
+	$cart_url = $woocommerce->cart->get_cart_url();
+
+	// if multiple products in cart
+		if ( $qty > 1 ) {
+			echo '<div class="header-social-right"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-cart-plus"> - ' . $qty . ' items</span></a></div>';
+		} elseif ( $qty < 1 ) {
+			echo '<div class="header-social-right"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-cart-plus"> - empty</span></a></div>';
+		} elseif ( $qty = 1 ) {
+			echo '<div class="header-social-right"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-cart-plus"> - ' . $qty . ' item</span></a></div>';
+		}
+
+
+
 
 	echo '<div class="header-social-right">' .
-	     '<a href="'. $pinterest .'" target="_blank"><span class="fa fa-pinterest"></span></a> ' .
-	     '<a href="'. $instagram .'" target="_blank"><span class="fa fa-instagram"></span></a> ' .
-	     '<a href="'. $houzz .'" target="_blank"><span class="fa fa-houzz"></span></a> ' .
-	     '<a href="'. $google_plus .'" target="_blank"><span class="fa fa-google-plus"></span></a> ' .
-	     '<a href="'. $facebook .'" target="_blank"><span class="fa fa-facebook"></span></a> ' .
-	     '<a href="'. $twitter .'" target="_blank"><span class="fa fa-twitter"></span></a> ' .
-	     '<a href="'. $youtube .'" target="_blank"><span class="fa fa-youtube"></span></a> ' .
+	     '<a href="' . $pinterest . '" target="_blank"><span class="fa fa-pinterest"></span></a> ' .
+	     '<a href="' . $instagram . '" target="_blank"><span class="fa fa-instagram"></span></a> ' .
+	     '<a href="' . $houzz . '" target="_blank"><span class="fa fa-houzz"></span></a> ' .
+	     '<a href="' . $google_plus . '" target="_blank"><span class="fa fa-google-plus"></span></a> ' .
+	     '<a href="' . $facebook . '" target="_blank"><span class="fa fa-facebook"></span></a> ' .
+	     '<a href="' . $twitter . '" target="_blank"><span class="fa fa-twitter"></span></a> ' .
+	     '<a href="' . $youtube . '" target="_blank"><span class="fa fa-youtube"></span></a> | ' .
 	     '</div>';
 
 
-//	if ( has_nav_menu( 'secondary' ) ) {
-//
-//			$args = array(
-//				'theme_location' => 'secondary',
-//				'container' => '',
-//				'menu_class' => genesis_get_option('nav_superfish') ? 'nav genesis-nav-menu superfish' : 'nav genesis-nav-menu',
-//				'echo' => 0
-//			);
-//
-//			$nav = wp_nav_menu( $args );
-//
-//			$nav_output = sprintf( '<nav class="nav-secondary">%1$s</nav>', $nav);
-//
-//			echo apply_filters( 'jessica_do_secondary_nav', $nav_output, $nav, $args );
-//
-//		}
+	if ( has_nav_menu( 'secondary' ) ) {
+
+			$args = array(
+				'theme_location' => 'secondary',
+				'container' => '',
+				'menu_class' => genesis_get_option('nav_superfish') ? 'nav genesis-nav-menu superfish' : 'nav genesis-nav-menu',
+				'echo' => 0
+			);
+
+			$nav = wp_nav_menu( $args );
+
+			$nav_output = sprintf( '<nav class="nav-secondary">%1$s</nav>', $nav);
+
+			echo apply_filters( 'jessica_do_secondary_nav', $nav_output, $nav, $args );
+
+		}
 
 	echo '</div></aside>';
 
@@ -111,9 +131,10 @@ function wsm_top_search_form( $menu, $args ) {
 
 }
 
+
 function do_subheader_area() {
 
-	$leadtext = genesis_get_option( 'wsm_subheader_leadtext', 'jessica-settings' );
+	$leadtext   = genesis_get_option( 'wsm_subheader_leadtext', 'jessica-settings' );
 	$hovertext1 = genesis_get_option( 'wsm_subheader_hovertext1', 'jessica-settings' );
 	$hovertext2 = genesis_get_option( 'wsm_subheader_hovertext2', 'jessica-settings' );
 	$hovertext3 = genesis_get_option( 'wsm_subheader_hovertext3', 'jessica-settings' );
@@ -122,34 +143,49 @@ function do_subheader_area() {
 	echo '<div class="wrap"><div class="subheader-area wrap">';
 
 	echo '	<div class="subheader-text-area">' .
-				$leadtext .
-			'</div>';
+	     $leadtext .
+	     '</div>';
 	echo '	<div class="hover-tile-outer">
 				<div class="hover-tile-container">
 					<div class="hover-tile hover-tile-visible"></div>
 					<div class="hover-tile hover-tile-hidden">' .
-	                    $hovertext1 .
-					'</div>
+	     $hovertext1 .
+	     '</div>
 				</div>
 			</div>';
 	echo '	<div class="hover-tile-outer">
 				<div class="hover-tile-container">
 					<div class="hover-tile hover-tile-visible"></div>
 					<div class="hover-tile hover-tile-hidden">' .
-					     $hovertext2 .
-	                '</div>
+	     $hovertext2 .
+	     '</div>
 				</div>
 			</div>';
 	echo '	<div class="hover-tile-outer">
 				<div class="hover-tile-container">
 					<div class="hover-tile hover-tile-visible"></div>
 					<div class="hover-tile hover-tile-hidden">' .
-				        $hovertext3 .
-	                '</div>
+	     $hovertext3 .
+	     '</div>
 				</div>
 			</div>';
 
 	echo '</div></div>';
 }
 
-add_action( 'genesis_after_header', 'do_subheader_area');
+add_action( 'genesis_after_header', 'do_subheader_area' );
+
+
+/**
+ * Add Search form to primary menu
+ */
+
+add_filter( 'wp_nav_menu_items', 'ak_genesis_search_primary_nav_menu', 10, 2 );
+function ak_genesis_search_primary_nav_menu( $menu, stdClass $args ){
+	if ( 'primary' != $args->theme_location )
+		return $menu;
+	if( genesis_get_option( 'nav_extras' ) )
+		return $menu;
+	$menu .= sprintf( '<li id="primary-search-box" class="nav-custom-search menu-item">%s</li>', __( genesis_search_form( $echo ) ) );
+	return $menu;
+}

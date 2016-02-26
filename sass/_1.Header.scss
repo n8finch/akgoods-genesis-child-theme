@@ -28,7 +28,21 @@
   }
 }
 
+.genesis-nav-menu a {
+  padding: 20px 18px;
+}
+
+.genesis-nav-menu .menu-item {
+  font-size: 12px;
+}
+
 .genesis-nav-menu .sub-menu {
+  background: none;
+  -webkit-transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -ms-transition: opacity .1s ease-in-out;
+  -o-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
   background: #aaaaaa;
   width: 200px;
   text-wrap: normal;
@@ -39,6 +53,8 @@
   font-size: 11px;
   border-bottom: none;
 }
+
+
 
 .sale-highlight {
   background-color: red;
@@ -56,6 +72,15 @@
   color: white !important;
 }
 
+.nav-custom-search > form {
+  display: flex;
+  margin-left: 5px;
+  input[type="submit"] {
+    background-color: #aaaaaa;
+    padding: 0 10px;
+    height: 2.4em;
+  }
+}
 
 .hover-tile-outer {
   $base-border-color: gainsboro !default;

@@ -297,3 +297,4 @@ function wsm_wrap_widget_titles( array $params ) {
 
 	return $params;
 }
+

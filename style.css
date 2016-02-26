@@ -3599,9 +3599,8 @@ div.shopping-cart-wrapper .shoppingcart table .cart-widget-count {
 }
 
 .genesis-nav-menu .sub-menu {
-	background: url(images/submenu-bg.png) repeat 0 0 transparent;
 	left: -9999px;
-	opacity: 0;
+	opacity: 1;
 	padding-bottom: 10px;
 	position: absolute;
 	-webkit-transition: opacity .4s ease-in-out;
@@ -3614,7 +3613,7 @@ div.shopping-cart-wrapper .shoppingcart table .cart-widget-count {
 }
 
 .genesis-nav-menu .sub-menu a {
-	background-color: transparent;
+	/*background-color: transparent;*/
 	border-bottom: 1px solid #e0e6e9;
 	font-size: 17px;
 	font-size: 1.7rem;
@@ -3631,7 +3630,7 @@ div.shopping-cart-wrapper .shoppingcart table .cart-widget-count {
 
 .genesis-nav-menu .sub-menu .menu-item:hover,
 .genesis-nav-menu .sub-menu .current-menu-item {
-	background: url(images/sub-menu-arrow.png) no-repeat left center;
+	/*background: url(images/sub-menu-arrow.png) no-repeat left center;*/
 }
 
 
@@ -6482,7 +6481,21 @@ picture {
   margin: 10px 0;
 }
 
+.genesis-nav-menu a {
+  padding: 20px 18px;
+}
+
+.genesis-nav-menu .menu-item {
+  font-size: 12px;
+}
+
 .genesis-nav-menu .sub-menu {
+  background: none;
+  -webkit-transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -ms-transition: opacity .1s ease-in-out;
+  -o-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
   background: #aaaaaa;
   width: 200px;
   text-wrap: normal;
@@ -6508,6 +6521,16 @@ picture {
 
 .sale-highlight > ul.sub-menu > * > * {
   color: white !important;
+}
+
+.nav-custom-search > form {
+  display: flex;
+  margin-left: 5px;
+}
+.nav-custom-search > form input[type="submit"] {
+  background-color: #aaaaaa;
+  padding: 0 10px;
+  height: 2.4em;
 }
 
 .hover-tile-outer {
