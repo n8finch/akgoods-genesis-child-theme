@@ -6602,4 +6602,25 @@ picture {
   color: #fff;
 }
 
+.footer-social-icons {
+  border-top: 1px solid #aaaaaa;
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center;
+}
+.footer-social-icons .footer-follow-us {
+  font-weight: 700;
+  color: #aaaaaa;
+}
+.footer-social-icons .fa {
+  color: #aaaaaa;
+  margin: 0 10px;
+  font-size: 26px;
+}
+.footer-social-icons .fa:hover {
+  color: #777777;
+  margin: 0 10px;
+  font-size: 26px;
+}
+
 /*# sourceMappingURL=sass-styles.css.map */

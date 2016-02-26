@@ -18,12 +18,9 @@
 
 remove_action( 'genesis_footer', 'genesis_do_footer' );
 
-add_action( 'genesis_footer', 'jessica_do_footer' );
-function jessica_do_footer() {
+add_action( 'genesis_before_footer', 'ak_custom_footer' );
 
-	$copyright = genesis_get_option( 'wsm_copyright', 'jessica-settings' );
-	$credit= genesis_get_option( 'wsm_credit', 'jessica-settings' );
-
+function ak_custom_footer() {
 	//	Adding Contact Values
 	$facebook    = genesis_get_option( 'wsm_header_facebook', 'jessica-settings' );
 	$twitter     = genesis_get_option( 'wsm_header_twitter', 'jessica-settings' );
@@ -34,7 +31,8 @@ function jessica_do_footer() {
 	$youtube     = genesis_get_option( 'wsm_header_youtube', 'jessica-settings' );
 
 
-	echo '<div class="footer-social-icons">' .
+	echo '<div class="wrap footer-social-icons">' .
+	     '<span class="footer-follow-us">Follow Us </span>' .
 	     '<a href="' . $pinterest . '" target="_blank"><span class="fa fa-pinterest"></span></a> ' .
 	     '<a href="' . $instagram . '" target="_blank"><span class="fa fa-instagram"></span></a> ' .
 	     '<a href="' . $houzz . '" target="_blank"><span class="fa fa-houzz"></span></a> ' .
@@ -44,6 +42,15 @@ function jessica_do_footer() {
 	     '<a href="' . $youtube . '" target="_blank"><span class="fa fa-youtube"></span></a>' .
 	     '</div>';
 
+}
+
+
+
+add_action( 'genesis_footer', 'jessica_do_footer' );
+function jessica_do_footer() {
+
+	$copyright = genesis_get_option( 'wsm_copyright', 'jessica-settings' );
+	$credit= genesis_get_option( 'wsm_credit', 'jessica-settings' );
 
 	if ( !empty($credit ) ) {
 		echo '<p class="credit">' . do_shortcode( genesis_get_option( 'wsm_credit', 'jessica-settings' ) ) . '</p>';
