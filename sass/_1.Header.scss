@@ -3,11 +3,65 @@
   border-bottom: 1px solid #cdd1d2;
 }
 
+.before-header {
+  background-color: #aaaaaa;
+}
+
+.header-conact-left {
+  float: left;
+  font-size: 14px;
+}
+
+.header-social-right {
+  float: right;
+}
+
+.site-header .wrap {
+  padding: 20px 22px 20px;
+}
+
+.subheader-text-area {
+  text-align: center;
+  h3 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+}
+
+.genesis-nav-menu .sub-menu {
+  background: #aaaaaa;
+  width: 200px;
+  text-wrap: normal;
+}
+
+.genesis-nav-menu .sub-menu a {
+  text-align: left;
+  font-size: 11px;
+  border-bottom: none;
+}
+
+.sale-highlight {
+  background-color: red;
+}
+
+.sale-highlight > * {
+  color: white !important;
+}
+
+.sale-highlight ul.sub-menu {
+  background-color: red;
+}
+
+.sale-highlight > ul.sub-menu > * > * {
+  color: white !important;
+}
+
+
 .hover-tile-outer {
   $base-border-color: gainsboro !default;
   $base-line-height: 1.5em !default;
   $medium-screen: em(640) !default;
-  $hover-tile-height: 10em;
+  $hover-tile-height: 8.5em;
   $base-spacing: 1.5em;
 
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
@@ -54,4 +108,23 @@
       margin: 0 0 0.5em 0;
     }
   }
+}
+
+@media only screen and (max-width: 768px) {
+
+  nav.nav-primary,
+  .menu-toggle {
+    background-color: #aaaaaa;
+  }
+
+  .subheader-area {
+    flex-wrap: wrap;
+  }
+
+  .hover-tile-outer,
+  .subheader-text-area {
+    flex: 1 1 100% !important;
+    margin: 10px !important;
+  }
+
 }

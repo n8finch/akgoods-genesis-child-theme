@@ -130,18 +130,18 @@ class Jessica_Settings extends Genesis_Admin_Boxes {
 		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_email' ) . '" id="' . $this->get_field_id( 'wsm_header_email' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_email' ) ) . '" size="70" /></p>';
 		// Add Social Media Information
 		echo '<h3><strong>' . __( 'Social Media Links:', 'jessica' ) . '</strong></h3>';
-		echo '<p><strong>' . __( 'Facebook:', 'jessica' ) . '</strong></p>';
-		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_facebook' ) . '" id="' . $this->get_field_id( 'wsm_header_facebook' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_facebook' ) ) . '" size="70" /></p>';
-		echo '<p><strong>' . __( 'Twiter:', 'jessica' ) . '</strong></p>';
-		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_twitter' ) . '" id="' . $this->get_field_id( 'wsm_header_twitter' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_twitter' ) ) . '" size="70" /></p>';
 		echo '<p><strong>' . __( 'Pinterest:', 'jessica' ) . '</strong></p>';
 		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_pinterest' ) . '" id="' . $this->get_field_id( 'wsm_header_pinterest' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_pinterest' ) ) . '" size="70" /></p>';
 		echo '<p><strong>' . __( 'Houzz:', 'jessica' ) . '</strong></p>';
 		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_houzz' ) . '" id="' . $this->get_field_id( 'wsm_header_houzz' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_houzz' ) ) . '" size="70" /></p>';
-		echo '<p><strong>' . __( 'Google+:', 'jessica' ) . '</strong></p>';
-		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_google_plus' ) . '" id="' . $this->get_field_id( 'wsm_header_google_plus' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_google_plus' ) ) . '" size="70" /></p>';
 		echo '<p><strong>' . __( 'Instagram:', 'jessica' ) . '</strong></p>';
 		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_instagram' ) . '" id="' . $this->get_field_id( 'wsm_header_instagram' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_instagram' ) ) . '" size="70" /></p>';
+		echo '<p><strong>' . __( 'Google+:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_google_plus' ) . '" id="' . $this->get_field_id( 'wsm_header_google_plus' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_google_plus' ) ) . '" size="70" /></p>';
+		echo '<p><strong>' . __( 'Facebook:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_facebook' ) . '" id="' . $this->get_field_id( 'wsm_header_facebook' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_facebook' ) ) . '" size="70" /></p>';
+		echo '<p><strong>' . __( 'Twiter:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_twitter' ) . '" id="' . $this->get_field_id( 'wsm_header_twitter' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_twitter' ) ) . '" size="70" /></p>';
 		echo '<p><strong>' . __( 'YouTube:', 'jessica' ) . '</strong></p>';
 		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_header_youtube' ) . '" id="' . $this->get_field_id( 'wsm_header_youtube' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_header_youtube' ) ) . '" size="70" /></p>';
 

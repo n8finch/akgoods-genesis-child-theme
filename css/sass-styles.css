@@ -467,6 +467,59 @@ picture {
   border-bottom: 1px solid #cdd1d2;
 }
 
+.before-header {
+  background-color: #aaaaaa;
+}
+
+.header-conact-left {
+  float: left;
+  font-size: 14px;
+}
+
+.header-social-right {
+  float: right;
+}
+
+.site-header .wrap {
+  padding: 20px 22px 20px;
+}
+
+.subheader-text-area {
+  text-align: center;
+}
+.subheader-text-area h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.genesis-nav-menu .sub-menu {
+  background: #aaaaaa;
+  width: 200px;
+  text-wrap: normal;
+}
+
+.genesis-nav-menu .sub-menu a {
+  text-align: left;
+  font-size: 11px;
+  border-bottom: none;
+}
+
+.sale-highlight {
+  background-color: red;
+}
+
+.sale-highlight > * {
+  color: white !important;
+}
+
+.sale-highlight ul.sub-menu {
+  background-color: red;
+}
+
+.sale-highlight > ul.sub-menu > * > * {
+  color: white !important;
+}
+
 .hover-tile-outer {
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
   background-position: top;
@@ -474,7 +527,7 @@ picture {
   background-color: beige;
   border: 1px solid #ddd;
   cursor: pointer;
-  height: 10em;
+  height: 8.5em;
   margin-bottom: 1.5;
   margin: 0 7px;
 }
@@ -484,7 +537,7 @@ picture {
   }
 }
 .hover-tile-outer .hover-tile-container {
-  height: 10em;
+  height: 8.5em;
   overflow: hidden;
 }
 .hover-tile-outer .hover-tile-container:hover > .hover-tile {
@@ -513,6 +566,27 @@ picture {
 }
 .hover-tile-outer .hover-tile-hidden h4 {
   margin: 0 0 0.5em 0;
+}
+
+@media only screen and (max-width: 768px) {
+  nav.nav-primary,
+  .menu-toggle {
+    background-color: #aaaaaa;
+  }
+
+  .subheader-area {
+    flex-wrap: wrap;
+  }
+
+  .hover-tile-outer,
+  .subheader-text-area {
+    flex: 1 1 100% !important;
+    margin: 10px !important;
+  }
+}
+.site-footer {
+  background-color: #aaaaaa;
+  color: #fff;
 }
 
 /*# sourceMappingURL=sass-styles.css.map */

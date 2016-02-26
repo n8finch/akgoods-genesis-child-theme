@@ -42,7 +42,7 @@ module.exports = function(grunt) {
       //  dest: 'js/compiled.js'
       //},
       css: {
-        src: ['css/theme-header.css', 'css/sass-styles.css', 'css/main-style.css' ],
+        src: ['css/theme-header.css', 'css/main-style.css', 'css/sass-styles.css' ],
         dest: 'style.css'
       }
     },

@@ -48,12 +48,12 @@ function jessica_do_before_header() {
 	//Right Header Social Media Icons
 
 	echo '<div class="header-social-right">' .
-	     '<a href="'. $facebook .'" target="_blank"><span class="fa fa-facebook"></span></a> ' .
-	     '<a href="'. $twitter .'" target="_blank"><span class="fa fa-twitter"></span></a> ' .
 	     '<a href="'. $pinterest .'" target="_blank"><span class="fa fa-pinterest"></span></a> ' .
+	     '<a href="'. $instagram .'" target="_blank"><span class="fa fa-instagram"></span></a> ' .
 	     '<a href="'. $houzz .'" target="_blank"><span class="fa fa-houzz"></span></a> ' .
 	     '<a href="'. $google_plus .'" target="_blank"><span class="fa fa-google-plus"></span></a> ' .
-	     '<a href="'. $instagram .'" target="_blank"><span class="fa fa-instagram"></span></a> ' .
+	     '<a href="'. $facebook .'" target="_blank"><span class="fa fa-facebook"></span></a> ' .
+	     '<a href="'. $twitter .'" target="_blank"><span class="fa fa-twitter"></span></a> ' .
 	     '<a href="'. $youtube .'" target="_blank"><span class="fa fa-youtube"></span></a> ' .
 	     '</div>';
 
@@ -112,36 +112,40 @@ function wsm_top_search_form( $menu, $args ) {
 }
 
 function do_subheader_area() {
+
+	$leadtext = genesis_get_option( 'wsm_subheader_leadtext', 'jessica-settings' );
+	$hovertext1 = genesis_get_option( 'wsm_subheader_hovertext1', 'jessica-settings' );
+	$hovertext2 = genesis_get_option( 'wsm_subheader_hovertext2', 'jessica-settings' );
+	$hovertext3 = genesis_get_option( 'wsm_subheader_hovertext3', 'jessica-settings' );
+
+
 	echo '<div class="wrap"><div class="subheader-area wrap">';
 
-	echo '	<div class="subheader-text-area">
-				<h2>Artisan Krafts</h2>
-			</div>';
+	echo '	<div class="subheader-text-area">' .
+				$leadtext .
+			'</div>';
 	echo '	<div class="hover-tile-outer">
 				<div class="hover-tile-container">
 					<div class="hover-tile hover-tile-visible"></div>
-					<div class="hover-tile hover-tile-hidden">
-						<h4>Hidden Copy</h4>
-						<p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
-					</div>
+					<div class="hover-tile hover-tile-hidden">' .
+	                    $hovertext1 .
+					'</div>
 				</div>
 			</div>';
 	echo '	<div class="hover-tile-outer">
 				<div class="hover-tile-container">
 					<div class="hover-tile hover-tile-visible"></div>
-					<div class="hover-tile hover-tile-hidden">
-						<h4>Hidden Copy</h4>
-						<p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
-					</div>
+					<div class="hover-tile hover-tile-hidden">' .
+					     $hovertext2 .
+	                '</div>
 				</div>
 			</div>';
 	echo '	<div class="hover-tile-outer">
 				<div class="hover-tile-container">
 					<div class="hover-tile hover-tile-visible"></div>
-					<div class="hover-tile hover-tile-hidden">
-						<h4>Hidden Copy</h4>
-						<p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
-					</div>
+					<div class="hover-tile hover-tile-hidden">' .
+				        $hovertext3 .
+	                '</div>
 				</div>
 			</div>';
 

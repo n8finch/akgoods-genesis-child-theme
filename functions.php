@@ -19,7 +19,7 @@ add_action( 'wp_enqueue_scripts', 'wsm_enqueue_assets' );
  */
 function wsm_enqueue_assets() {
 
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Ubuntu:400,700,300|Ubuntu+Condensed|Open+Sans:400,300,700', array() );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Ubuntu:400,700,300|Ubuntu+Condensed|Open+Sans:400,300,700|Source+Serif+Pro|Playfair+Display:400,700', array() );
 
 	wp_register_style( 'fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' );
 	wp_enqueue_style( 'fontawesome' );
