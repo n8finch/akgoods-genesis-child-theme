@@ -1,6 +1,14 @@
 #Changelog
 started  Feb. 23, 2016
 
+
+
+###Feb. 26, 2016
+
+- added search form and stylings to primary nav, added cart to top menu area
+- restyled some areas of the menu
+
+
 ###Feb. 25, 2016
 
 - added social media area to header right. coptions in Jessica header settings and the before-header.php and jessica-theme-settings.php files
