@@ -6,7 +6,6 @@
 
 
 .footer-social-icons {
-  border-top: 1px solid #aaaaaa;
   text-transform: uppercase;
   padding: 20px;
   text-align: center;
@@ -29,6 +28,16 @@
   }
 }
 
-.footer-follow-us {
+.footer-widgets li {
+  border-bottom: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+}
 
+h4.widgettitle.widget-title {
+  margin: 0;
+}
+
+.footer-widgets .widget-tile {
+  margin-bottom: 0;
 }

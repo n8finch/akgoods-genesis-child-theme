@@ -18,9 +18,9 @@
 
 remove_action( 'genesis_footer', 'genesis_do_footer' );
 
-add_action( 'genesis_before_footer', 'ak_custom_footer' );
+add_action( 'genesis_before_footer', 'ak_social_icon_footer', 1 );
 
-function ak_custom_footer() {
+function ak_social_icon_footer() {
 	//	Adding Contact Values
 	$facebook    = genesis_get_option( 'wsm_header_facebook', 'jessica-settings' );
 	$twitter     = genesis_get_option( 'wsm_header_twitter', 'jessica-settings' );
@@ -44,6 +44,17 @@ function ak_custom_footer() {
 
 }
 
+add_action( 'genesis_footer', 'ak_custom_logo_footer', 1 );
+
+function ak_custom_logo_footer() {
+	//	Adding Contact Values
+	$facebook    = genesis_get_option( 'wsm_header_facebook', 'jessica-settings' );
+
+	echo '<div class="wrap footer-social-icons">' .
+	     '<a href="' . esc_url( home_url( '/' ) ) . '"><img src="' . CHILD_URL . '/images/logo.png"></a> ' .
+	     '</div>';
+
+}
 
 
 add_action( 'genesis_footer', 'jessica_do_footer' );
