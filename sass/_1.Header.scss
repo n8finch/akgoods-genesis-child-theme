@@ -7,6 +7,10 @@
   background-color: #aaaaaa;
 }
 
+.before-header .wrap{
+  padding: 0 22px;
+}
+
 .header-conact-left {
   float: left;
   font-size: 14px;
@@ -14,6 +18,10 @@
 
 .header-social-right {
   float: right;
+}
+
+span.fa.fa-cart-plus {
+  margin-left: 20px;
 }
 
 .site-header .wrap {
@@ -29,7 +37,8 @@
 }
 
 .genesis-nav-menu a {
-  padding: 20px 18px;
+  padding: 13px 18px;
+  padding-left: 0;
 }
 
 .genesis-nav-menu .menu-item {
@@ -54,14 +63,16 @@
   border-bottom: none;
 }
 
-
-
 .sale-highlight {
   background-color: red;
 }
 
 .sale-highlight > * {
   color: white !important;
+}
+
+.sale-highlight > a {
+  padding-left: 15px;
 }
 
 .sale-highlight ul.sub-menu {
@@ -79,6 +90,10 @@
     background-color: #aaaaaa;
     padding: 0 10px;
     height: 2.4em;
+    margin-bottom: 0px;
+  }
+  input[type="search"] {
+    margin-bottom: 0px;
   }
 }
 
@@ -135,7 +150,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 699px) {
 
   nav.nav-primary,
   .menu-toggle {
@@ -150,6 +165,33 @@
   .subheader-text-area {
     flex: 1 1 100% !important;
     margin: 10px !important;
+  }
+
+  .nav-primary .genesis-nav-menu .menu-item a {
+    border-bottom: 0;
+  }
+
+  .sale-highlight  {
+    background-color: red !important;
+  }
+
+  .sale-highlight > * {
+    color: white !important;
+  }
+
+  .sale-highlight > a {
+    padding-left: 15px;
+    background-color: red !important;
+  }
+
+  .sale-highlight > ul.sub-menu {
+    background-color: red !important;
+  }
+
+  .sale-highlight > ul.sub-menu > *,
+  .sale-highlight > ul.sub-menu > * > * {
+    color: white !important;
+    background-color: red !important;
   }
 
 }
