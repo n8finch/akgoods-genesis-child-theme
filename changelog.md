@@ -1,6 +1,11 @@
 #Changelog
 started  Feb. 23, 2016
 
+###Mar. 2, 2016
+
+- Added layout for homepage
+- need feedback on stylings
+
 ###Mar. 1, 2016
 
 - fixed stylings on the header
