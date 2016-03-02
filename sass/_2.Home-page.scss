@@ -58,6 +58,7 @@
   }
 
   .main-page-col-two-thirds {
+    @include outer-container;
     height: 300px;
     background-color: #aaaaaa;
     opacity: .5;
@@ -87,6 +88,8 @@
 
 }
 
+//Main Page Top Section
+
 #mainpage-top-left,
 #mainpage-top-right {
   display: flex;
@@ -108,3 +111,23 @@
   }
 }
 
+
+//Main Page Trade Discount Section
+
+
+
+//Main Page Ornamental Stone Products Section
+
+
+
+//Main Page Home Design and Decor Section
+
+
+
+
+//Main Page Featured Project Galleries Section
+
+
+
+
+//Main Page Blog Post and Testimonials Section

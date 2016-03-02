@@ -45,6 +45,7 @@ function main_page_top_section() {
 
 			</div>
 			<div class="main-page-col-third" id="mainpage-top-right">
+
 				<div class="hover-tile-outer mainpage-hover-tile-top">
 				  <div class="hover-tile-container">
 				    <div class="hover-tile hover-tile-visible"></div>
@@ -74,20 +75,33 @@ function main_page_top_section() {
 
 function main_page_trade_discount_section() {
 	echo '<div class="top-main-page-container">
-			<div class="main-page-col-quarter">
+			<div class="main-page-col-third">
+			<h3>Trade Discount 10% OFF</h3>
+			<p>we offer a trade discount to architects, designers, builders, and other trade customers.</p>
+			<p>Multi item discount available.</p>
 
 
 			</div>
-			<div class="main-page-col-quarter">
+			<div class="main-page-col-two-thirds">
 
+				<div class="main-page-col-third">
+				<h4>SPEC US</h4>
+				<p>SPEC US ON YOUR NEXT PROJECT! ARTISAN KRAFT OFFERS FIREPLAC</p>
+				<button>VIEW INSIDE</button>
 
-			</div>
-			<div class="main-page-col-quarter">
+				</div>
+				<div class="main-page-col-third">
+				<h4>TECHNICAL DATA</h4>
+				<p>INSTALLATION INSTALLATION INSTRUCTIONS ARE AVAILABLE</p>
+				<button>INSIDE</button>
 
+				</div>
+				<div class="main-page-col-third">
+				<h4>MATERIALS</h4>
+				<p>MARBLE MARBLE EXUDES THE ULTIMATE TOUCH OF SOPHISTIC</p>
+				<button>INSIDE</button>
 
-			</div>
-			<div class="main-page-col-quarter">
-
+				</div>
 
 			</div>
 		  </div>';

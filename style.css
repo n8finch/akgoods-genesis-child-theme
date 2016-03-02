@@ -6686,6 +6686,9 @@ span.fa.fa-cart-plus {
   }
 }
 .top-main-page-container .main-page-col-two-thirds {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
   height: 300px;
   background-color: #aaaaaa;
   opacity: .5;
@@ -6693,6 +6696,11 @@ span.fa.fa-cart-plus {
   display: block;
   margin-right: 2.35765%;
   width: 65.88078%;
+}
+.top-main-page-container .main-page-col-two-thirds::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 .top-main-page-container .main-page-col-two-thirds:last-child {
   margin-right: 0;
