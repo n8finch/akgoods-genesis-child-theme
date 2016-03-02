@@ -46,9 +46,9 @@
   margin-top: 10px;
 
   .main-page-col-third {
-    height: 300px;
-    background-color: #aaaaaa;
-    opacity: .5;
+    //height: 300px;
+    //background-color: #aaaaaa;
+    //opacity: .5;
     @include span-columns(4);
 
     @include media($mobile) {
@@ -59,9 +59,9 @@
 
   .main-page-col-two-thirds {
     @include outer-container;
-    height: 300px;
-    background-color: #aaaaaa;
-    opacity: .5;
+    //height: 300px;
+    //background-color: #aaaaaa;
+    //opacity: .5;
     @include span-columns(8);
 
     @include media($mobile) {
@@ -71,9 +71,9 @@
   }
 
   .main-page-col-quarter {
-    height: 300px;
-    background-color: #aaaaaa;
-    opacity: .5;
+    //height: 300px;
+    //background-color: #aaaaaa;
+    //opacity: .5;
     @include span-columns(3);
 
     @include media($mobile) {
@@ -91,9 +91,11 @@
 //Main Page Top Section
 
 #mainpage-top-left,
-#mainpage-top-right {
+#mainpage-top-right,
+#mainpage-top-center {
   display: flex;
   flex-direction: column;
+  height: 300px;
 
 
   .hover-tile-outer {
@@ -108,6 +110,15 @@
     .hover-tile-container {
       height: 10.5em;
     }
+  }
+}
+
+#mainpage-top-center {
+  width: 100%;
+  flex-grow: 1;
+
+  .hover-tile-container {
+    height: 21.5em;
   }
 }
 
@@ -131,3 +142,27 @@
 
 
 //Main Page Blog Post and Testimonials Section
+
+.featuredpost > .widget-wrap {
+  display: flex;
+  flex-wrap: wrap;
+
+  .has-post-thumbnail {
+    flex: 1 1 45%;
+  }
+}
+
+
+img.entry-image.attachment-post {
+  border-radius: 100%;
+}
+
+
+div#home-page-featured-posts {
+  padding-top: 20px;
+}
+
+blockquote.easy-testimonial {
+  margin: 0;
+  padding: 0;
+}

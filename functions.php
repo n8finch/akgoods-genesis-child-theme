@@ -258,22 +258,18 @@ genesis_register_sidebar( array(
 ) );
 
 genesis_register_sidebar( array(
-	'id'          => 'homepage-gallery-1',
-	'name'        => __( 'Homepage Gallery 1', 'jessica' ),
-	'description' => __( 'This is the Homepage Gallery 1 section.', 'jessica' ),
+	'id'          => 'homepage-featured-posts',
+	'name'        => __( 'Homepage Featured Posts', 'jessica' ),
+	'description' => __( 'This is the Homepage Featured Posts section.', 'jessica' ),
 ) );
 
 genesis_register_sidebar( array(
-	'id'          => 'homepage-gallery-2',
-	'name'        => __( 'Homepage Gallery 2', 'jessica' ),
-	'description' => __( 'This is the Homepage Gallery 2 section.', 'jessica' ),
+	'id'          => 'homepage-testimonials',
+	'name'        => __( 'Homepage Testimonials', 'jessica' ),
+	'description' => __( 'This is the Homepage Testimonials section.', 'jessica' ),
 ) );
 
-genesis_register_sidebar( array(
-	'id'          => 'homepage-gallery-3',
-	'name'        => __( 'Homepage Gallery 3', 'jessica' ),
-	'description' => __( 'This is the Homepage Gallery 3 section.', 'jessica' ),
-) );
+
 
 
 // Remove edit link from TablePress tables for logged in users

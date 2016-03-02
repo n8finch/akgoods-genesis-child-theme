@@ -673,9 +673,6 @@ span.fa.fa-cart-plus {
   display: table;
 }
 .top-main-page-container .main-page-col-third {
-  height: 300px;
-  background-color: #aaaaaa;
-  opacity: .5;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -700,9 +697,6 @@ span.fa.fa-cart-plus {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  height: 300px;
-  background-color: #aaaaaa;
-  opacity: .5;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -729,9 +723,6 @@ span.fa.fa-cart-plus {
   }
 }
 .top-main-page-container .main-page-col-quarter {
-  height: 300px;
-  background-color: #aaaaaa;
-  opacity: .5;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -757,23 +748,57 @@ span.fa.fa-cart-plus {
 }
 
 #mainpage-top-left,
-#mainpage-top-right {
+#mainpage-top-right,
+#mainpage-top-center {
   display: flex;
   flex-direction: column;
+  height: 300px;
 }
 #mainpage-top-left .hover-tile-outer,
-#mainpage-top-right .hover-tile-outer {
+#mainpage-top-right .hover-tile-outer,
+#mainpage-top-center .hover-tile-outer {
   width: 100%;
   margin: 0;
 }
 #mainpage-top-left .mainpage-hover-tile-top,
-#mainpage-top-right .mainpage-hover-tile-top {
+#mainpage-top-right .mainpage-hover-tile-top,
+#mainpage-top-center .mainpage-hover-tile-top {
   flex-grow: 2;
   margin-bottom: 10px;
 }
 #mainpage-top-left .mainpage-hover-tile-top .hover-tile-container,
-#mainpage-top-right .mainpage-hover-tile-top .hover-tile-container {
+#mainpage-top-right .mainpage-hover-tile-top .hover-tile-container,
+#mainpage-top-center .mainpage-hover-tile-top .hover-tile-container {
   height: 10.5em;
+}
+
+#mainpage-top-center {
+  width: 100%;
+  flex-grow: 1;
+}
+#mainpage-top-center .hover-tile-container {
+  height: 21.5em;
+}
+
+.featuredpost > .widget-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.featuredpost > .widget-wrap .has-post-thumbnail {
+  flex: 1 1 45%;
+}
+
+img.entry-image.attachment-post {
+  border-radius: 100%;
+}
+
+div#home-page-featured-posts {
+  padding-top: 20px;
+}
+
+blockquote.easy-testimonial {
+  margin: 0;
+  padding: 0;
 }
 
 .site-footer {

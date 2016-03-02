@@ -41,7 +41,7 @@ function main_page_top_section() {
 
 			</div>
 			<div class="main-page-col-third">
-				<div class="hover-tile-outer">
+				<div class="hover-tile-outer" id="mainpage-top-center">
 				  <div class="hover-tile-container">
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
@@ -75,7 +75,8 @@ function main_page_top_section() {
 				</div>
 
 			</div>
-		  </div>';
+		  </div>
+		  <hr/>';
 }
 
 
@@ -112,7 +113,8 @@ function main_page_trade_discount_section() {
 				</div>
 
 			</div>
-		  </div>';
+		  </div>
+		  <hr/>';
 }
 
 
@@ -245,14 +247,16 @@ function main_page_blog_post_and_testimonials_section() {
 					<h4>// Blog Post and Testimonials //</h4>
 				</div>
 
-			<div class="main-page-col-two-thirds">
+			<div class="main-page-col-two-thirds" id="home-page-featured-posts">';
+						genesis_widget_area( 'homepage-featured-posts', array( 'before' => '<div class="homepage-featured-posts widget-area">', 'after' => '</div>') );
 
 
-			</div>
-			<div class="main-page-col-third">
+	echo	'</div>
+			<div class="main-page-col-third">';
 
+			genesis_widget_area( 'homepage-testimonials', array( 'before' => '<div class="homepage-testimonials widget-area">', 'after' => '</div>') );
 
-			</div>
+	echo	'</div>
 		  </div>';
 }
 
