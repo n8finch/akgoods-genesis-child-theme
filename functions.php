@@ -186,61 +186,61 @@ add_theme_support( 'genesis-footer-widgets', 4 );
 // Setup Sidebars
 unregister_sidebar( 'sidebar-alt' );
 
-genesis_register_sidebar( array(
-	'id'          => 'rotator',
-	'name'        => __( 'Rotator', 'jessica' ),
-	'description' => __( 'This is the image rotator section.', 'jessica' ),
-) );
-genesis_register_sidebar( array(
-	'id'          => 'home-nav',
-	'name'        => __( 'Home Categories Menu', 'jessica' ),
-	'description' => __( 'This is the home middle navigation section.', 'jessica' ),
-) );
-genesis_register_sidebar( array(
-	'id'          => 'home-cta-left',
-	'name'        => __( 'Home CTA Left', 'jessica' ),
-	'description' => __( 'This is the home call to action section.', 'jessica' ),
-) );
-genesis_register_sidebar( array(
-	'id'          => 'home-cta-right',
-	'name'        => __( 'Home CTA Right', 'jessica' ),
-	'description' => __( 'This is the home call to action section.', 'jessica' ),
-) );
-genesis_register_sidebar( array(
-	'id'          => 'home-mid-left',
-	'name'        => __( 'Home Mid Left', 'jessica' ),
-	'description' => __( 'This is the home middle section.', 'jessica' ),
-) );
-genesis_register_sidebar( array(
-	'id'          => 'home-mid-right',
-	'name'        => __( 'Home Mid Right', 'jessica' ),
-	'description' => __( 'This is the home middle section.', 'jessica' ),
-) );
-genesis_register_sidebar( array(
-	'id'          => 'home-bottom-ad',
-	'name'        => __( 'Home Bottom Ad', 'jessica' ),
-	'description' => __( 'This is the home page ad section.', 'jessica' ),
-) );
-genesis_register_sidebar( array(
-	'id'          => 'bottom1',
-	'name'        => __( 'Home Bottom 1', 'jessica' ),
-	'description' => __( 'This is the before footer section.', 'jessica' ),
-) );
-genesis_register_sidebar( array(
-	'id'          => 'bottom2',
-	'name'        => __( 'Home Bottom 2', 'jessica' ),
-	'description' => __( 'This is the before footer section.', 'jessica' ),
-) );
-genesis_register_sidebar( array(
-	'id'          => 'bottom3',
-	'name'        => __( 'Home Bottom 3', 'jessica' ),
-	'description' => __( 'This is the before footer section.', 'jessica' ),
-) );
-genesis_register_sidebar( array(
-	'id'          => 'bottom4',
-	'name'        => __( 'Home Bottom 4', 'jessica' ),
-	'description' => __( 'This is the before footer section.', 'jessica' ),
-) );
+//genesis_register_sidebar( array(
+//	'id'          => 'rotator',
+//	'name'        => __( 'Rotator', 'jessica' ),
+//	'description' => __( 'This is the image rotator section.', 'jessica' ),
+//) );
+//genesis_register_sidebar( array(
+//	'id'          => 'home-nav',
+//	'name'        => __( 'Home Categories Menu', 'jessica' ),
+//	'description' => __( 'This is the home middle navigation section.', 'jessica' ),
+//) );
+//genesis_register_sidebar( array(
+//	'id'          => 'home-cta-left',
+//	'name'        => __( 'Home CTA Left', 'jessica' ),
+//	'description' => __( 'This is the home call to action section.', 'jessica' ),
+//) );
+//genesis_register_sidebar( array(
+//	'id'          => 'home-cta-right',
+//	'name'        => __( 'Home CTA Right', 'jessica' ),
+//	'description' => __( 'This is the home call to action section.', 'jessica' ),
+//) );
+//genesis_register_sidebar( array(
+//	'id'          => 'home-mid-left',
+//	'name'        => __( 'Home Mid Left', 'jessica' ),
+//	'description' => __( 'This is the home middle section.', 'jessica' ),
+//) );
+//genesis_register_sidebar( array(
+//	'id'          => 'home-mid-right',
+//	'name'        => __( 'Home Mid Right', 'jessica' ),
+//	'description' => __( 'This is the home middle section.', 'jessica' ),
+//) );
+//genesis_register_sidebar( array(
+//	'id'          => 'home-bottom-ad',
+//	'name'        => __( 'Home Bottom Ad', 'jessica' ),
+//	'description' => __( 'This is the home page ad section.', 'jessica' ),
+//) );
+//genesis_register_sidebar( array(
+//	'id'          => 'bottom1',
+//	'name'        => __( 'Home Bottom 1', 'jessica' ),
+//	'description' => __( 'This is the before footer section.', 'jessica' ),
+//) );
+//genesis_register_sidebar( array(
+//	'id'          => 'bottom2',
+//	'name'        => __( 'Home Bottom 2', 'jessica' ),
+//	'description' => __( 'This is the before footer section.', 'jessica' ),
+//) );
+//genesis_register_sidebar( array(
+//	'id'          => 'bottom3',
+//	'name'        => __( 'Home Bottom 3', 'jessica' ),
+//	'description' => __( 'This is the before footer section.', 'jessica' ),
+//) );
+//genesis_register_sidebar( array(
+//	'id'          => 'bottom4',
+//	'name'        => __( 'Home Bottom 4', 'jessica' ),
+//	'description' => __( 'This is the before footer section.', 'jessica' ),
+//) );
 genesis_register_sidebar( array(
 	'id'          => 'blog-sidebar',
 	'name'        => __( 'Blog Sidebar', 'jessica' ),
@@ -256,6 +256,25 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Store Sidebar', 'jessica' ),
 	'description' => __( 'This is the Store Page Sidebar.', 'jessica' ),
 ) );
+
+genesis_register_sidebar( array(
+	'id'          => 'homepage-gallery-1',
+	'name'        => __( 'Homepage Gallery 1', 'jessica' ),
+	'description' => __( 'This is the Homepage Gallery 1 section.', 'jessica' ),
+) );
+
+genesis_register_sidebar( array(
+	'id'          => 'homepage-gallery-2',
+	'name'        => __( 'Homepage Gallery 2', 'jessica' ),
+	'description' => __( 'This is the Homepage Gallery 2 section.', 'jessica' ),
+) );
+
+genesis_register_sidebar( array(
+	'id'          => 'homepage-gallery-3',
+	'name'        => __( 'Homepage Gallery 3', 'jessica' ),
+	'description' => __( 'This is the Homepage Gallery 3 section.', 'jessica' ),
+) );
+
 
 // Remove edit link from TablePress tables for logged in users
 add_filter( 'tablepress_edit_link_below_table', '__return_false' );

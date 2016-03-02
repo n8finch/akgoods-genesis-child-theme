@@ -41,7 +41,15 @@ function main_page_top_section() {
 
 			</div>
 			<div class="main-page-col-third">
-
+				<div class="hover-tile-outer">
+				  <div class="hover-tile-container">
+				    <div class="hover-tile hover-tile-visible"></div>
+				    <div class="hover-tile hover-tile-hidden">
+				      <h4>Hidden Copy</h4>
+				      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+				    </div>
+				  </div>
+				</div>
 
 			</div>
 			<div class="main-page-col-third" id="mainpage-top-right">
@@ -117,37 +125,51 @@ function main_page_ornamental_stone_products_section() {
 					<h4>// Ornamental Stone Products //</h4>
 				</div>
 
-			<div class="main-page-col-third">
-
-
-			</div>
-			<div class="main-page-col-third">
-
+			<div class="main-page-col-quarter">
+				<img src="http://placehold.it/250x300"/>
+				<h4>Category</h4>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante.</span>
 
 			</div>
-			<div class="main-page-col-third">
-
+			<div class="main-page-col-quarter">
+				<img src="http://placehold.it/250x300"/>
+				<h4>Category</h4>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante.</span>
 
 			</div>
+			<div class="main-page-col-quarter">
+				<img src="http://placehold.it/250x300"/>
+				<h4>Category</h4>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante.</span>
+
+			</div>
+			<div class="main-page-col-quarter">
+				<img src="http://placehold.it/250x300"/>
+				<h4>Category</h4>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante.</span>
+
+			</div>
+
 		  </div>';
 
 	echo '<div class="top-main-page-container">
-			<div class="main-page-col-quarter">
 
-
-			</div>
-			<div class="main-page-col-quarter">
-
+			<div class="main-page-col-third">
+				<img src="https://www.akgoods.com/wp-content/uploads/2014/06/freeshipping.jpg"/>
+				<span>free shipping is offered for any product shipped from stock to any location in the continental u.s. products in stock ar SHOP FOR FREE SHIPPING</span>
 
 			</div>
-			<div class="main-page-col-quarter">
-
-
-			</div>
-			<div class="main-page-col-quarter">
-
+			<div class="main-page-col-third">
+				<img src="https://www.akgoods.com/wp-content/uploads/2014/06/fireplaceseconomyline.jpg"/>
+				<span>free shipping is offered for any product shipped from stock to any location in the continental u.s. products in stock ar SHOP FOR FREE SHIPPING</span>
 
 			</div>
+			<div class="main-page-col-third">
+				<img src="https://www.akgoods.com/wp-content/uploads/2014/06/custom.jpg"/>
+				<span>free shipping is offered for any product shipped from stock to any location in the continental u.s. products in stock ar SHOP FOR FREE SHIPPING</span>
+
+			</div>
+
 		  </div>';
 }
 
@@ -162,19 +184,27 @@ function main_page_home_design_and_decor_section() {
 				</div>
 
 			<div class="main-page-col-quarter">
-
-
-			</div>
-			<div class="main-page-col-quarter">
-
+				<img src="http://placehold.it/250x300"/>
+				<h4>Category</h4>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante.</span>
 
 			</div>
 			<div class="main-page-col-quarter">
-
+				<img src="http://placehold.it/250x300"/>
+				<h4>Category</h4>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante.</span>
 
 			</div>
 			<div class="main-page-col-quarter">
+				<img src="http://placehold.it/250x300"/>
+				<h4>Category</h4>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante.</span>
 
+			</div>
+			<div class="main-page-col-quarter">
+				<img src="http://placehold.it/250x300"/>
+				<h4>Category</h4>
+				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante.</span>
 
 			</div>
 		  </div>';
@@ -190,18 +220,18 @@ function main_page_featured_project_galleries_section() {
 					<h4>// Featured Project Galleries //</h4>
 				</div>
 
-			<div class="main-page-col-third">
+			<div class="main-page-col-third">';
+			masterslider(1);
 
+	echo	'</div>
+			<div class="main-page-col-third">';
+			masterslider(1);
 
-			</div>
-			<div class="main-page-col-third">
+	echo	'</div>
+			<div class="main-page-col-third">';
+			masterslider(1);
 
-
-			</div>
-			<div class="main-page-col-third">
-
-
-			</div>
+	echo	'</div>
 		  </div>';
 }
 
