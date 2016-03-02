@@ -1,0 +1,110 @@
+//.top-main-page-container {
+//  display: flex;
+//  flex-wrap: wrap;
+//  width: 100%;
+//  justify-content: space-between;
+//
+//  .main-page-col-left,
+//  .main-page-col-middle,
+//  .main-page-col-right {
+//    height: 300px;
+//    background-color: #aaaaaa;
+//    flex: 1 1 30%;
+//    margin: 10px;
+//    display: flex;
+//    flex-wrap: wrap;
+//    opacity: .5;
+//  }
+//
+//  .main-page-col-left {
+//    height: 300px;
+//    background-color: #aaaaaa;
+//    flex: 1 1 30%;
+//    margin: 10px;
+//    display: flex;
+//    flex-wrap: wrap;
+//  }
+//
+//}
+
+
+//Main Layouts
+
+
+.home .site-inner {
+  padding-top: 10px;
+}
+
+.site-inner {
+  clear: both;
+  padding: 10px 0;
+}
+
+.top-main-page-container {
+  @include outer-container;
+  $mobile: new-breakpoint(max-width 700px 4);
+  margin-top: 10px;
+
+  .main-page-col-third {
+    height: 300px;
+    background-color: #aaaaaa;
+    opacity: .5;
+    @include span-columns(4);
+
+    @include media($mobile) {
+      @include span-columns(4);
+      margin-top: 10px;
+    }
+  }
+
+  .main-page-col-two-thirds {
+    height: 300px;
+    background-color: #aaaaaa;
+    opacity: .5;
+    @include span-columns(8);
+
+    @include media($mobile) {
+      @include span-columns(4);
+      margin-top: 10px;
+    }
+  }
+
+  .main-page-col-quarter {
+    height: 300px;
+    background-color: #aaaaaa;
+    opacity: .5;
+    @include span-columns(3);
+
+    @include media($mobile) {
+      @include span-columns(4);
+      margin-top: 10px;
+    }
+  }
+
+  .main-page-container-heading {
+    text-align: center;
+  }
+
+}
+
+#mainpage-top-left,
+#mainpage-top-right {
+  display: flex;
+  flex-direction: column;
+
+
+  .hover-tile-outer {
+    width: 100%;
+    margin: 0;
+  }
+
+  .mainpage-hover-tile-top {
+    flex-grow: 2;
+    margin-bottom: 10px;
+
+    .hover-tile-container {
+      height: 10.5em;
+    }
+  }
+}
+

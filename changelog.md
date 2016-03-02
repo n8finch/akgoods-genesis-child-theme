@@ -4,7 +4,7 @@ started  Feb. 23, 2016
 ###Mar. 1, 2016
 
 - fixed stylings on the header
--fixed stylings on the footer
+- fixed stylings on the footer
 
 
 ###Feb. 26, 2016
