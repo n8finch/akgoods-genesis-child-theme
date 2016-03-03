@@ -161,10 +161,24 @@ span.fa.fa-cart-plus {
     flex-wrap: wrap;
   }
 
+  div.subheader-area.wrap {
+    padding: 0;
+
+    .hover-tile-outer {
+      margin: 0;
+      margin-left: 7px;
+      margin-right: 7px;
+    }
+
+    .hover-tile-outer:last-of-type {
+      margin-right: 0px;
+    }
+  }
+
   .hover-tile-outer,
   .subheader-text-area {
     flex: 1 1 100% !important;
-    margin: 10px !important;
+    margin: 10px;
   }
 
   .nav-primary .genesis-nav-menu .menu-item a {
@@ -192,6 +206,33 @@ span.fa.fa-cart-plus {
   .sale-highlight > ul.sub-menu > * > * {
     color: white !important;
     background-color: red !important;
+  }
+
+}
+
+
+@media screen and (max-width: 699px) {
+
+  .header-conact-left {
+    float: left;
+    font-size: 12px;
+  }
+
+  .subheader-area {
+    border-top: none;
+  }
+
+  .hover-tile-outer {
+    margin: 0;
+  }
+
+  div.subheader-area.wrap {
+    .hover-tile-outer {
+      margin: 7px;
+    }
+    .hover-tile-outer:last-of-type {
+      margin-right: 7px;
+    }
   }
 
 }

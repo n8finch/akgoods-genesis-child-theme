@@ -1,33 +1,3 @@
-//.top-main-page-container {
-//  display: flex;
-//  flex-wrap: wrap;
-//  width: 100%;
-//  justify-content: space-between;
-//
-//  .main-page-col-left,
-//  .main-page-col-middle,
-//  .main-page-col-right {
-//    height: 300px;
-//    background-color: #aaaaaa;
-//    flex: 1 1 30%;
-//    margin: 10px;
-//    display: flex;
-//    flex-wrap: wrap;
-//    opacity: .5;
-//  }
-//
-//  .main-page-col-left {
-//    height: 300px;
-//    background-color: #aaaaaa;
-//    flex: 1 1 30%;
-//    margin: 10px;
-//    display: flex;
-//    flex-wrap: wrap;
-//  }
-//
-//}
-
-
 //Main Layouts
 
 
@@ -44,6 +14,7 @@
   @include outer-container;
   $mobile: new-breakpoint(max-width 700px 4);
   margin-top: 10px;
+  min-width: 100%;
 
   .main-page-col-third {
     //height: 300px;
@@ -55,13 +26,14 @@
       @include span-columns(4);
       margin-top: 10px;
     }
+
+    img {
+      width: 100%;
+    }
   }
 
   .main-page-col-two-thirds {
     @include outer-container;
-    //height: 300px;
-    //background-color: #aaaaaa;
-    //opacity: .5;
     @include span-columns(8);
 
     @include media($mobile) {
@@ -165,4 +137,11 @@ div#home-page-featured-posts {
 blockquote.easy-testimonial {
   margin: 0;
   padding: 0;
+}
+
+
+@media screen and (max-width: 699px) {
+  .hover-tile-outer {
+    width: 100%;
+  }
 }

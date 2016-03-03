@@ -619,10 +619,22 @@ span.fa.fa-cart-plus {
     flex-wrap: wrap;
   }
 
+  div.subheader-area.wrap {
+    padding: 0;
+  }
+  div.subheader-area.wrap .hover-tile-outer {
+    margin: 0;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+  div.subheader-area.wrap .hover-tile-outer:last-of-type {
+    margin-right: 0px;
+  }
+
   .hover-tile-outer,
   .subheader-text-area {
     flex: 1 1 100% !important;
-    margin: 10px !important;
+    margin: 10px;
   }
 
   .nav-primary .genesis-nav-menu .menu-item a {
@@ -652,6 +664,27 @@ span.fa.fa-cart-plus {
     background-color: red !important;
   }
 }
+@media screen and (max-width: 699px) {
+  .header-conact-left {
+    float: left;
+    font-size: 12px;
+  }
+
+  .subheader-area {
+    border-top: none;
+  }
+
+  .hover-tile-outer {
+    margin: 0;
+  }
+
+  div.subheader-area.wrap .hover-tile-outer {
+    margin: 7px;
+  }
+  div.subheader-area.wrap .hover-tile-outer:last-of-type {
+    margin-right: 7px;
+  }
+}
 .home .site-inner {
   padding-top: 10px;
 }
@@ -666,6 +699,7 @@ span.fa.fa-cart-plus {
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
+  min-width: 100%;
 }
 .top-main-page-container::after {
   clear: both;
@@ -692,6 +726,9 @@ span.fa.fa-cart-plus {
   .top-main-page-container .main-page-col-third:last-child {
     margin-right: 0;
   }
+}
+.top-main-page-container .main-page-col-third img {
+  width: 100%;
 }
 .top-main-page-container .main-page-col-two-thirds {
   max-width: 68em;
@@ -801,6 +838,11 @@ blockquote.easy-testimonial {
   padding: 0;
 }
 
+@media screen and (max-width: 699px) {
+  .hover-tile-outer {
+    width: 100%;
+  }
+}
 .site-footer {
   background-color: #aaaaaa;
   color: #fff;
