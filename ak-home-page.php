@@ -75,8 +75,7 @@ function main_page_top_section() {
 				</div>
 
 			</div>
-		  </div>
-		  <hr/>';
+		  </div>';
 }
 
 
@@ -113,15 +112,14 @@ function main_page_trade_discount_section() {
 				</div>
 
 			</div>
-		  </div>
-		  <hr/>';
+		  </div>';
 }
 
 
 //Main Page Ornamental Stone Products Section
 
 function main_page_ornamental_stone_products_section() {
-	echo '<div class="top-main-page-container">
+	echo '<div class="top-main-page-container top-border-homepage-sections" id="ornamental-stone-section">
 
 				<div class="main-page-container-heading">
 					<h4>// Ornamental Stone Products //</h4>
@@ -179,7 +177,7 @@ function main_page_ornamental_stone_products_section() {
 //Main Page Home Design and Decor Section
 
 function main_page_home_design_and_decor_section() {
-	echo '<div class="top-main-page-container">
+	echo '<div class="top-main-page-container top-border-homepage-sections" id="home-design-decor-section">
 
 				<div class="main-page-container-heading">
 					<h4>// Home Design and Decor //</h4>
@@ -216,7 +214,7 @@ function main_page_home_design_and_decor_section() {
 //Main Page Featured Project Galleries Section
 
 function main_page_featured_project_galleries_section() {
-	echo '<div class="top-main-page-container">
+	echo '<div class="top-main-page-container top-border-homepage-sections" id="featured-project-galleries-section">
 
 				<div class="main-page-container-heading">
 					<h4>// Featured Project Galleries //</h4>
@@ -241,7 +239,7 @@ function main_page_featured_project_galleries_section() {
 //Main Page Blog Post and Testimonials Section
 
 function main_page_blog_post_and_testimonials_section() {
-	echo '<div class="top-main-page-container">
+	echo '<div class="top-main-page-container" id="blog-post-testimonials-section">
 
 				<div class="main-page-container-heading">
 					<h4>// Blog Post and Testimonials //</h4>

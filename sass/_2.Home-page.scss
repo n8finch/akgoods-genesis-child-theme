@@ -17,9 +17,6 @@
   min-width: 100%;
 
   .main-page-col-third {
-    //height: 300px;
-    //background-color: #aaaaaa;
-    //opacity: .5;
     @include span-columns(4);
 
     @include media($mobile) {
@@ -43,9 +40,6 @@
   }
 
   .main-page-col-quarter {
-    //height: 300px;
-    //background-color: #aaaaaa;
-    //opacity: .5;
     @include span-columns(3);
 
     @include media($mobile) {
@@ -56,6 +50,7 @@
 
   .main-page-container-heading {
     text-align: center;
+
   }
 
 }
@@ -67,16 +62,16 @@
 #mainpage-top-center {
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: 400px;
 
 
   .hover-tile-outer {
     width: 100%;
     margin: 0;
+    flex-grow: 1;
   }
 
   .mainpage-hover-tile-top {
-    flex-grow: 2;
     margin-bottom: 10px;
 
     .hover-tile-container {
@@ -94,12 +89,32 @@
   }
 }
 
+//Border Sections
+
+.top-border-homepage-sections {
+  border-top: 5px double #dddddd;
+  margin-top: 40px;
+  padding-top: 40px;
+  position: relative;
+
+
+
+  .main-page-container-heading {
+    top: -20px;
+    position: absolute;
+    background: white;
+    right: 35%;
+    padding: 0 10px;
+  }
+
+}
 
 //Main Page Trade Discount Section
 
 
 
 //Main Page Ornamental Stone Products Section
+
 
 
 
@@ -114,6 +129,10 @@
 
 
 //Main Page Blog Post and Testimonials Section
+
+#blog-post-testimonials-section {
+  padding-top: 20px;
+}
 
 .featuredpost > .widget-wrap {
   display: flex;

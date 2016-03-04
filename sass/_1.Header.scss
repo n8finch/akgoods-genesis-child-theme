@@ -3,6 +3,10 @@
   border-bottom: 1px solid #cdd1d2;
   padding: 0;
 
+  .hover-tile-outer {
+    height: 100px;
+  }
+
   .hover-tile-outer:last-of-type {
     margin-right: 0px;
   }
@@ -35,10 +39,11 @@ span.fa.fa-cart-plus {
 
 .subheader-text-area {
   text-align: center;
-  h3 {
-    font-size: 24px;
-    margin: 10px 0;
-  }
+  width: 350px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 .genesis-nav-menu a {

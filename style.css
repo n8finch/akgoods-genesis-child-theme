@@ -6456,6 +6456,9 @@ picture {
   border-bottom: 1px solid #cdd1d2;
   padding: 0;
 }
+.subheader-area .hover-tile-outer {
+  height: 100px;
+}
 .subheader-area .hover-tile-outer:last-of-type {
   margin-right: 0px;
 }
@@ -6487,10 +6490,11 @@ span.fa.fa-cart-plus {
 
 .subheader-text-area {
   text-align: center;
-}
-.subheader-text-area h3 {
-  font-size: 24px;
-  margin: 10px 0;
+  width: 350px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 .genesis-nav-menu a {
@@ -6780,18 +6784,18 @@ span.fa.fa-cart-plus {
 #mainpage-top-center {
   display: flex;
   flex-direction: column;
-  height: 300px;
+  height: 400px;
 }
 #mainpage-top-left .hover-tile-outer,
 #mainpage-top-right .hover-tile-outer,
 #mainpage-top-center .hover-tile-outer {
   width: 100%;
   margin: 0;
+  flex-grow: 1;
 }
 #mainpage-top-left .mainpage-hover-tile-top,
 #mainpage-top-right .mainpage-hover-tile-top,
 #mainpage-top-center .mainpage-hover-tile-top {
-  flex-grow: 2;
   margin-bottom: 10px;
 }
 #mainpage-top-left .mainpage-hover-tile-top .hover-tile-container,
@@ -6806,6 +6810,24 @@ span.fa.fa-cart-plus {
 }
 #mainpage-top-center .hover-tile-container {
   height: 21.5em;
+}
+
+.top-border-homepage-sections {
+  border-top: 5px double #dddddd;
+  margin-top: 40px;
+  padding-top: 40px;
+  position: relative;
+}
+.top-border-homepage-sections .main-page-container-heading {
+  top: -20px;
+  position: absolute;
+  background: white;
+  right: 35%;
+  padding: 0 10px;
+}
+
+#blog-post-testimonials-section {
+  padding-top: 20px;
 }
 
 .featuredpost > .widget-wrap {
@@ -6862,7 +6884,7 @@ blockquote.easy-testimonial {
 .footer-widgets li {
   border-bottom: 0;
   margin-bottom: 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 h4.widgettitle.widget-title {
