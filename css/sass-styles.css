@@ -465,6 +465,10 @@ picture {
 .subheader-area {
   display: flex;
   border-bottom: 1px solid #cdd1d2;
+  padding: 0;
+}
+.subheader-area .hover-tile-outer:last-of-type {
+  margin-right: 0px;
 }
 
 .before-header {
@@ -617,11 +621,9 @@ span.fa.fa-cart-plus {
 
   .subheader-area {
     flex-wrap: wrap;
+    padding: 0px;
   }
 
-  div.subheader-area.wrap {
-    padding: 0;
-  }
   div.subheader-area.wrap .hover-tile-outer {
     margin: 0;
     margin-left: 7px;
