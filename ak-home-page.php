@@ -220,26 +220,53 @@ function main_page_ornamental_stone_products_section() {
 
 		  </div>';
 
+	$box_1_image_background_ss        = get_field( 'box_1_image_background_ss' );
+	$box_1_icon_ss                    = get_field( 'box_1_icon_ss' );
+	$box_1_title_ss                   = get_field( 'box_1_title_ss' );
+	$box_1_text_area_ss               = get_field( 'box_1_text_area_ss' );
+	$box_1_link_ss                    = get_field( 'box_1_link_ss' );
+	$box_2_image_background_ss        = get_field( 'box_2_image_background_ss' );
+	$box_2_icon_ss                    = get_field( 'box_2_icon_ss' );
+	$box_2_title_ss                   = get_field( 'box_2_title_ss' );
+	$box_2_text_area_ss               = get_field( 'box_2_text_area_ss' );
+	$box_2_link_ss                    = get_field( 'box_2_link_ss' );
+	$box_3_image_background_ss        = get_field( 'box_3_image_background_ss' );
+	$box_3_icon_ss                    = get_field( 'box_3_icon_ss' );
+	$box_3_title_ss                   = get_field( 'box_3_title_ss' );
+	$box_3_text_area_ss               = get_field( 'box_3_text_area_ss' );
+	$box_3_link_ss                    = get_field( 'box_3_link_ss' );
+
+
+
+
 	echo '<div class="top-main-page-container">
 
-			<div class="main-page-col-third shipping-section">
-				<span class="fa fa-truck"></span>
-				<h4>Free Shipping</h4>
-				<p>free shipping is offered for any product shipped from stock to any location in the continental u.s. products in stock ar SHOP FOR FREE SHIPPING</p>
+			<a href="'.$box_1_link_ss.'">
+			<div class="main-page-col-third shipping-section" style="background-image: url('.$box_1_image_background_ss.');">
+				<span class="fa '.$box_1_icon_ss.'"></span>
+				<h4>'.$box_1_title_ss.'</h4>
+				<p>'.$box_1_text_area_ss.'</p>
 
 			</div>
-			<div class="main-page-col-third shipping-section">
-				<span class="fa fa-fire"></span>
-				<h4>Fireplace Economy Line</h4>
-				<p>free shipping is offered for any product shipped from stock to any location in the continental u.s. products in stock ar SHOP FOR FREE SHIPPING</p>
+			</a>
+
+			<a href="'.$box_2_link_ss.'">
+			<div class="main-page-col-third shipping-section" style="background-image: url('.$box_2_image_background_ss.');">
+				<span class="fa '.$box_2_icon_ss.'"></span>
+				<h4>'.$box_2_title_ss.'</h4>
+				<p>'.$box_2_text_area_ss.'</p>
 
 			</div>
-			<div class="main-page-col-third shipping-section">
-				<span class="fa fa-gears"></span>
-				<h4>Custom</h4>
-				<p>free shipping is offered for any product shipped from stock to any location in the continental u.s. products in stock ar SHOP FOR FREE SHIPPING</p>
+			</a>
+
+			<a href="'.$box_3_link_ss.'">
+			<div class="main-page-col-third shipping-section" style="background-image: url('.$box_3_image_background_ss.');">
+				<span class="fa '.$box_3_icon_ss.'"></span>
+				<h4>'.$box_3_title_ss.'</h4>
+				<p>'.$box_3_text_area_ss.'</p>
 
 			</div>
+			</a>
 
 		  </div>';
 }
