@@ -16,7 +16,12 @@ add_action( 'genesis_before_loop', 'main_page_blog_post_and_testimonials_section
 function main_page_top_section() {
 
 	$top_left_column_category_slug = get_field('top_left_column_category_slug');
-
+	$bottom_left_left_column_category_slug = get_field('bottom_left_left_column_category_slug');
+	$bottom_right_left_column_category_slug = get_field('bottom_right_left_column_category_slug');
+	$center_column_category_slug = get_field('center_column_category_slug');
+	$top_left_right_column_category_slug = get_field('top_left_right_column_category_slug');
+	$top_right_right_column_category_slug = get_field('top_right_right_column_category_slug');
+	$bottom_right_column_category_slug = get_field('bottom_right_column_category_slug');
 
 
 	echo '<div class="top-main-page-container">
@@ -37,7 +42,7 @@ function main_page_top_section() {
 				<div class="top-side-by-side-section">
 					<div class="hover-tile-outer main-page-col-half left">
 					  <div class="hover-tile-container">
-					  	<h3 class="hide-title-on-hover">This</h3>
+					  	<h3 class="hide-title-on-hover">'.$bottom_left_left_column_category_slug.'</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
 					      <h3>Hidden Copy</h3>
@@ -260,6 +265,13 @@ function main_page_home_design_and_decor_section() {
 //Main Page Featured Project Galleries Section
 
 function main_page_featured_project_galleries_section() {
+
+	$homepage_gallery_1 = get_field('homepage_gallery_1');
+	$homepage_gallery_2 = get_field('homepage_gallery_2');
+	$homepage_gallery_3 = get_field('homepage_gallery_3');
+
+
+
 	echo '<div class="top-main-page-container top-border-homepage-sections" id="featured-project-galleries-section">
 
 				<div class="main-page-container-heading">
@@ -267,15 +279,15 @@ function main_page_featured_project_galleries_section() {
 				</div>
 
 			<div class="main-page-col-third">';
-			masterslider(1);
+			masterslider($homepage_gallery_1);
 
 	echo	'</div>
 			<div class="main-page-col-third">';
-			masterslider(1);
+			masterslider($homepage_gallery_2);
 
 	echo	'</div>
 			<div class="main-page-col-third">';
-			masterslider(1);
+			masterslider($homepage_gallery_3);
 
 	echo	'</div>
 		  </div>';
