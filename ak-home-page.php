@@ -241,8 +241,8 @@ function main_page_ornamental_stone_products_section() {
 
 	echo '<div class="top-main-page-container">
 
-			<a href="'.$box_1_link_ss.'">
-			<div class="main-page-col-third shipping-section" style="background-image: url('.$box_1_image_background_ss.');">
+			<a class="main-page-col-third" href="'.$box_1_link_ss.'">
+			<div class="shipping-section" style="background-image: url('.$box_1_image_background_ss.');">
 				<span class="fa '.$box_1_icon_ss.'"></span>
 				<h4>'.$box_1_title_ss.'</h4>
 				<p>'.$box_1_text_area_ss.'</p>
@@ -250,8 +250,8 @@ function main_page_ornamental_stone_products_section() {
 			</div>
 			</a>
 
-			<a href="'.$box_2_link_ss.'">
-			<div class="main-page-col-third shipping-section" style="background-image: url('.$box_2_image_background_ss.');">
+			<a class="main-page-col-third" href="'.$box_2_link_ss.'">
+			<div class="shipping-section" style="background-image: url('.$box_2_image_background_ss.');">
 				<span class="fa '.$box_2_icon_ss.'"></span>
 				<h4>'.$box_2_title_ss.'</h4>
 				<p>'.$box_2_text_area_ss.'</p>
@@ -259,8 +259,8 @@ function main_page_ornamental_stone_products_section() {
 			</div>
 			</a>
 
-			<a href="'.$box_3_link_ss.'">
-			<div class="main-page-col-third shipping-section" style="background-image: url('.$box_3_image_background_ss.');">
+			<a class="main-page-col-third" href="'.$box_3_link_ss.'">
+			<div class="shipping-section" style="background-image: url('.$box_3_image_background_ss.');">
 				<span class="fa '.$box_3_icon_ss.'"></span>
 				<h4>'.$box_3_title_ss.'</h4>
 				<p>'.$box_3_text_area_ss.'</p>
