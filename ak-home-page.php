@@ -23,43 +23,42 @@ function main_page_top_section() {
 	$top_right_right_column_category_slug = get_field('top_right_right_column_category_slug');
 	$bottom_right_column_category_slug = get_field('bottom_right_column_category_slug');
 
-
 	echo '<div class="top-main-page-container">
 
 			<!-- Top Left Section -->
 			<div class="main-page-col-third" id="mainpage-top-left">
-				<div class="hover-tile-outer mainpage-hover-tile-top">
-				  <div class="hover-tile-container">
-				  		<h3 class="hide-title-on-hover">'.$top_left_column_category_slug.'</h3>
+				<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url(https://www.akgoods.com/wp-content/uploads/home-bath.jpg);">
+				  <a href="http://akgoods.dev/shop/bathtubs/"><div class="hover-tile-container">
+				  		<h3 class="hide-title-on-hover">Bathtubs</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
-				      <h3>Hidden Copy</h3>
-				      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+				      <h3 class="yellow-text">Shop Now</h3>
+				      <p>See our special pricing and available stock here.</p>
 				    </div>
-				  </div>
+				  </div></a>
 				</div>
 
 				<div class="top-side-by-side-section">
-					<div class="hover-tile-outer main-page-col-half left">
-					  <div class="hover-tile-container">
-					  	<h3 class="hide-title-on-hover">'.$bottom_left_left_column_category_slug.'</h3>
+					<div class="hover-tile-outer main-page-col-half left" style="background-image: url(https://www.akgoods.com/wp-content/uploads/home-accents.jpg);">
+					  <a href="http://akgoods.dev/shop/home-accents/"><div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover">Home Accents</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
-					      <h3>Hidden Copy</h3>
-					      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+					      <h3 class="yellow-text">Shop Now</h3>
+					      <p>See our special pricing and available stock here.</p>
 					    </div>
-					  </div>
+					  </div></a>
 					</div>
 
-					<div class="hover-tile-outer main-page-col-half right">
-					  <div class="hover-tile-container">
-					  	<h3 class="hide-title-on-hover">This</h3>
+					<div class="hover-tile-outer main-page-col-half right" style="background-image: url(https://www.akgoods.com/wp-content/uploads/770-772-fire-pit-with-773-780-spark-screen-buring-wood-glamour-2.jpg);">
+					  <a href="http://akgoods.dev/shop/outdoor-products/"><div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover">Outdoor</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
-					      <h3>Hidden Copy</h3>
-					      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+					      <h3 class="yellow-text">Shop Now</h3>
+					      <p>See our special pricing and available stock here.</p>
 					    </div>
-					  </div>
+					  </div></a>
 					</div>
 				</div>
 
@@ -68,16 +67,16 @@ function main_page_top_section() {
 
 			<!-- Top Center Section -->
 			<div class="main-page-col-third">
-				<div class="hover-tile-outer" id="mainpage-top-center">
+				<a href="http://akgoods.dev/shop/fireplaces-mantels/"><div class="hover-tile-outer" id="mainpage-top-center" style="background-image: url(https://www.akgoods.com/wp-content/uploads/section-5-fireplaces-middle12.jpg);">
 				  <div class="hover-tile-container">
-				    <h3 class="hide-title-on-hover">This</h3>
+				    <h3 class="hide-title-on-hover">Fireplace Mantels</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
-				      <h3>Hidden Copy</h3>
-				      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+				      <h3 class="yellow-text">Shop Now</h3>
+				      <p>See our special pricing and available stock here.</p>
 				    </div>
 				  </div>
-				</div>
+				</div></a>
 
 			</div>
 
@@ -85,38 +84,38 @@ function main_page_top_section() {
 			<div class="main-page-col-third" id="mainpage-top-right">
 
 				<div class="top-side-by-side-section">
-					<div class="hover-tile-outer main-page-col-half left">
-					  <div class="hover-tile-container">
-					  	<h3 class="hide-title-on-hover">This</h3>
+					<div class="hover-tile-outer main-page-col-half left" style="background-image: url(https://www.akgoods.com/wp-content/uploads/custom-kitchen-hoods-02-2.jpg);">
+					  <a href="http://akgoods.dev/shop/kitchen-range-hoods/"><div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover">Kitchen Range Hoods</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
-					      <h3>Hidden Copy</h3>
-					      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+					      <h3 class="yellow-text">Shop Now</h3>
+					      <p>See our special pricing and available stock here.</p>
 					    </div>
-					  </div>
+					  </div></a>
 					</div>
 
-					<div class="hover-tile-outer main-page-col-half right">
-					  <div class="hover-tile-container">
-					  	<h3 class="hide-title-on-hover">This</h3>
+					<div class="hover-tile-outer main-page-col-half right" style="background-image: url(https://www.akgoods.com/wp-content/uploads/bronze.jpg);">
+					  <a href="http://akgoods.dev/shop/bronze-and-copper/"><div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover">Bronze & Copper</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
-					      <h3>Hidden Copy</h3>
-					      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+					      <h3 class="yellow-text">Shop Now</h3>
+					      <p>See our special pricing and available stock here.</p>
 					    </div>
-					  </div>
+					  </div></a>
 					</div>
 				</div>
 
-				<div class="hover-tile-outer">
-				  <div class="hover-tile-container">
-				  	<h3 class="hide-title-on-hover">This</h3>
+				<div class="hover-tile-outer" style="background-image: url(https://www.akgoods.com/wp-content/uploads/section-5-architectural-stone11.jpg);">
+				  <a href="http://akgoods.dev/shop/architectural-stone/"><div class="hover-tile-container">
+				  	<h3 class="hide-title-on-hover">Architechtural Stone</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
-				      <h3>Hidden Copy</h3>
-				      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+				      <h3 class="yellow-text">Shop Now</h3>
+				      <p>See our special pricing and available stock here.</p>
 				    </div>
-				  </div>
+				  </div></a>
 				</div>
 
 			</div>
