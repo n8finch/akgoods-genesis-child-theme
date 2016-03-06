@@ -5,6 +5,11 @@
 
   .hover-tile-outer {
     height: 100px;
+    margin: 0 7px;
+
+    .hover-tile-container {
+      height: 100px;
+    }
   }
 
   .hover-tile-outer:last-of-type {

@@ -10,6 +10,11 @@
   padding: 10px 0;
 }
 
+.hover-tile-outer {
+  margin: 0;
+  height: 13em;
+}
+
 .top-main-page-container {
   @include outer-container;
   $mobile: new-breakpoint(max-width 700px 4);
@@ -48,12 +53,27 @@
     }
   }
 
+  .top-side-by-side-section {
+    display: flex;
+
+    .main-page-col-half {
+      @include span-columns(6);
+
+      @include media($mobile) {
+        @include span-columns(6);
+        margin-top: 10px;
+      }
+    }
+  }
+
+
   .main-page-container-heading {
     text-align: center;
 
   }
 
 }
+
 
 //Main Page Top Section
 
@@ -67,7 +87,6 @@
 
   .hover-tile-outer {
     width: 100%;
-    margin: 0;
     flex-grow: 1;
   }
 
@@ -75,7 +94,7 @@
     margin-bottom: 10px;
 
     .hover-tile-container {
-      height: 10.5em;
+      height: 195px;
     }
   }
 }
@@ -85,9 +104,30 @@
   flex-grow: 1;
 
   .hover-tile-container {
-    height: 21.5em;
+    height: 100%;
   }
 }
+
+div.hover-tile-outer.main-page-col-half.left {
+  margin: 0;
+  margin-right: 2.5px;
+  flex-grow: 1;
+
+}
+
+div.hover-tile-outer.main-page-col-half.right {
+  margin: 0;
+  margin-left: 2.5px;
+  flex-grow: 1;
+}
+
+#mainpage-top-right {
+
+  .top-side-by-side-section {
+    margin-bottom: 10px;
+  }
+}
+
 
 //Border Sections
 

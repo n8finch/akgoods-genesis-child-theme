@@ -6458,6 +6458,10 @@ picture {
 }
 .subheader-area .hover-tile-outer {
   height: 100px;
+  margin: 0 7px;
+}
+.subheader-area .hover-tile-outer .hover-tile-container {
+  height: 100px;
 }
 .subheader-area .hover-tile-outer:last-of-type {
   margin-right: 0px;
@@ -6689,6 +6693,11 @@ span.fa.fa-cart-plus {
   padding: 10px 0;
 }
 
+.hover-tile-outer {
+  margin: 0;
+  height: 13em;
+}
+
 .top-main-page-container {
   max-width: 68em;
   margin-left: auto;
@@ -6775,6 +6784,30 @@ span.fa.fa-cart-plus {
     margin-right: 0;
   }
 }
+.top-main-page-container .top-side-by-side-section {
+  display: flex;
+}
+.top-main-page-container .top-side-by-side-section .main-page-col-half {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+.top-main-page-container .top-side-by-side-section .main-page-col-half:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 700px) {
+  .top-main-page-container .top-side-by-side-section .main-page-col-half {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 153.71149%;
+    margin-top: 10px;
+  }
+  .top-main-page-container .top-side-by-side-section .main-page-col-half:last-child {
+    margin-right: 0;
+  }
+}
 .top-main-page-container .main-page-container-heading {
   text-align: center;
 }
@@ -6790,7 +6823,6 @@ span.fa.fa-cart-plus {
 #mainpage-top-right .hover-tile-outer,
 #mainpage-top-center .hover-tile-outer {
   width: 100%;
-  margin: 0;
   flex-grow: 1;
 }
 #mainpage-top-left .mainpage-hover-tile-top,
@@ -6801,7 +6833,7 @@ span.fa.fa-cart-plus {
 #mainpage-top-left .mainpage-hover-tile-top .hover-tile-container,
 #mainpage-top-right .mainpage-hover-tile-top .hover-tile-container,
 #mainpage-top-center .mainpage-hover-tile-top .hover-tile-container {
-  height: 10.5em;
+  height: 195px;
 }
 
 #mainpage-top-center {
@@ -6809,7 +6841,23 @@ span.fa.fa-cart-plus {
   flex-grow: 1;
 }
 #mainpage-top-center .hover-tile-container {
-  height: 21.5em;
+  height: 100%;
+}
+
+div.hover-tile-outer.main-page-col-half.left {
+  margin: 0;
+  margin-right: 2.5px;
+  flex-grow: 1;
+}
+
+div.hover-tile-outer.main-page-col-half.right {
+  margin: 0;
+  margin-left: 2.5px;
+  flex-grow: 1;
+}
+
+#mainpage-top-right .top-side-by-side-section {
+  margin-bottom: 10px;
 }
 
 .top-border-homepage-sections {

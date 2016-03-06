@@ -16,7 +16,7 @@ add_action( 'genesis_before_loop', 'main_page_blog_post_and_testimonials_section
 function main_page_top_section() {
 	echo '<div class="top-main-page-container">
 
-
+			<!-- Top Left Section -->
 			<div class="main-page-col-third" id="mainpage-top-left">
 				<div class="hover-tile-outer mainpage-hover-tile-top">
 				  <div class="hover-tile-container">
@@ -28,18 +28,32 @@ function main_page_top_section() {
 				  </div>
 				</div>
 
-				<div class="hover-tile-outer">
-				  <div class="hover-tile-container">
-				    <div class="hover-tile hover-tile-visible"></div>
-				    <div class="hover-tile hover-tile-hidden">
-				      <h4>Hidden Copy</h4>
-				      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
-				    </div>
-				  </div>
+				<div class="top-side-by-side-section">
+					<div class="hover-tile-outer main-page-col-half left">
+					  <div class="hover-tile-container">
+					    <div class="hover-tile hover-tile-visible"></div>
+					    <div class="hover-tile hover-tile-hidden">
+					      <h4>Hidden Copy</h4>
+					      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+					    </div>
+					  </div>
+					</div>
+
+					<div class="hover-tile-outer main-page-col-half right">
+					  <div class="hover-tile-container">
+					    <div class="hover-tile hover-tile-visible"></div>
+					    <div class="hover-tile hover-tile-hidden">
+					      <h4>Hidden Copy</h4>
+					      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+					    </div>
+					  </div>
+					</div>
 				</div>
 
 
 			</div>
+
+			<!-- Top Center Section -->
 			<div class="main-page-col-third">
 				<div class="hover-tile-outer" id="mainpage-top-center">
 				  <div class="hover-tile-container">
@@ -52,16 +66,30 @@ function main_page_top_section() {
 				</div>
 
 			</div>
+
+			<!-- Top Right Section -->
 			<div class="main-page-col-third" id="mainpage-top-right">
 
-				<div class="hover-tile-outer mainpage-hover-tile-top">
-				  <div class="hover-tile-container">
-				    <div class="hover-tile hover-tile-visible"></div>
-				    <div class="hover-tile hover-tile-hidden">
-				      <h4>Hidden Copy</h4>
-				      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
-				    </div>
-				  </div>
+				<div class="top-side-by-side-section">
+					<div class="hover-tile-outer main-page-col-half left">
+					  <div class="hover-tile-container">
+					    <div class="hover-tile hover-tile-visible"></div>
+					    <div class="hover-tile hover-tile-hidden">
+					      <h4>Hidden Copy</h4>
+					      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+					    </div>
+					  </div>
+					</div>
+
+					<div class="hover-tile-outer main-page-col-half right">
+					  <div class="hover-tile-container">
+					    <div class="hover-tile hover-tile-visible"></div>
+					    <div class="hover-tile hover-tile-hidden">
+					      <h4>Hidden Copy</h4>
+					      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+					    </div>
+					  </div>
+					</div>
 				</div>
 
 				<div class="hover-tile-outer">
