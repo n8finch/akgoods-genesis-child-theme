@@ -156,7 +156,7 @@ function main_page_trade_discount_section() {
 			<div class="main-page-col-two-thirds">
 
 				<a href="'.$box_1_link.'">
-				<div class="main-page-col-third discount-section" style="background-image: url('.$box_1_image_background.');">
+				<div class="main-page-col-third discount-section" id="discount-section-1" style="background-image: url('.$box_1_image_background.');">
 				<span class="fa '.$box_1_icon.'"></span>
 				<h4>'.$box_1_title.'</h4>
 				<p>'.$box_1_text_area.'</p>
@@ -164,7 +164,7 @@ function main_page_trade_discount_section() {
 				</a>
 
 				<a href="'.$box_2_link.'">
-				<div class="main-page-col-third discount-section" style="background-image: url('.$box_2_image_background.');">
+				<div class="main-page-col-third discount-section" id="discount-section-2" style="background-image: url('.$box_2_image_background.');">
 				<span class="fa '.$box_2_icon.'"></span>
 				<h4>'.$box_2_title.'</h4>
 				<p>'.$box_2_text_area.'</p>
@@ -172,7 +172,7 @@ function main_page_trade_discount_section() {
 				</a>
 
 				<a href="'.$box_3_link.'">
-				<div class="main-page-col-third discount-section" style="background-image: url('.$box_3_image_background.');">
+				<div class="main-page-col-third discount-section" id="discount-section-3" style="background-image: url('.$box_3_image_background.');">
 				<span class="fa '.$box_3_icon.'"></span>
 				<h4>'.$box_3_title.'</h4>
 				<p>'.$box_3_text_area.'</p>
