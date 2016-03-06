@@ -126,6 +126,10 @@ function main_page_top_section() {
 //Main Page Trade Discount Section
 
 function main_page_trade_discount_section() {
+
+
+
+
 	echo '<div class="top-main-page-container">
 			<div class="main-page-col-third trade-discount">
 			<h3>Trade Discount 10% OFF</h3>
