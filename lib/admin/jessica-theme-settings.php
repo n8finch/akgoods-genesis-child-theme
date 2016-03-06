@@ -159,11 +159,29 @@ class Jessica_Settings extends Genesis_Admin_Boxes {
 		echo '<p><strong>' . __( 'Hover Text 1:', 'jessica' ) . '</strong></p>';
 		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_subheader_hovertext1' ) . '" id="' . $this->get_field_id( 'wsm_subheader_hovertext1' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_subheader_hovertext1' ) ) . '" size="70" /></p>';
 
+		echo '<p><strong>' . __( 'Image 1:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_subheader_image1' ) . '" id="' . $this->get_field_id( 'wsm_subheader_image1' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_subheader_image1' ) ) . '" size="70" /></p>';
+
+		echo '<p><strong>' . __( 'Link 1:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_subheader_link1' ) . '" id="' . $this->get_field_id( 'wsm_subheader_link1' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_subheader_link1' ) ) . '" size="70" /></p>';
+
 		echo '<p><strong>' . __( 'Hover Text 2:', 'jessica' ) . '</strong></p>';
 		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_subheader_hovertext2' ) . '" id="' . $this->get_field_id( 'wsm_subheader_hovertext2' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_subheader_hovertext2' ) ) . '" size="70" /></p>';
 
+		echo '<p><strong>' . __( 'Image 2:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_subheader_image2' ) . '" id="' . $this->get_field_id( 'wsm_subheader_image2' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_subheader_image2' ) ) . '" size="70" /></p>';
+
+		echo '<p><strong>' . __( 'Link 2:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_subheader_link2' ) . '" id="' . $this->get_field_id( 'wsm_subheader_link2' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_subheader_link2' ) ) . '" size="70" /></p>';
+
 		echo '<p><strong>' . __( 'Hover Text 3:', 'jessica' ) . '</strong></p>';
 		echo '<p><input type="texta" name="' . $this->get_field_name( 'wsm_subheader_hovertext3' ) . '" id="' . $this->get_field_id( 'wsm_subheader_hovertext3' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_subheader_hovertext3' ) ) . '" size="70" /></p>';
+
+		echo '<p><strong>' . __( 'Image 3:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_subheader_image3' ) . '" id="' . $this->get_field_id( 'wsm_subheader_image3' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_subheader_image3' ) ) . '" size="70" /></p>';
+
+		echo '<p><strong>' . __( 'Link 3:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_subheader_link3' ) . '" id="' . $this->get_field_id( 'wsm_subheader_link3' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_subheader_link3' ) ) . '" size="70" /></p>';
 	}
 
 	/**

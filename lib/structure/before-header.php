@@ -136,8 +136,14 @@ function do_subheader_area() {
 
 	$leadtext   = genesis_get_option( 'wsm_subheader_leadtext', 'jessica-settings' );
 	$hovertext1 = genesis_get_option( 'wsm_subheader_hovertext1', 'jessica-settings' );
+	$image1 = esc_url(genesis_get_option( 'wsm_subheader_image1', 'jessica-settings' ));
+	$link1 = genesis_get_option( 'wsm_subheader_link1', 'jessica-settings' );
 	$hovertext2 = genesis_get_option( 'wsm_subheader_hovertext2', 'jessica-settings' );
+	$image2 = genesis_get_option( 'wsm_subheader_image2', 'jessica-settings' );
+	$link2 = genesis_get_option( 'wsm_subheader_link2', 'jessica-settings' );
 	$hovertext3 = genesis_get_option( 'wsm_subheader_hovertext3', 'jessica-settings' );
+	$image3 = genesis_get_option( 'wsm_subheader_image3', 'jessica-settings' );
+	$link3 = genesis_get_option( 'wsm_subheader_link3', 'jessica-settings' );
 
 
 	echo '<div class="wrap"><div class="subheader-area wrap">';
@@ -145,29 +151,28 @@ function do_subheader_area() {
 	echo '	<div class="subheader-text-area">' .
 	     $leadtext .
 	     '</div>';
-	echo '	<div class="hover-tile-outer">
-				<div class="hover-tile-container">
+	echo '	<div class="hover-tile-outer" style="background-image: url('.$image1.');">
+				<a href="' . $link1 . '"><div class="hover-tile-container">
 					<div class="hover-tile hover-tile-visible"></div>
-					<div class="hover-tile hover-tile-hidden">' .
-	     $hovertext1 .
-	     '</div>
-				</div>
+					<div class="hover-tile hover-tile-hidden"><h3>' . $hovertext1 .
+	     '</h3></div>
+				</div></a>
 			</div>';
-	echo '	<div class="hover-tile-outer">
-				<div class="hover-tile-container">
+	echo '	<div class="hover-tile-outer" style="background-image: url('.$image2.');">
+				<a href="' . $link2 . '"><div class="hover-tile-container">
 					<div class="hover-tile hover-tile-visible"></div>
-					<div class="hover-tile hover-tile-hidden">' .
+					<div class="hover-tile hover-tile-hidden"><h3>' .
 	     $hovertext2 .
-	     '</div>
-				</div>
+	     '</h3></div>
+				</div></a>
 			</div>';
-	echo '	<div class="hover-tile-outer">
-				<div class="hover-tile-container">
+	echo '	<div class="hover-tile-outer" style="background-image: url('.$image3.');">
+				<a href="' . $link3 . '"><div class="hover-tile-container">
 					<div class="hover-tile hover-tile-visible"></div>
-					<div class="hover-tile hover-tile-hidden">' .
+					<div class="hover-tile hover-tile-hidden"><h3>' .
 	     $hovertext3 .
-	     '</div>
-				</div>
+	     '</h3></div>
+				</div></a>
 			</div>';
 
 	echo '</div></div>';
