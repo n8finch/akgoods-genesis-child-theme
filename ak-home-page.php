@@ -20,9 +20,10 @@ function main_page_top_section() {
 			<div class="main-page-col-third" id="mainpage-top-left">
 				<div class="hover-tile-outer mainpage-hover-tile-top">
 				  <div class="hover-tile-container">
+				  		<h3 class="hide-title-on-hover">This</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
-				      <h4>Hidden Copy</h4>
+				      <h3>Hidden Copy</h3>
 				      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
 				    </div>
 				  </div>
@@ -31,9 +32,10 @@ function main_page_top_section() {
 				<div class="top-side-by-side-section">
 					<div class="hover-tile-outer main-page-col-half left">
 					  <div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover">This</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
-					      <h4>Hidden Copy</h4>
+					      <h3>Hidden Copy</h3>
 					      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
 					    </div>
 					  </div>
@@ -41,9 +43,10 @@ function main_page_top_section() {
 
 					<div class="hover-tile-outer main-page-col-half right">
 					  <div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover">This</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
-					      <h4>Hidden Copy</h4>
+					      <h3>Hidden Copy</h3>
 					      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
 					    </div>
 					  </div>
@@ -57,9 +60,10 @@ function main_page_top_section() {
 			<div class="main-page-col-third">
 				<div class="hover-tile-outer" id="mainpage-top-center">
 				  <div class="hover-tile-container">
+				    <h3 class="hide-title-on-hover">This</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
-				      <h4>Hidden Copy</h4>
+				      <h3>Hidden Copy</h3>
 				      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
 				    </div>
 				  </div>
@@ -73,9 +77,10 @@ function main_page_top_section() {
 				<div class="top-side-by-side-section">
 					<div class="hover-tile-outer main-page-col-half left">
 					  <div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover">This</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
-					      <h4>Hidden Copy</h4>
+					      <h3>Hidden Copy</h3>
 					      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
 					    </div>
 					  </div>
@@ -83,9 +88,10 @@ function main_page_top_section() {
 
 					<div class="hover-tile-outer main-page-col-half right">
 					  <div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover">This</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
-					      <h4>Hidden Copy</h4>
+					      <h3>Hidden Copy</h3>
 					      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
 					    </div>
 					  </div>
@@ -94,9 +100,10 @@ function main_page_top_section() {
 
 				<div class="hover-tile-outer">
 				  <div class="hover-tile-container">
+				  	<h3 class="hide-title-on-hover">This</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
-				      <h4>Hidden Copy</h4>
+				      <h3>Hidden Copy</h3>
 				      <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
 				    </div>
 				  </div>
@@ -111,7 +118,7 @@ function main_page_top_section() {
 
 function main_page_trade_discount_section() {
 	echo '<div class="top-main-page-container">
-			<div class="main-page-col-third">
+			<div class="main-page-col-third trade-discount">
 			<h3>Trade Discount 10% OFF</h3>
 			<p>we offer a trade discount to architects, designers, builders, and other trade customers.</p>
 			<p>Multi item discount available.</p>
@@ -120,22 +127,25 @@ function main_page_trade_discount_section() {
 			</div>
 			<div class="main-page-col-two-thirds">
 
-				<div class="main-page-col-third">
+				<div class="main-page-col-third discount-section">
+				<span class="fa fa-question-circle"></span>
 				<h4>SPEC US</h4>
 				<p>SPEC US ON YOUR NEXT PROJECT! ARTISAN KRAFT OFFERS FIREPLAC</p>
-				<button>VIEW INSIDE</button>
+
 
 				</div>
-				<div class="main-page-col-third">
+				<div class="main-page-col-third discount-section">
+				<span class="fa fa-clipboard"></span>
 				<h4>TECHNICAL DATA</h4>
 				<p>INSTALLATION INSTALLATION INSTRUCTIONS ARE AVAILABLE</p>
-				<button>INSIDE</button>
+
 
 				</div>
-				<div class="main-page-col-third">
+				<div class="main-page-col-third discount-section">
+				<span class="fa fa-file-text"></span>
 				<h4>MATERIALS</h4>
 				<p>MARBLE MARBLE EXUDES THE ULTIMATE TOUCH OF SOPHISTIC</p>
-				<button>INSIDE</button>
+
 
 				</div>
 
@@ -182,19 +192,22 @@ function main_page_ornamental_stone_products_section() {
 
 	echo '<div class="top-main-page-container">
 
-			<div class="main-page-col-third">
-				<img src="https://www.akgoods.com/wp-content/uploads/2014/06/freeshipping.jpg"/>
-				<span>free shipping is offered for any product shipped from stock to any location in the continental u.s. products in stock ar SHOP FOR FREE SHIPPING</span>
+			<div class="main-page-col-third shipping-section">
+				<span class="fa fa-truck"></span>
+				<h4>Free Shipping</h4>
+				<p>free shipping is offered for any product shipped from stock to any location in the continental u.s. products in stock ar SHOP FOR FREE SHIPPING</p>
 
 			</div>
-			<div class="main-page-col-third">
-				<img src="https://www.akgoods.com/wp-content/uploads/2014/06/fireplaceseconomyline.jpg"/>
-				<span>free shipping is offered for any product shipped from stock to any location in the continental u.s. products in stock ar SHOP FOR FREE SHIPPING</span>
+			<div class="main-page-col-third shipping-section">
+				<span class="fa fa-fire"></span>
+				<h4>Fireplace Economy Line</h4>
+				<p>free shipping is offered for any product shipped from stock to any location in the continental u.s. products in stock ar SHOP FOR FREE SHIPPING</p>
 
 			</div>
-			<div class="main-page-col-third">
-				<img src="https://www.akgoods.com/wp-content/uploads/2014/06/custom.jpg"/>
-				<span>free shipping is offered for any product shipped from stock to any location in the continental u.s. products in stock ar SHOP FOR FREE SHIPPING</span>
+			<div class="main-page-col-third shipping-section">
+				<span class="fa fa-gears"></span>
+				<h4>Custom</h4>
+				<p>free shipping is offered for any product shipped from stock to any location in the continental u.s. products in stock ar SHOP FOR FREE SHIPPING</p>
 
 			</div>
 

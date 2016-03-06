@@ -98,6 +98,11 @@ span.fa.fa-cart-plus {
   color: white !important;
 }
 
+li#primary-search-box.nav-custom-search.menu-item {
+  float: right;
+  margin-top: 5px;
+}
+
 .nav-custom-search > form {
   display: flex;
   margin-left: 5px;
@@ -128,9 +133,17 @@ span.fa.fa-cart-plus {
   height: $hover-tile-height;
   margin-bottom: $base-line-height;
   margin: 0 7px;
+  text-align: center;
 
   @include media($medium-screen) {
     width: 40%;
+  }
+
+  h3 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0;
   }
 
   .hover-tile-container {
@@ -221,6 +234,11 @@ span.fa.fa-cart-plus {
   .sale-highlight > ul.sub-menu > * > * {
     color: white !important;
     background-color: red !important;
+  }
+
+  li#primary-search-box.nav-custom-search.menu-item {
+    float: none;
+    margin-top: 0;
   }
 
 }
