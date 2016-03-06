@@ -160,24 +160,24 @@ function main_page_trade_discount_section() {
 				<span class="fa '.$box_1_icon.'"></span>
 				<h4>'.$box_1_title.'</h4>
 				<p>'.$box_1_text_area.'</p>
+				</div>
 				</a>
 
-
+				<a href="'.$box_2_link.'">
+				<div class="main-page-col-third discount-section" style="background-image: url('.$box_2_image_background.');">
+				<span class="fa '.$box_2_icon.'"></span>
+				<h4>'.$box_2_title.'</h4>
+				<p>'.$box_2_text_area.'</p>
 				</div>
-				<div class="main-page-col-third discount-section" style="background-image: url(https://www.akgoods.com/wp-content/uploads/section-5-architectural-stone11.jpg);">
-				<span class="fa fa-clipboard"></span>
-				<h4>TECHNICAL DATA</h4>
-				<p>INSTALLATION INSTALLATION INSTRUCTIONS ARE AVAILABLE</p>
+				</a>
 
-
+				<a href="'.$box_3_link.'">
+				<div class="main-page-col-third discount-section" style="background-image: url('.$box_3_image_background.');">
+				<span class="fa '.$box_3_icon.'"></span>
+				<h4>'.$box_3_title.'</h4>
+				<p>'.$box_3_text_area.'</p>
 				</div>
-				<div class="main-page-col-third discount-section" style="background-image: url(https://www.akgoods.com/wp-content/uploads/section-5-architectural-stone11.jpg);">
-				<span class="fa fa-file-text"></span>
-				<h4>MATERIALS</h4>
-				<p>MARBLE MARBLE EXUDES THE ULTIMATE TOUCH OF SOPHISTIC</p>
-
-
-				</div>
+				</a>
 
 			</div>
 		  </div>';
