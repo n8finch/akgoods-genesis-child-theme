@@ -15,13 +15,13 @@ add_action( 'genesis_before_loop', 'main_page_blog_post_and_testimonials_section
 
 function main_page_top_section() {
 
-	$top_left_column_category_slug = get_field('top_left_column_category_slug');
-	$bottom_left_left_column_category_slug = get_field('bottom_left_left_column_category_slug');
-	$bottom_right_left_column_category_slug = get_field('bottom_right_left_column_category_slug');
-	$center_column_category_slug = get_field('center_column_category_slug');
-	$top_left_right_column_category_slug = get_field('top_left_right_column_category_slug');
-	$top_right_right_column_category_slug = get_field('top_right_right_column_category_slug');
-	$bottom_right_column_category_slug = get_field('bottom_right_column_category_slug');
+	$top_left_column_category_slug          = get_field( 'top_left_column_category_slug' );
+	$bottom_left_left_column_category_slug  = get_field( 'bottom_left_left_column_category_slug' );
+	$bottom_right_left_column_category_slug = get_field( 'bottom_right_left_column_category_slug' );
+	$center_column_category_slug            = get_field( 'center_column_category_slug' );
+	$top_left_right_column_category_slug    = get_field( 'top_left_right_column_category_slug' );
+	$top_right_right_column_category_slug   = get_field( 'top_right_right_column_category_slug' );
+	$bottom_right_column_category_slug      = get_field( 'bottom_right_column_category_slug' );
 
 	echo '<div class="top-main-page-container">
 
@@ -127,34 +127,51 @@ function main_page_top_section() {
 
 function main_page_trade_discount_section() {
 
-
+	$trade_discount_left_title     = get_field( 'trade_discount_left_title' );
+	$trade_discount_left_text_area = get_field( 'trade_discount_left_text_area' );
+	$box_1_image_background        = get_field( 'box_1_image_background' );
+	$box_1_icon                    = get_field( 'box_1_icon' );
+	$box_1_title                   = get_field( 'box_1_title' );
+	$box_1_text_area               = get_field( 'box_1_text_area' );
+	$box_1_link                    = get_field( 'box_1_link' );
+	$box_2_image_background        = get_field( 'box_2_image_background' );
+	$box_2_icon                    = get_field( 'box_2_icon' );
+	$box_2_title                   = get_field( 'box_2_title' );
+	$box_2_text_area               = get_field( 'box_2_text_area' );
+	$box_2_link                    = get_field( 'box_2_link' );
+	$box_3_image_background        = get_field( 'box_3_image_background' );
+	$box_3_icon                    = get_field( 'box_3_icon' );
+	$box_3_title                   = get_field( 'box_3_title' );
+	$box_3_text_area               = get_field( 'box_3_text_area' );
+	$box_3_link                    = get_field( 'box_3_link' );
 
 
 	echo '<div class="top-main-page-container">
 			<div class="main-page-col-third trade-discount">
-			<h3>Trade Discount 10% OFF</h3>
-			<p>we offer a trade discount to architects, designers, builders, and other trade customers.</p>
-			<p>Multi item discount available.</p>
+			<h3>'.$trade_discount_left_title.'</h3>
+			<p>'.$trade_discount_left_text_area.'</p>
 
 
 			</div>
 			<div class="main-page-col-two-thirds">
 
-				<div class="main-page-col-third discount-section">
-				<span class="fa fa-question-circle"></span>
-				<h4>SPEC US</h4>
-				<p>SPEC US ON YOUR NEXT PROJECT! ARTISAN KRAFT OFFERS FIREPLAC</p>
+				<a href="'.$box_1_link.'">
+				<div class="main-page-col-third discount-section" style="background-image: url('.$box_1_image_background.');">
+				<span class="fa '.$box_1_icon.'"></span>
+				<h4>'.$box_1_title.'</h4>
+				<p>'.$box_1_text_area.'</p>
+				</a>
 
 
 				</div>
-				<div class="main-page-col-third discount-section">
+				<div class="main-page-col-third discount-section" style="background-image: url(https://www.akgoods.com/wp-content/uploads/section-5-architectural-stone11.jpg);">
 				<span class="fa fa-clipboard"></span>
 				<h4>TECHNICAL DATA</h4>
 				<p>INSTALLATION INSTALLATION INSTRUCTIONS ARE AVAILABLE</p>
 
 
 				</div>
-				<div class="main-page-col-third discount-section">
+				<div class="main-page-col-third discount-section" style="background-image: url(https://www.akgoods.com/wp-content/uploads/section-5-architectural-stone11.jpg);">
 				<span class="fa fa-file-text"></span>
 				<h4>MATERIALS</h4>
 				<p>MARBLE MARBLE EXUDES THE ULTIMATE TOUCH OF SOPHISTIC</p>
@@ -269,10 +286,9 @@ function main_page_home_design_and_decor_section() {
 
 function main_page_featured_project_galleries_section() {
 
-	$homepage_gallery_1 = get_field('homepage_gallery_1');
-	$homepage_gallery_2 = get_field('homepage_gallery_2');
-	$homepage_gallery_3 = get_field('homepage_gallery_3');
-
+	$homepage_gallery_1 = get_field( 'homepage_gallery_1' );
+	$homepage_gallery_2 = get_field( 'homepage_gallery_2' );
+	$homepage_gallery_3 = get_field( 'homepage_gallery_3' );
 
 
 	echo '<div class="top-main-page-container top-border-homepage-sections" id="featured-project-galleries-section">
@@ -282,17 +298,17 @@ function main_page_featured_project_galleries_section() {
 				</div>
 
 			<div class="main-page-col-third">';
-			masterslider($homepage_gallery_1);
+	masterslider( $homepage_gallery_1 );
 
-	echo	'</div>
+	echo '</div>
 			<div class="main-page-col-third">';
-			masterslider($homepage_gallery_2);
+	masterslider( $homepage_gallery_2 );
 
-	echo	'</div>
+	echo '</div>
 			<div class="main-page-col-third">';
-			masterslider($homepage_gallery_3);
+	masterslider( $homepage_gallery_3 );
 
-	echo	'</div>
+	echo '</div>
 		  </div>';
 }
 
@@ -307,15 +323,21 @@ function main_page_blog_post_and_testimonials_section() {
 				</div>
 
 			<div class="main-page-col-two-thirds" id="home-page-featured-posts">';
-						genesis_widget_area( 'homepage-featured-posts', array( 'before' => '<div class="homepage-featured-posts widget-area">', 'after' => '</div>') );
+	genesis_widget_area( 'homepage-featured-posts', array(
+		'before' => '<div class="homepage-featured-posts widget-area">',
+		'after'  => '</div>'
+	) );
 
 
-	echo	'</div>
+	echo '</div>
 			<div class="main-page-col-third">';
 
-			genesis_widget_area( 'homepage-testimonials', array( 'before' => '<div class="homepage-testimonials widget-area">', 'after' => '</div>') );
+	genesis_widget_area( 'homepage-testimonials', array(
+		'before' => '<div class="homepage-testimonials widget-area">',
+		'after'  => '</div>'
+	) );
 
-	echo	'</div>
+	echo '</div>
 		  </div>';
 }
 
