@@ -194,27 +194,27 @@ function main_page_ornamental_stone_products_section() {
 				</div>
 
 			<div class="main-page-col-quarter">
-				<img src="http://placehold.it/250x300"/>
-				<h4>Category</h4>
-				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante.</span>
+				<a href="https://www.akgoods.dev/shop/ornamental-stone/balustrades-ornamental-stone/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/balustrades.jpg"/></a>
+				<h4>Balustrades</h4>
+				<span>See our special pricing and available stock here.</span>
 
 			</div>
 			<div class="main-page-col-quarter">
-				<img src="http://placehold.it/250x300"/>
-				<h4>Category</h4>
-				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante.</span>
+				<a href="https://www.akgoods.dev/shop/ornamental-stone/columns-ornamental-stone/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/columns1.jpg"/></a>
+				<h4>Columns</h4>
+				<span>See our special pricing and available stock here.</span>
 
 			</div>
 			<div class="main-page-col-quarter">
-				<img src="http://placehold.it/250x300"/>
-				<h4>Category</h4>
-				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante.</span>
+				<a href="https://www.akgoods.dev/shop/ornamental-stone/fountains/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/fountain01.jpg"/></a>
+				<h4>Fountains</h4>
+				<span>See our special pricing and available stock here.</span>
 
 			</div>
 			<div class="main-page-col-quarter">
-				<img src="http://placehold.it/250x300"/>
-				<h4>Category</h4>
-				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante.</span>
+				<a href="https://www.akgoods.dev/shop/ornamental-stone/statues/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/children-moon-statue-carrera-marble.jpg"/></a>
+				<h4>Statues</h4>
+				<span>See our special pricing and available stock here.</span>
 
 			</div>
 

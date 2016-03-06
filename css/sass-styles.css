@@ -946,10 +946,6 @@ h3.yellow-text {
   margin-right: 7px;
 }
 
-#discount-section-1 {
-  margin-right: 7px;
-}
-
 #discount-section-2 {
   margin: 0 10px;
 }
@@ -961,6 +957,11 @@ h3.yellow-text {
 .discount-section:hover {
   font-size: 14px;
   text-shadow: 2px 2px 2px #969696;
+}
+
+.category-images-homepage {
+  width: 250px;
+  height: 300px;
 }
 
 .shipping-section {
