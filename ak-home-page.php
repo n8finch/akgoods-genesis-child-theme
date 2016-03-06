@@ -14,13 +14,18 @@ add_action( 'genesis_before_loop', 'main_page_blog_post_and_testimonials_section
 //Main Page Top Section
 
 function main_page_top_section() {
+
+	$top_left_column_category_slug = get_field('top_left_column_category_slug');
+
+
+
 	echo '<div class="top-main-page-container">
 
 			<!-- Top Left Section -->
 			<div class="main-page-col-third" id="mainpage-top-left">
 				<div class="hover-tile-outer mainpage-hover-tile-top">
 				  <div class="hover-tile-container">
-				  		<h3 class="hide-title-on-hover">This</h3>
+				  		<h3 class="hide-title-on-hover">'.$top_left_column_category_slug.'</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
 				      <h3>Hidden Copy</h3>
