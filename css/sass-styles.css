@@ -871,6 +871,11 @@ div.hover-tile-outer.main-page-col-half.right {
   margin-bottom: 10px;
 }
 
+.hover-tile-outer .hover-tile-container {
+  height: 13em;
+  overflow: hidden;
+}
+
 .top-border-homepage-sections {
   border-top: 5px double #dddddd;
   margin-top: 40px;
