@@ -627,6 +627,7 @@ li#primary-search-box.nav-custom-search.menu-item {
 }
 .hover-tile-outer .hover-tile-hidden {
   background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #555555;
 }
 .hover-tile-outer .hover-tile-hidden p {
   color: rgba(255, 255, 255, 0.7);
@@ -910,6 +911,9 @@ div.hover-tile-outer.main-page-col-half.right {
   padding: 0 10px;
 }
 
+.trade-discount {
+  text-align: right;
+}
 .trade-discount h3 {
   font-size: 24px;
   font-weight: 700;
