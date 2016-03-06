@@ -194,25 +194,25 @@ function main_page_ornamental_stone_products_section() {
 				</div>
 
 			<div class="main-page-col-quarter">
-				<a href="https://www.akgoods.dev/shop/ornamental-stone/balustrades-ornamental-stone/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/balustrades.jpg"/></a>
+				<a href="https://www.akgoods.finchproserivces.com/shop/ornamental-stone/balustrades-ornamental-stone/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/balustrades.jpg"/></a>
 				<h4>Balustrades</h4>
 				<span>See our special pricing and available stock here.</span>
 
 			</div>
 			<div class="main-page-col-quarter">
-				<a href="https://www.akgoods.dev/shop/ornamental-stone/columns-ornamental-stone/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/columns1.jpg"/></a>
+				<a href="https://www.akgoods.finchproserivces.com/shop/ornamental-stone/columns-ornamental-stone/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/columns1.jpg"/></a>
 				<h4>Columns</h4>
 				<span>See our special pricing and available stock here.</span>
 
 			</div>
 			<div class="main-page-col-quarter">
-				<a href="https://www.akgoods.dev/shop/ornamental-stone/fountains/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/fountain01.jpg"/></a>
+				<a href="https://www.akgoods.finchproserivces.com/shop/ornamental-stone/fountains/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/fountain01.jpg"/></a>
 				<h4>Fountains</h4>
 				<span>See our special pricing and available stock here.</span>
 
 			</div>
 			<div class="main-page-col-quarter">
-				<a href="https://www.akgoods.dev/shop/ornamental-stone/statues/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/children-moon-statue-carrera-marble.jpg"/></a>
+				<a href="https://www.akgoods.finchproserivces.com/shop/ornamental-stone/statues/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/children-moon-statue-carrera-marble.jpg"/></a>
 				<h4>Statues</h4>
 				<span>See our special pricing and available stock here.</span>
 
@@ -282,27 +282,27 @@ function main_page_home_design_and_decor_section() {
 				</div>
 
 			<div class="main-page-col-quarter">
-				<img src="http://placehold.it/250x300"/>
-				<h4>Category</h4>
-				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante.</span>
+				<a href="https://www.akgoods.finchproserivces.com/shop/homedesigndecor/bathroom/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/IMG_05491.jpeg"/></a>
+				<h4>Bathroom</h4>
+				<span>See our special pricing and available stock here.</span>
 
 			</div>
 			<div class="main-page-col-quarter">
-				<img src="http://placehold.it/250x300"/>
-				<h4>Category</h4>
-				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante.</span>
+				<a href="https://www.akgoods.finchproserivces.com/shop/homedesigndecor/copper_products/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/coppertub.jpg"/></a>
+				<h4>Copper Products</h4>
+				<span>See our special pricing and available stock here.</span>
 
 			</div>
 			<div class="main-page-col-quarter">
-				<img src="http://placehold.it/250x300"/>
-				<h4>Category</h4>
-				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante.</span>
+				<a href="https://www.akgoods.finchproserivces.com/shop/homedesigndecor/fireplaces_accessories/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/fireplaceaccessories2.jpg"/></a>
+				<h4>Fireplace Accessories</h4>
+				<span>See our special pricing and available stock here.</span>
 
 			</div>
 			<div class="main-page-col-quarter">
-				<img src="http://placehold.it/250x300"/>
-				<h4>Category</h4>
-				<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut sem at leo rhoncus semper molestie nec ante.</span>
+				<a href="https://www.akgoods.finchproserivces.com/shop/homedesigndecor/kitchen/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/2014/06/sub-cat-5.jpg"/></a>
+				<h4>Kitchen</h4>
+				<span>See our special pricing and available stock here.</span>
 
 			</div>
 		  </div>';
