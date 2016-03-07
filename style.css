@@ -6996,6 +6996,24 @@ blockquote.easy-testimonial {
     width: 100%;
   }
 }
+body.woocommerce-page ul.products {
+  border-bottom: 1px solid #d8dbdc;
+  max-width: 900px;
+  float: right;
+}
+
+.woocommerce div.product {
+  margin-bottom: 0;
+  position: relative;
+  float: right;
+  max-width: 900px;
+}
+
+.sidebar-primary {
+  float: left;
+  max-width: 200px;
+}
+
 .site-footer {
   background-color: #aaaaaa;
   color: #fff;

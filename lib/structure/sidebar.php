@@ -100,7 +100,7 @@ function jessica_child_do_sidebar() {
 
 	elseif ( class_exists( 'Woocommerce' ) ) {
 
-			if( is_shop() || is_product_category() || is_product_tag() ) {
+			if( is_shop() || is_product_category() || is_product_tag() || is_product() ) {
 				genesis_widget_area( 'store-sidebar');
 			}
 

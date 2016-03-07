@@ -23,11 +23,6 @@ function main_page_top_section() {
 	$top_right_right_column_category_slug   = get_field( 'top_right_right_column_category_slug' );
 	$bottom_right_column_category_slug      = get_field( 'bottom_right_column_category_slug' );
 
-	echo '<pre>';
-	var_dump(get_terms(108));
-	echo '</pre>';
-
-
 	echo '<div class="top-main-page-container">
 
 			<!-- Top Left Section -->
