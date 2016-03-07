@@ -269,17 +269,6 @@ genesis_register_sidebar( array(
 	'description' => __( 'This is the Homepage Testimonials section.', 'jessica' ),
 ) );
 
-add_action( 'woocommerce_sidebar', 'child_do_sidebar' );
-/**
- * Add a widget/sidebar area.
- *
- * @author Greg Rickaby
- * @since 1.0.0
- */
-
-
-
-
 
 // Remove edit link from TablePress tables for logged in users
 add_filter( 'tablepress_edit_link_below_table', '__return_false' );
