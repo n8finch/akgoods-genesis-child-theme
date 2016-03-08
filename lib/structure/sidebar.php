@@ -100,11 +100,11 @@ function jessica_child_do_sidebar() {
 
 	elseif ( class_exists( 'Woocommerce' ) ) {
 
-			if( is_shop() || is_product_category() || is_product_tag() || is_product() ) {
-				genesis_widget_area( 'store-sidebar');
-			}
+//			if( is_shop() || is_product_category() || is_product_tag() || is_product() ) {
+//				genesis_widget_area( 'store-sidebar');
+//			}
 
-			elseif( is_archive() || is_single() || is_category() || is_page_template( 'page_blog.php' ) ) {
+			if( is_archive() || is_single() || is_category() || is_page_template( 'page_blog.php' ) ) {
 				genesis_widget_area( 'blog-sidebar');
 			}
 
