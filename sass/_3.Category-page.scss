@@ -82,13 +82,22 @@ ul.children {
 
 //Category Hero Top Section
 
+.category-header {
+  text-align: center;
+}
+
+.category-header-name {
+  margin-bottom: 0;
+}
+
+.category-header-description {
+
+}
+
 .category-hero {
   max-width: 900px;
   float: right;
 }
-
-
-
 
 body.woocommerce-page ul.products {
   float: right;
@@ -99,4 +108,23 @@ body.woocommerce-page ul.products {
 p.woocommerce-result-count {
   float: left;
   clear: both;
+}
+
+//Product Images
+
+body.woocommerce-page ul.products li.product a img {
+  border: none;
+}
+
+body.woocommerce-page ul.products {
+  border-bottom: none;
+}
+
+//Description After Product Loop
+
+.description_after_product_loop {
+  clear: both;
+  text-align: center;
+  border-bottom: 1px solid #d8dbdc;
+  padding-bottom: 20px;
 }

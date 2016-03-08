@@ -3,7 +3,9 @@
   color: #fff;
 }
 
-
+.footer-widgets {
+  padding: 25px;
+}
 
 .footer-social-icons {
   text-transform: uppercase;
@@ -40,4 +42,24 @@ h4.widgettitle.widget-title {
 
 .footer-widgets .widget-tile {
   margin-bottom: 0;
+}
+
+div.footer-widgets-1,
+div.footer-widgets-2,
+div.footer-widgets-3 {
+
+  section.widget.widget_nav_menu {
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    div.widget-wrap {
+
+      h4.widgettitle.widget-title {
+        padding: 0;
+        background-color: #eaecec;
+        border: none;
+      }
+    }
+  }
 }
