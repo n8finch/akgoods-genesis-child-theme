@@ -7063,6 +7063,40 @@ ul.children {
 .category-hero {
   max-width: 900px;
   float: right;
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.category-description-left {
+  max-width: 175px;
+  background-color: #ffffff;
+  padding: 20px 10px;
+  font-weight: 400;
+  opacity: .85;
+  height: 100%;
+  position: relative;
+}
+
+.category-description-button {
+  width: 150px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 400;
+  background-color: #4c4034;
+  opacity: 1;
+  border-radius: 0;
+  position: absolute;
+  bottom: 10px;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.category-description-button:hover {
+  background-color: #251d19;
+  opacity: 1;
 }
 
 body.woocommerce-page ul.products {
@@ -7074,6 +7108,14 @@ body.woocommerce-page ul.products {
 p.woocommerce-result-count {
   float: left;
   clear: both;
+}
+
+body.woocommerce-page ul.products li.product {
+  width: 30.5%;
+}
+
+body.woocommerce-page ul.products li.product a img {
+  height: 200px;
 }
 
 body.woocommerce-page ul.products li.product a img {
