@@ -173,3 +173,23 @@ body.woocommerce-page ul.products {
   border-bottom: 1px solid #d8dbdc;
   padding-bottom: 20px;
 }
+
+@media only screen and (max-width: 1150px) {
+
+  .shop-sidebar {
+    display: none;
+  }
+
+  .category-hero {
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  body.woocommerce-page ul.products {
+    float: none;
+    max-width: 900px;
+    clear: inherit;
+    margin: auto;
+  }
+
+}
