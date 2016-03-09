@@ -1,6 +1,21 @@
 
 //Category and Single Product Sidebar Section
 
+.start_sorting_container {
+  min-width: 100%;
+  height: 37px;
+  text-align: right;
+  float: right;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #EEEDED;
+  border: 1px solid #cccccc;
+}
+
+.woocommerce .woocommerce-ordering select {
+  font-size: 12px;
+}
+
 .shop-sidebar {
   max-width: 200px;
   float: left;
