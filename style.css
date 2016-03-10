@@ -7177,6 +7177,18 @@ body.woocommerce-page ul.products {
   max-width: 200px;
 }
 
+body.woocommerce-page #content div.product div.images, body.woocommerce-page div.product div.images {
+  width: 49%;
+}
+
+body.woocommerce-page #content div.product div.summary, body.woocommerce-page div.product div.summary {
+  width: 50%;
+}
+
+body.woocommerce-page div.product div.images img, body.woocommerce-page #content div.product div.images img {
+  border: none;
+}
+
 .site-footer {
   background-color: #aaaaaa;
   color: #fff;

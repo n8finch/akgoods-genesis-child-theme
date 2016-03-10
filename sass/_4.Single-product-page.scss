@@ -9,3 +9,17 @@
   float: left;
   max-width: 200px;
 }
+
+// Resize Single Product Image and Description boxes
+
+body.woocommerce-page #content div.product div.images, body.woocommerce-page div.product div.images {
+  width: 49%;
+}
+
+body.woocommerce-page #content div.product div.summary, body.woocommerce-page div.product div.summary {
+  width: 50%;
+}
+
+body.woocommerce-page div.product div.images img, body.woocommerce-page #content div.product div.images img {
+  border: none;
+}
