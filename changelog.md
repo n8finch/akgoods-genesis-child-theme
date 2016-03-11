@@ -7,6 +7,8 @@ March. 3, 2016
           	<?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?>
           </div>```, placed into the functionality plugin.
 
+- added Related Items loop to woocommerce>>single-product.php template.
+
 
 
 ###Mar. 2, 2016

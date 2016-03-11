@@ -64,4 +64,41 @@ get_header( 'shop' ); ?>
 	do_action( 'akg_woocommerce_footer' );
 	?>
 
+<?php
+	if ( is_product() ) {
+		global $wp_query;
+		$cat = $wp_query->query['product_cat']; //gets current product's category
+
+		$args = array(
+			'posts_per_page' => 4,
+			'product_cat'    => $cat,
+			'post_type'      => 'product',
+			'orderby'        => 'rand',
+		);
+
+		$the_query = new WP_Query( $args );
+		// The Loop
+		echo '<div class="you-may-also-like-section">' .
+			 '<h2>You May Also Like</h2>' .
+		     '<div class="you-may-also-like-items">' ;
+		while ( $the_query->have_posts() ) {
+
+
+			$the_query->the_post();
+			echo '<a href="' . get_post_permalink() .'">' .
+				 '<div class="you-may-also-like-item">' .
+			     '<img class="you-may-also-like-images" src="'.get_the_post_thumbnail_url() . '">' .
+			     '<h3>' . get_the_title() . '</h3>' .
+			     '</div></a>';
+
+			wp_reset_postdata();
+		}
+		echo '</div></div> <!--end Related Products Loop-->';
+	}
+
+
+?>
+
+
+
 <?php get_footer( 'shop' ); ?>

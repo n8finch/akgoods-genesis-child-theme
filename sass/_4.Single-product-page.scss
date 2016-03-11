@@ -80,6 +80,7 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
 #upsell-product-space {
   clear: both;
   text-align: center;
+  width: 1100px;
 
   ul.products {
     float: none;
@@ -90,6 +91,28 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
     }
   }
 }
+
+.you-may-also-like-section {
+  text-align: center;
+  clear: both;
+
+  .you-may-also-like-items {
+    @include outer-container;
+
+    .you-may-also-like-item {
+      @include span-columns(3);
+      margin: 0 5px;
+
+      .you-may-also-like-images {
+        height: 200px;
+        width: 250px;
+      }
+    }
+
+  }
+}
+
+
 
 
 div.woocommerce-tabs.wc-tabs-wrapper {

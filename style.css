@@ -7241,6 +7241,7 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
 #upsell-product-space {
   clear: both;
   text-align: center;
+  width: 1100px;
 }
 #upsell-product-space ul.products {
   float: none;
@@ -7248,6 +7249,35 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
 }
 #upsell-product-space ul.products li {
   width: 29%;
+}
+
+.you-may-also-like-section {
+  text-align: center;
+  clear: both;
+}
+.you-may-also-like-section .you-may-also-like-items {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.you-may-also-like-section .you-may-also-like-items::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.you-may-also-like-section .you-may-also-like-items .you-may-also-like-item {
+  float: left;
+  display: block;
+  margin-right: 0.73174%;
+  width: 24.45119%;
+  margin: 0 5px;
+}
+.you-may-also-like-section .you-may-also-like-items .you-may-also-like-item:last-child {
+  margin-right: 0;
+}
+.you-may-also-like-section .you-may-also-like-items .you-may-also-like-item .you-may-also-like-images {
+  height: 200px;
+  width: 250px;
 }
 
 div.woocommerce-tabs.wc-tabs-wrapper {
