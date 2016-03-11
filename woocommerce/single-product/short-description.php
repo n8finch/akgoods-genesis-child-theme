@@ -26,6 +26,9 @@ if ( ! $post->post_excerpt ) {
 }
 
 ?>
-<div itemprop="description">
-	<?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?>
-</div>
+<!--Moved to Functionality Plugin-->
+<!--<div itemprop="description">-->
+<!--	--><?php //echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?>
+<!--</div>-->
+
+

@@ -1,6 +1,14 @@
 #Changelog
 started  Feb. 23, 2016
 
+
+March. 3, 2016
+- Removed ```<div itemprop="description">
+          	<?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?>
+          </div>```, placed into the functionality plugin.
+
+
+
 ###Mar. 2, 2016
 
 - Added layout for homepage

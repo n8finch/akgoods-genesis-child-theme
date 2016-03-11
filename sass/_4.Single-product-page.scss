@@ -23,3 +23,34 @@ body.woocommerce-page #content div.product div.summary, body.woocommerce-page di
 body.woocommerce-page div.product div.images img, body.woocommerce-page #content div.product div.images img {
   border: none;
 }
+
+.social-compare-wishlist-section {
+  text-align: center;
+  margin: 0 20px;
+  margin-top: 30px;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+
+  .social-share-text {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .fa {
+    margin: 10px;
+  }
+}
+
+#product-description-accordion {
+  margin-top: 50px;
+}
+
+body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt, body.woocommerce-page #respond input#submit.alt, body.woocommerce-page #content input.button.alt {
+  background-color: #333333;
+  padding: 10px 20px;
+}
+
+.woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover {
+  background-color: #777777 !important;
+}
