@@ -18,7 +18,7 @@
 
 remove_action( 'genesis_footer', 'genesis_do_footer' );
 
-add_action( 'genesis_before_footer', 'ak_social_icon_footer', 1 );
+add_action( 'genesis_before_footer', 'ak_social_icon_footer', 8 );
 
 function ak_social_icon_footer() {
 	//	Adding Contact Values

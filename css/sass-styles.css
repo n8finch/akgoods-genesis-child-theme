@@ -1249,6 +1249,18 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
   background-color: #777777 !important;
 }
 
+#upsell-product-space {
+  clear: both;
+  text-align: center;
+}
+#upsell-product-space ul.products {
+  float: none;
+  margin: 0 auto;
+}
+#upsell-product-space ul.products li {
+  width: 29%;
+}
+
 div.woocommerce-tabs.wc-tabs-wrapper {
   display: none;
 }

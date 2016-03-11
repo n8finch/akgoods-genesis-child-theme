@@ -55,4 +55,13 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_sidebar' );
 	?>
 
+	<?php
+	/**
+	 * woocommerce_sidebar hook.
+	 *
+	 * @hooked woocommerce_get_sidebar - 10
+	 */
+	do_action( 'akg_woocommerce_footer' );
+	?>
+
 <?php get_footer( 'shop' ); ?>

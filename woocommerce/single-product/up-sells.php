@@ -46,9 +46,9 @@ $woocommerce_loop['columns'] = $columns;
 
 if ( $products->have_posts() ) : ?>
 
-	<div class="upsells products">
+	<div id="upsell-product-space" class="upsells products">
 
-		<h2><?php _e( 'You may also like&hellip;', 'woocommerce' ) ?></h2>
+		<h2><?php _e( 'Pair It With', 'woocommerce' ) ?></h2>
 
 		<?php woocommerce_product_loop_start(); ?>
 
