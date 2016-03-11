@@ -1216,8 +1216,28 @@ body.woocommerce-page div.product div.images img, body.woocommerce-page #content
   margin: 10px;
 }
 
+.compare_and_wishlist_buttons {
+  text-align: center;
+  margin: 0 20px;
+  padding: 10px;
+  border-bottom: 1px solid #aaaaaa;
+}
+.compare_and_wishlist_buttons a.compare.button {
+  background-color: #333333;
+}
+
 #product-description-accordion {
-  margin-top: 50px;
+  margin-top: 60px;
+}
+
+.single-product-custom-fields-titles {
+  border-top: 1px solid #333333;
+  padding: 10px 0;
+  margin: 5px;
+}
+
+.fa-float-right {
+  float: right;
 }
 
 body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt, body.woocommerce-page #respond input#submit.alt, body.woocommerce-page #content input.button.alt {
@@ -1227,6 +1247,10 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
 
 .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover {
   background-color: #777777 !important;
+}
+
+div.woocommerce-tabs.wc-tabs-wrapper {
+  display: none;
 }
 
 .site-footer {
