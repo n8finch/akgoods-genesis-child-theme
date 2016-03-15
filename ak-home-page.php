@@ -29,7 +29,7 @@ function main_page_top_section() {
 			<div class="main-page-col-third" id="mainpage-top-left">
 				<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url(https://www.akgoods.com/wp-content/uploads/home-bath.jpg);">
 				  <a href="http://akgoods.dev/shop/bathtubs/"><div class="hover-tile-container">
-				  		<h3 class="hide-title-on-hover">Bathtubs</h3>
+				  		<h3 class="hide-title-on-hover" id="top-left-title">Bathtubs</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
 				      <h3 class="white-category-title-text">Bathtubs</h3>
@@ -42,7 +42,7 @@ function main_page_top_section() {
 				<div class="top-side-by-side-section">
 					<div class="hover-tile-outer main-page-col-half left" style="background-image: url(https://www.akgoods.com/wp-content/uploads/home-accents.jpg);">
 					  <a href="http://akgoods.dev/shop/home-accents/"><div class="hover-tile-container">
-					  	<h3 class="hide-title-on-hover">Home Accents</h3>
+					  	<h3 class="hide-title-on-hover" id="top-quarter-left-left-title">Home Accents</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
 						  <h3 class="white-category-title-text">Home Accents</h3>
@@ -54,7 +54,7 @@ function main_page_top_section() {
 
 					<div class="hover-tile-outer main-page-col-half right" style="background-image: url(https://www.akgoods.com/wp-content/uploads/770-772-fire-pit-with-773-780-spark-screen-buring-wood-glamour-2.jpg);">
 					  <a href="http://akgoods.dev/shop/outdoor-products/"><div class="hover-tile-container">
-					  	<h3 class="hide-title-on-hover">Outdoor</h3>
+					  	<h3 class="hide-title-on-hover" id="top-quarter-left-right-title">Outdoor</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
 					      <h3 class="white-category-title-text">Outdoor</h3>
@@ -72,7 +72,7 @@ function main_page_top_section() {
 			<div class="main-page-col-third">
 				<a href="http://akgoods.dev/shop/fireplaces-mantels/"><div class="hover-tile-outer" id="mainpage-top-center" style="background-image: url(https://www.akgoods.com/wp-content/uploads/section-5-fireplaces-middle12.jpg);">
 				  <div class="hover-tile-container">
-				    <h3 class="hide-title-on-hover">Fireplace Mantels</h3>
+				    <h3 class="hide-title-on-hover" id="top-center-title">Fireplace Mantels</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
 				      <h3 class="white-category-title-text">Fireplace Mantels</h3>
@@ -90,7 +90,7 @@ function main_page_top_section() {
 				<div class="top-side-by-side-section">
 					<div class="hover-tile-outer main-page-col-half left" style="background-image: url(https://www.akgoods.com/wp-content/uploads/custom-kitchen-hoods-02-2.jpg);">
 					  <a href="http://akgoods.dev/shop/kitchen-range-hoods/"><div class="hover-tile-container">
-					  	<h3 class="hide-title-on-hover">Kitchen Range Hoods</h3>
+					  	<h3 class="hide-title-on-hover" id="top-quarter-right-left-title">Kitchen Range Hoods</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
 					      <h3 class="white-category-title-text">Kitchen Range Hoods</h3>
@@ -102,7 +102,7 @@ function main_page_top_section() {
 
 					<div class="hover-tile-outer main-page-col-half right" style="background-image: url(https://www.akgoods.com/wp-content/uploads/bronze.jpg);">
 					  <a href="http://akgoods.dev/shop/bronze-and-copper/"><div class="hover-tile-container">
-					  	<h3 class="hide-title-on-hover">Bronze & Copper</h3>
+					  	<h3 class="hide-title-on-hover" id="top-quarter-right-right-title">Bronze & Copper</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
 					      <h3 class="white-category-title-text">Bronze & Copper</h3>
@@ -115,7 +115,7 @@ function main_page_top_section() {
 
 				<div class="hover-tile-outer" style="background-image: url(https://www.akgoods.com/wp-content/uploads/section-5-architectural-stone11.jpg);">
 				  <a href="http://akgoods.dev/shop/architectural-stone/"><div class="hover-tile-container">
-				  	<h3 class="hide-title-on-hover">Architechtural Stone</h3>
+				  	<h3 class="hide-title-on-hover" id="bottom-right-title">Architechtural Stone</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
 				      <h3 class="white-category-title-text">Architechtural Stone</h3>

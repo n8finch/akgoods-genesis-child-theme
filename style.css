@@ -6911,6 +6911,22 @@ h3.yellow-text {
   color: #fad532;
 }
 
+#top-left-title,
+#bottom-right-title {
+  padding-top: 35%;
+}
+
+#top-quarter-left-left-title,
+#top-quarter-left-right-title,
+#top-quarter-right-left-title,
+#top-quarter-right-right-title {
+  padding-top: 75%;
+}
+
+#top-center-title {
+  padding-top: 92%;
+}
+
 .top-border-homepage-sections {
   border-top: 5px double #dddddd;
   margin-top: 40px;

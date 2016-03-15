@@ -150,6 +150,27 @@ h3.yellow-text {
   color: #fad532;
 }
 
+//Top Section Titles
+
+#top-left-title,
+#bottom-right-title{
+  padding-top: 35%;
+  //hover: 25%
+}
+
+#top-quarter-left-left-title,
+#top-quarter-left-right-title,
+#top-quarter-right-left-title,
+#top-quarter-right-right-title {
+  padding-top: 75%;
+  //hover: 25%
+}
+
+#top-center-title {
+  padding-top: 92%;
+  //hover: 45%
+}
+
 
 //Border Sections
 
@@ -170,6 +191,7 @@ h3.yellow-text {
   }
 
 }
+
 
 //Main Page Trade Discount Section
 
