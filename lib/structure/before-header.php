@@ -56,15 +56,13 @@ function jessica_do_before_header() {
 	$cart_url = $woocommerce->cart->get_cart_url();
 
 	// if multiple products in cart
-		if ( $qty > 1 ) {
-			echo '<div class="header-social-right"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-cart-plus"> - ' . $qty . ' items</span></a></div>';
-		} elseif ( $qty < 1 ) {
-			echo '<div class="header-social-right"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-cart-plus"> - empty</span></a></div>';
-		} elseif ( $qty = 1 ) {
-			echo '<div class="header-social-right"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-cart-plus"> - ' . $qty . ' item</span></a></div>';
-		}
-
-
+	if ( $qty > 1 ) {
+		echo '<div class="header-social-right"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-cart-plus"> - ' . $qty . ' items</span></a></div>';
+	} elseif ( $qty < 1 ) {
+		echo '<div class="header-social-right"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-cart-plus"> - empty</span></a></div>';
+	} elseif ( $qty = 1 ) {
+		echo '<div class="header-social-right"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-cart-plus"> - ' . $qty . ' item</span></a></div>';
+	}
 
 
 	echo '<div class="header-social-right">' .
@@ -80,20 +78,20 @@ function jessica_do_before_header() {
 
 	if ( has_nav_menu( 'secondary' ) ) {
 
-			$args = array(
-				'theme_location' => 'secondary',
-				'container' => '',
-				'menu_class' => genesis_get_option('nav_superfish') ? 'nav genesis-nav-menu superfish' : 'nav genesis-nav-menu',
-				'echo' => 0
-			);
+		$args = array(
+			'theme_location' => 'secondary',
+			'container'      => '',
+			'menu_class'     => genesis_get_option( 'nav_superfish' ) ? 'nav genesis-nav-menu superfish' : 'nav genesis-nav-menu',
+			'echo'           => 0
+		);
 
-			$nav = wp_nav_menu( $args );
+		$nav = wp_nav_menu( $args );
 
-			$nav_output = sprintf( '<nav class="nav-secondary">%1$s</nav>', $nav);
+		$nav_output = sprintf( '<nav class="nav-secondary">%1$s</nav>', $nav );
 
-			echo apply_filters( 'jessica_do_secondary_nav', $nav_output, $nav, $args );
+		echo apply_filters( 'jessica_do_secondary_nav', $nav_output, $nav, $args );
 
-		}
+	}
 
 	echo '</div></aside>';
 
@@ -136,14 +134,14 @@ function do_subheader_area() {
 
 	$leadtext   = genesis_get_option( 'wsm_subheader_leadtext', 'jessica-settings' );
 	$hovertext1 = genesis_get_option( 'wsm_subheader_hovertext1', 'jessica-settings' );
-	$image1 = esc_url(genesis_get_option( 'wsm_subheader_image1', 'jessica-settings' ));
-	$link1 = genesis_get_option( 'wsm_subheader_link1', 'jessica-settings' );
+	$image1     = esc_url( genesis_get_option( 'wsm_subheader_image1', 'jessica-settings' ) );
+	$link1      = genesis_get_option( 'wsm_subheader_link1', 'jessica-settings' );
 	$hovertext2 = genesis_get_option( 'wsm_subheader_hovertext2', 'jessica-settings' );
-	$image2 = genesis_get_option( 'wsm_subheader_image2', 'jessica-settings' );
-	$link2 = genesis_get_option( 'wsm_subheader_link2', 'jessica-settings' );
+	$image2     = genesis_get_option( 'wsm_subheader_image2', 'jessica-settings' );
+	$link2      = genesis_get_option( 'wsm_subheader_link2', 'jessica-settings' );
 	$hovertext3 = genesis_get_option( 'wsm_subheader_hovertext3', 'jessica-settings' );
-	$image3 = genesis_get_option( 'wsm_subheader_image3', 'jessica-settings' );
-	$link3 = genesis_get_option( 'wsm_subheader_link3', 'jessica-settings' );
+	$image3     = genesis_get_option( 'wsm_subheader_image3', 'jessica-settings' );
+	$link3      = genesis_get_option( 'wsm_subheader_link3', 'jessica-settings' );
 
 
 	echo '<div class="wrap"><div class="subheader-area wrap">';
@@ -151,29 +149,44 @@ function do_subheader_area() {
 	echo '	<div class="subheader-text-area">' .
 	     $leadtext .
 	     '</div>';
-	echo '	<div class="hover-tile-outer" style="background-image: url('.$image1.');">
-				<a href="' . $link1 . '"><div class="hover-tile-container">
-					<div class="hover-tile hover-tile-visible"></div>' . $hovertext1 . '
-					<div class="hover-tile hover-tile-hidden"><h3>' . $hovertext1 .
-	     '</h3></div>
-				</div></a>
-			</div>';
-	echo '	<div class="hover-tile-outer" style="background-image: url('.$image2.');">
-				<a href="' . $link2 . '"><div class="hover-tile-container">
-					<div class="hover-tile hover-tile-visible"></div>
-					<div class="hover-tile hover-tile-hidden"><h3>' .
-	     $hovertext2 .
-	     '</h3></div>
-				</div></a>
-			</div>';
-	echo '	<div class="hover-tile-outer" style="background-image: url('.$image3.');">
-				<a href="' . $link3 . '"><div class="hover-tile-container">
-					<div class="hover-tile hover-tile-visible"></div>
-					<div class="hover-tile hover-tile-hidden"><h3>' .
-	     $hovertext3 .
-	     '</h3></div>
-				</div></a>
-			</div>';
+//	echo '	<div class="hover-tile-outer" style="background-image: url('.$image1.');">
+//				<a href="' . $link1 . '"><div class="hover-tile-container">' . $hovertext1 . '
+//					<div class="hover-tile hover-tile-visible"></div>
+//					<div class="hover-tile hover-tile-hidden"><h3>' . $hovertext1 .
+//	     '</h3></div>
+//				</div></a>
+//			</div>';
+	echo '<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url(' . $image1 . ');">
+				  <a href="' . $link1 . '">
+				  <div class="hover-tile-container">
+				  		<h3 class="hide-title-on-hover">' . $hovertext1 . '</h3>
+				    <div class="hover-tile hover-tile-visible"></div>
+				    <div class="hover-tile hover-tile-hidden">
+				      <h3 class="white-category-title-text">' . $hovertext1 . '</h3>
+				      <!--<p>See our special pricing and available stock here.</p>-->
+				    </div>
+				  </div></a>
+				</div>';
+	echo '<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url(' . $image2 . ');">
+				  <a href="' . $link2 . '"><div class="hover-tile-container">
+				  		<h3 class="hide-title-on-hover">' . $hovertext2 . '</h3>
+				    <div class="hover-tile hover-tile-visible"></div>
+				    <div class="hover-tile hover-tile-hidden">
+				      <h3 class="white-category-title-text">' . $hovertext2 . '</h3>
+				      <!--<p>See our special pricing and available stock here.</p>-->
+				    </div>
+				  </div></a>
+				</div>';
+	echo '<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url(' . $image3 . ');">
+				  <a href="' . $link3 . '"><div class="hover-tile-container">
+				  		<h3 class="hide-title-on-hover">' . $hovertext3 . '</h3>
+				    <div class="hover-tile hover-tile-visible"></div>
+				    <div class="hover-tile hover-tile-hidden">
+				      <h3 class="white-category-title-text">' . $hovertext3 . '</h3>
+				      <!--<p>See our special pricing and available stock here.</p>-->
+				    </div>
+				  </div></a>
+				</div>';
 
 	echo '</div></div>';
 }
@@ -186,11 +199,14 @@ add_action( 'genesis_after_header', 'do_subheader_area' );
  */
 
 add_filter( 'wp_nav_menu_items', 'ak_genesis_search_primary_nav_menu', 10, 2 );
-function ak_genesis_search_primary_nav_menu( $menu, stdClass $args ){
-	if ( 'primary' != $args->theme_location )
+function ak_genesis_search_primary_nav_menu( $menu, stdClass $args ) {
+	if ( 'primary' != $args->theme_location ) {
 		return $menu;
-	if( genesis_get_option( 'nav_extras' ) )
+	}
+	if ( genesis_get_option( 'nav_extras' ) ) {
 		return $menu;
+	}
 	$menu .= sprintf( '<li id="primary-search-box" class="nav-custom-search menu-item">%s</li>', __( genesis_search_form( $echo ) ) );
+
 	return $menu;
 }

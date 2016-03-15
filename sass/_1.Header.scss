@@ -4,11 +4,16 @@
   padding: 0;
 
   .hover-tile-outer {
-    height: 100px;
+    height: 75px;
     margin: 0 7px;
 
     .hover-tile-container {
-      height: 100px;
+      height: 75px;
+
+      h3 {
+        padding-top: 20px;
+        font-size: 22px;
+      }
     }
   }
 
@@ -48,8 +53,9 @@ span.fa.fa-cart-plus {
   font-weight: 400;
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 16px;
+  max-height: 100px;
 }
 
 .genesis-nav-menu a {

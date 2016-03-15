@@ -471,11 +471,15 @@ picture {
   padding: 0;
 }
 .subheader-area .hover-tile-outer {
-  height: 100px;
+  height: 75px;
   margin: 0 7px;
 }
 .subheader-area .hover-tile-outer .hover-tile-container {
-  height: 100px;
+  height: 75px;
+}
+.subheader-area .hover-tile-outer .hover-tile-container h3 {
+  padding-top: 20px;
+  font-size: 22px;
 }
 .subheader-area .hover-tile-outer:last-of-type {
   margin-right: 0px;
@@ -512,8 +516,9 @@ span.fa.fa-cart-plus {
   font-weight: 400;
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 16px;
+  max-height: 100px;
 }
 
 .genesis-nav-menu a {
