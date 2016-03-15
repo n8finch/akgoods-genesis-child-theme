@@ -32,8 +32,9 @@ function main_page_top_section() {
 				  		<h3 class="hide-title-on-hover">Bathtubs</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
+				      <h3 class="white-category-title-text">Bathtubs</h3>
 				      <h3 class="yellow-text">Shop Now</h3>
-				      <p>See our special pricing and available stock here.</p>
+				      <!--<p>See our special pricing and available stock here.</p>-->
 				    </div>
 				  </div></a>
 				</div>
@@ -44,8 +45,9 @@ function main_page_top_section() {
 					  	<h3 class="hide-title-on-hover">Home Accents</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
+						  <h3 class="white-category-title-text">Home Accents</h3>
 					      <h3 class="yellow-text">Shop Now</h3>
-					      <p>See our special pricing and available stock here.</p>
+					      <!--<p>See our special pricing and available stock here.</p>-->
 					    </div>
 					  </div></a>
 					</div>
@@ -55,8 +57,9 @@ function main_page_top_section() {
 					  	<h3 class="hide-title-on-hover">Outdoor</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
+					      <h3 class="white-category-title-text">Outdoor</h3>
 					      <h3 class="yellow-text">Shop Now</h3>
-					      <p>See our special pricing and available stock here.</p>
+					      <!--<p>See our special pricing and available stock here.</p>-->
 					    </div>
 					  </div></a>
 					</div>
@@ -72,8 +75,9 @@ function main_page_top_section() {
 				    <h3 class="hide-title-on-hover">Fireplace Mantels</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
+				      <h3 class="white-category-title-text">Fireplace Mantels</h3>
 				      <h3 class="yellow-text">Shop Now</h3>
-				      <p>See our special pricing and available stock here.</p>
+				      <!--<p>See our special pricing and available stock here.</p>-->
 				    </div>
 				  </div>
 				</div></a>
@@ -89,8 +93,9 @@ function main_page_top_section() {
 					  	<h3 class="hide-title-on-hover">Kitchen Range Hoods</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
+					      <h3 class="white-category-title-text">Kitchen Range Hoods</h3>
 					      <h3 class="yellow-text">Shop Now</h3>
-					      <p>See our special pricing and available stock here.</p>
+					      <!--<p>See our special pricing and available stock here.</p>-->
 					    </div>
 					  </div></a>
 					</div>
@@ -100,8 +105,9 @@ function main_page_top_section() {
 					  	<h3 class="hide-title-on-hover">Bronze & Copper</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
+					      <h3 class="white-category-title-text">Bronze & Copper</h3>
 					      <h3 class="yellow-text">Shop Now</h3>
-					      <p>See our special pricing and available stock here.</p>
+					      <!--<p>See our special pricing and available stock here.</p>-->
 					    </div>
 					  </div></a>
 					</div>
@@ -112,8 +118,9 @@ function main_page_top_section() {
 				  	<h3 class="hide-title-on-hover">Architechtural Stone</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
+				      <h3 class="white-category-title-text">Architechtural Stone</h3>
 				      <h3 class="yellow-text">Shop Now</h3>
-				      <p>See our special pricing and available stock here.</p>
+				      <!--<p>See our special pricing and available stock here.</p>-->
 				    </div>
 				  </div></a>
 				</div>
@@ -146,40 +153,44 @@ function main_page_trade_discount_section() {
 	$box_3_link                    = get_field( 'box_3_link' );
 
 
-	echo '<div class="top-main-page-container">
-			<div class="main-page-col-third trade-discount">
-			<h3>'.$trade_discount_left_title.'</h3>
-			<p>'.$trade_discount_left_text_area.'</p>
+	echo '<div class="top-main-page-container" id="trade-discount-section">
 
 
-			</div>
-			<div class="main-page-col-two-thirds">
+					<a class="main-page-col-quarter" href="'.$box_1_link.'">
+						<div class="discount-section" id="discount-section-1" style="background-image: url('.$box_1_image_background.');">
+							<!--<span class="fa '.$box_1_icon.'"></span>-->
+							<h4>'.$box_1_title.'</h4>
+							<p>'.$box_1_text_area.'</p>
+						</div>
+					</a>
 
-				<a class="main-page-col-third" href="'.$box_1_link.'">
-				<div class="discount-section" id="discount-section-1" style="background-image: url('.$box_1_image_background.');">
-				<span class="fa '.$box_1_icon.'"></span>
-				<h4>'.$box_1_title.'</h4>
-				<p>'.$box_1_text_area.'</p>
-				</div>
-				</a>
 
-				<a class="main-page-col-third" href="'.$box_2_link.'">
-				<div class="discount-section" id="discount-section-2" style="background-image: url('.$box_2_image_background.');">
-				<span class="fa '.$box_2_icon.'"></span>
-				<h4>'.$box_2_title.'</h4>
-				<p>'.$box_2_text_area.'</p>
-				</div>
-				</a>
+					<a class="main-page-col-quarter" href="'.$box_1_link.'">
+					<div class="discount-section" id="discount-section-1" style="background-image: url('.$box_1_image_background.');">
+						<!--<span class="fa '.$box_1_icon.'"></span>-->
+					<h4>'.$box_1_title.'</h4>
+					<p>'.$box_1_text_area.'</p>
+					</div>
+					</a>
 
-				<a class="main-page-col-third" href="'.$box_3_link.'">
-				<div class="discount-section" id="discount-section-3" style="background-image: url('.$box_3_image_background.');">
-				<span class="fa '.$box_3_icon.'"></span>
-				<h4>'.$box_3_title.'</h4>
-				<p>'.$box_3_text_area.'</p>
-				</div>
-				</a>
+					<a class="main-page-col-quarter" href="'.$box_2_link.'">
+					<div class="discount-section" id="discount-section-2" style="background-image: url('.$box_2_image_background.');">
+					<!--<span class="fa '.$box_2_icon.'"></span>-->
+					<h4>'.$box_2_title.'</h4>
+					<p>'.$box_2_text_area.'</p>
+					</div>
+					</a>
 
-			</div>
+					<a class="main-page-col-quarter" href="'.$box_3_link.'">
+					<div class="discount-section" id="discount-section-3" style="background-image: url('.$box_3_image_background.');">
+					<!--<span class="fa '.$box_3_icon.'"></span>-->
+					<h4>'.$box_3_title.'</h4>
+					<p>'.$box_3_text_area.'</p>
+					</div>
+					</a>
+
+
+
 		  </div>';
 }
 
@@ -187,10 +198,10 @@ function main_page_trade_discount_section() {
 //Main Page Ornamental Stone Products Section
 
 function main_page_ornamental_stone_products_section() {
-	echo '<div class="top-main-page-container top-border-homepage-sections" id="ornamental-stone-section">
+	echo '<div class="top-main-page-container top-border-homepage-sections">
 
 				<div class="main-page-container-heading">
-					<h4>// Ornamental Stone Products //</h4>
+					<h4>Ornamental Stone Products</h4>
 				</div>
 
 			<div class="main-page-col-quarter">
@@ -239,11 +250,11 @@ function main_page_ornamental_stone_products_section() {
 
 
 
-	echo '<div class="top-main-page-container">
+	echo '<div class="top-main-page-container" id="shipping-section">
 
 			<a class="main-page-col-third" href="'.$box_1_link_ss.'">
 			<div class="shipping-section" style="background-image: url('.$box_1_image_background_ss.');">
-				<span class="fa '.$box_1_icon_ss.'"></span>
+				<!--<span class="fa '.$box_1_icon_ss.'"></span>-->
 				<h4>'.$box_1_title_ss.'</h4>
 				<p>'.$box_1_text_area_ss.'</p>
 
@@ -252,7 +263,7 @@ function main_page_ornamental_stone_products_section() {
 
 			<a class="main-page-col-third" href="'.$box_2_link_ss.'">
 			<div class="shipping-section" style="background-image: url('.$box_2_image_background_ss.');">
-				<span class="fa '.$box_2_icon_ss.'"></span>
+				<!--<span class="fa '.$box_2_icon_ss.'"></span>-->
 				<h4>'.$box_2_title_ss.'</h4>
 				<p>'.$box_2_text_area_ss.'</p>
 
@@ -261,7 +272,7 @@ function main_page_ornamental_stone_products_section() {
 
 			<a class="main-page-col-third" href="'.$box_3_link_ss.'">
 			<div class="shipping-section" style="background-image: url('.$box_3_image_background_ss.');">
-				<span class="fa '.$box_3_icon_ss.'"></span>
+				<!--<span class="fa '.$box_3_icon_ss.'"></span>-->
 				<h4>'.$box_3_title_ss.'</h4>
 				<p>'.$box_3_text_area_ss.'</p>
 
@@ -278,7 +289,7 @@ function main_page_home_design_and_decor_section() {
 	echo '<div class="top-main-page-container top-border-homepage-sections" id="home-design-decor-section">
 
 				<div class="main-page-container-heading">
-					<h4>// Home Design and Decor //</h4>
+					<h4>Home Design and Decor</h4>
 				</div>
 
 			<div class="main-page-col-quarter">
@@ -321,7 +332,7 @@ function main_page_featured_project_galleries_section() {
 	echo '<div class="top-main-page-container top-border-homepage-sections" id="featured-project-galleries-section">
 
 				<div class="main-page-container-heading">
-					<h4>// Featured Project Galleries //</h4>
+					<h4>Featured Project Galleries</h4>
 				</div>
 
 			<div class="main-page-col-third">';
@@ -343,10 +354,10 @@ function main_page_featured_project_galleries_section() {
 //Main Page Blog Post and Testimonials Section
 
 function main_page_blog_post_and_testimonials_section() {
-	echo '<div class="top-main-page-container" id="blog-post-testimonials-section">
+	echo '<div class="top-main-page-container top-border-homepage-sections" id="blog-post-testimonials-section">
 
 				<div class="main-page-container-heading">
-					<h4>// Blog Post and Testimonials //</h4>
+					<h4>Blog Post and Testimonials</h4>
 				</div>
 
 			<div class="main-page-col-two-thirds" id="home-page-featured-posts">';

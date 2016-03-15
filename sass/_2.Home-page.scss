@@ -88,6 +88,10 @@
   .hover-tile-outer {
     width: 100%;
     flex-grow: 1;
+
+    h3 {
+      font-size: 24px;
+    }
   }
 
   .mainpage-hover-tile-top {
@@ -126,6 +130,11 @@ div.hover-tile-outer.main-page-col-half.right {
   .top-side-by-side-section {
     margin-bottom: 10px;
   }
+
+}
+
+.hover-tile-outer .hover-tile-hidden {
+  border: none;
 }
 
 .hover-tile-outer .hover-tile-container {
@@ -133,8 +142,12 @@ div.hover-tile-outer.main-page-col-half.right {
   overflow: hidden;
 }
 
+.hover-tile-outer .hover-tile {
+  padding: 0;
+}
+
 h3.yellow-text {
-  color: yellow;
+  color: #fad532;
 }
 
 
@@ -160,6 +173,13 @@ h3.yellow-text {
 
 //Main Page Trade Discount Section
 
+#trade-discount-section {
+  border-top: 1px solid #dddddd;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .trade-discount {
 
   text-align: right;
@@ -176,6 +196,10 @@ h3.yellow-text {
   text-align: center;
   padding: 5px;
   text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 100px;
 
   h4 {
     color: #ffffff;
@@ -204,6 +228,13 @@ h3.yellow-text {
   height: 300px;
 }
 
+#shipping-section {
+  border-top: 1px solid #dddddd;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .shipping-section {
   color: #ffffff;
   background: url('http://akgoods.finchproservices.com/wp-content/uploads/blurred1.jpeg') no-repeat;
@@ -211,6 +242,8 @@ h3.yellow-text {
   text-align: center;
   padding: 5px;
   text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+  background-position: center;
+  min-height: 100px;
 
   h4 {
     color: #ffffff;

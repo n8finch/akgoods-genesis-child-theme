@@ -5,12 +5,14 @@
 
 .footer-widgets {
   padding: 25px;
+  background-color: #F4F4F4;
 }
 
 .footer-social-icons {
   text-transform: uppercase;
   padding: 20px;
   text-align: center;
+  background-color: #eaecec;
 
   .footer-follow-us {
     font-weight: 700;
@@ -57,9 +59,27 @@ div.footer-widgets-3 {
 
       h4.widgettitle.widget-title {
         padding: 0;
-        background-color: #eaecec;
+        background-color: #F4F4F4;
         border: none;
+      }
+
+      div {
+
+        ul.menu {
+
+          li.menu-item {
+            border: none !important;
+            padding: 0 !important;
+          }
+
+        }
+
       }
     }
   }
 }
+//
+//.widget-wrap > div > ul > li.menu-item .footer-widgets {
+//  border: none !important;
+//
+//}

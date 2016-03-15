@@ -18,7 +18,7 @@
 }
 
 .before-header {
-  background-color: #aaaaaa;
+  background-color: #cccccc;
 }
 
 .before-header .wrap{
@@ -49,6 +49,7 @@ span.fa.fa-cart-plus {
   display: flex;
   justify-content: center;
   padding: 20px 0;
+  font-size: 16px;
 }
 
 .genesis-nav-menu a {
@@ -57,7 +58,7 @@ span.fa.fa-cart-plus {
 }
 
 .genesis-nav-menu .menu-item {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -106,14 +107,17 @@ li#primary-search-box.nav-custom-search.menu-item {
 .nav-custom-search > form {
   display: flex;
   margin-left: 5px;
+
   input[type="submit"] {
     background-color: #aaaaaa;
     padding: 0 10px;
     height: 2.4em;
     margin-bottom: 0px;
+    font-family: 'Playfair Display', serif;
   }
   input[type="search"] {
     margin-bottom: 0px;
+    font-family: 'Playfair Display', serif;
   }
 }
 

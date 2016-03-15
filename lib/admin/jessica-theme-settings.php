@@ -190,11 +190,11 @@ class Jessica_Settings extends Genesis_Admin_Boxes {
 	 */
 	function wsm_footer_info_metabox() {
 
-		echo '<p><strong>' . __( 'Copyright Info:', 'jessica' ) . '</strong></p>';
-		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_copyright' ) . '" id="' . $this->get_field_id( 'wsm_copyright' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_copyright' ) ) . '" size="70" /></p>';
-
 		echo '<p><strong>' . __( 'Credit Info:', 'jessica' ) . '</strong></p>';
 		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_credit' ) . '" id="' . $this->get_field_id( 'wsm_credit' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_credit' ) ) . '" size="70" /></p>';
+
+		echo '<p><strong>' . __( 'Copyright Info:', 'jessica' ) . '</strong></p>';
+		echo '<p><input type="text" name="' . $this->get_field_name( 'wsm_copyright' ) . '" id="' . $this->get_field_id( 'wsm_copyright' ) . '" value="' . esc_attr( $this->get_field_value( 'wsm_copyright' ) ) . '" size="70" /></p>';
 
 	}
 

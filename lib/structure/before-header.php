@@ -153,7 +153,7 @@ function do_subheader_area() {
 	     '</div>';
 	echo '	<div class="hover-tile-outer" style="background-image: url('.$image1.');">
 				<a href="' . $link1 . '"><div class="hover-tile-container">
-					<div class="hover-tile hover-tile-visible"></div>
+					<div class="hover-tile hover-tile-visible"></div>' . $hovertext1 . '
 					<div class="hover-tile hover-tile-hidden"><h3>' . $hovertext1 .
 	     '</h3></div>
 				</div></a>

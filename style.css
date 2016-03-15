@@ -6471,7 +6471,7 @@ picture {
 }
 
 .before-header {
-  background-color: #aaaaaa;
+  background-color: #cccccc;
 }
 
 .before-header .wrap {
@@ -6502,6 +6502,7 @@ span.fa.fa-cart-plus {
   display: flex;
   justify-content: center;
   padding: 20px 0;
+  font-size: 16px;
 }
 
 .genesis-nav-menu a {
@@ -6510,7 +6511,7 @@ span.fa.fa-cart-plus {
 }
 
 .genesis-nav-menu .menu-item {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .genesis-nav-menu .sub-menu {
@@ -6565,9 +6566,11 @@ li#primary-search-box.nav-custom-search.menu-item {
   padding: 0 10px;
   height: 2.4em;
   margin-bottom: 0px;
+  font-family: 'Playfair Display', serif;
 }
 .nav-custom-search > form input[type="search"] {
   margin-bottom: 0px;
+  font-family: 'Playfair Display', serif;
 }
 
 .hover-tile-outer {
@@ -6846,6 +6849,11 @@ li#primary-search-box.nav-custom-search.menu-item {
   width: 100%;
   flex-grow: 1;
 }
+#mainpage-top-left .hover-tile-outer h3,
+#mainpage-top-right .hover-tile-outer h3,
+#mainpage-top-center .hover-tile-outer h3 {
+  font-size: 24px;
+}
 #mainpage-top-left .mainpage-hover-tile-top,
 #mainpage-top-right .mainpage-hover-tile-top,
 #mainpage-top-center .mainpage-hover-tile-top {
@@ -6881,13 +6889,21 @@ div.hover-tile-outer.main-page-col-half.right {
   margin-bottom: 10px;
 }
 
+.hover-tile-outer .hover-tile-hidden {
+  border: none;
+}
+
 .hover-tile-outer .hover-tile-container {
   height: 13em;
   overflow: hidden;
 }
 
+.hover-tile-outer .hover-tile {
+  padding: 0;
+}
+
 h3.yellow-text {
-  color: yellow;
+  color: #fad532;
 }
 
 .top-border-homepage-sections {
@@ -6904,6 +6920,13 @@ h3.yellow-text {
   padding: 0 10px;
 }
 
+#trade-discount-section {
+  border-top: 1px solid #dddddd;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .trade-discount {
   text-align: right;
 }
@@ -6918,6 +6941,10 @@ h3.yellow-text {
   text-align: center;
   padding: 5px;
   text-shadow: 1px 1px 1px #969696;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 100px;
 }
 .discount-section h4 {
   color: #ffffff;
@@ -6941,6 +6968,13 @@ h3.yellow-text {
   height: 300px;
 }
 
+#shipping-section {
+  border-top: 1px solid #dddddd;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .shipping-section {
   color: #ffffff;
   background: url("http://akgoods.finchproservices.com/wp-content/uploads/blurred1.jpeg") no-repeat;
@@ -6948,6 +6982,8 @@ h3.yellow-text {
   text-align: center;
   padding: 5px;
   text-shadow: 1px 1px 1px #969696;
+  background-position: center;
+  min-height: 100px;
 }
 .shipping-section h4 {
   color: #ffffff;
@@ -7291,12 +7327,14 @@ div.woocommerce-tabs.wc-tabs-wrapper {
 
 .footer-widgets {
   padding: 25px;
+  background-color: #F4F4F4;
 }
 
 .footer-social-icons {
   text-transform: uppercase;
   padding: 20px;
   text-align: center;
+  background-color: #eaecec;
 }
 .footer-social-icons .footer-follow-us {
   font-weight: 700;
@@ -7337,8 +7375,14 @@ div.footer-widgets-1 section.widget.widget_nav_menu div.widget-wrap h4.widgettit
 div.footer-widgets-2 section.widget.widget_nav_menu div.widget-wrap h4.widgettitle.widget-title,
 div.footer-widgets-3 section.widget.widget_nav_menu div.widget-wrap h4.widgettitle.widget-title {
   padding: 0;
-  background-color: #eaecec;
+  background-color: #F4F4F4;
   border: none;
+}
+div.footer-widgets-1 section.widget.widget_nav_menu div.widget-wrap div ul.menu li.menu-item,
+div.footer-widgets-2 section.widget.widget_nav_menu div.widget-wrap div ul.menu li.menu-item,
+div.footer-widgets-3 section.widget.widget_nav_menu div.widget-wrap div ul.menu li.menu-item {
+  border: none !important;
+  padding: 0 !important;
 }
 
 /*# sourceMappingURL=sass-styles.css.map */
