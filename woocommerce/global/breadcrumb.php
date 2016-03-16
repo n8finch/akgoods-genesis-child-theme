@@ -9,9 +9,9 @@
  * as little as possible, but it does happen. When this occurs the version of the template file will.
  * be bumped and the readme will list any important changes.
  *
- * @see 	    http://docs.woothemes.com/document/template-structure/
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
+ * @see        http://docs.woothemes.com/document/template-structure/
+ * @author        WooThemes
+ * @package    WooCommerce/Templates
  * @version     2.3.0
  * @see         woocommerce_breadcrumb()
  */
@@ -20,28 +20,38 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! empty( $breadcrumb ) ) {
 
-	echo $wrap_before;
+if ( is_product_category() ) {
 
-	foreach ( $breadcrumb as $key => $crumb ) {
+	return;
 
-		echo $before;
+} else {
 
-		if ( ! empty( $crumb[1] ) && sizeof( $breadcrumb ) !== $key + 1 ) {
-			echo '<a href="' . esc_url( $crumb[1] ) . '">' . esc_html( $crumb[0] ) . '</a>';
-		} else {
-			echo esc_html( $crumb[0] );
+
+	if ( ! empty( $breadcrumb ) ) {
+
+		echo $wrap_before;
+
+		foreach ( $breadcrumb as $key => $crumb ) {
+
+			echo $before;
+
+			if ( ! empty( $crumb[1] ) && sizeof( $breadcrumb ) !== $key + 1 ) {
+				echo '<a href="' . esc_url( $crumb[1] ) . '">' . esc_html( $crumb[0] ) . '</a>';
+			} else {
+				echo esc_html( $crumb[0] );
+			}
+
+			echo $after;
+
+			if ( sizeof( $breadcrumb ) !== $key + 1 ) {
+				echo $delimiter;
+			}
+
 		}
 
-		echo $after;
-
-		if ( sizeof( $breadcrumb ) !== $key + 1 ) {
-			echo $delimiter;
-		}
+		echo $wrap_after;
 
 	}
 
-	echo $wrap_after;
-
-}
+} //end ifelse

@@ -6,8 +6,13 @@ started  Feb. 23, 2016
 If WooCommerce templates need to be updated, BEFORE YOU UPDATE, please make sure you preserve the customizations on the following templates:
 
 - `single-product.php`
+- `breadcrumb.php`
 
 <hr/>
+
+
+March. 16, 2016
+- added if/else to `breadcrumb.php` to not show during product categories pages.
 
 
 March. 3, 2016

@@ -401,7 +401,7 @@ picture {
  ---------------------------*/
 body {
   color: #333;
-  font-family: Lato;
+  font-family: "Source Serif Pro", serif;
   font-size: 15px;
   line-height: 1.5;
 }
@@ -412,7 +412,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Lato;
+  font-family: "Playfair Display", serif;
   font-size: 15px;
   line-height: 1.2;
   margin: 0 0 0.75em;
@@ -1135,17 +1135,35 @@ ul.children {
   display: none;
 }
 
+li.cat-item span.count {
+  display: none;
+}
+
+mark.count {
+  display: none;
+}
+
+section.widget.woocommerce.widget_product_categories .widget-wrap ul.product-categories {
+  font-size: 14px;
+}
+
 .category-header {
   text-align: center;
 }
 
 .category-header-name {
-  margin-bottom: 0;
+  margin: 30px 0;
+}
+
+.category-hero-outer {
+  max-width: 900px;
+  float: right;
+  width: 100%;
 }
 
 .category-hero {
-  max-width: 900px;
-  float: right;
+  max-width: 600px;
+  float: left;
   background-position: top;
   background-size: cover;
   width: 100%;
@@ -1182,6 +1200,45 @@ ul.children {
   opacity: 1;
 }
 
+.category-hero-view-all {
+  max-width: 300px;
+  float: right;
+  height: 245px;
+  background-color: #4c4034;
+  width: 290px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.category-hero-view-all:hover {
+  background-color: #251d19;
+}
+
+.category-hero-sale {
+  max-width: 300px;
+  float: right;
+  height: 245px;
+  background-color: #C20000;
+  width: 290px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.category-hero-sale:hover {
+  background-color: #E70000;
+}
+
+.category-hero-right-titles {
+  color: white;
+  font-size: 24px;
+}
+
 body.woocommerce-page ul.products {
   float: right;
   max-width: 900px;
@@ -1209,11 +1266,24 @@ body.woocommerce-page ul.products {
   border-bottom: none;
 }
 
+a.button-details.button {
+  display: none;
+}
+
 .description_after_product_loop {
   clear: both;
   text-align: center;
   border-bottom: 1px solid #d8dbdc;
   padding-bottom: 20px;
+}
+
+ul.page-numbers {
+  width: 100%;
+}
+
+.page-numbers {
+  width: 30px;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1150px) {
