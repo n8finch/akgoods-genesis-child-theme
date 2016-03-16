@@ -1,6 +1,14 @@
 #Changelog
 started  Feb. 23, 2016
 
+<hr/>
+##**WOOCOMMERCE TEMPLATES WITH CUSTOMIZATIONS**##
+If WooCommerce templates need to be updated, BEFORE YOU UPDATE, please make sure you preserve the customizations on the following templates:
+
+- `single-product.php`
+
+<hr/>
+
 
 March. 3, 2016
 - Removed ```<div itemprop="description">
