@@ -7411,6 +7411,93 @@ div.woocommerce-tabs.wc-tabs-wrapper {
   display: none;
 }
 
+.materials-page-repeater-outer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+.materials-page-repeater-outer::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.materials-page-repeater-outer .materials-page-repeater-inner-2-col {
+  float: left;
+  display: block;
+  margin-right: 0.73174%;
+  width: 49.63413%;
+  max-width: 465px;
+  margin: 0 20px;
+}
+.materials-page-repeater-outer .materials-page-repeater-inner-2-col:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 1050px) {
+  .materials-page-repeater-outer .materials-page-repeater-inner-2-col {
+    float: left;
+    display: block;
+    margin-right: 0.73174%;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0;
+    padding: 0 10px;
+  }
+  .materials-page-repeater-outer .materials-page-repeater-inner-2-col:last-child {
+    margin-right: 0;
+  }
+}
+.materials-page-repeater-outer .materials-page-repeater-inner-3-col {
+  float: left;
+  display: block;
+  margin-right: 0.73174%;
+  width: 32.84551%;
+  max-width: 300px;
+  margin: 0 20px;
+}
+.materials-page-repeater-outer .materials-page-repeater-inner-3-col:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 1050px) {
+  .materials-page-repeater-outer .materials-page-repeater-inner-3-col {
+    float: left;
+    display: block;
+    margin-right: 0.73174%;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0;
+    padding: 0 10px;
+  }
+  .materials-page-repeater-outer .materials-page-repeater-inner-3-col:last-child {
+    margin-right: 0;
+  }
+}
+.materials-page-repeater-outer .materials-page-repeater-inner-4-col {
+  float: left;
+  display: block;
+  margin-right: 0.73174%;
+  width: 24.45119%;
+  max-width: 230px;
+  margin: 0 10px;
+}
+.materials-page-repeater-outer .materials-page-repeater-inner-4-col:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 1050px) {
+  .materials-page-repeater-outer .materials-page-repeater-inner-4-col {
+    float: left;
+    display: block;
+    margin-right: 0.73174%;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0;
+    padding: 0 10px;
+  }
+  .materials-page-repeater-outer .materials-page-repeater-inner-4-col:last-child {
+    margin-right: 0;
+  }
+}
+
 .site-footer {
   background-color: #aaaaaa;
   color: #fff;

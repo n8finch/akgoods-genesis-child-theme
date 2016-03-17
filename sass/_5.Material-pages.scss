@@ -1,0 +1,45 @@
+.materials-page-repeater-outer {
+  @include outer-container;
+  $mobile: new-breakpoint(max-width 1050px 12);
+  text-align: left;
+
+  .materials-page-repeater-inner-2-col {
+    @include span-columns(6);
+    max-width: 465px;
+    margin: 0 20px;
+
+    @include media($mobile) {
+      @include span-columns(12);
+      max-width: 1000px;
+      margin: 0;
+      padding: 0 10px;
+    }
+  }
+
+  .materials-page-repeater-inner-3-col {
+    @include span-columns(4);
+    max-width: 300px;
+    margin: 0 20px;
+
+    @include media($mobile) {
+      @include span-columns(12);
+      max-width: 1000px;
+      margin: 0;
+      padding: 0 10px;
+    }
+  }
+
+  .materials-page-repeater-inner-4-col {
+    @include span-columns(3);
+    max-width: 230px;
+    margin: 0 10px;
+
+    @include media($mobile) {
+      @include span-columns(12);
+      max-width: 1000px;
+      margin: 0;
+      padding: 0 10px;
+    }
+  }
+
+}
