@@ -1,0 +1,31 @@
+.gallery-page-outer {
+  @include outer-container;
+  $mobile: new-breakpoint(max-width 1050px 12);
+  text-align: left;
+  margin: 0;
+  margin-bottom: 20px;
+
+  .master-slider-parent {
+    @include span-columns(9);
+    @include media($mobile) {
+      @include span-columns(12);
+      max-width: 1000px;
+      margin: 0;
+      padding: 0 10px;
+    }
+  }
+
+  .gallery-top-right-text {
+    @include span-columns(3);
+    @include media($mobile) {
+      @include span-columns(12);
+      max-width: 1000px;
+      margin: 10px 0 0;
+      padding: 0 10px;
+    }
+  }
+}
+
+.gallery-main-content {
+
+}
