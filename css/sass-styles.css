@@ -472,7 +472,8 @@ picture {
 }
 .subheader-area .hover-tile-outer {
   height: 75px;
-  margin: 0 7px;
+  margin: 0 2px;
+  width: 40%;
 }
 .subheader-area .hover-tile-outer .hover-tile-container {
   height: 75px;
@@ -600,11 +601,6 @@ li#primary-search-box.nav-custom-search.menu-item {
   margin-bottom: 1.5;
   margin: 0 7px;
   text-align: center;
-}
-@media screen and (min-width: 40em) {
-  .hover-tile-outer {
-    width: 40%;
-  }
 }
 .hover-tile-outer h3 {
   color: #ffffff;
@@ -1072,8 +1068,8 @@ blockquote.easy-testimonial {
   }
 
   #mainpage-top-center {
-    margin-top: 35px;
-    margin-bottom: 30px;
+    margin-top: 65px;
+    margin-bottom: 0;
   }
 
   #mainpage-top-right .top-side-by-side-section {

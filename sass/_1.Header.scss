@@ -5,7 +5,8 @@
 
   .hover-tile-outer {
     height: 75px;
-    margin: 0 7px;
+    margin: 0 2px;
+    width: 40%;
 
     .hover-tile-container {
       height: 75px;
@@ -146,7 +147,7 @@ li#primary-search-box.nav-custom-search.menu-item {
   text-align: center;
 
   @include media($medium-screen) {
-    width: 40%;
+    //width: 40%;
   }
 
   h3 {
