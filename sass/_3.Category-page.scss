@@ -281,3 +281,12 @@ ul.page-numbers {
   }
 
 }
+
+@media only screen and (max-width: 699) {
+
+
+
+  body.woocommerce-page ul.products li.product {
+    width: 300px;
+  }
+}

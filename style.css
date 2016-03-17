@@ -3,7 +3,7 @@
 	Description: Jessica is a flexible WordPress eCommerce theme that lets you pick from three different eCommerce plugins. The theme is pre-styled for WooCommerce, iThemes Exchange, and WP e-Commerce. You pick the store plugin that's right for you! By Web Savvy Marketing on the <a href="http://web-savvy-marketing.com/go/studiopress/">Genesis framework</a>.
 	Author: Web Savvy Marketing
 	Author URI: http://www.web-savvy-marketing.com/
-	Version: 1.2.11
+	Version: 1.2.12
 	Template: genesis
 
 	Copyright 2014 - Web Savvy Marketing
@@ -6871,7 +6871,6 @@ li#primary-search-box.nav-custom-search.menu-item {
 }
 
 #mainpage-top-center {
-  width: 100%;
   flex-grow: 1;
 }
 #mainpage-top-center .hover-tile-container {
@@ -7051,6 +7050,54 @@ blockquote.easy-testimonial {
 @media screen and (max-width: 699px) {
   .hover-tile-outer {
     width: 100%;
+  }
+
+  .site-header .wrap {
+    padding: 20px 5px 20px;
+  }
+
+  .nav-primary .genesis-nav-menu .sub-menu a {
+    background-color: transparent;
+  }
+
+  #mainpage-top-center {
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+
+  #mainpage-top-right .top-side-by-side-section {
+    margin-bottom: 100px;
+  }
+
+  .hover-tile-hidden {
+    display: none;
+  }
+
+  .category-images-homepage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .top-border-homepage-sections {
+    border: none !important;
+  }
+
+  div.main-page-container-heading {
+    right: 0 !important;
+    top: -20px;
+  }
+  div.main-page-container-heading h4 {
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+  }
+
+  #featured-project-galleries-section {
+    padding-top: 60px;
+  }
+
+  div#home-page-featured-posts {
+    margin-top: 40px;
   }
 }
 .start_sorting_container {

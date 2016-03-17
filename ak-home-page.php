@@ -69,7 +69,7 @@ function main_page_top_section() {
 			</div>
 
 			<!-- Top Center Section -->
-			<div class="main-page-col-third">
+			<div class="main-page-col-third" id="mainpage-top-center">
 				<a href="http://akgoods.dev/shop/fireplaces-mantels/"><div class="hover-tile-outer" id="mainpage-top-center" style="background-image: url(https://www.akgoods.com/wp-content/uploads/section-5-fireplaces-middle12.jpg);">
 				  <div class="hover-tile-container">
 				    <h3 class="hide-title-on-hover" id="top-center-title">Fireplace Mantels</h3>

@@ -1,6 +1,5 @@
 //Main Layouts
 
-
 .home .site-inner {
   padding-top: 10px;
 }
@@ -66,14 +65,12 @@
     }
   }
 
-
   .main-page-container-heading {
     text-align: center;
 
   }
 
 }
-
 
 //Main Page Top Section
 
@@ -83,7 +80,6 @@
   display: flex;
   flex-direction: column;
   height: 400px;
-
 
   .hover-tile-outer {
     width: 100%;
@@ -104,7 +100,7 @@
 }
 
 #mainpage-top-center {
-  width: 100%;
+  //width: 100%;
   flex-grow: 1;
 
   .hover-tile-container {
@@ -153,7 +149,7 @@ h3.yellow-text {
 //Top Section Titles
 
 #top-left-title,
-#bottom-right-title{
+#bottom-right-title {
   padding-top: 35%;
   //hover: 25%
 }
@@ -171,7 +167,6 @@ h3.yellow-text {
   //hover: 45%
 }
 
-
 //Border Sections
 
 .top-border-homepage-sections {
@@ -179,8 +174,6 @@ h3.yellow-text {
   margin-top: 40px;
   padding-top: 40px;
   position: relative;
-
-
 
   .main-page-container-heading {
     top: -20px;
@@ -191,7 +184,6 @@ h3.yellow-text {
   }
 
 }
-
 
 //Main Page Trade Discount Section
 
@@ -287,16 +279,9 @@ h3.yellow-text {
   text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
 }
 
-
 //Main Page Home Design and Decor Section
 
-
-
-
 //Main Page Featured Project Galleries Section
-
-
-
 
 //Main Page Blog Post and Testimonials Section
 
@@ -313,11 +298,9 @@ h3.yellow-text {
   }
 }
 
-
 img.entry-image.attachment-post {
   border-radius: 100%;
 }
-
 
 div#home-page-featured-posts {
   padding-top: 20px;
@@ -328,9 +311,59 @@ blockquote.easy-testimonial {
   padding: 0;
 }
 
-
 @media screen and (max-width: 699px) {
   .hover-tile-outer {
     width: 100%;
+  }
+
+  .site-header .wrap {
+    padding: 20px 5px 20px;
+  }
+
+  .nav-primary .genesis-nav-menu .sub-menu a {
+    background-color: transparent;
+  }
+
+  #mainpage-top-center {
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+
+  #mainpage-top-right {
+    .top-side-by-side-section {
+      margin-bottom: 100px;
+    }
+  }
+
+  .hover-tile-hidden {
+    display: none;
+  }
+
+  .category-images-homepage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .top-border-homepage-sections {
+    border: none !important;
+  }
+
+  div.main-page-container-heading {
+    right: 0 !important;
+    top: -20px;
+
+    h4 {
+      font-size: 22px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  #featured-project-galleries-section {
+    padding-top: 60px;
+  }
+
+  div#home-page-featured-posts {
+    margin-top: 40px;
   }
 }
