@@ -27,9 +27,7 @@ section.widget.woocommerce.widget_product_categories {
     h4.widgettitle.widget-title {
       font-size: 15px;
       letter-spacing: 0;
-      padding: 10px;
-      background-color: #EEEDED;
-      border: 1px solid #cccccc;
+      padding: 5px 0;
     }
 
     ul.product-categories {
@@ -37,16 +35,10 @@ section.widget.woocommerce.widget_product_categories {
       letter-spacing: 0;
 
       li.cat-item {
-        padding: 10px;
-        border-left: 1px solid #cccccc;
-        border-right: 1px solid #cccccc;
-        border-top: 1px dotted #cccccc;
-        border-bottom: 1px dotted #cccccc;
+        border-bottom: 1px solid #cccccc;
+        padding: 5px 0;
       }
 
-      li.cat-item:last-of-type {
-        border-bottom: 1px solid #cccccc;
-      }
     }
   }
 }
@@ -60,9 +52,7 @@ section.widget.widget_nav_menu {
     h4.widgettitle.widget-title {
     font-size: 15px;
     letter-spacing: 0;
-    padding: 10px;
-    background-color: #EEEDED;
-    border: 1px solid #cccccc;
+    padding: 5px 0;
     }
 
     div.menu-useful-links-container {
@@ -72,16 +62,11 @@ section.widget.widget_nav_menu {
         letter-spacing: 0;
 
         li.menu-item {
-          padding: 10px;
-          border-left: 1px solid #cccccc;
-          border-right: 1px solid #cccccc;
-          border-top: 1px dotted #cccccc;
-          border-bottom: 1px dotted #cccccc;
-        }
-
-        li.menu-item:last-of-type {
+          padding: 5px 0;
           border-bottom: 1px solid #cccccc;
         }
+
+
       }
     }
   }

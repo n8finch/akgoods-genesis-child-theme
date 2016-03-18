@@ -401,7 +401,7 @@ picture {
  ---------------------------*/
 body {
   color: #333;
-  font-family: "Source Serif Pro", serif;
+  font-family: "Lato", serif;
   font-size: 15px;
   line-height: 1.5;
 }
@@ -630,7 +630,7 @@ li#primary-search-box.nav-custom-search.menu-item {
   padding: 1.5em;
 }
 .hover-tile-outer .hover-tile-hidden {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.75);
   border: 2px solid #555555;
 }
 .hover-tile-outer .hover-tile-hidden p {
@@ -902,6 +902,10 @@ div.hover-tile-outer.main-page-col-half.right {
 
 .hover-tile-outer .hover-tile-hidden {
   border: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
 .hover-tile-outer .hover-tile-container {
@@ -1130,23 +1134,15 @@ blockquote.easy-testimonial {
 section.widget.woocommerce.widget_product_categories .widget-wrap h4.widgettitle.widget-title {
   font-size: 15px;
   letter-spacing: 0;
-  padding: 10px;
-  background-color: #EEEDED;
-  border: 1px solid #cccccc;
+  padding: 5px 0;
 }
 section.widget.woocommerce.widget_product_categories .widget-wrap ul.product-categories {
   font-size: 13px;
   letter-spacing: 0;
 }
 section.widget.woocommerce.widget_product_categories .widget-wrap ul.product-categories li.cat-item {
-  padding: 10px;
-  border-left: 1px solid #cccccc;
-  border-right: 1px solid #cccccc;
-  border-top: 1px dotted #cccccc;
-  border-bottom: 1px dotted #cccccc;
-}
-section.widget.woocommerce.widget_product_categories .widget-wrap ul.product-categories li.cat-item:last-of-type {
   border-bottom: 1px solid #cccccc;
+  padding: 5px 0;
 }
 
 section.widget.widget_nav_menu {
@@ -1155,22 +1151,14 @@ section.widget.widget_nav_menu {
 section.widget.widget_nav_menu .widget-wrap h4.widgettitle.widget-title {
   font-size: 15px;
   letter-spacing: 0;
-  padding: 10px;
-  background-color: #EEEDED;
-  border: 1px solid #cccccc;
+  padding: 5px 0;
 }
 section.widget.widget_nav_menu .widget-wrap div.menu-useful-links-container ul#menu-useful-links {
   font-size: 13px;
   letter-spacing: 0;
 }
 section.widget.widget_nav_menu .widget-wrap div.menu-useful-links-container ul#menu-useful-links li.menu-item {
-  padding: 10px;
-  border-left: 1px solid #cccccc;
-  border-right: 1px solid #cccccc;
-  border-top: 1px dotted #cccccc;
-  border-bottom: 1px dotted #cccccc;
-}
-section.widget.widget_nav_menu .widget-wrap div.menu-useful-links-container ul#menu-useful-links li.menu-item:last-of-type {
+  padding: 5px 0;
   border-bottom: 1px solid #cccccc;
 }
 
