@@ -70,7 +70,7 @@ get_header( 'shop' ); ?>
 		$cat = $wp_query->query['product_cat']; //gets current product's category
 
 		$args = array(
-			'posts_per_page' => 4,
+			'posts_per_page' => 3,
 			'product_cat'    => $cat,
 			'post_type'      => 'product',
 			'orderby'        => 'rand',

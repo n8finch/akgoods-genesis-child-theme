@@ -1,3 +1,16 @@
+h1.product_title.entry-title {
+  font-size: 22px;
+}
+
+.woocommerce-breadcrumb {
+  margin: 1em 0 2em;
+  font-family: 'Playfair Display', serif;
+}
+
+td.label {
+
+}
+
 .woocommerce div.product {
   margin-bottom: 0;
   position: relative;
@@ -24,6 +37,10 @@ body.woocommerce-page div.product div.images img, body.woocommerce-page #content
   border: none;
 }
 
+.woocommerce div.product form.cart table td {
+  padding: 0;
+}
+
 .social-compare-wishlist-section {
   text-align: center;
   margin: 0 20px;
@@ -39,6 +56,7 @@ body.woocommerce-page div.product div.images img, body.woocommerce-page #content
 
   .fa {
     margin: 10px;
+    font-size: 20px;
   }
 }
 
@@ -62,6 +80,11 @@ body.woocommerce-page div.product div.images img, body.woocommerce-page #content
   //border-bottom: 1px solid #333333;
   padding: 10px 0;
   margin: 5px;
+
+  h3 {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
 }
 
 .fa-float-right {
@@ -75,6 +98,10 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
 
 .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover {
   background-color: #777777 !important;
+}
+
+.product_meta {
+  display: none;
 }
 
 #upsell-product-space {
@@ -100,8 +127,8 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
     @include outer-container;
 
     .you-may-also-like-item {
-      @include span-columns(3);
-      margin: 0 5px;
+      @include span-columns(4);
+      margin: 0;
 
       .you-may-also-like-images {
         height: 200px;
