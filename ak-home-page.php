@@ -15,24 +15,45 @@ add_action( 'genesis_before_loop', 'main_page_blog_post_and_testimonials_section
 
 function main_page_top_section() {
 
-	$top_left_column_category_slug          = get_field( 'top_left_column_category_slug' );
-	$bottom_left_left_column_category_slug  = get_field( 'bottom_left_left_column_category_slug' );
-	$bottom_right_left_column_category_slug = get_field( 'bottom_right_left_column_category_slug' );
-	$center_column_category_slug            = get_field( 'center_column_category_slug' );
-	$top_left_right_column_category_slug    = get_field( 'top_left_right_column_category_slug' );
-	$top_right_right_column_category_slug   = get_field( 'top_right_right_column_category_slug' );
-	$bottom_right_column_category_slug      = get_field( 'bottom_right_column_category_slug' );
+	$top_left_column_category_image = get_field( 'top_left_column_category_image' );
+	$top_left_column_category_title = get_field( 'top_left_column_category_title' );
+	$top_left_column_category_link  = get_field( 'top_left_column_category_link' );
+
+	$bottom_left_left_column_category_image = get_field( 'bottom_left_left_column_category_image' );
+	$bottom_left_left_column_category_title = get_field( 'bottom_left_left_column_category_title' );
+	$bottom_left_left_column_category_link  = get_field( 'bottom_left_left_column_category_link' );
+
+	$bottom_left_right_column_category_image = get_field( 'bottom_left_right_column_category_image' );
+	$bottom_left_right_column_category_title = get_field( 'bottom_left_right_column_category_title' );
+	$bottom_left_right_column_category_link  = get_field( 'bottom_left_right_column_category_link' );
+
+	$center_column_category_image = get_field( 'center_column_category_image' );
+	$center_column_category_title = get_field( 'center_column_category_title' );
+	$center_column_category_link  = get_field( 'center_column_category_link' );
+
+	$top_right_left_column_category_image = get_field( 'top_right_left_column_category_image' );
+	$top_right_left_column_category_title = get_field( 'top_right_left_column_category_title' );
+	$top_right_left_column_category_link  = get_field( 'top_right_left_column_category_link' );
+
+	$top_right_right_column_category_image = get_field( 'top_right_right_column_category_image' );
+	$top_right_right_column_category_title = get_field( 'top_right_right_column_category_title' );
+	$top_right_right_column_category_link  = get_field( 'top_right_right_column_category_link' );
+
+	$bottom_right_column_category_image = get_field( 'bottom_right_column_category_image' );
+	$bottom_right_column_category_title = get_field( 'bottom_right_column_category_title' );
+	$bottom_right_column_category_link  = get_field( 'bottom_right_column_category_link' );
+
 
 	echo '<div class="top-main-page-container">
 
 			<!-- Top Left Section -->
 			<div class="main-page-col-third" id="mainpage-top-left">
-				<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url(https://www.akgoods.com/wp-content/uploads/home-bath.jpg);">
-				  <a href="http://akgoods.dev/shop/bathtubs/"><div class="hover-tile-container">
-				  		<h3 class="hide-title-on-hover" id="top-left-title">Bathtubs</h3>
+				<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url('.$top_left_column_category_image .');">
+				  <a href="'.$top_left_column_category_link.'"><div class="hover-tile-container">
+				  		<h3 class="hide-title-on-hover" id="top-left-title">'.$top_left_column_category_title.'</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
-				      <h3 class="white-category-title-text">Bathtubs</h3>
+				      <h3 class="white-category-title-text">'.$top_left_column_category_title.'</h3>
 				      <h3 class="yellow-text">Shop Now</h3>
 				      <!--<p>See our special pricing and available stock here.</p>-->
 				    </div>
@@ -40,24 +61,24 @@ function main_page_top_section() {
 				</div>
 
 				<div class="top-side-by-side-section">
-					<div class="hover-tile-outer main-page-col-half left" style="background-image: url(https://www.akgoods.com/wp-content/uploads/home-accents.jpg);">
-					  <a href="http://akgoods.dev/shop/home-accents/"><div class="hover-tile-container">
-					  	<h3 class="hide-title-on-hover" id="top-quarter-left-left-title">Home Accents</h3>
+					<div class="hover-tile-outer main-page-col-half left" style="background-image: url('.$bottom_left_left_column_category_image.');">
+					  <a href="'.$bottom_left_left_column_category_link.'"><div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover" id="top-quarter-left-left-title">'.$bottom_left_left_column_category_title.'</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
-						  <h3 class="white-category-title-text">Home Accents</h3>
+						  <h3 class="white-category-title-text">'.$bottom_left_left_column_category_title.'</h3>
 					      <h3 class="yellow-text">Shop Now</h3>
 					      <!--<p>See our special pricing and available stock here.</p>-->
 					    </div>
 					  </div></a>
 					</div>
 
-					<div class="hover-tile-outer main-page-col-half right" style="background-image: url(https://www.akgoods.com/wp-content/uploads/770-772-fire-pit-with-773-780-spark-screen-buring-wood-glamour-2.jpg);">
-					  <a href="http://akgoods.dev/shop/outdoor-products/"><div class="hover-tile-container">
-					  	<h3 class="hide-title-on-hover" id="top-quarter-left-right-title">Outdoor</h3>
+					<div class="hover-tile-outer main-page-col-half right" style="background-image: url('.$bottom_left_right_column_category_image.');">
+					  <a href="'.$bottom_left_right_column_category_link.'"><div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover" id="top-quarter-left-right-title">'.$bottom_left_right_column_category_title.'</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
-					      <h3 class="white-category-title-text">Outdoor</h3>
+					      <h3 class="white-category-title-text">'.$bottom_left_right_column_category_title.'</h3>
 					      <h3 class="yellow-text">Shop Now</h3>
 					      <!--<p>See our special pricing and available stock here.</p>-->
 					    </div>
@@ -70,12 +91,12 @@ function main_page_top_section() {
 
 			<!-- Top Center Section -->
 			<div class="main-page-col-third" id="mainpage-top-center">
-				<a href="http://akgoods.dev/shop/fireplaces-mantels/"><div class="hover-tile-outer" id="mainpage-top-center" style="background-image: url(https://www.akgoods.com/wp-content/uploads/section-5-fireplaces-middle12.jpg);">
+				<a href="'.$center_column_category_link.'"><div class="hover-tile-outer" id="mainpage-top-center" style="background-image: url('.$center_column_category_image.');">
 				  <div class="hover-tile-container">
-				    <h3 class="hide-title-on-hover" id="top-center-title">Fireplace Mantels</h3>
+				    <h3 class="hide-title-on-hover" id="top-center-title">'.$center_column_category_title.'</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
-				      <h3 class="white-category-title-text">Fireplace Mantels</h3>
+				      <h3 class="white-category-title-text">'.$center_column_category_title.'</h3>
 				      <h3 class="yellow-text">Shop Now</h3>
 				      <!--<p>See our special pricing and available stock here.</p>-->
 				    </div>
@@ -88,24 +109,24 @@ function main_page_top_section() {
 			<div class="main-page-col-third" id="mainpage-top-right">
 
 				<div class="top-side-by-side-section">
-					<div class="hover-tile-outer main-page-col-half left" style="background-image: url(https://www.akgoods.com/wp-content/uploads/custom-kitchen-hoods-02-2.jpg);">
-					  <a href="http://akgoods.dev/shop/kitchen-range-hoods/"><div class="hover-tile-container">
-					  	<h3 class="hide-title-on-hover" id="top-quarter-right-left-title">Kitchen Range Hoods</h3>
+					<div class="hover-tile-outer main-page-col-half left" style="background-image: url('.$top_right_left_column_category_image.');">
+					  <a href="'.$top_right_left_column_category_link.'"><div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover" id="top-quarter-right-left-title">'.$top_right_left_column_category_title.'</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
-					      <h3 class="white-category-title-text">Kitchen Range Hoods</h3>
+					      <h3 class="white-category-title-text">'.$top_right_left_column_category_title.'</h3>
 					      <h3 class="yellow-text">Shop Now</h3>
 					      <!--<p>See our special pricing and available stock here.</p>-->
 					    </div>
 					  </div></a>
 					</div>
 
-					<div class="hover-tile-outer main-page-col-half right" style="background-image: url(https://www.akgoods.com/wp-content/uploads/bronze.jpg);">
-					  <a href="http://akgoods.dev/shop/bronze-and-copper/"><div class="hover-tile-container">
-					  	<h3 class="hide-title-on-hover" id="top-quarter-right-right-title">Bronze & Copper</h3>
+					<div class="hover-tile-outer main-page-col-half right" style="background-image: url('.$top_right_right_column_category_image.');">
+					  <a href="'.$top_right_right_column_category_link.'"><div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover" id="top-quarter-right-right-title">'.$top_right_right_column_category_title.'</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
-					      <h3 class="white-category-title-text">Bronze & Copper</h3>
+					      <h3 class="white-category-title-text">'.$top_right_right_column_category_title.'</h3>
 					      <h3 class="yellow-text">Shop Now</h3>
 					      <!--<p>See our special pricing and available stock here.</p>-->
 					    </div>
@@ -113,12 +134,12 @@ function main_page_top_section() {
 					</div>
 				</div>
 
-				<div class="hover-tile-outer" style="background-image: url(https://www.akgoods.com/wp-content/uploads/section-5-architectural-stone11.jpg);">
-				  <a href="http://akgoods.dev/shop/architectural-stone/"><div class="hover-tile-container">
-				  	<h3 class="hide-title-on-hover" id="bottom-right-title">Architechtural Stone</h3>
+				<div class="hover-tile-outer" style="background-image: url('.$bottom_right_column_category_image.');">
+				  <a href="'.$bottom_right_column_category_link.'"><div class="hover-tile-container">
+				  	<h3 class="hide-title-on-hover" id="bottom-right-title">'.$bottom_right_column_category_title.'</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
-				      <h3 class="white-category-title-text">Architechtural Stone</h3>
+				      <h3 class="white-category-title-text">'.$bottom_right_column_category_title.'</h3>
 				      <h3 class="yellow-text">Shop Now</h3>
 				      <!--<p>See our special pricing and available stock here.</p>-->
 				    </div>
@@ -134,62 +155,62 @@ function main_page_top_section() {
 
 function main_page_trade_discount_section() {
 
-	$trade_discount_left_title     = get_field( 'trade_discount_left_title' );
-	$trade_discount_left_text_area = get_field( 'trade_discount_left_text_area' );
-	$box_1_image_background        = get_field( 'box_1_image_background' );
-	$box_1_icon                    = get_field( 'box_1_icon' );
-	$box_1_title                   = get_field( 'box_1_title' );
-	$box_1_text_area               = get_field( 'box_1_text_area' );
-	$box_1_link                    = get_field( 'box_1_link' );
-	$box_2_image_background        = get_field( 'box_2_image_background' );
-	$box_2_icon                    = get_field( 'box_2_icon' );
-	$box_2_title                   = get_field( 'box_2_title' );
-	$box_2_text_area               = get_field( 'box_2_text_area' );
-	$box_2_link                    = get_field( 'box_2_link' );
-	$box_3_image_background        = get_field( 'box_3_image_background' );
-	$box_3_icon                    = get_field( 'box_3_icon' );
-	$box_3_title                   = get_field( 'box_3_title' );
-	$box_3_text_area               = get_field( 'box_3_text_area' );
-	$box_3_link                    = get_field( 'box_3_link' );
+	$box_1_image_background = get_field( 'box_1_image_background' );
+	$box_1_icon             = get_field( 'box_1_icon' );
+	$box_1_title            = get_field( 'box_1_title' );
+	$box_1_text_area        = get_field( 'box_1_text_area' );
+	$box_1_link             = get_field( 'box_1_link' );
+	$box_2_image_background = get_field( 'box_2_image_background' );
+	$box_2_icon             = get_field( 'box_2_icon' );
+	$box_2_title            = get_field( 'box_2_title' );
+	$box_2_text_area        = get_field( 'box_2_text_area' );
+	$box_2_link             = get_field( 'box_2_link' );
+	$box_3_image_background = get_field( 'box_3_image_background' );
+	$box_3_icon             = get_field( 'box_3_icon' );
+	$box_3_title            = get_field( 'box_3_title' );
+	$box_3_text_area        = get_field( 'box_3_text_area' );
+	$box_3_link             = get_field( 'box_3_link' );
+	$box_4_image_background = get_field( 'box_4_image_background' );
+	$box_4_icon             = get_field( 'box_4_icon' );
+	$box_4_title            = get_field( 'box_4_title' );
+	$box_4_text_area        = get_field( 'box_4_text_area' );
+	$box_4_link             = get_field( 'box_4_link' );
 
 
 	echo '<div class="top-main-page-container" id="trade-discount-section">
 
 
-					<a class="main-page-col-quarter" href="'.$box_1_link.'">
-						<div class="discount-section" id="discount-section-1" style="background-image: url('.$box_1_image_background.');">
-							<!--<span class="fa '.$box_1_icon.'"></span>-->
-							<h4>'.$box_1_title.'</h4>
-							<p>'.$box_1_text_area.'</p>
+					<a class="main-page-col-quarter" href="' . $box_1_link . '">
+						<div class="discount-section" id="discount-section-1" style="background-image: url(' . $box_1_image_background . ');">
+							<!--<span class="fa ' . $box_1_icon . '"></span>-->
+							<h4>' . $box_1_title . '</h4>
+							<p>' . $box_1_text_area . '</p>
 						</div>
 					</a>
 
-
-					<a class="main-page-col-quarter" href="'.$box_1_link.'">
-					<div class="discount-section" id="discount-section-1" style="background-image: url('.$box_1_image_background.');">
-						<!--<span class="fa '.$box_1_icon.'"></span>-->
-					<h4>'.$box_1_title.'</h4>
-					<p>'.$box_1_text_area.'</p>
+					<a class="main-page-col-quarter" href="' . $box_2_link . '">
+					<div class="discount-section" id="discount-section-2" style="background-image: url(' . $box_2_image_background . ');">
+					<!--<span class="fa ' . $box_2_icon . '"></span>-->
+					<h4>' . $box_2_title . '</h4>
+					<p>' . $box_2_text_area . '</p>
 					</div>
 					</a>
 
-					<a class="main-page-col-quarter" href="'.$box_2_link.'">
-					<div class="discount-section" id="discount-section-2" style="background-image: url('.$box_2_image_background.');">
-					<!--<span class="fa '.$box_2_icon.'"></span>-->
-					<h4>'.$box_2_title.'</h4>
-					<p>'.$box_2_text_area.'</p>
+					<a class="main-page-col-quarter" href="' . $box_3_link . '">
+					<div class="discount-section" id="discount-section-3" style="background-image: url(' . $box_3_image_background . ');">
+					<!--<span class="fa ' . $box_3_icon . '"></span>-->
+					<h4>' . $box_3_title . '</h4>
+					<p>' . $box_3_text_area . '</p>
 					</div>
 					</a>
-
-					<a class="main-page-col-quarter" href="'.$box_3_link.'">
-					<div class="discount-section" id="discount-section-3" style="background-image: url('.$box_3_image_background.');">
-					<!--<span class="fa '.$box_3_icon.'"></span>-->
-					<h4>'.$box_3_title.'</h4>
-					<p>'.$box_3_text_area.'</p>
+					
+					<a class="main-page-col-quarter" href="' . $box_4_link . '">
+					<div class="discount-section" id="discount-section-1" style="background-image: url(' . $box_4_image_background . ');">
+						<!--<span class="fa ' . $box_4_icon . '"></span>-->
+					<h4>' . $box_4_title . '</h4>
+					<p>' . $box_4_text_area . '</p>
 					</div>
 					</a>
-
-
 
 		  </div>';
 }
@@ -231,50 +252,48 @@ function main_page_ornamental_stone_products_section() {
 
 		  </div>';
 
-	$box_1_image_background_ss        = get_field( 'box_1_image_background_ss' );
-	$box_1_icon_ss                    = get_field( 'box_1_icon_ss' );
-	$box_1_title_ss                   = get_field( 'box_1_title_ss' );
-	$box_1_text_area_ss               = get_field( 'box_1_text_area_ss' );
-	$box_1_link_ss                    = get_field( 'box_1_link_ss' );
-	$box_2_image_background_ss        = get_field( 'box_2_image_background_ss' );
-	$box_2_icon_ss                    = get_field( 'box_2_icon_ss' );
-	$box_2_title_ss                   = get_field( 'box_2_title_ss' );
-	$box_2_text_area_ss               = get_field( 'box_2_text_area_ss' );
-	$box_2_link_ss                    = get_field( 'box_2_link_ss' );
-	$box_3_image_background_ss        = get_field( 'box_3_image_background_ss' );
-	$box_3_icon_ss                    = get_field( 'box_3_icon_ss' );
-	$box_3_title_ss                   = get_field( 'box_3_title_ss' );
-	$box_3_text_area_ss               = get_field( 'box_3_text_area_ss' );
-	$box_3_link_ss                    = get_field( 'box_3_link_ss' );
-
-
+	$box_1_image_background_ss = get_field( 'box_1_image_background_ss' );
+	$box_1_icon_ss             = get_field( 'box_1_icon_ss' );
+	$box_1_title_ss            = get_field( 'box_1_title_ss' );
+	$box_1_text_area_ss        = get_field( 'box_1_text_area_ss' );
+	$box_1_link_ss             = get_field( 'box_1_link_ss' );
+	$box_2_image_background_ss = get_field( 'box_2_image_background_ss' );
+	$box_2_icon_ss             = get_field( 'box_2_icon_ss' );
+	$box_2_title_ss            = get_field( 'box_2_title_ss' );
+	$box_2_text_area_ss        = get_field( 'box_2_text_area_ss' );
+	$box_2_link_ss             = get_field( 'box_2_link_ss' );
+	$box_3_image_background_ss = get_field( 'box_3_image_background_ss' );
+	$box_3_icon_ss             = get_field( 'box_3_icon_ss' );
+	$box_3_title_ss            = get_field( 'box_3_title_ss' );
+	$box_3_text_area_ss        = get_field( 'box_3_text_area_ss' );
+	$box_3_link_ss             = get_field( 'box_3_link_ss' );
 
 
 	echo '<div class="top-main-page-container" id="shipping-section">
 
-			<a class="main-page-col-third" href="'.$box_1_link_ss.'">
-			<div class="shipping-section" style="background-image: url('.$box_1_image_background_ss.');">
-				<!--<span class="fa '.$box_1_icon_ss.'"></span>-->
-				<h4>'.$box_1_title_ss.'</h4>
-				<p>'.$box_1_text_area_ss.'</p>
+			<a class="main-page-col-third" href="' . $box_1_link_ss . '">
+			<div class="shipping-section" style="background-image: url(' . $box_1_image_background_ss . ');">
+				<!--<span class="fa ' . $box_1_icon_ss . '"></span>-->
+				<h4>' . $box_1_title_ss . '</h4>
+				<p>' . $box_1_text_area_ss . '</p>
 
 			</div>
 			</a>
 
-			<a class="main-page-col-third" href="'.$box_2_link_ss.'">
-			<div class="shipping-section" style="background-image: url('.$box_2_image_background_ss.');">
-				<!--<span class="fa '.$box_2_icon_ss.'"></span>-->
-				<h4>'.$box_2_title_ss.'</h4>
-				<p>'.$box_2_text_area_ss.'</p>
+			<a class="main-page-col-third" href="' . $box_2_link_ss . '">
+			<div class="shipping-section" style="background-image: url(' . $box_2_image_background_ss . ');">
+				<!--<span class="fa ' . $box_2_icon_ss . '"></span>-->
+				<h4>' . $box_2_title_ss . '</h4>
+				<p>' . $box_2_text_area_ss . '</p>
 
 			</div>
 			</a>
 
-			<a class="main-page-col-third" href="'.$box_3_link_ss.'">
-			<div class="shipping-section" style="background-image: url('.$box_3_image_background_ss.');">
-				<!--<span class="fa '.$box_3_icon_ss.'"></span>-->
-				<h4>'.$box_3_title_ss.'</h4>
-				<p>'.$box_3_text_area_ss.'</p>
+			<a class="main-page-col-third" href="' . $box_3_link_ss . '">
+			<div class="shipping-section" style="background-image: url(' . $box_3_image_background_ss . ');">
+				<!--<span class="fa ' . $box_3_icon_ss . '"></span>-->
+				<h4>' . $box_3_title_ss . '</h4>
+				<p>' . $box_3_text_area_ss . '</p>
 
 			</div>
 			</a>
