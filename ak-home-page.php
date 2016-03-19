@@ -48,12 +48,12 @@ function main_page_top_section() {
 
 			<!-- Top Left Section -->
 			<div class="main-page-col-third" id="mainpage-top-left">
-				<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url('.$top_left_column_category_image .');">
-				  <a href="'.$top_left_column_category_link.'"><div class="hover-tile-container">
-				  		<h3 class="hide-title-on-hover" id="top-left-title">'.$top_left_column_category_title.'</h3>
+				<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url(' . $top_left_column_category_image . ');">
+				  <a href="' . $top_left_column_category_link . '"><div class="hover-tile-container">
+				  		<h3 class="hide-title-on-hover" id="top-left-title">' . $top_left_column_category_title . '</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
-				      <h3 class="white-category-title-text">'.$top_left_column_category_title.'</h3>
+				      <h3 class="white-category-title-text">' . $top_left_column_category_title . '</h3>
 				      <h3 class="yellow-text">Shop Now</h3>
 				      <!--<p>See our special pricing and available stock here.</p>-->
 				    </div>
@@ -61,24 +61,24 @@ function main_page_top_section() {
 				</div>
 
 				<div class="top-side-by-side-section">
-					<div class="hover-tile-outer main-page-col-half left" style="background-image: url('.$bottom_left_left_column_category_image.');">
-					  <a href="'.$bottom_left_left_column_category_link.'"><div class="hover-tile-container">
-					  	<h3 class="hide-title-on-hover" id="top-quarter-left-left-title">'.$bottom_left_left_column_category_title.'</h3>
+					<div class="hover-tile-outer main-page-col-half left" style="background-image: url(' . $bottom_left_left_column_category_image . ');">
+					  <a href="' . $bottom_left_left_column_category_link . '"><div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover" id="top-quarter-left-left-title">' . $bottom_left_left_column_category_title . '</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
-						  <h3 class="white-category-title-text">'.$bottom_left_left_column_category_title.'</h3>
+						  <h3 class="white-category-title-text">' . $bottom_left_left_column_category_title . '</h3>
 					      <h3 class="yellow-text">Shop Now</h3>
 					      <!--<p>See our special pricing and available stock here.</p>-->
 					    </div>
 					  </div></a>
 					</div>
 
-					<div class="hover-tile-outer main-page-col-half right" style="background-image: url('.$bottom_left_right_column_category_image.');">
-					  <a href="'.$bottom_left_right_column_category_link.'"><div class="hover-tile-container">
-					  	<h3 class="hide-title-on-hover" id="top-quarter-left-right-title">'.$bottom_left_right_column_category_title.'</h3>
+					<div class="hover-tile-outer main-page-col-half right" style="background-image: url(' . $bottom_left_right_column_category_image . ');">
+					  <a href="' . $bottom_left_right_column_category_link . '"><div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover" id="top-quarter-left-right-title">' . $bottom_left_right_column_category_title . '</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
-					      <h3 class="white-category-title-text">'.$bottom_left_right_column_category_title.'</h3>
+					      <h3 class="white-category-title-text">' . $bottom_left_right_column_category_title . '</h3>
 					      <h3 class="yellow-text">Shop Now</h3>
 					      <!--<p>See our special pricing and available stock here.</p>-->
 					    </div>
@@ -91,12 +91,12 @@ function main_page_top_section() {
 
 			<!-- Top Center Section -->
 			<div class="main-page-col-third" id="mainpage-top-center">
-				<a href="'.$center_column_category_link.'"><div class="hover-tile-outer" id="mainpage-top-center" style="background-image: url('.$center_column_category_image.');">
+				<a href="' . $center_column_category_link . '"><div class="hover-tile-outer" id="mainpage-top-center" style="background-image: url(' . $center_column_category_image . ');">
 				  <div class="hover-tile-container">
-				    <h3 class="hide-title-on-hover" id="top-center-title">'.$center_column_category_title.'</h3>
+				    <h3 class="hide-title-on-hover" id="top-center-title">' . $center_column_category_title . '</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
-				      <h3 class="white-category-title-text">'.$center_column_category_title.'</h3>
+				      <h3 class="white-category-title-text">' . $center_column_category_title . '</h3>
 				      <h3 class="yellow-text">Shop Now</h3>
 				      <!--<p>See our special pricing and available stock here.</p>-->
 				    </div>
@@ -109,24 +109,24 @@ function main_page_top_section() {
 			<div class="main-page-col-third" id="mainpage-top-right">
 
 				<div class="top-side-by-side-section">
-					<div class="hover-tile-outer main-page-col-half left" style="background-image: url('.$top_right_left_column_category_image.');">
-					  <a href="'.$top_right_left_column_category_link.'"><div class="hover-tile-container">
-					  	<h3 class="hide-title-on-hover" id="top-quarter-right-left-title">'.$top_right_left_column_category_title.'</h3>
+					<div class="hover-tile-outer main-page-col-half left" style="background-image: url(' . $top_right_left_column_category_image . ');">
+					  <a href="' . $top_right_left_column_category_link . '"><div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover" id="top-quarter-right-left-title">' . $top_right_left_column_category_title . '</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
-					      <h3 class="white-category-title-text">'.$top_right_left_column_category_title.'</h3>
+					      <h3 class="white-category-title-text">' . $top_right_left_column_category_title . '</h3>
 					      <h3 class="yellow-text">Shop Now</h3>
 					      <!--<p>See our special pricing and available stock here.</p>-->
 					    </div>
 					  </div></a>
 					</div>
 
-					<div class="hover-tile-outer main-page-col-half right" style="background-image: url('.$top_right_right_column_category_image.');">
-					  <a href="'.$top_right_right_column_category_link.'"><div class="hover-tile-container">
-					  	<h3 class="hide-title-on-hover" id="top-quarter-right-right-title">'.$top_right_right_column_category_title.'</h3>
+					<div class="hover-tile-outer main-page-col-half right" style="background-image: url(' . $top_right_right_column_category_image . ');">
+					  <a href="' . $top_right_right_column_category_link . '"><div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover" id="top-quarter-right-right-title">' . $top_right_right_column_category_title . '</h3>
 					    <div class="hover-tile hover-tile-visible"></div>
 					    <div class="hover-tile hover-tile-hidden">
-					      <h3 class="white-category-title-text">'.$top_right_right_column_category_title.'</h3>
+					      <h3 class="white-category-title-text">' . $top_right_right_column_category_title . '</h3>
 					      <h3 class="yellow-text">Shop Now</h3>
 					      <!--<p>See our special pricing and available stock here.</p>-->
 					    </div>
@@ -134,12 +134,12 @@ function main_page_top_section() {
 					</div>
 				</div>
 
-				<div class="hover-tile-outer" style="background-image: url('.$bottom_right_column_category_image.');">
-				  <a href="'.$bottom_right_column_category_link.'"><div class="hover-tile-container">
-				  	<h3 class="hide-title-on-hover" id="bottom-right-title">'.$bottom_right_column_category_title.'</h3>
+				<div class="hover-tile-outer" style="background-image: url(' . $bottom_right_column_category_image . ');">
+				  <a href="' . $bottom_right_column_category_link . '"><div class="hover-tile-container">
+				  	<h3 class="hide-title-on-hover" id="bottom-right-title">' . $bottom_right_column_category_title . '</h3>
 				    <div class="hover-tile hover-tile-visible"></div>
 				    <div class="hover-tile hover-tile-hidden">
-				      <h3 class="white-category-title-text">'.$bottom_right_column_category_title.'</h3>
+				      <h3 class="white-category-title-text">' . $bottom_right_column_category_title . '</h3>
 				      <h3 class="yellow-text">Shop Now</h3>
 				      <!--<p>See our special pricing and available stock here.</p>-->
 				    </div>
@@ -219,6 +219,28 @@ function main_page_trade_discount_section() {
 //Main Page Ornamental Stone Products Section
 
 function main_page_ornamental_stone_products_section() {
+
+	$category_1_image_oss     = get_field( 'category_1_image_oss' );
+	$category_1_title_oss     = get_field( 'category_1_title_oss' );
+	$category_1_text_area_oss = get_field( 'category_1_text_area_oss' );
+	$category_1_link_oss      = get_field( 'category_1_link_oss' );
+
+	$category_2_image_oss     = get_field( 'category_2_image_oss' );
+	$category_2_title_oss     = get_field( 'category_2_title_oss' );
+	$category_2_text_area_oss = get_field( 'category_2_text_area_oss' );
+	$category_2_link_oss      = get_field( 'category_2_link_oss' );
+
+	$category_3_image_oss     = get_field( 'category_3_image_oss' );
+	$category_3_title_oss     = get_field( 'category_3_title_oss' );
+	$category_3_text_area_oss = get_field( 'category_3_text_area_oss' );
+	$category_3_link_oss      = get_field( 'category_3_link_oss' );
+
+	$category_4_image_oss     = get_field( 'category_4_image_oss' );
+	$category_4_title_oss     = get_field( 'category_4_title_oss' );
+	$category_4_text_area_oss = get_field( 'category_4_text_area_oss' );
+	$category_4_link_oss      = get_field( 'category_4_link_oss' );
+
+
 	echo '<div class="top-main-page-container top-border-homepage-sections">
 
 				<div class="main-page-container-heading">
@@ -226,27 +248,27 @@ function main_page_ornamental_stone_products_section() {
 				</div>
 
 			<div class="main-page-col-quarter">
-				<a href="https://www.akgoods.finchproserivces.com/shop/ornamental-stone/balustrades-ornamental-stone/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/balustrades.jpg"/></a>
-				<h4>Balustrades</h4>
-				<span>See our special pricing and available stock here.</span>
+				<a href="'.$category_1_link_oss.'"><img class="category-images-homepage" src="'.$category_1_image_oss.'"/></a>
+				<h4>'.$category_1_title_oss.'</h4>
+				<span>'.$category_1_text_area_oss.'</span>
 
 			</div>
 			<div class="main-page-col-quarter">
-				<a href="https://www.akgoods.finchproserivces.com/shop/ornamental-stone/columns-ornamental-stone/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/columns1.jpg"/></a>
-				<h4>Columns</h4>
-				<span>See our special pricing and available stock here.</span>
+				<a href="'.$category_2_link_oss.'"><img class="category-images-homepage" src="'.$category_2_image_oss.'"/></a>
+				<h4>'.$category_2_title_oss.'</h4>
+				<span>'.$category_2_text_area_oss.'</span>
 
 			</div>
 			<div class="main-page-col-quarter">
-				<a href="https://www.akgoods.finchproserivces.com/shop/ornamental-stone/fountains/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/fountain01.jpg"/></a>
-				<h4>Fountains</h4>
-				<span>See our special pricing and available stock here.</span>
+				<a href="'.$category_3_link_oss.'"><img class="category-images-homepage" src="'.$category_3_image_oss.'"/></a>
+				<h4>'.$category_3_title_oss.'</h4>
+				<span>'.$category_3_text_area_oss.'</span>
 
 			</div>
 			<div class="main-page-col-quarter">
-				<a href="https://www.akgoods.finchproserivces.com/shop/ornamental-stone/statues/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/children-moon-statue-carrera-marble.jpg"/></a>
-				<h4>Statues</h4>
-				<span>See our special pricing and available stock here.</span>
+				<a href="'.$category_4_link_oss.'"><img class="category-images-homepage" src="'.$category_4_image_oss.'"/></a>
+				<h4>'.$category_4_title_oss.'</h4>
+				<span>'.$category_4_text_area_oss.'</span>
 
 			</div>
 
@@ -305,6 +327,28 @@ function main_page_ornamental_stone_products_section() {
 //Main Page Home Design and Decor Section
 
 function main_page_home_design_and_decor_section() {
+
+	$category_1_image_hdd     = get_field( 'category_1_image_hdd' );
+	$category_1_title_hdd     = get_field( 'category_1_title_hdd' );
+	$category_1_text_area_hdd = get_field( 'category_1_text_area_hdd' );
+	$category_1_link_hdd      = get_field( 'category_1_link_hdd' );
+
+	$category_2_image_hdd     = get_field( 'category_2_image_hdd' );
+	$category_2_title_hdd     = get_field( 'category_2_title_hdd' );
+	$category_2_text_area_hdd = get_field( 'category_2_text_area_hdd' );
+	$category_2_link_hdd      = get_field( 'category_2_link_hdd' );
+
+	$category_3_image_hdd     = get_field( 'category_3_image_hdd' );
+	$category_3_title_hdd     = get_field( 'category_3_title_hdd' );
+	$category_3_text_area_hdd = get_field( 'category_3_text_area_hdd' );
+	$category_3_link_hdd      = get_field( 'category_3_link_hdd' );
+
+	$category_4_image_hdd     = get_field( 'category_4_image_hdd' );
+	$category_4_title_hdd     = get_field( 'category_4_title_hdd' );
+	$category_4_text_area_hdd = get_field( 'category_4_text_area_hdd' );
+	$category_4_link_hdd      = get_field( 'category_4_link_hdd' );
+
+
 	echo '<div class="top-main-page-container top-border-homepage-sections" id="home-design-decor-section">
 
 				<div class="main-page-container-heading">
@@ -312,27 +356,27 @@ function main_page_home_design_and_decor_section() {
 				</div>
 
 			<div class="main-page-col-quarter">
-				<a href="https://www.akgoods.finchproserivces.com/shop/homedesigndecor/bathroom/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/IMG_05491.jpeg"/></a>
-				<h4>Bathroom</h4>
-				<span>See our special pricing and available stock here.</span>
+				<a href="'.$category_1_link_hdd.'"><img class="category-images-homepage" src="'.$category_1_image_hdd.'"/></a>
+				<h4>'.$category_1_title_hdd.'</h4>
+				<span>'.$category_1_text_area_hdd.'</span>
 
 			</div>
 			<div class="main-page-col-quarter">
-				<a href="https://www.akgoods.finchproserivces.com/shop/homedesigndecor/copper_products/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/coppertub.jpg"/></a>
-				<h4>Copper Products</h4>
-				<span>See our special pricing and available stock here.</span>
+				<a href="'.$category_2_link_hdd.'"><img class="category-images-homepage" src="'.$category_2_image_hdd.'"/></a>
+				<h4>'.$category_2_title_hdd.'</h4>
+				<span>'.$category_2_text_area_hdd.'</span>
 
 			</div>
 			<div class="main-page-col-quarter">
-				<a href="https://www.akgoods.finchproserivces.com/shop/homedesigndecor/fireplaces_accessories/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/fireplaceaccessories2.jpg"/></a>
-				<h4>Fireplace Accessories</h4>
-				<span>See our special pricing and available stock here.</span>
+				<a href="'.$category_3_link_hdd.'"><img class="category-images-homepage" src="'.$category_3_image_hdd.'"/></a>
+				<h4>'.$category_3_title_hdd.'</h4>
+				<span>'.$category_3_text_area_hdd.'</span>
 
 			</div>
 			<div class="main-page-col-quarter">
-				<a href="https://www.akgoods.finchproserivces.com/shop/homedesigndecor/kitchen/"><img class="category-images-homepage" src="https://www.akgoods.com/wp-content/uploads/2014/06/sub-cat-5.jpg"/></a>
-				<h4>Kitchen</h4>
-				<span>See our special pricing and available stock here.</span>
+				<a href="'.$category_4_link_hdd.'"><img class="category-images-homepage" src="'.$category_4_image_hdd.'"/></a>
+				<h4>'.$category_4_title_hdd.'</h4>
+				<span>'.$category_4_text_area_hdd.'</span>
 
 			</div>
 		  </div>';
