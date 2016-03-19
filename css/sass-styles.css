@@ -1123,12 +1123,17 @@ blockquote.easy-testimonial {
 }
 
 .woocommerce .woocommerce-ordering select {
-  font-size: 12px;
+  font-size: 1em;
 }
 
 .shop-sidebar {
   max-width: 200px;
   float: left;
+}
+
+.gridlist-toggle {
+  display: initial !important;
+  margin-left: 40px !important;
 }
 
 section.widget.woocommerce.widget_product_categories .widget-wrap h4.widgettitle.widget-title {
