@@ -65,7 +65,7 @@ function jessica_do_before_header() {
 	}
 
 
-	echo '<div class="header-social-right">' .
+	echo '<div class="header-social-right" id="social-icons-header">' .
 	     '<a href="' . $pinterest . '" target="_blank"><span class="fa fa-pinterest"></span></a> ' .
 	     '<a href="' . $instagram . '" target="_blank"><span class="fa fa-instagram"></span></a> ' .
 	     '<a href="' . $houzz . '" target="_blank"><span class="fa fa-houzz"></span></a> ' .
@@ -144,18 +144,12 @@ function do_subheader_area() {
 	$link3      = genesis_get_option( 'wsm_subheader_link3', 'jessica-settings' );
 
 
-	echo '<div class="wrap"><div class="subheader-area wrap">';
+	echo '<div class="wrap desktop-only"><div class="subheader-area wrap">';
 
 	echo '	<div class="subheader-text-area">' .
 	     $leadtext .
 	     '</div>';
-//	echo '	<div class="hover-tile-outer" style="background-image: url('.$image1.');">
-//				<a href="' . $link1 . '"><div class="hover-tile-container">' . $hovertext1 . '
-//					<div class="hover-tile hover-tile-visible"></div>
-//					<div class="hover-tile hover-tile-hidden"><h3>' . $hovertext1 .
-//	     '</h3></div>
-//				</div></a>
-//			</div>';
+
 	echo '<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url(' . $image1 . ');">
 				  <a href="' . $link1 . '">
 				  <div class="hover-tile-container">
@@ -209,4 +203,15 @@ function ak_genesis_search_primary_nav_menu( $menu, stdClass $args ) {
 	$menu .= sprintf( '<li id="primary-search-box" class="nav-custom-search menu-item">%s</li>', __( genesis_search_form( $echo ) ) );
 
 	return $menu;
+}
+
+add_action( 'genesis_after_header', 'mobile_only_lead_text_subheader', 2);
+
+function mobile_only_lead_text_subheader() {
+
+	$leadtext   = genesis_get_option( 'wsm_subheader_leadtext', 'jessica-settings' );
+	
+	echo '	<div class="mobile-only mobile-lead-text">' .
+	     $leadtext .
+	     '</div>';
 }

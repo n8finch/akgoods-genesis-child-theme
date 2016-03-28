@@ -135,10 +135,18 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
   clear: both;
   text-align: center;
   width: 1100px;
+  border-top: 5px double #dddddd;
+  position: relative;
+  padding-top: 40px;
 
   h2 {
     font-size: 24px;
     font-weight: 400;
+    top: -30px;
+    position: absolute;
+    background: white;
+    margin: 0 37%;
+    padding: 15px;
   }
   ul.products {
     float: none;
@@ -153,10 +161,18 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
 .you-may-also-like-section {
   text-align: center;
   clear: both;
+  border-top: 5px double #dddddd;
+  position: relative;
+  padding-top: 40px;
 
   h2 {
     font-size: 24px;
     font-weight: 400;
+    top: -30px;
+    position: absolute;
+    background: white;
+    margin: 0 32%;
+    padding: 15px;
   }
 
   .you-may-also-like-items {

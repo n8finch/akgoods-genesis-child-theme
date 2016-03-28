@@ -82,8 +82,13 @@ div.footer-widgets-3 {
     }
   }
 }
-//
-//.widget-wrap > div > ul > li.menu-item .footer-widgets {
-//  border: none !important;
-//
-//}
+
+
+
+@media only screen and (max-width: 699px) {
+  .footer-widgets-1, .footer-widgets-2, .footer-widgets-3, .footer-widgets-4, .bottom-widgets .widget-area {
+    float: left;
+    margin: 0 10px 20px;
+    width: 40%;
+  }
+}

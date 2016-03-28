@@ -375,4 +375,34 @@ blockquote.easy-testimonial {
   div#home-page-featured-posts {
     margin-top: 40px;
   }
+
+
+
+  .subheader-area {
+    display: flex;
+    padding: 5px 0;
+    border: none;
+    border-top: 1px solid #cdd1d2;
+    padding-top: 15px;
+
+    .hover-tile-outer {
+      height: 75px;
+      margin: 2px 0;
+      width: 40%;
+
+      .hover-tile-container {
+        height: 75px;
+
+        h3 {
+          padding-top: 20px;
+          font-size: 22px;
+        }
+      }
+    }
+
+    .hover-tile-outer:last-of-type {
+      margin-right: 0px;
+    }
+  }
+
 }
