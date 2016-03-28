@@ -32,8 +32,8 @@ class Jessica_Settings extends Genesis_Admin_Boxes {
 		$menu_ops = array(
 			'submenu' => array(
 				'parent_slug' => 'genesis',
-				'page_title'  => __( 'Jessica Settings', 'jessica' ),
-				'menu_title'  => __( 'Jessica Settings', 'jessica' ),
+				'page_title'  => __( 'AK Goods Settings', 'jessica' ),
+				'menu_title'  => __( 'AK Goods Settings', 'jessica' ),
 				'capability' => 'manage_options',
 			)
 		);
@@ -107,7 +107,7 @@ class Jessica_Settings extends Genesis_Admin_Boxes {
 		add_meta_box('wsm_header_metabox', __( 'Header Info', 'jessica' ), array( $this, 'wsm_header_metabox' ), $this->pagehook, 'main', 'high');
 		add_meta_box('wsm_subheader_metabox', __( 'Sub Header', 'jessica' ), array( $this, 'wsm_subheader_metabox' ), $this->pagehook, 'main', 'high');
 		add_meta_box('wsm_footer_info_metabox', __( 'Footer Info', 'jessica' ), array( $this, 'wsm_footer_info_metabox' ), $this->pagehook, 'main', 'high');
-		add_meta_box('wsm_upate_notifications_metabox', __( 'Update Notifications', 'jessica' ), array( $this, 'wsm_upate_notifications_metabox' ), $this->pagehook, 'main', 'high');
+//		add_meta_box('wsm_upate_notifications_metabox', __( 'Update Notifications', 'jessica' ), array( $this, 'wsm_upate_notifications_metabox' ), $this->pagehook, 'main', 'high');
 
 	}
 
@@ -202,15 +202,15 @@ class Jessica_Settings extends Genesis_Admin_Boxes {
 	 * Update Notifications Metabox
 	 * @since 1.0.0
 	 */
-	function wsm_upate_notifications_metabox() {
-
-		echo '<p>' . __( 'Please check the box below if you wish to ignore/hide the theme update notification.<br/>Uncheck the box if you wish to be notified of theme updates.', 'jessica' ) . '</p>';
-
-		echo '<input type="checkbox" name="' . $this->get_field_name( 'wsm_ignore_updates' ) . '" id="' .  $this->get_field_id( 'wsm_ignore_updates' ) . '" value="1" ';
-		checked( 1, $this->get_field_value( 'wsm_ignore_updates' ) );
-		echo '/> <label for="' . $this->get_field_id( 'wsm_ignore_updates' ) . '">' . __( 'Ignore Theme Updates?', 'jessica' ) . '</label>';
-
-	}
+//	function wsm_upate_notifications_metabox() {
+//
+//		echo '<p>' . __( 'Please check the box below if you wish to ignore/hide the theme update notification.<br/>Uncheck the box if you wish to be notified of theme updates.', 'jessica' ) . '</p>';
+//
+//		echo '<input type="checkbox" name="' . $this->get_field_name( 'wsm_ignore_updates' ) . '" id="' .  $this->get_field_id( 'wsm_ignore_updates' ) . '" value="1" ';
+//		checked( 1, $this->get_field_value( 'wsm_ignore_updates' ) );
+//		echo '/> <label for="' . $this->get_field_id( 'wsm_ignore_updates' ) . '">' . __( 'Ignore Theme Updates?', 'jessica' ) . '</label>';
+//
+//	}
 
 }
 

@@ -1,7 +1,7 @@
 .subheader-area {
   display: flex;
-  border-bottom: 1px solid #cdd1d2;
-  padding: 0;
+  border: 1px solid #cdd1d2;
+  padding: 5px 0;
 
   .hover-tile-outer {
     height: 75px;
@@ -28,7 +28,7 @@
 }
 
 .before-header .wrap{
-  padding: 0 22px;
+  padding: 4px 22px;
 }
 
 .header-conact-left {
@@ -139,7 +139,7 @@ li#primary-search-box.nav-custom-search.menu-item {
   background-position: top;
   background-size: cover;
   background-color: beige;
-  border: 1px solid $base-border-color;
+  //border: 1px solid $base-border-color;
   cursor: pointer;
   height: $hover-tile-height;
   margin-bottom: $base-line-height;

@@ -1,6 +1,8 @@
-h1.product_title.entry-title {
+body.woocommerce-page div.product .product_title, body.woocommerce-page #content div.product .product_title {
   font-size: 22px;
+  letter-spacing: 3px;
 }
+
 
 .woocommerce-breadcrumb {
   margin: 1em 0 2em;
@@ -41,6 +43,15 @@ body.woocommerce-page div.product div.images img, body.woocommerce-page #content
   padding: 0;
 }
 
+.yith_magnifier_gallery {
+  .yith_magnifier_thumbnail {
+    width: 75px !important;
+    margin: 0 10px;
+  }
+}
+
+
+
 .social-compare-wishlist-section {
   text-align: center;
   margin: 0 20px;
@@ -71,6 +82,19 @@ body.woocommerce-page div.product div.images img, body.woocommerce-page #content
   }
 }
 
+div#wl-wrapper {
+  a.wl-add-to.wl-add-but.button {
+    font-size: 15px !important;
+    text-transform: none !important;
+    font-family: "Lato", sans-serif !important;
+    background-color: #20221d !important;
+  }
+
+  a.wl-add-to.wl-add-but.button.disabled {
+    color: #ffffff;
+  }
+}
+
 #product-description-accordion {
   margin-top: 60px;
 }
@@ -93,7 +117,10 @@ body.woocommerce-page div.product div.images img, body.woocommerce-page #content
 
 body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt, body.woocommerce-page #respond input#submit.alt, body.woocommerce-page #content input.button.alt {
   background-color: #333333;
-  padding: 10px 20px;
+  padding: 5.5px 20px;
+  float: left !important;
+  margin-left: 170px;
+  //height: 31px;
 }
 
 .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover {
@@ -109,6 +136,10 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
   text-align: center;
   width: 1100px;
 
+  h2 {
+    font-size: 24px;
+    font-weight: 400;
+  }
   ul.products {
     float: none;
     margin: 0 auto;
@@ -122,6 +153,11 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
 .you-may-also-like-section {
   text-align: center;
   clear: both;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 400;
+  }
 
   .you-may-also-like-items {
     @include outer-container;

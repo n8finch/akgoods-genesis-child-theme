@@ -6456,8 +6456,8 @@ picture {
 
 .subheader-area {
   display: flex;
-  border-bottom: 1px solid #cdd1d2;
-  padding: 0;
+  border: 1px solid #cdd1d2;
+  padding: 5px 0;
 }
 .subheader-area .hover-tile-outer {
   height: 75px;
@@ -6480,7 +6480,7 @@ picture {
 }
 
 .before-header .wrap {
-  padding: 0 22px;
+  padding: 4px 22px;
 }
 
 .header-conact-left {
@@ -6584,7 +6584,6 @@ li#primary-search-box.nav-custom-search.menu-item {
   background-position: top;
   background-size: cover;
   background-color: beige;
-  border: 1px solid #ddd;
   cursor: pointer;
   height: 8.5em;
   margin-bottom: 1.5;
@@ -7038,6 +7037,11 @@ img.entry-image.attachment-post {
   border-radius: 100%;
 }
 
+.featured-content img {
+  width: 90px !important;
+  height: 90px !important;
+}
+
 div#home-page-featured-posts {
   padding-top: 20px;
 }
@@ -7131,7 +7135,7 @@ section.widget.woocommerce.widget_product_categories .widget-wrap h4.widgettitle
   padding: 5px 0;
 }
 section.widget.woocommerce.widget_product_categories .widget-wrap ul.product-categories {
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 0;
 }
 section.widget.woocommerce.widget_product_categories .widget-wrap ul.product-categories li.cat-item {
@@ -7148,7 +7152,7 @@ section.widget.widget_nav_menu .widget-wrap h4.widgettitle.widget-title {
   padding: 5px 0;
 }
 section.widget.widget_nav_menu .widget-wrap div.menu-useful-links-container ul#menu-useful-links {
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 0;
 }
 section.widget.widget_nav_menu .widget-wrap div.menu-useful-links-container ul#menu-useful-links li.menu-item {
@@ -7166,10 +7170,6 @@ li.cat-item span.count {
 
 mark.count {
   display: none;
-}
-
-section.widget.woocommerce.widget_product_categories .widget-wrap ul.product-categories {
-  font-size: 15px;
 }
 
 .category-header {
@@ -7380,8 +7380,9 @@ ul.page-numbers {
     width: 300px;
   }
 }
-h1.product_title.entry-title {
+body.woocommerce-page div.product .product_title, body.woocommerce-page #content div.product .product_title {
   font-size: 22px;
+  letter-spacing: 3px;
 }
 
 .woocommerce-breadcrumb {
@@ -7417,6 +7418,11 @@ body.woocommerce-page div.product div.images img, body.woocommerce-page #content
   padding: 0;
 }
 
+.yith_magnifier_gallery .yith_magnifier_thumbnail {
+  width: 75px !important;
+  margin: 0 10px;
+}
+
 .social-compare-wishlist-section {
   text-align: center;
   margin: 0 20px;
@@ -7444,6 +7450,16 @@ body.woocommerce-page div.product div.images img, body.woocommerce-page #content
   background-color: #333333;
 }
 
+div#wl-wrapper a.wl-add-to.wl-add-but.button {
+  font-size: 15px !important;
+  text-transform: none !important;
+  font-family: "Lato", sans-serif !important;
+  background-color: #20221d !important;
+}
+div#wl-wrapper a.wl-add-to.wl-add-but.button.disabled {
+  color: #ffffff;
+}
+
 #product-description-accordion {
   margin-top: 60px;
 }
@@ -7464,7 +7480,9 @@ body.woocommerce-page div.product div.images img, body.woocommerce-page #content
 
 body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt, body.woocommerce-page #respond input#submit.alt, body.woocommerce-page #content input.button.alt {
   background-color: #333333;
-  padding: 10px 20px;
+  padding: 5.5px 20px;
+  float: left !important;
+  margin-left: 170px;
 }
 
 .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover {
@@ -7480,6 +7498,10 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
   text-align: center;
   width: 1100px;
 }
+#upsell-product-space h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
 #upsell-product-space ul.products {
   float: none;
   margin: 0 auto;
@@ -7491,6 +7513,10 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
 .you-may-also-like-section {
   text-align: center;
   clear: both;
+}
+.you-may-also-like-section h2 {
+  font-size: 24px;
+  font-weight: 400;
 }
 .you-may-also-like-section .you-may-also-like-items {
   max-width: 68em;
