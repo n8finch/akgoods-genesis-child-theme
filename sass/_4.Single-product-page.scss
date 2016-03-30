@@ -25,6 +25,10 @@ td.label {
   max-width: 200px;
 }
 
+.shop-sidebar {
+  margin-bottom: 20px;
+}
+
 // Resize Single Product Image and Description boxes
 
 body.woocommerce-page #content div.product div.images, body.woocommerce-page div.product div.images {
@@ -88,10 +92,13 @@ div#wl-wrapper {
     text-transform: none !important;
     font-family: "Lato", sans-serif !important;
     background-color: #20221d !important;
+    float: left !important;
+    margin-left: 227px !important;
   }
 
   a.wl-add-to.wl-add-but.button.disabled {
     color: #ffffff;
+    background-color: #777777 !important;
   }
 }
 
@@ -120,7 +127,6 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
   padding: 5.5px 20px;
   float: left !important;
   margin-left: 170px;
-  //height: 31px;
 }
 
 .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover {

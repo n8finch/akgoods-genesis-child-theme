@@ -36,12 +36,14 @@ section.widget.woocommerce.widget_product_categories {
     }
 
     ul.product-categories {
-      font-size: 16px;
+      font-size: 14px;
       letter-spacing: 0;
 
       li.cat-item {
         border-bottom: 1px solid #cccccc;
         padding: 5px 0;
+        text-transform: uppercase;
+        font-family: "Playfair Display", serif;
       }
 
     }
@@ -63,15 +65,14 @@ section.widget.widget_nav_menu {
     div.menu-useful-links-container {
 
       ul#menu-useful-links {
-        font-size: 16px;
+        font-size: 15px;
         letter-spacing: 0;
 
         li.menu-item {
           padding: 5px 0;
           border-bottom: 1px solid #cccccc;
+          font-family: "Playfair Display", serif;
         }
-
-
       }
     }
   }
@@ -210,6 +211,12 @@ p.woocommerce-result-count {
 
 body.woocommerce-page ul.products li.product {
   width: 30.8%;
+
+  a {
+    h3 {
+      letter-spacing: 2px;
+    }
+  }
 }
 
 body.woocommerce-page ul.products li.product a img {
