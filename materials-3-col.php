@@ -17,13 +17,17 @@ function get_the_materials_columns_3() {
 		// loop through the rows of data
 		while ( have_rows('material_information') ) : the_row();
 
-			$title = get_sub_field('material_title');
-			$image = get_sub_field('material_image');
-			$content = get_sub_field('material_paragraph');
+			$title       = get_sub_field( 'material_title' );
+			$image       = get_sub_field( 'material_image' );
+			$content     = get_sub_field( 'material_paragraph' );
+			$link        = get_sub_field( 'material_link' );
+			$button_text = get_sub_field( 'material_button_text' );
 
-			echo '<div class="materials-page-repeater-inner-3-col">';
+			echo '<div class="materials-page-repeater-inner-4-col">';
 
-			echo '<img src="' . $image . '" >';
+			echo '<a href="' . $link .'"><img src="' . $image . '" ></a>';
+
+			echo '<a href="' . $link .'"><button>' . $button_text . '</button>';
 
 			echo '<h2>' . $title . '</h2>';
 

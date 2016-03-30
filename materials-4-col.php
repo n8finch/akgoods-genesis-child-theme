@@ -5,25 +5,28 @@
  */
 
 
-
-add_action( 'genesis_loop', 'get_the_materials_columns_4');
+add_action( 'genesis_loop', 'get_the_materials_columns_4' );
 
 function get_the_materials_columns_4() {
 
 	echo '<div class="materials-page-repeater-outer">';
 	// check if the repeater field has rows of data
-	if( have_rows('material_information') ):
+	if ( have_rows( 'material_information' ) ):
 
 		// loop through the rows of data
-		while ( have_rows('material_information') ) : the_row();
+		while ( have_rows( 'material_information' ) ) : the_row();
 
-			$title = get_sub_field('material_title');
-			$image = get_sub_field('material_image');
-			$content = get_sub_field('material_paragraph');
+			$title       = get_sub_field( 'material_title' );
+			$image       = get_sub_field( 'material_image' );
+			$content     = get_sub_field( 'material_paragraph' );
+			$link        = get_sub_field( 'material_link' );
+			$button_text = get_sub_field( 'material_button_text' );
 
 			echo '<div class="materials-page-repeater-inner-4-col">';
 
-			echo '<img src="' . $image . '" >';
+			echo '<a href="' . $link .'"><img src="' . $image . '" ></a>';
+
+			echo '<a href="' . $link .'"><button>' . $button_text . '</button>';
 
 			echo '<h2>' . $title . '</h2>';
 
@@ -42,15 +45,6 @@ function get_the_materials_columns_4() {
 	echo '</div>';// end materials-page-repeater-outer
 
 }
-
-
-
-
-
-
-
-
-
 
 
 genesis();
