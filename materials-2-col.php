@@ -13,6 +13,8 @@ function get_the_materials_columns_2() {
 	// check if the repeater field has rows of data
 	if( have_rows('material_information') ):
 
+		$i = 1;
+
 		// loop through the rows of data
 		while ( have_rows('material_information') ) : the_row();
 
@@ -22,17 +24,23 @@ function get_the_materials_columns_2() {
 			$link        = get_sub_field( 'material_link' );
 			$button_text = get_sub_field( 'material_button_text' );
 
-			echo '<div class="materials-page-repeater-inner-4-col">';
+			echo '<div class="materials-page-repeater-inner-2-col">';
 
 			echo '<a href="' . $link .'"><img src="' . $image . '" ></a>';
 
-			echo '<a href="' . $link .'"><button>' . $button_text . '</button>';
+			echo '<a href="' . $link .'"><button>' . $button_text . '</button></a>';
 
-			echo '<h2>' . $title . '</h2>';
+			echo '<h3>' . $title . '</h3>';
 
 			echo $content;
 
 			echo '</div>';// end materials-page-repeater-inner
+
+			if ( $i%2 === 0 ) {
+				echo '<div class="materials-column-page-clearfix"></div>';
+			}
+
+			$i++;
 
 		endwhile;
 

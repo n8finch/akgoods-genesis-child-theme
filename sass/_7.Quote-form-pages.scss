@@ -1,0 +1,42 @@
+.quote-form-outer {
+  @include outer-container;
+  $mobile: new-breakpoint(max-width 699px 12);
+  max-width: 100%;
+
+  .quote-form-one-half {
+    @include span-columns(6);
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+    width: 49%;
+  }
+
+  .quote-form-one-third {
+    @include span-columns(4);
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+    width: 32.6%;
+
+    span > select {
+      width: 100%;
+      height: 34px;
+      margin-bottom: 0;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      border-radius: 0;
+      width: 100%;
+    }
+  }
+
+  .quote-file-upload,
+  .quote-additional-details,
+  .quote-submit {
+    clear: both;
+    @include shift(4);
+  }
+
+
+}
