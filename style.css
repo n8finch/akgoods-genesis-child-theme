@@ -7801,6 +7801,7 @@ div.woocommerce-tabs.wc-tabs-wrapper {
   margin-right: 0.73174%;
   width: 32.84551%;
   margin-bottom: 25px;
+  width: 30%;
 }
 .materials-page-repeater-outer .materials-page-repeater-inner-3-col:last-child {
   margin-right: 0;
@@ -7833,15 +7834,15 @@ div.woocommerce-tabs.wc-tabs-wrapper {
 }
 .materials-page-repeater-outer .materials-page-repeater-inner-3-col:nth-of-type(3n+1) {
   margin-left: 0;
-  margin-right: 3px;
+  margin-right: 10px;
   clear: left;
 }
 .materials-page-repeater-outer .materials-page-repeater-inner-3-col:nth-of-type(3n+2) {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 .materials-page-repeater-outer .materials-page-repeater-inner-3-col:nth-of-type(3n+3) {
-  margin-left: 3px;
+  margin-left: 10px;
   margin-right: 0;
 }
 .materials-page-repeater-outer .materials-page-repeater-inner-4-col {
