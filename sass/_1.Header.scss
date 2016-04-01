@@ -74,8 +74,8 @@ span.fa.fa-cart-plus {
   -moz-transition: opacity .1s ease-in-out;
   -ms-transition: opacity .1s ease-in-out;
   -o-transition: opacity .1s ease-in-out;
-  transition: opacity .1s ease-in-out;
-  background: #aaaaaa;
+  transition: opacity .0s ease-in-out;
+  background: #eeeeee;
   width: 200px;
   text-wrap: normal;
 }
@@ -84,6 +84,30 @@ span.fa.fa-cart-plus {
   text-align: left;
   font-size: 11px;
   border-bottom: none;
+}
+
+.genesis-nav-menu .sub-menu .menu-item:hover {
+  background-color: #C20000;
+  width: 100%;
+
+  a {
+    color: white !important;
+  }
+
+}
+
+.active-primary-menu {
+  a {
+    color: #C20000 !important;
+    font-weight: 700 !important;
+  }
+
+  ul.sub-menu {
+    a {
+      color: #20221d !important;
+      font-weight: normal !important;
+    }
+  }
 }
 
 .sale-highlight {

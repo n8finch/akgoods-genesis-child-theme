@@ -36,7 +36,20 @@
   .quote-submit {
     clear: both;
     @include shift(4);
+    @include media($mobile) {
+      @include span-columns(12);
+      @include shift(0);
+    }
   }
 
 
+}
+
+@media only screen and (max-width: 699px) {
+
+  .quote-file-upload,
+  .quote-additional-details,
+  .quote-submit {
+    //@include shift(0);
+  }
 }

@@ -41,8 +41,8 @@ function jessica_do_before_header() {
 	     $phone .
 	     ' | <span class="fa fa-fax""></span> ' .
 	     $fax .
-	     ' | <span class="fa fa-envelope"></span> ' .
-	     $email .
+//	     '<span class="fa fa-envelope"></span> ' .
+//	     $email .
 	     '</div>';
 
 	//Right Header Cart and Social Media Icons
@@ -64,16 +64,20 @@ function jessica_do_before_header() {
 		echo '<div class="header-social-right"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-cart-plus"> - ' . $qty . ' item</span></a></div>';
 	}
 
-
 	echo '<div class="header-social-right" id="social-icons-header">' .
-	     '<a href="' . $pinterest . '" target="_blank"><span class="fa fa-pinterest"></span></a> ' .
-	     '<a href="' . $instagram . '" target="_blank"><span class="fa fa-instagram"></span></a> ' .
-	     '<a href="' . $houzz . '" target="_blank"><span class="fa fa-houzz"></span></a> ' .
-	     '<a href="' . $google_plus . '" target="_blank"><span class="fa fa-google-plus"></span></a> ' .
-	     '<a href="' . $facebook . '" target="_blank"><span class="fa fa-facebook"></span></a> ' .
-	     '<a href="' . $twitter . '" target="_blank"><span class="fa fa-twitter"></span></a> ' .
-	     '<a href="' . $youtube . '" target="_blank"><span class="fa fa-youtube"></span></a> | ' .
+	     '<span class="fa fa-envelope"></span> ' .
+	     $email .
 	     '</div>';
+
+//	echo '<div class="header-social-right" id="social-icons-header">' .
+//	     '<a href="' . $pinterest . '" target="_blank"><span class="fa fa-pinterest"></span></a> ' .
+//	     '<a href="' . $instagram . '" target="_blank"><span class="fa fa-instagram"></span></a> ' .
+//	     '<a href="' . $houzz . '" target="_blank"><span class="fa fa-houzz"></span></a> ' .
+//	     '<a href="' . $google_plus . '" target="_blank"><span class="fa fa-google-plus"></span></a> ' .
+//	     '<a href="' . $facebook . '" target="_blank"><span class="fa fa-facebook"></span></a> ' .
+//	     '<a href="' . $twitter . '" target="_blank"><span class="fa fa-twitter"></span></a> ' .
+//	     '<a href="' . $youtube . '" target="_blank"><span class="fa fa-youtube"></span></a> | ' .
+//	     '</div>';
 
 
 	if ( has_nav_menu( 'secondary' ) ) {

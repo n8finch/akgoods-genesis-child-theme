@@ -46,7 +46,7 @@ function get_the_materials_columns_3() {
 			echo '</div>';// end materials-page-repeater-inner
 
 			if ( $i % 3 === 0 ) {
-				echo '<div class="materials-column-page-clearfix"></div>';
+//				echo '<div class="materials-column-page-clearfix"></div>';
 			}
 
 			$i ++;
