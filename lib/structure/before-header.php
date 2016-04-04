@@ -116,11 +116,11 @@ function add_cart_to_header_right() {
 
 	// if multiple products in cart
 	if ( $qty > 1 ) {
-		echo '<div class="header-cart-items"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-shopping-cart fa-2x"> - ' . $qty . ' items</span></a></div>';
+		echo '<div class="header-cart-items"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-shopping-cart fa-2x"> ' . $qty . '</span></a></div>';
 	} elseif ( $qty < 1 ) {
-		echo '<div class="header-cart-items"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-shopping-cart fa-2x"> - 0</span></a></div>';
+		echo '<div class="header-cart-items"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-shopping-cart fa-2x"> 0</span></a></div>';
 	} elseif ( $qty = 1 ) {
-		echo '<div class="header-cart-items"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-shopping-cart fa-2x"> - ' . $qty . ' item</span></a></div>';
+		echo '<div class="header-cart-items"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-shopping-cart fa-2x"> ' . $qty . '</span></a></div>';
 	}
 }
 

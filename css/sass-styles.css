@@ -2175,7 +2175,6 @@ div.footer-widgets-3 section.widget.widget_nav_menu {
 div.footer-widgets-1 section.widget.widget_nav_menu div.widget-wrap h4.widgettitle.widget-title,
 div.footer-widgets-2 section.widget.widget_nav_menu div.widget-wrap h4.widgettitle.widget-title,
 div.footer-widgets-3 section.widget.widget_nav_menu div.widget-wrap h4.widgettitle.widget-title {
-  padding: 0;
   background-color: #F4F4F4;
   border: none;
 }
@@ -2217,7 +2216,14 @@ div#footer-left-half #bottom-widget-3 section.widget {
 div#footer-left-half #bottom-widget-1 section.widget div.widget-wrap h4,
 div#footer-left-half #bottom-widget-2 section.widget div.widget-wrap h4,
 div#footer-left-half #bottom-widget-3 section.widget div.widget-wrap h4 {
+  padding: 0 !important;
+  font-size: 16px !important;
   border-bottom: none;
+}
+div#footer-left-half #bottom-widget-1 section.widget div.widget-wrap div ul,
+div#footer-left-half #bottom-widget-2 section.widget div.widget-wrap div ul,
+div#footer-left-half #bottom-widget-3 section.widget div.widget-wrap div ul {
+  margin-left: 0;
 }
 
 div#footer-right-half {
