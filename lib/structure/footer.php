@@ -46,14 +46,36 @@ function ak_social_icon_footer() {
 
 //add_action( 'genesis_footer', 'ak_custom_logo_footer', 1 );
 
-function ak_custom_logo_footer() {
-	//	Adding Contact Values
-	$facebook    = genesis_get_option( 'wsm_header_facebook', 'jessica-settings' );
+//function ak_custom_logo_footer() {
+//	//	Adding Contact Values
+//	$facebook    = genesis_get_option( 'wsm_header_facebook', 'jessica-settings' );
+//
+//	echo '<div class="wrap footer-social-icons">' .
+//	     '<a href="' . esc_url( home_url( '/' ) ) . '"><img src="' . CHILD_URL . '/images/logo.png"></a> ' .
+//	     '</div>';
+//
+//}
 
-	echo '<div class="wrap footer-social-icons">' .
-	     '<a href="' . esc_url( home_url( '/' ) ) . '"><img src="' . CHILD_URL . '/images/logo.png"></a> ' .
-	     '</div>';
 
+add_action('genesis_before_footer', 'jessica_bottom_widgets', 5 );
+function jessica_bottom_widgets() {
+	echo'<div class="bottom-widgets">';
+	echo'<div class="wrap">';
+
+	echo'<div id="footer-left-half">';
+	genesis_widget_area( 'bottom1', array( 'before' => '<div id="bottom-widget-1" class="bottom1 widget-area">', 'after' => '</div>') );
+	genesis_widget_area( 'bottom2', array( 'before' => '<div id="bottom-widget-2" class="bottom2 widget-area">', 'after' => '</div>') );
+	genesis_widget_area( 'bottom3', array( 'before' => '<div id="bottom-widget-3" class="bottom3 widget-area">', 'after' => '</div>') );
+	echo'</div>';
+
+
+	echo'<div id="footer-right-half">';
+	genesis_widget_area( 'bottom4', array( 'before' => '<div id="bottom-widget-4" class="bottom4 widget-area">', 'after' => '</div>') );
+	genesis_widget_area( 'bottom5', array( 'before' => '<div id="bottom-widget-5" class="bottom5 widget-area">', 'after' => '</div>') );
+	echo'</div>';
+
+	echo'</div >';
+	echo'</div >';
 }
 
 

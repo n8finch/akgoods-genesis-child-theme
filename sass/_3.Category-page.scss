@@ -34,7 +34,7 @@ section.widget.woocommerce.widget_product_categories {
       font-size: 15px;
       letter-spacing: 0;
       padding: 5px 0;
-      background-color: #eeeeee;
+      font-style: italic;
     }
 
     ul.product-categories {
@@ -63,7 +63,7 @@ section.widget.widget_nav_menu {
     font-size: 15px;
     letter-spacing: 0;
     padding: 5px 0;
-    background-color: #eeeeee;
+    border-bottom: 5px double #eeeeee;
 
     }
 
@@ -99,6 +99,9 @@ mark.count {
   display: none;
 }
 
+body.woocommerce-page ul.products li.product h3 {
+  margin-top: 45px;
+}
 
 
 

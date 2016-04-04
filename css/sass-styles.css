@@ -504,11 +504,20 @@ picture {
 
 .header-conact-left {
   float: left;
-  font-size: 14px;
+  font-size: 16px;
+}
+.header-conact-left .fa-fax {
+  margin-left: 25px;
 }
 
 .header-social-right {
   float: right;
+  font-size: 16px;
+}
+
+.header-cart-items {
+  float: right;
+  margin-left: 15px;
 }
 
 span.fa.fa-cart-plus {
@@ -1261,7 +1270,7 @@ section.widget.woocommerce.widget_product_categories .widget-wrap h4.widgettitle
   font-size: 15px;
   letter-spacing: 0;
   padding: 5px 0;
-  background-color: #eeeeee;
+  font-style: italic;
 }
 section.widget.woocommerce.widget_product_categories .widget-wrap ul.product-categories {
   font-size: 14px;
@@ -1281,7 +1290,7 @@ section.widget.widget_nav_menu .widget-wrap h4.widgettitle.widget-title {
   font-size: 15px;
   letter-spacing: 0;
   padding: 5px 0;
-  background-color: #eeeeee;
+  border-bottom: 5px double #eeeeee;
 }
 section.widget.widget_nav_menu .widget-wrap div.menu-useful-links-container ul#menu-useful-links {
   font-size: 15px;
@@ -1304,6 +1313,10 @@ li.cat-item span.count {
 
 mark.count {
   display: none;
+}
+
+body.woocommerce-page ul.products li.product h3 {
+  margin-top: 45px;
 }
 
 .category-header {
@@ -2171,6 +2184,68 @@ div.footer-widgets-2 section.widget.widget_nav_menu div.widget-wrap div ul.menu 
 div.footer-widgets-3 section.widget.widget_nav_menu div.widget-wrap div ul.menu li.menu-item {
   border: none !important;
   padding: 0 !important;
+}
+
+div#footer-left-half {
+  max-width: 50%;
+  width: 50%;
+  height: 200px;
+  float: left;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+div#footer-left-half #bottom-widget-1,
+div#footer-left-half #bottom-widget-2,
+div#footer-left-half #bottom-widget-3 {
+  max-width: 30%;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+div#footer-left-half #bottom-widget-1 section.widget,
+div#footer-left-half #bottom-widget-2 section.widget,
+div#footer-left-half #bottom-widget-3 section.widget {
+  margin-top: 0px;
+}
+div#footer-left-half #bottom-widget-1 section.widget div.widget-wrap h4,
+div#footer-left-half #bottom-widget-2 section.widget div.widget-wrap h4,
+div#footer-left-half #bottom-widget-3 section.widget div.widget-wrap h4 {
+  border-bottom: none;
+}
+
+div#footer-right-half {
+  max-width: 50%;
+  width: 50%;
+  float: right;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+div#footer-right-half #bottom-widget-4,
+div#footer-right-half #bottom-widget-5 {
+  max-width: 45%;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+div#footer-right-half section.widget {
+  margin-top: 0px;
+}
+div#footer-right-half section.widget div.widget-wrap h4 {
+  border-bottom: none;
 }
 
 @media only screen and (max-width: 699px) {

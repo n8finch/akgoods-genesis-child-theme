@@ -33,11 +33,21 @@
 
 .header-conact-left {
   float: left;
-  font-size: 14px;
+  font-size: 16px;
+
+  .fa-fax {
+    margin-left: 25px;
+  }
 }
 
 .header-social-right {
   float: right;
+  font-size: 16px;
+}
+
+.header-cart-items {
+  float: right;
+  margin-left: 15px;
 }
 
 span.fa.fa-cart-plus {

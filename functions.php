@@ -190,7 +190,7 @@ genesis_unregister_layout( 'sidebar-sidebar-content' );
 genesis_unregister_layout( 'sidebar-content-sidebar' );
 
 //* Add support for 3-column footer widgets
-add_theme_support( 'genesis-footer-widgets', 4 );
+//add_theme_support( 'genesis-footer-widgets', 5 );
 
 // Setup Sidebars
 unregister_sidebar( 'sidebar-alt' );
@@ -230,26 +230,7 @@ unregister_sidebar( 'sidebar-alt' );
 //	'name'        => __( 'Home Bottom Ad', 'jessica' ),
 //	'description' => __( 'This is the home page ad section.', 'jessica' ),
 //) );
-//genesis_register_sidebar( array(
-//	'id'          => 'bottom1',
-//	'name'        => __( 'Home Bottom 1', 'jessica' ),
-//	'description' => __( 'This is the before footer section.', 'jessica' ),
-//) );
-//genesis_register_sidebar( array(
-//	'id'          => 'bottom2',
-//	'name'        => __( 'Home Bottom 2', 'jessica' ),
-//	'description' => __( 'This is the before footer section.', 'jessica' ),
-//) );
-//genesis_register_sidebar( array(
-//	'id'          => 'bottom3',
-//	'name'        => __( 'Home Bottom 3', 'jessica' ),
-//	'description' => __( 'This is the before footer section.', 'jessica' ),
-//) );
-//genesis_register_sidebar( array(
-//	'id'          => 'bottom4',
-//	'name'        => __( 'Home Bottom 4', 'jessica' ),
-//	'description' => __( 'This is the before footer section.', 'jessica' ),
-//) );
+
 genesis_register_sidebar( array(
 	'id'          => 'blog-sidebar',
 	'name'        => __( 'Blog Sidebar', 'jessica' ),
@@ -276,6 +257,31 @@ genesis_register_sidebar( array(
 	'id'          => 'homepage-testimonials',
 	'name'        => __( 'Homepage Testimonials', 'jessica' ),
 	'description' => __( 'This is the Homepage Testimonials section.', 'jessica' ),
+) );
+genesis_register_sidebar( array(
+	'id'          => 'bottom1',
+	'name'        => __( 'Bottom 1', 'jessica' ),
+	'description' => __( 'This is the before footer section.', 'jessica' ),
+) );
+genesis_register_sidebar( array(
+	'id'          => 'bottom2',
+	'name'        => __( 'Bottom 2', 'jessica' ),
+	'description' => __( 'This is the before footer section.', 'jessica' ),
+) );
+genesis_register_sidebar( array(
+	'id'          => 'bottom3',
+	'name'        => __( 'Bottom 3', 'jessica' ),
+	'description' => __( 'This is the before footer section.', 'jessica' ),
+) );
+genesis_register_sidebar( array(
+	'id'          => 'bottom4',
+	'name'        => __( 'Bottom 4', 'jessica' ),
+	'description' => __( 'This is the before footer section.', 'jessica' ),
+) );
+genesis_register_sidebar( array(
+	'id'          => 'bottom5',
+	'name'        => __( 'Bottom 5', 'jessica' ),
+	'description' => __( 'This is the before footer section.', 'jessica' ),
 ) );
 
 

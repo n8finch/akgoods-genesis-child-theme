@@ -39,30 +39,30 @@ function jessica_do_before_header() {
 	echo '<div class="header-conact-left">' .
 	     '<span class="fa fa-phone"></span> ' .
 	     $phone .
-	     ' | <span class="fa fa-fax""></span> ' .
+	     '<span class="fa fa-fax""></span> ' .
 	     $fax .
 //	     '<span class="fa fa-envelope"></span> ' .
 //	     $email .
 	     '</div>';
 
-	//Right Header Cart and Social Media Icons
-
-	global $woocommerce;
-
-	// get cart quantity
-	$qty = $woocommerce->cart->get_cart_contents_count();
-
-	// get cart url
-	$cart_url = $woocommerce->cart->get_cart_url();
-
-	// if multiple products in cart
-	if ( $qty > 1 ) {
-		echo '<div class="header-social-right"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-cart-plus"> - ' . $qty . ' items</span></a></div>';
-	} elseif ( $qty < 1 ) {
-		echo '<div class="header-social-right"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-cart-plus"> - empty</span></a></div>';
-	} elseif ( $qty = 1 ) {
-		echo '<div class="header-social-right"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-cart-plus"> - ' . $qty . ' item</span></a></div>';
-	}
+//	//Right Header Cart and Social Media Icons
+//
+//	global $woocommerce;
+//
+//	// get cart quantity
+//	$qty = $woocommerce->cart->get_cart_contents_count();
+//
+//	// get cart url
+//	$cart_url = $woocommerce->cart->get_cart_url();
+//
+//	// if multiple products in cart
+//	if ( $qty > 1 ) {
+//		echo '<div class="header-social-right"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-cart-plus"> - ' . $qty . ' items</span></a></div>';
+//	} elseif ( $qty < 1 ) {
+//		echo '<div class="header-social-right"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-cart-plus"> - empty</span></a></div>';
+//	} elseif ( $qty = 1 ) {
+//		echo '<div class="header-social-right"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-cart-plus"> - ' . $qty . ' item</span></a></div>';
+//	}
 
 	echo '<div class="header-social-right" id="social-icons-header">' .
 	     '<span class="fa fa-envelope"></span> ' .
@@ -99,6 +99,29 @@ function jessica_do_before_header() {
 
 	echo '</div></aside>';
 
+}
+
+
+add_action( 'genesis_header_right', 'add_cart_to_header_right');
+function add_cart_to_header_right() {
+	//Right Header Cart and Social Media Icons
+
+	global $woocommerce;
+
+	// get cart quantity
+	$qty = $woocommerce->cart->get_cart_contents_count();
+
+	// get cart url
+	$cart_url = $woocommerce->cart->get_cart_url();
+
+	// if multiple products in cart
+	if ( $qty > 1 ) {
+		echo '<div class="header-cart-items"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-shopping-cart fa-2x"> - ' . $qty . ' items</span></a></div>';
+	} elseif ( $qty < 1 ) {
+		echo '<div class="header-cart-items"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-shopping-cart fa-2x"> - 0</span></a></div>';
+	} elseif ( $qty = 1 ) {
+		echo '<div class="header-cart-items"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-shopping-cart fa-2x"> - ' . $qty . ' item</span></a></div>';
+	}
 }
 
 
