@@ -36,7 +36,7 @@ function wsm_child_sidebars_init() {
 	remove_action( 'genesis_sidebar_alt', 'genesis_do_sidebar_alt' );
 	remove_action( 'genesis_sidebar', 'ss_do_sidebar' );
 	remove_action( 'genesis_sidebar_alt', 'ss_do_sidebar_alt' );
-	add_action( 'genesis_sidebar', 'jessica_child_do_sidebar' );
+//	add_action( 'genesis_sidebar', 'jessica_child_do_sidebar' );
 }
 
 /**

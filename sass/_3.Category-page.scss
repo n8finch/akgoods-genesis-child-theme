@@ -33,8 +33,9 @@ section.widget.woocommerce.widget_product_categories {
     h4.widgettitle.widget-title {
       font-size: 15px;
       letter-spacing: 0;
-      padding: 5px 0;
-      font-style: italic;
+      padding: 5px;
+      color: white;
+      background-color: #4C4034;
     }
 
     ul.product-categories {
@@ -62,8 +63,9 @@ section.widget.widget_nav_menu {
     h4.widgettitle.widget-title {
     font-size: 15px;
     letter-spacing: 0;
-    padding: 5px 0;
-    border-bottom: 5px double #eeeeee;
+    padding: 5px;
+    color: white;
+    background-color: #4C4034;
 
     }
 
@@ -127,12 +129,12 @@ body.woocommerce-page ul.products li.product h3 {
 }
 
 .category-hero {
-  max-width: 600px;
+  max-width: 650px;
   float: left;
   background-position: top;
   background-size: cover;
   width: 100%;
-  height: 500px;
+  height: 450px;
   margin-bottom: 20px;
 }
 
@@ -166,9 +168,9 @@ body.woocommerce-page ul.products li.product h3 {
 }
 
 .category-hero-view-all {
-  max-width: 300px;
+  max-width: 240px;
   float: right;
-  height: 245px;
+  height: 220px;
   background-color: #4c4034;
   width: 290px;
   margin-bottom: 5px;
@@ -183,9 +185,9 @@ body.woocommerce-page ul.products li.product h3 {
 }
 
 .category-hero-sale {
-  max-width: 300px;
+  max-width: 240px;
   float: right;
-  height: 245px;
+  height: 220px;
   background-color: #C20000;
   width: 290px;
   margin-top: 5px;
@@ -203,6 +205,15 @@ body.woocommerce-page ul.products li.product h3 {
   color: white;
   font-size: 24px;
 }
+
+//Remove the itemprop descriptions
+
+li.product-category.product {
+  div {
+    display: none;
+  }
+}
+
 
 //Remove the Info and Buy Buttons
 
@@ -249,6 +260,14 @@ body.woocommerce-page ul.products {
 
 a.button-details.button {
   display: none;
+}
+
+ul.products {
+  li.product {
+    hr {
+      display: none;
+    }
+  }
 }
 
 //Description After Product Loop

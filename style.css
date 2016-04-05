@@ -3,7 +3,7 @@
 	Description: Jessica is a flexible WordPress eCommerce theme that lets you pick from three different eCommerce plugins. The theme is pre-styled for WooCommerce, iThemes Exchange, and WP e-Commerce. You pick the store plugin that's right for you! By Web Savvy Marketing on the <a href="http://web-savvy-marketing.com/go/studiopress/">Genesis framework</a>.
 	Author: Web Savvy Marketing
 	Author URI: http://www.web-savvy-marketing.com/
-	Version: 1.2.22
+	Version: 1.2.25
 	Template: genesis
 
 	Copyright 2014 - Web Savvy Marketing
@@ -6460,7 +6460,8 @@ picture {
 }
 
 .before-header {
-  background-color: #cccccc;
+  background-color: #efefef;
+  color: black;
 }
 
 .before-header .wrap {
@@ -6520,7 +6521,7 @@ span.fa.fa-cart-plus {
 .genesis-nav-menu .sub-menu {
   background: none;
   transition: opacity .0s ease-in-out;
-  background: #eeeeee;
+  background: #efefef;
   width: 200px;
   text-wrap: normal;
 }
@@ -7234,8 +7235,9 @@ blockquote.easy-testimonial {
 section.widget.woocommerce.widget_product_categories .widget-wrap h4.widgettitle.widget-title {
   font-size: 15px;
   letter-spacing: 0;
-  padding: 5px 0;
-  font-style: italic;
+  padding: 5px;
+  color: white;
+  background-color: #4C4034;
 }
 section.widget.woocommerce.widget_product_categories .widget-wrap ul.product-categories {
   font-size: 14px;
@@ -7254,8 +7256,9 @@ section.widget.widget_nav_menu {
 section.widget.widget_nav_menu .widget-wrap h4.widgettitle.widget-title {
   font-size: 15px;
   letter-spacing: 0;
-  padding: 5px 0;
-  border-bottom: 5px double #eeeeee;
+  padding: 5px;
+  color: white;
+  background-color: #4C4034;
 }
 section.widget.widget_nav_menu .widget-wrap div.menu-useful-links-container ul#menu-useful-links {
   font-size: 15px;
@@ -7299,12 +7302,12 @@ body.woocommerce-page ul.products li.product h3 {
 }
 
 .category-hero {
-  max-width: 600px;
+  max-width: 650px;
   float: left;
   background-position: top;
   background-size: cover;
   width: 100%;
-  height: 500px;
+  height: 450px;
   margin-bottom: 20px;
 }
 
@@ -7338,9 +7341,9 @@ body.woocommerce-page ul.products li.product h3 {
 }
 
 .category-hero-view-all {
-  max-width: 300px;
+  max-width: 240px;
   float: right;
-  height: 245px;
+  height: 220px;
   background-color: #4c4034;
   width: 290px;
   margin-bottom: 5px;
@@ -7361,9 +7364,9 @@ body.woocommerce-page ul.products li.product h3 {
 }
 
 .category-hero-sale {
-  max-width: 300px;
+  max-width: 240px;
   float: right;
-  height: 245px;
+  height: 220px;
   background-color: #C20000;
   width: 290px;
   margin-top: 5px;
@@ -7386,6 +7389,10 @@ body.woocommerce-page ul.products li.product h3 {
 .category-hero-right-titles {
   color: white;
   font-size: 24px;
+}
+
+li.product-category.product div {
+  display: none;
 }
 
 .woocommerce ul.products li.product .button {
@@ -7423,6 +7430,10 @@ body.woocommerce-page ul.products {
 }
 
 a.button-details.button {
+  display: none;
+}
+
+ul.products li.product hr {
   display: none;
 }
 
@@ -8184,6 +8195,8 @@ div#footer-left-half #bottom-widget-3 section.widget div.widget-wrap h4 {
   padding: 0 !important;
   font-size: 16px !important;
   border-bottom: none;
+  color: black;
+  background-color: transparent !important;
 }
 div#footer-left-half #bottom-widget-1 section.widget div.widget-wrap div ul,
 div#footer-left-half #bottom-widget-2 section.widget div.widget-wrap div ul,
@@ -8225,6 +8238,201 @@ div#footer-right-half section.widget div.widget-wrap h4 {
     margin: 0 10px 20px;
     width: 40%;
   }
+}
+.blog-page-entry-content {
+  margin-bottom: 25px;
+}
+
+/**
+ * First Page Blog Entries
+ */
+h2.blog-page-first-post-only {
+  display: none;
+}
+
+.blog-page-entries {
+  max-width: 800px;
+  float: left;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only:first-of-type {
+  border: 1px solid #cdd1d2;
+  border-right: 2px solid #cdd1d2;
+  border-bottom: 3px solid #cdd1d2;
+  margin-bottom: 20px;
+  padding: 20px;
+  max-width: 74.0625em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only:first-of-type h2.blog-page-first-post-only {
+  display: block;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only:first-of-type::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only:first-of-type .blog-page-single-entries-left {
+  float: left;
+  display: block;
+  margin-right: 0.73174%;
+  width: 49.63413%;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only:first-of-type .blog-page-single-entries-left:last-child {
+  margin-right: 0;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only:first-of-type .blog-page-single-entries-left a > img {
+  max-width: 400px;
+  width: 370px;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only:first-of-type .blog-page-single-entries-right {
+  padding-left: 7px;
+  float: left;
+  display: block;
+  margin-right: 0.73174%;
+  width: 49.63413%;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only:first-of-type .blog-page-single-entries-right:last-child {
+  margin-right: 0;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only:first-of-type .blog-page-single-entries-right h2 {
+  font-size: 32px;
+  margin: 0 0 0.25em;
+  display: none;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only:first-of-type .blog-page-single-entries-right div.blog-post-categories {
+  margin-bottom: .25em;
+  font-style: italic;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only:first-of-type .blog-page-single-entries-right .blog-page-date-posted {
+  float: left;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only:first-of-type .blog-page-single-entries-right .blog-page-read-more-link {
+  float: right;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only {
+  border: 1px solid #cdd1d2;
+  margin-bottom: 20px;
+  padding: 20px;
+  max-width: 74.0625em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only .blog-page-single-entries-left {
+  float: left;
+  display: block;
+  margin-right: 0.73174%;
+  width: 32.84551%;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only .blog-page-single-entries-left:last-child {
+  margin-right: 0;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only .blog-page-single-entries-left a > img {
+  max-width: 250px;
+  width: 250px;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only .blog-page-single-entries-right {
+  padding-left: 7px;
+  float: left;
+  display: block;
+  margin-right: 0.73174%;
+  width: 66.42275%;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only .blog-page-single-entries-right:last-child {
+  margin-right: 0;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only .blog-page-single-entries-right h2 {
+  font-size: 28px;
+  margin: 0 0 0.25em;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only .blog-page-single-entries-right div.blog-post-categories {
+  margin-bottom: .25em;
+  font-style: italic;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only .blog-page-single-entries-right .blog-page-date-posted {
+  float: left;
+}
+.blog-page-entries .blog-page-single-entries-first-page-only .blog-page-single-entries-right .blog-page-read-more-link {
+  float: right;
+}
+
+/**
+ * Other Blog Entries
+ */
+.blog-page-entries {
+  max-width: 800px;
+  float: left;
+}
+.blog-page-entries .blog-page-single-entries {
+  border: 1px solid #cdd1d2;
+  margin-bottom: 20px;
+  padding: 20px;
+  max-width: 74.0625em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.blog-page-entries .blog-page-single-entries::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.blog-page-entries .blog-page-single-entries .blog-page-single-entries-left {
+  float: left;
+  display: block;
+  margin-right: 0.73174%;
+  width: 32.84551%;
+}
+.blog-page-entries .blog-page-single-entries .blog-page-single-entries-left:last-child {
+  margin-right: 0;
+}
+.blog-page-entries .blog-page-single-entries .blog-page-single-entries-left a > img {
+  max-width: 250px;
+  width: 250px;
+}
+.blog-page-entries .blog-page-single-entries .blog-page-single-entries-right {
+  padding-left: 7px;
+  float: left;
+  display: block;
+  margin-right: 0.73174%;
+  width: 66.42275%;
+}
+.blog-page-entries .blog-page-single-entries .blog-page-single-entries-right:last-child {
+  margin-right: 0;
+}
+.blog-page-entries .blog-page-single-entries .blog-page-single-entries-right h2 {
+  font-size: 28px;
+  margin: 0 0 0.25em;
+}
+.blog-page-entries .blog-page-single-entries .blog-page-single-entries-right div.blog-post-categories {
+  margin-bottom: .25em;
+  font-style: italic;
+}
+.blog-page-entries .blog-page-single-entries .blog-page-single-entries-right .blog-page-date-posted {
+  float: left;
+}
+.blog-page-entries .blog-page-single-entries .blog-page-single-entries-right .blog-page-read-more-link {
+  float: right;
+}
+
+/**
+ * Blog Sidebar
+ */
+.akgoods-blog-sidebar {
+  max-width: 300px;
+  float: right;
+}
+.akgoods-blog-sidebar aside section div ul li {
+  border-bottom: 1px solid #cdd1d2;
+  margin: 5px 0;
+  padding: 5px 0;
+}
+.akgoods-blog-sidebar aside section div ul li:last-of-type {
+  border-bottom: none;
 }
 
 /*# sourceMappingURL=sass-styles.css.map */
