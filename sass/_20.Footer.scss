@@ -1,3 +1,8 @@
+
+.bottom-widgets {
+  margin: 10px 0;
+}
+
 .site-footer {
   background-color: #aaaaaa;
   color: #fff;
@@ -10,7 +15,7 @@
 
 .footer-social-icons {
   text-transform: uppercase;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   background-color: #eaecec;
 
@@ -72,7 +77,11 @@ div.footer-widgets-3 {
 
           li.menu-item {
             border: none !important;
-            padding: 0 !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            border-bottom: none !important;
+            text-transform: uppercase !important;
+            font-family: "Lato", sans-serif !important;
           }
 
         }
@@ -115,6 +124,15 @@ div#footer-left-half {
         div {
           ul {
             margin-left: 0;
+
+            li.menu-item {
+              border: none !important;
+              padding-top: 0 !important;
+              padding-bottom: 0 !important;
+              border-bottom: none !important;
+              text-transform: uppercase !important;
+              font-family: "Lato", sans-serif !important;
+            }
           }
         }
       }
@@ -153,17 +171,24 @@ div#footer-right-half {
 
 }
 
-
-
-
-
-
-
-
 @media only screen and (max-width: 699px) {
   .footer-widgets-1, .footer-widgets-2, .footer-widgets-3, .footer-widgets-4, .bottom-widgets .widget-area {
     float: left;
     margin: 0 10px 20px;
     width: 40%;
+  }
+
+  div#footer-left-half,
+  div#footer-right-half {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+
+    #bottom-widget-1,
+    #bottom-widget-2,
+    #bottom-widget-3 {
+      max-width: 100%;
+      flex: 1 1 40%;
+    }
   }
 }

@@ -5,14 +5,15 @@ remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
 
 add_action( 'genesis_before_loop', 'main_page_top_section' );
+add_action( 'genesis_before_loop', 'main_page_top_section_mobile_only' );
 add_action( 'genesis_before_loop', 'main_page_trade_discount_section' );
-add_action( 'genesis_before_loop', 'mobile_only_add_subheader_to_main_page' );
+//add_action( 'genesis_before_loop', 'mobile_only_add_subheader_to_main_page' );
 add_action( 'genesis_before_loop', 'main_page_ornamental_stone_products_section' );
 add_action( 'genesis_before_loop', 'main_page_home_design_and_decor_section' );
 add_action( 'genesis_before_loop', 'main_page_featured_project_galleries_section' );
 add_action( 'genesis_before_loop', 'main_page_blog_post_and_testimonials_section' );
 
-//Main Page Top Section
+//Main Page Top Section - Desktop Only
 
 function main_page_top_section() {
 
@@ -45,7 +46,7 @@ function main_page_top_section() {
 	$bottom_right_column_category_link  = get_field( 'bottom_right_column_category_link' );
 
 
-	echo '<div class="top-main-page-container">
+	echo '<div class="top-main-page-container desktop-only">
 
 			<!-- Top Left Section -->
 			<div class="main-page-col-third" id="mainpage-top-left">
@@ -151,6 +152,145 @@ function main_page_top_section() {
 		  </div>';
 }
 
+//Main Page Top Section - Mobile Only
+
+function main_page_top_section_mobile_only() {
+
+	$top_left_column_category_image = get_field( 'top_left_column_category_image' );
+	$top_left_column_category_title = get_field( 'top_left_column_category_title' );
+	$top_left_column_category_link  = get_field( 'top_left_column_category_link' );
+
+	$bottom_left_left_column_category_image = get_field( 'bottom_left_left_column_category_image' );
+	$bottom_left_left_column_category_title = get_field( 'bottom_left_left_column_category_title' );
+	$bottom_left_left_column_category_link  = get_field( 'bottom_left_left_column_category_link' );
+
+	$bottom_left_right_column_category_image = get_field( 'bottom_left_right_column_category_image' );
+	$bottom_left_right_column_category_title = get_field( 'bottom_left_right_column_category_title' );
+	$bottom_left_right_column_category_link  = get_field( 'bottom_left_right_column_category_link' );
+
+	$center_column_category_image = get_field( 'center_column_category_image' );
+	$center_column_category_title = get_field( 'center_column_category_title' );
+	$center_column_category_link  = get_field( 'center_column_category_link' );
+
+	$top_right_left_column_category_image = get_field( 'top_right_left_column_category_image' );
+	$top_right_left_column_category_title = get_field( 'top_right_left_column_category_title' );
+	$top_right_left_column_category_link  = get_field( 'top_right_left_column_category_link' );
+
+	$top_right_right_column_category_image = get_field( 'top_right_right_column_category_image' );
+	$top_right_right_column_category_title = get_field( 'top_right_right_column_category_title' );
+	$top_right_right_column_category_link  = get_field( 'top_right_right_column_category_link' );
+
+	$bottom_right_column_category_image = get_field( 'bottom_right_column_category_image' );
+	$bottom_right_column_category_title = get_field( 'bottom_right_column_category_title' );
+	$bottom_right_column_category_link  = get_field( 'bottom_right_column_category_link' );
+
+
+	echo '<div class="top-main-page-container mobile-only">
+
+			<!-- Top Center Section -->
+			<div class="main-page-col-third" id="mainpage-top-center">
+				<a href="' . $center_column_category_link . '"><div class="hover-tile-outer" id="mainpage-top-center" style="background-image: url(' . $center_column_category_image . ');">
+				  <div class="hover-tile-container">
+				    <h3 class="hide-title-on-hover" id="top-center-title">' . $center_column_category_title . '</h3>
+				    <div class="hover-tile hover-tile-visible"></div>
+				    <div class="hover-tile hover-tile-hidden">
+				      <h3 class="white-category-title-text">' . $center_column_category_title . '</h3>
+				      <h3 class="yellow-text">Shop Now</h3>
+				      <!--<p>See our special pricing and available stock here.</p>-->
+				    </div>
+				  </div>
+				</div></a>
+
+			</div>
+
+			<!-- Top Left Section -->
+			<div class="main-page-col-third" id="mainpage-top-left">
+				<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url(' . $top_left_column_category_image . ');">
+				  <a href="' . $top_left_column_category_link . '"><div class="hover-tile-container">
+				  		<h3 class="hide-title-on-hover" id="top-left-title">' . $top_left_column_category_title . '</h3>
+				    <div class="hover-tile hover-tile-visible"></div>
+				    <div class="hover-tile hover-tile-hidden">
+				      <h3 class="white-category-title-text">' . $top_left_column_category_title . '</h3>
+				      <h3 class="yellow-text">Shop Now</h3>
+				      <!--<p>See our special pricing and available stock here.</p>-->
+				    </div>
+				  </div></a>
+				</div>
+
+				<div class="top-side-by-side-section">
+					<div class="hover-tile-outer main-page-col-half left" style="background-image: url(' . $top_right_left_column_category_image . ');">
+					  <a href="' . $top_right_left_column_category_link . '"><div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover" id="top-quarter-left-left-title">' . $top_right_left_column_category_title . '</h3>
+					    <div class="hover-tile hover-tile-visible"></div>
+					    <div class="hover-tile hover-tile-hidden">
+						  <h3 class="white-category-title-text">' . $top_right_left_column_category_title . '</h3>
+					      <h3 class="yellow-text">Shop Now</h3>
+					      <!--<p>See our special pricing and available stock here.</p>-->
+					    </div>
+					  </div></a>
+					</div>
+
+					<div class="hover-tile-outer main-page-col-half right" style="background-image: url(' . $top_right_right_column_category_image . ');">
+					  <a href="' . $top_right_right_column_category_link . '"><div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover" id="top-quarter-left-right-title">' . $top_right_right_column_category_title . '</h3>
+					    <div class="hover-tile hover-tile-visible"></div>
+					    <div class="hover-tile hover-tile-hidden">
+					      <h3 class="white-category-title-text">' . $top_right_right_column_category_title . '</h3>
+					      <h3 class="yellow-text">Shop Now</h3>
+					      <!--<p>See our special pricing and available stock here.</p>-->
+					    </div>
+					  </div></a>
+					</div>
+				</div>
+
+
+			</div>
+
+			<!-- Top Right Section -->
+			<div class="main-page-col-third" id="mainpage-top-right">
+
+				<div class="top-side-by-side-section">
+					<div class="hover-tile-outer main-page-col-half left" style="background-image: url(' . $bottom_left_left_column_category_image . ');">
+					  <a href="' . $bottom_left_left_column_category_link . '"><div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover" id="top-quarter-right-left-title">' . $bottom_left_left_column_category_title . '</h3>
+					    <div class="hover-tile hover-tile-visible"></div>
+					    <div class="hover-tile hover-tile-hidden">
+					      <h3 class="white-category-title-text">' . $bottom_left_left_column_category_title . '</h3>
+					      <h3 class="yellow-text">Shop Now</h3>
+					      <!--<p>See our special pricing and available stock here.</p>-->
+					    </div>
+					  </div></a>
+					</div>
+
+					<div class="hover-tile-outer main-page-col-half right" style="background-image: url(' . $bottom_left_right_column_category_image . ');">
+					  <a href="' . $bottom_left_right_column_category_link . '"><div class="hover-tile-container">
+					  	<h3 class="hide-title-on-hover" id="top-quarter-right-right-title">' . $bottom_left_right_column_category_title . '</h3>
+					    <div class="hover-tile hover-tile-visible"></div>
+					    <div class="hover-tile hover-tile-hidden">
+					      <h3 class="white-category-title-text">' . $bottom_left_right_column_category_title . '</h3>
+					      <h3 class="yellow-text">Shop Now</h3>
+					      <!--<p>See our special pricing and available stock here.</p>-->
+					    </div>
+					  </div></a>
+					</div>
+				</div>
+
+				<div class="hover-tile-outer" style="background-image: url(' . $bottom_right_column_category_image . ');">
+				  <a href="' . $bottom_right_column_category_link . '"><div class="hover-tile-container">
+				  	<h3 class="hide-title-on-hover" id="bottom-right-title">' . $bottom_right_column_category_title . '</h3>
+				    <div class="hover-tile hover-tile-visible"></div>
+				    <div class="hover-tile hover-tile-hidden">
+				      <h3 class="white-category-title-text">' . $bottom_right_column_category_title . '</h3>
+				      <h3 class="yellow-text">Shop Now</h3>
+				      <!--<p>See our special pricing and available stock here.</p>-->
+				    </div>
+				  </div></a>
+				</div>
+
+			</div>
+		  </div>';
+}
+
 
 //Main Page Trade Discount Section
 
@@ -178,7 +318,7 @@ function main_page_trade_discount_section() {
 	$box_4_link             = get_field( 'box_4_link' );
 
 
-	echo '<div class="top-main-page-container" id="trade-discount-section">
+	echo '<div class="top-main-page-container desktop-only" id="trade-discount-section">
 
 
 					<a class="main-page-col-quarter" href="' . $box_1_link . '">
@@ -216,55 +356,55 @@ function main_page_trade_discount_section() {
 		  </div>';
 }
 
-function mobile_only_add_subheader_to_main_page() {
-	$hovertext1 = genesis_get_option( 'wsm_subheader_hovertext1', 'jessica-settings' );
-	$image1     = esc_url( genesis_get_option( 'wsm_subheader_image1', 'jessica-settings' ) );
-	$link1      = genesis_get_option( 'wsm_subheader_link1', 'jessica-settings' );
-	$hovertext2 = genesis_get_option( 'wsm_subheader_hovertext2', 'jessica-settings' );
-	$image2     = genesis_get_option( 'wsm_subheader_image2', 'jessica-settings' );
-	$link2      = genesis_get_option( 'wsm_subheader_link2', 'jessica-settings' );
-	$hovertext3 = genesis_get_option( 'wsm_subheader_hovertext3', 'jessica-settings' );
-	$image3     = genesis_get_option( 'wsm_subheader_image3', 'jessica-settings' );
-	$link3      = genesis_get_option( 'wsm_subheader_link3', 'jessica-settings' );
-
-
-	echo '<div class="subheader-area mobile-only">';
-
-	echo '<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url(' . $image1 . ');">
-				  <a href="' . $link1 . '">
-				  <div class="hover-tile-container">
-				  		<h3 class="hide-title-on-hover">' . $hovertext1 . '</h3>
-				    <div class="hover-tile hover-tile-visible"></div>
-				    <div class="hover-tile hover-tile-hidden">
-				      <h3 class="white-category-title-text">' . $hovertext1 . '</h3>
-				      <!--<p>See our special pricing and available stock here.</p>-->
-				    </div>
-				  </div></a>
-				</div>';
-	echo '<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url(' . $image2 . ');">
-				  <a href="' . $link2 . '"><div class="hover-tile-container">
-				  		<h3 class="hide-title-on-hover">' . $hovertext2 . '</h3>
-				    <div class="hover-tile hover-tile-visible"></div>
-				    <div class="hover-tile hover-tile-hidden">
-				      <h3 class="white-category-title-text">' . $hovertext2 . '</h3>
-				      <!--<p>See our special pricing and available stock here.</p>-->
-				    </div>
-				  </div></a>
-				</div>';
-	echo '<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url(' . $image3 . ');">
-				  <a href="' . $link3 . '"><div class="hover-tile-container">
-				  		<h3 class="hide-title-on-hover">' . $hovertext3 . '</h3>
-				    <div class="hover-tile hover-tile-visible"></div>
-				    <div class="hover-tile hover-tile-hidden">
-				      <h3 class="white-category-title-text">' . $hovertext3 . '</h3>
-				      <!--<p>See our special pricing and available stock here.</p>-->
-				    </div>
-				  </div></a>
-				</div>';
-
-	echo '</div>';
-
-}
+//function mobile_only_add_subheader_to_main_page() {
+//	$hovertext1 = genesis_get_option( 'wsm_subheader_hovertext1', 'jessica-settings' );
+//	$image1     = esc_url( genesis_get_option( 'wsm_subheader_image1', 'jessica-settings' ) );
+//	$link1      = genesis_get_option( 'wsm_subheader_link1', 'jessica-settings' );
+//	$hovertext2 = genesis_get_option( 'wsm_subheader_hovertext2', 'jessica-settings' );
+//	$image2     = genesis_get_option( 'wsm_subheader_image2', 'jessica-settings' );
+//	$link2      = genesis_get_option( 'wsm_subheader_link2', 'jessica-settings' );
+//	$hovertext3 = genesis_get_option( 'wsm_subheader_hovertext3', 'jessica-settings' );
+//	$image3     = genesis_get_option( 'wsm_subheader_image3', 'jessica-settings' );
+//	$link3      = genesis_get_option( 'wsm_subheader_link3', 'jessica-settings' );
+//
+//
+//	echo '<div class="subheader-area mobile-only">';
+//
+//	echo '<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url(' . $image1 . ');">
+//				  <a href="' . $link1 . '">
+//				  <div class="hover-tile-container">
+//				  		<h3 class="hide-title-on-hover">' . $hovertext1 . '</h3>
+//				    <div class="hover-tile hover-tile-visible"></div>
+//				    <div class="hover-tile hover-tile-hidden">
+//				      <h3 class="white-category-title-text">' . $hovertext1 . '</h3>
+//				      <!--<p>See our special pricing and available stock here.</p>-->
+//				    </div>
+//				  </div></a>
+//				</div>';
+//	echo '<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url(' . $image2 . ');">
+//				  <a href="' . $link2 . '"><div class="hover-tile-container">
+//				  		<h3 class="hide-title-on-hover">' . $hovertext2 . '</h3>
+//				    <div class="hover-tile hover-tile-visible"></div>
+//				    <div class="hover-tile hover-tile-hidden">
+//				      <h3 class="white-category-title-text">' . $hovertext2 . '</h3>
+//				      <!--<p>See our special pricing and available stock here.</p>-->
+//				    </div>
+//				  </div></a>
+//				</div>';
+//	echo '<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url(' . $image3 . ');">
+//				  <a href="' . $link3 . '"><div class="hover-tile-container">
+//				  		<h3 class="hide-title-on-hover">' . $hovertext3 . '</h3>
+//				    <div class="hover-tile hover-tile-visible"></div>
+//				    <div class="hover-tile hover-tile-hidden">
+//				      <h3 class="white-category-title-text">' . $hovertext3 . '</h3>
+//				      <!--<p>See our special pricing and available stock here.</p>-->
+//				    </div>
+//				  </div></a>
+//				</div>';
+//
+//	echo '</div>';
+//
+//}
 
 //Main Page Ornamental Stone Products Section
 
@@ -291,7 +431,7 @@ function main_page_ornamental_stone_products_section() {
 	$category_4_link_oss      = get_field( 'category_4_link_oss' );
 
 
-	echo '<div class="top-main-page-container top-border-homepage-sections">
+	echo '<div class="top-main-page-container top-border-homepage-sections" id="ornamental-stone-products">
 
 				<div class="main-page-container-heading">
 					<h4>Ornamental Stone Products</h4>
@@ -341,7 +481,7 @@ function main_page_ornamental_stone_products_section() {
 	$box_3_link_ss             = get_field( 'box_3_link_ss' );
 
 
-	echo '<div class="top-main-page-container" id="shipping-section">
+	echo '<div class="top-main-page-container desktop-only" id="shipping-section">
 
 			<a class="main-page-col-third" href="' . $box_1_link_ss . '">
 			<div class="shipping-section" style="background-image: url(' . $box_1_image_background_ss . ');">
@@ -442,7 +582,7 @@ function main_page_featured_project_galleries_section() {
 	$homepage_gallery_3 = get_field( 'homepage_gallery_3' );
 
 
-	echo '<div class="top-main-page-container top-border-homepage-sections" id="featured-project-galleries-section">
+	echo '<div class="top-main-page-container top-border-homepage-sections desktop-only" id="featured-project-galleries-section">
 
 				<div class="main-page-container-heading">
 					<h4>Featured Project Galleries</h4>

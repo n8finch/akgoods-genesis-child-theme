@@ -75,6 +75,10 @@ span.fa.fa-cart-plus {
   padding-left: 0;
 }
 
+.genesis-nav-menu a:hover {
+  color: #C20000;
+}
+
 .genesis-nav-menu .menu-item {
   font-size: 13px;
 }
@@ -225,6 +229,19 @@ li#primary-search-box.nav-custom-search.menu-item {
   }
 }
 
+.breadcrumb {
+  color: #777777;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+  font-size: .92em;
+  margin-top: 1em;
+  margin-bottom: 0;
+
+  a {
+    color: #777;
+  }
+}
+
 @media only screen and (min-width: 699px) {
   .mobile-only {
     display: none;
@@ -243,6 +260,15 @@ li#primary-search-box.nav-custom-search.menu-item {
 
   .desktop-only {
     display: none !important;
+  }
+
+  .header-conact-left,
+  .header-social-right {
+    font-size: 12px;
+  }
+
+  span.fa.fa-fax {
+    margin-left: 8px;
   }
 
   .before-header .wrap{

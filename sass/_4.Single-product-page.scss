@@ -1,17 +1,14 @@
 body.woocommerce-page div.product .product_title, body.woocommerce-page #content div.product .product_title {
   font-size: 22px;
-  letter-spacing: 3px;
+  letter-spacing: 1.5px;
 }
 
 
 .woocommerce-breadcrumb {
-  margin: 1em 0 2em;
+  margin: 1em 0 !important;
   font-family: 'Playfair Display', serif;
 }
 
-td.label {
-
-}
 
 .woocommerce div.product {
   margin-bottom: 0;
@@ -79,21 +76,30 @@ body.woocommerce-page div.product div.images img, body.woocommerce-page #content
   text-align: center;
   margin: 0 20px;
   padding: 10px;
-  border-bottom: 1px solid #aaaaaa;
-
-  a.compare.button {
-    background-color: #333333;
-  }
+  //border-bottom: 1px solid #aaaaaa;
 }
 
+a.compare.button {
+  font-size: 16px !important;
+  text-transform: none !important;
+  background-color: #333 !important;
+  margin-left: 5px !important;
+}
+
+
 div#wl-wrapper {
+  //clear: none !important;
+  padding: 0 !important;
+
   a.wl-add-to.wl-add-but.button {
     font-size: 15px !important;
     text-transform: none !important;
-    font-family: "Lato", sans-serif !important;
     background-color: #20221d !important;
-    float: left !important;
-    margin-left: 227px !important;
+    float: right !important;
+    margin-left: 5px !important;
+    margin-right: 13px;
+    font-family: "Playfair Display", serif !important;
+    height: 36px;
   }
 
   a.wl-add-to.wl-add-but.button.disabled {
@@ -102,20 +108,44 @@ div#wl-wrapper {
   }
 }
 
+
+.woocommerce div.product form.cart .variations label {
+  font-weight: 400 !important;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+}
+
 #product-description-accordion {
   margin-top: 60px;
+  //border: 1px solid #333333;
+  //border-top: none;
 }
 
 .single-product-custom-fields-titles {
   border-top: 1px solid #333333;
   //border-bottom: 1px solid #333333;
-  padding: 10px 0;
+  padding: 10px 5px;
   margin: 5px;
 
   h3 {
     font-size: 13px;
     margin-bottom: 0;
+    letter-spacing: 1.5px;
   }
+}
+
+
+.knowledgeable-team-container {
+  background-color: #eeeeee;
+  border-bottom: 1px solid #cccccc;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.single-product-custom-fields {
+  padding: 5px;
 }
 
 .fa-float-right {
@@ -125,8 +155,9 @@ div#wl-wrapper {
 body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt, body.woocommerce-page #respond input#submit.alt, body.woocommerce-page #content input.button.alt {
   background-color: #333333;
   padding: 5.5px 20px;
-  float: left !important;
-  margin-left: 170px;
+  float: right !important;
+  margin-right: 13px;
+  font-size: 25px;
 }
 
 .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover {
@@ -170,6 +201,7 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
   border-top: 5px double #dddddd;
   position: relative;
   padding-top: 40px;
+  margin-bottom: 10px;
 
   h2 {
     font-size: 24px;

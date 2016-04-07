@@ -321,6 +321,7 @@ blockquote.easy-testimonial {
 }
 
 @media screen and (max-width: 699px) {
+
   .hover-tile-outer {
     width: 100%;
   }
@@ -333,12 +334,18 @@ blockquote.easy-testimonial {
     background-color: transparent;
   }
 
+  .top-main-page-container {
+    margin-top: 0;
+  }
+
   #mainpage-top-center {
-    margin-top: 65px;
+    margin-top: 0;
     margin-bottom: 0;
   }
 
   #mainpage-top-right {
+    margin-top: 75px;
+
     .top-side-by-side-section {
       margin-bottom: 100px;
     }
@@ -366,6 +373,11 @@ blockquote.easy-testimonial {
       padding: 0;
       margin: 0;
     }
+  }
+
+  .main-page-container-heading {
+    top: 0 !important;
+    position: relative !important;
   }
 
   #featured-project-galleries-section {

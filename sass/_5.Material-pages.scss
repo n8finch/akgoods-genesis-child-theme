@@ -8,6 +8,10 @@
   margin-bottom: 0;
 }
 
+.entry {
+  margin-bottom: 1em;
+}
+
 .materials-page-repeater-outer {
   @include outer-container;
   $mobile: new-breakpoint(max-width 1050px 12);

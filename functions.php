@@ -326,3 +326,13 @@ function wsm_wrap_widget_titles( array $params ) {
 	return $params;
 }
 
+
+
+//NUMBER OF PRODUCTS TO DISPLAY ON SHOP PAGE
+add_filter('loop_shop_per_page', 'wg_view_all_products');
+
+function wg_view_all_products(){
+	if($_GET['view'] === 'all'){
+		return '9999';
+	}
+}

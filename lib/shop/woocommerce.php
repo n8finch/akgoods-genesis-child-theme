@@ -42,7 +42,7 @@ add_filter( 'add_to_cart_text', 'wsm_woo_custom_cart_button_text' ); // < 2.1
 add_filter( 'woocommerce_product_single_add_to_cart_text', 'wsm_woo_custom_cart_button_text' ); // 2.1+ Single
 add_filter( 'woocommerce_product_add_to_cart_text', 'wsm_woo_custom_cart_button_text' ); // 2.1 + Archives
 function wsm_woo_custom_cart_button_text() {
-	return __( 'Buy', 'jessica' );
+	return __( 'Add to Cart', 'jessica' );
 }
 
 // Add Demo & Details Link to Theme store page
