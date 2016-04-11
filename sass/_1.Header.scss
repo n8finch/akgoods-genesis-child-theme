@@ -44,6 +44,11 @@
 .header-social-right {
   float: right;
   font-size: 16px;
+
+  a > * {
+    color: black;
+  }
+
 }
 
 .header-cart-items {
@@ -249,6 +254,10 @@ li#primary-search-box.nav-custom-search.menu-item {
 
   .desktop-only {
     display: block;
+  }
+
+  span.desktop-only.inline-block-display {
+    display: inline-block !important;
   }
 }
 

@@ -3,6 +3,15 @@
   margin: 10px 0;
 }
 
+.bottom-widgets .widget-area {
+  width: 22%;
+  font-family: "Playfair Display", serif;
+}
+
+.bottom-widgets ul li {
+  margin: 0;
+}
+
 .site-footer {
   background-color: #aaaaaa;
   color: #fff;
@@ -81,7 +90,7 @@ div.footer-widgets-3 {
             padding-bottom: 0 !important;
             border-bottom: none !important;
             text-transform: uppercase !important;
-            font-family: "Lato", sans-serif !important;
+            //font-family: "Lato", sans-serif !important;
           }
 
         }
@@ -131,7 +140,7 @@ div#footer-left-half {
               padding-bottom: 0 !important;
               border-bottom: none !important;
               text-transform: uppercase !important;
-              font-family: "Lato", sans-serif !important;
+              //font-family: "Lato", sans-serif !important;
             }
           }
         }
@@ -172,6 +181,11 @@ div#footer-right-half {
 }
 
 @media only screen and (max-width: 699px) {
+
+  .footer-social-icons .fa {
+    font-size: 15px !important;
+  }
+
   .footer-widgets-1, .footer-widgets-2, .footer-widgets-3, .footer-widgets-4, .bottom-widgets .widget-area {
     float: left;
     margin: 0 10px 20px;

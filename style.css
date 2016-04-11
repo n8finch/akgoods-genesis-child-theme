@@ -3,7 +3,7 @@
 	Description: Jessica is a flexible WordPress eCommerce theme that lets you pick from three different eCommerce plugins. The theme is pre-styled for WooCommerce, iThemes Exchange, and WP e-Commerce. You pick the store plugin that's right for you! By Web Savvy Marketing on the <a href="http://web-savvy-marketing.com/go/studiopress/">Genesis framework</a>.
 	Author: Web Savvy Marketing
 	Author URI: http://www.web-savvy-marketing.com/
-	Version: 1.2.2812
+	Version: 1.2.291234
 	Template: genesis
 
 	Copyright 2014 - Web Savvy Marketing
@@ -6480,6 +6480,9 @@ picture {
   float: right;
   font-size: 16px;
 }
+.header-social-right a > * {
+  color: black;
+}
 
 .header-cart-items {
   float: right;
@@ -6660,6 +6663,10 @@ li#primary-search-box.nav-custom-search.menu-item {
 
   .desktop-only {
     display: block;
+  }
+
+  span.desktop-only.inline-block-display {
+    display: inline-block !important;
   }
 }
 @media only screen and (max-width: 699px) {
@@ -7024,7 +7031,7 @@ h3.yellow-text {
 
 .top-border-homepage-sections {
   border-top: 5px double #dddddd;
-  margin-top: 40px;
+  margin-top: 20px;
   padding-top: 40px;
   position: relative;
 }
@@ -7120,6 +7127,7 @@ h3.yellow-text {
 
 #blog-post-testimonials-section {
   padding-top: 20px;
+  margin-top: 40px;
 }
 
 .featuredpost > .widget-wrap {
@@ -7456,6 +7464,10 @@ body.woocommerce-page ul.products li.product h3 {
   letter-spacing: 1px;
 }
 
+ul.products li {
+  margin-bottom: 0 !important;
+}
+
 body.woocommerce-page ul.products li.product a img {
   height: 255px;
 }
@@ -7549,6 +7561,23 @@ ul.page-numbers {
   body.woocommerce-page ul.products li.product {
     width: 45%;
   }
+
+  li.product-category.product.first,
+  li.product-category.product.last,
+  li.product-category.product {
+    margin: 0 auto 20px !important;
+  }
+
+  li.product-category.product.first,
+  li.product-category.product.last {
+    margin-right: none;
+    margin-left: none;
+    width: 90% !important;
+  }
+
+  form.woocommerce-ordering {
+    display: none;
+  }
 }
 @media only screen and (max-width: 699px) {
   div.category-hero-view-all,
@@ -7630,6 +7659,44 @@ body.woocommerce-page div.product div.images img, body.woocommerce-page #content
   font-size: 20px;
 }
 
+.variations_form.cart {
+  margin-bottom: 20px !important;
+  padding-top: 20px;
+  border-top: 1px solid #dddddd;
+}
+
+.woocommerce div.product form.cart .variations td.label {
+  width: 165px;
+}
+
+tr.spacer {
+  height: 15px;
+}
+
+td.value {
+  border: 1px solid #dddddd !important;
+  width: 270px;
+  height: 11px;
+  padding: 0 !important;
+}
+
+.woocommerce div.product form.cart .variations td, .woocommerce div.product form.cart .variations th {
+  line-height: 1em !important;
+}
+
+.woocommerce div.product form.cart .variations select {
+  font-family: "Playfair Display", serif;
+  min-width: 100% !important;
+  background: none;
+  border: none;
+  margin-bottom: 0 !important;
+}
+
+div.quantity {
+  float: right !important;
+  margin-right: 0 !important;
+}
+
 .compare_and_wishlist_buttons {
   text-align: center;
   margin: 0 20px;
@@ -7641,6 +7708,7 @@ a.compare.button {
   text-transform: none !important;
   background-color: #333 !important;
   margin-left: 5px !important;
+  padding: 10px 26px !important;
 }
 
 div#wl-wrapper {
@@ -7652,13 +7720,18 @@ div#wl-wrapper a.wl-add-to.wl-add-but.button {
   background-color: #20221d !important;
   float: right !important;
   margin-left: 5px !important;
-  margin-right: 13px;
+  margin-right: 0;
+  padding: 10px 26px !important;
   font-family: "Playfair Display", serif !important;
   height: 36px;
 }
 div#wl-wrapper a.wl-add-to.wl-add-but.button.disabled {
   color: #ffffff;
   background-color: #777777 !important;
+}
+
+a.reset_variations {
+  display: none !important;
 }
 
 .woocommerce div.product form.cart .variations label {
@@ -7669,7 +7742,7 @@ div#wl-wrapper a.wl-add-to.wl-add-but.button.disabled {
 }
 
 #product-description-accordion {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .single-product-custom-fields-titles {
@@ -8370,6 +8443,15 @@ h2.blog-page-first-post-only {
   margin: 10px 0;
 }
 
+.bottom-widgets .widget-area {
+  width: 22%;
+  font-family: "Playfair Display", serif;
+}
+
+.bottom-widgets ul li {
+  margin: 0;
+}
+
 .site-footer {
   background-color: #aaaaaa;
   color: #fff;
@@ -8439,7 +8521,6 @@ div.footer-widgets-3 section.widget.widget_nav_menu div.widget-wrap div ul.menu 
   padding-bottom: 0 !important;
   border-bottom: none !important;
   text-transform: uppercase !important;
-  font-family: "Lato", sans-serif !important;
 }
 
 div#footer-left-half {
@@ -8492,7 +8573,6 @@ div#footer-left-half #bottom-widget-3 section.widget div.widget-wrap div ul li.m
   padding-bottom: 0 !important;
   border-bottom: none !important;
   text-transform: uppercase !important;
-  font-family: "Lato", sans-serif !important;
 }
 
 div#footer-right-half {
@@ -8524,6 +8604,10 @@ div#footer-right-half section.widget div.widget-wrap h4 {
 }
 
 @media only screen and (max-width: 699px) {
+  .footer-social-icons .fa {
+    font-size: 15px !important;
+  }
+
   .footer-widgets-1, .footer-widgets-2, .footer-widgets-3, .footer-widgets-4, .bottom-widgets .widget-area {
     float: left;
     margin: 0 10px 20px;

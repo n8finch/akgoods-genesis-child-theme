@@ -3,12 +3,10 @@ body.woocommerce-page div.product .product_title, body.woocommerce-page #content
   letter-spacing: 1.5px;
 }
 
-
 .woocommerce-breadcrumb {
   margin: 1em 0 !important;
   font-family: 'Playfair Display', serif;
 }
-
 
 .woocommerce div.product {
   margin-bottom: 0;
@@ -51,8 +49,6 @@ body.woocommerce-page div.product div.images img, body.woocommerce-page #content
   }
 }
 
-
-
 .social-compare-wishlist-section {
   text-align: center;
   margin: 0 20px;
@@ -72,6 +68,49 @@ body.woocommerce-page div.product div.images img, body.woocommerce-page #content
   }
 }
 
+//Add to cart section
+.variations_form.cart {
+  margin-bottom: 20px !important;
+  padding-top: 20px;
+  border-top: 1px solid #dddddd;
+}
+
+//body.woocommerce-page div.product form.cart .variations, body.woocommerce-page #content div.product form.cart .variations {
+//  margin-bottom: .75em;
+//}
+
+.woocommerce div.product form.cart .variations td.label {
+  width: 165px;
+}
+
+tr.spacer {
+  height: 15px;
+}
+
+td.value {
+  border: 1px solid #dddddd !important;
+  width: 270px;
+  height: 11px;
+  padding: 0 !important;
+}
+
+.woocommerce div.product form.cart .variations td, .woocommerce div.product form.cart .variations th {
+  line-height: 1em !important;
+}
+
+.woocommerce div.product form.cart .variations select {
+  font-family: "Playfair Display", serif;
+  min-width: 100% !important;
+  background: none;
+  border: none;
+  margin-bottom: 0 !important;
+}
+
+div.quantity {
+  float: right !important;
+  margin-right: 0 !important;
+}
+
 .compare_and_wishlist_buttons {
   text-align: center;
   margin: 0 20px;
@@ -84,8 +123,8 @@ a.compare.button {
   text-transform: none !important;
   background-color: #333 !important;
   margin-left: 5px !important;
+  padding: 10px 26px !important;
 }
-
 
 div#wl-wrapper {
   //clear: none !important;
@@ -97,7 +136,8 @@ div#wl-wrapper {
     background-color: #20221d !important;
     float: right !important;
     margin-left: 5px !important;
-    margin-right: 13px;
+    margin-right: 0;
+    padding: 10px 26px !important;
     font-family: "Playfair Display", serif !important;
     height: 36px;
   }
@@ -108,6 +148,9 @@ div#wl-wrapper {
   }
 }
 
+a.reset_variations {
+  display: none !important;
+}
 
 .woocommerce div.product form.cart .variations label {
   font-weight: 400 !important;
@@ -117,7 +160,7 @@ div#wl-wrapper {
 }
 
 #product-description-accordion {
-  margin-top: 60px;
+  margin-top: 20px;
   //border: 1px solid #333333;
   //border-top: none;
 }
@@ -135,14 +178,12 @@ div#wl-wrapper {
   }
 }
 
-
 .knowledgeable-team-container {
   background-color: #eeeeee;
   border-bottom: 1px solid #cccccc;
   padding: 20px;
   text-align: center;
 }
-
 
 .single-product-custom-fields {
   padding: 5px;

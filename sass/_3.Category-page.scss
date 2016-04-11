@@ -245,6 +245,13 @@ body.woocommerce-page ul.products li.product {
     }
 }
 
+ul.products {
+
+  li {
+    margin-bottom: 0 !important;
+  }
+}
+
 body.woocommerce-page ul.products li.product a img {
   height: 255px;
 }
@@ -363,6 +370,23 @@ ul.page-numbers {
 
   body.woocommerce-page ul.products li.product {
     width: 45%;
+  }
+
+  li.product-category.product.first,
+  li.product-category.product.last,
+  li.product-category.product {
+    margin: 0 auto 20px !important;
+  }
+
+  li.product-category.product.first,
+  li.product-category.product.last {
+    margin-right: none;
+    margin-left: none;
+    width: 90% !important;
+  }
+
+  form.woocommerce-ordering{
+    display: none;
   }
 
 }

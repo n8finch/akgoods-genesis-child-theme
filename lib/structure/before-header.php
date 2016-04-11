@@ -39,10 +39,8 @@ function jessica_do_before_header() {
 	echo '<div class="header-conact-left">' .
 	     '<span class="fa fa-phone"></span> ' .
 	     $phone .
-	     '<span class="fa fa-fax""></span> ' .
-	     $fax .
-//	     '<span class="fa fa-envelope"></span> ' .
-//	     $email .
+	     '<span class="desktop-only inline-block-display"><span class="fa fa-fax"></span> ' .
+	     $fax . '</span>' .
 	     '</div>';
 
 //	//Right Header Cart and Social Media Icons
@@ -65,8 +63,8 @@ function jessica_do_before_header() {
 //	}
 
 	echo '<div class="header-social-right" id="social-icons-header">' .
-	     '<span class="fa fa-envelope"></span> ' .
-	     $email .
+	     '<a href="mailto:' . $email . '"><span class="fa fa-envelope"></span> ' .
+	     $email . '</a>' .
 	     '</div>';
 
 //	echo '<div class="header-social-right" id="social-icons-header">' .
@@ -102,7 +100,7 @@ function jessica_do_before_header() {
 }
 
 
-add_action( 'genesis_header_right', 'add_cart_to_header_right');
+add_action( 'genesis_header_right', 'add_cart_to_header_right' );
 function add_cart_to_header_right() {
 	//Right Header Cart and Social Media Icons
 
@@ -232,12 +230,12 @@ function ak_genesis_search_primary_nav_menu( $menu, stdClass $args ) {
 	return $menu;
 }
 
-add_action( 'genesis_after_header', 'mobile_only_lead_text_subheader', 2);
+add_action( 'genesis_after_header', 'mobile_only_lead_text_subheader', 2 );
 
 function mobile_only_lead_text_subheader() {
 
-	$leadtext   = genesis_get_option( 'wsm_subheader_leadtext', 'jessica-settings' );
-	
+	$leadtext = genesis_get_option( 'wsm_subheader_leadtext', 'jessica-settings' );
+
 	echo '	<div class="mobile-only mobile-lead-text">' .
 	     $leadtext .
 	     '</div>';
