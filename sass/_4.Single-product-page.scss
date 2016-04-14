@@ -24,6 +24,10 @@ body.woocommerce-page div.product .product_title, body.woocommerce-page #content
   margin-bottom: 20px;
 }
 
+div.menu-useful-links-container {
+  font-family: "Playfair Display", serif;
+}
+
 // Resize Single Product Image and Description boxes
 
 body.woocommerce-page #content div.product div.images, body.woocommerce-page div.product div.images {
@@ -126,6 +130,13 @@ a.compare.button {
   padding: 10px 26px !important;
 }
 
+a.compare.button:hover {
+  background-color: #ffffff !important;
+  color: #333 !important;
+  border: 1px solid #333 !important;
+}
+
+
 div#wl-wrapper {
   //clear: none !important;
   padding: 0 !important;
@@ -140,6 +151,12 @@ div#wl-wrapper {
     padding: 10px 26px !important;
     font-family: "Playfair Display", serif !important;
     height: 36px;
+  }
+
+  a.wl-add-to.wl-add-but.button:hover {
+    background-color: #ffffff !important;
+    color: #333 !important;
+    border: 1px solid #333 !important;
   }
 
   a.wl-add-to.wl-add-but.button.disabled {
@@ -216,6 +233,7 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
   border-top: 5px double #dddddd;
   position: relative;
   padding-top: 40px;
+  margin: 0 auto;
 
   h2 {
     font-size: 24px;
@@ -231,7 +249,7 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
     margin: 0 auto;
 
     li {
-      width: 29%;
+      width: 32%;
     }
   }
 }
@@ -297,6 +315,24 @@ div.woocommerce-tabs.wc-tabs-wrapper {
   .you-may-also-like-section .you-may-also-like-items .you-may-also-like-item {
     width: 50%;
     margin: 0;
+  }
+
+  #upsell-product-space,
+  div.you-may-also-like-section {
+
+    padding-top: 40px;
+    top: 0;
+
+    h2 {
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+  }
+
+  td.value {
+    width: 100%;
   }
 
 }

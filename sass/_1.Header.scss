@@ -60,6 +60,10 @@ span.fa.fa-cart-plus {
   margin-left: 20px;
 }
 
+.cart-items-red {
+  color: #C20000;
+}
+
 .site-header .wrap {
   padding: 20px 22px 20px;
 }
@@ -96,13 +100,13 @@ span.fa.fa-cart-plus {
   -o-transition: opacity .1s ease-in-out;
   transition: opacity .0s ease-in-out;
   background: #efefef;
-  width: 200px;
+  width: 250px;
   text-wrap: normal;
 }
 
 .genesis-nav-menu .sub-menu a {
   text-align: left;
-  font-size: 11px;
+  font-size: 13px;
   border-bottom: none;
 }
 
@@ -182,7 +186,7 @@ li#primary-search-box.nav-custom-search.menu-item {
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
   background-position: top;
   background-size: cover;
-  background-color: beige;
+  background-color: white;
   //border: 1px solid $base-border-color;
   cursor: pointer;
   height: $hover-tile-height;

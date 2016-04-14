@@ -140,14 +140,14 @@ function jessica_add_excerpt_more( $more ) {
  * See readme file located at /lib/js/css_browser_selector_readm.html
  * for a full explanation of available browser css selectors.
  */
-add_action( 'get_header', 'jessica_load_scripts' );
+add_action( 'wp_enqueue_scripts', 'jessica_load_scripts' );
 function jessica_load_scripts() {
 	wp_enqueue_script( 'browserselect', CHILD_URL . '/lib/js/css_browser_selector.js', array( 'jquery' ), '0.4.0', true );
 
 //	wp_enqueue_script( 'jquery-ui-local', CHILD_URL .'/lib/js/jquery-ui.min.js', array( 'jquery' ), '1.11.4', true );
 
 
-	wp_enqueue_script( 'customjs', CHILD_URL . '/lib/js/custom.js', array( 'jquery' ), '1.0.3', true );
+	wp_enqueue_script( 'customjs', CHILD_URL . '/lib/js/custom.js', array( 'jquery', 'wc-add-to-cart-variation' ), '1.0.5', true );
 }
 
 // Structural Wrap
@@ -327,12 +327,9 @@ function wsm_wrap_widget_titles( array $params ) {
 }
 
 
-
-//NUMBER OF PRODUCTS TO DISPLAY ON SHOP PAGE
-add_filter('loop_shop_per_page', 'wg_view_all_products');
-
-function wg_view_all_products(){
-	if($_GET['view'] === 'all'){
-		return '9999';
-	}
+//* Disable the superfish script
+add_action( 'wp_enqueue_scripts', 'sp_disable_superfish' );
+function sp_disable_superfish() {
+	wp_deregister_script( 'superfish' );
+	wp_deregister_script( 'superfish-args' );
 }

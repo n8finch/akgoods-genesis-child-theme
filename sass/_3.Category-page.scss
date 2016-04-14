@@ -1,29 +1,49 @@
-
 //Category and Single Product Sidebar Section
 
 .start_sorting_container {
-  min-width: 100%;
+  position: relative;
+  min-width: 80%;
   height: 37px;
   text-align: right;
   float: right;
-  margin: 10px 0;
-  padding: 10px;
-  background-color: #EEEDED;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 6px;
+  background-color: #efefef;
   border: 1px solid #cccccc;
-}
 
-.woocommerce .woocommerce-ordering select {
-  font-size: 1em;
+  .gridlist-toggle {
+    display: initial !important;
+    margin: 0;
+    float: left;
+    padding: 0 !important;
+
+    a {
+      padding: 0.3em;
+    }
+  }
+
+  form.woocommerce-ordering {
+    margin-left: 10px;
+
+    select {
+      background-color: white;
+    }
+
+  }
+
+  form.form-wppp-select.products-per-page {
+
+    select {
+      background-color: white;
+    }
+
+  }
 }
 
 .shop-sidebar {
   max-width: 200px;
   float: left;
-}
-
-.gridlist-toggle {
-  display: initial !important;
-  margin-left: 40px !important;
 }
 
 //Product Categories Menu
@@ -61,11 +81,11 @@ section.widget.widget_nav_menu {
   .widget-wrap {
 
     h4.widgettitle.widget-title {
-    font-size: 15px;
-    letter-spacing: 0;
-    padding: 5px;
-    color: white;
-    background-color: #4C4034;
+      font-size: 15px;
+      letter-spacing: 0;
+      padding: 5px;
+      color: white;
+      background-color: #4C4034;
 
     }
 
@@ -105,9 +125,6 @@ body.woocommerce-page ul.products li.product h3 {
   margin-top: 45px;
 }
 
-
-
-
 //Category Hero Top Section
 
 .category-header {
@@ -144,7 +161,7 @@ body.woocommerce-page ul.products li.product h3 {
   background-color: #ffffff;
   padding: 20px 10px;
   font-weight: 400;
-  opacity: .75;
+  opacity: .65;
   height: 100%;
   position: relative;
 }
@@ -155,7 +172,7 @@ body.woocommerce-page ul.products li.product h3 {
   text-align: center;
   font-weight: 400;
   background-color: #4c4034;
-  opacity: 1;
+  opacity: 1 !important;
   border-radius: 0;
   position: absolute;
   bottom: 10px;
@@ -165,7 +182,7 @@ body.woocommerce-page ul.products li.product h3 {
 
 .category-description-button:hover {
   background-color: #251d19;
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .category-hero-view-all {
@@ -215,7 +232,6 @@ li.product-category.product {
   }
 }
 
-
 //Remove the Info and Buy Buttons
 
 .woocommerce ul.products li.product .button {
@@ -239,10 +255,10 @@ body.woocommerce-page ul.products li.product {
   width: 32.8%;
   margin-right: .5%;
 
-
-    h3 {
-      letter-spacing: 1px;
-    }
+  h3 {
+    letter-spacing: 1px;
+    padding: 10px 0 0 !important;
+  }
 }
 
 ul.products {
@@ -273,8 +289,6 @@ a.button-details.button {
 ul.products {
   li.product {
 
-
-
     hr {
       display: none;
     }
@@ -290,7 +304,6 @@ ul.products {
   padding-bottom: 20px;
 }
 
-
 ul.page-numbers {
   width: 100%;
 }
@@ -299,7 +312,6 @@ ul.page-numbers {
   width: 30px;
   text-align: center;
 }
-
 
 @media only screen and (max-width: 1150px) {
 
@@ -321,7 +333,6 @@ ul.page-numbers {
 
 }
 
-
 @media only screen and (max-width: 1025px) {
 
   .category-header-name {
@@ -339,7 +350,6 @@ ul.page-numbers {
   }
 
 }
-
 
 @media only screen and (max-width: 800px) {
 
@@ -385,7 +395,7 @@ ul.page-numbers {
     width: 90% !important;
   }
 
-  form.woocommerce-ordering{
+  form.woocommerce-ordering {
     display: none;
   }
 

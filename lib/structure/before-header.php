@@ -37,10 +37,8 @@ function jessica_do_before_header() {
 	//Left Header Info Section
 
 	echo '<div class="header-conact-left">' .
-	     '<span class="fa fa-phone"></span> ' .
+	     '<span class="">Phone: </span> ' .
 	     $phone .
-	     '<span class="desktop-only inline-block-display"><span class="fa fa-fax"></span> ' .
-	     $fax . '</span>' .
 	     '</div>';
 
 //	//Right Header Cart and Social Media Icons
@@ -113,12 +111,12 @@ function add_cart_to_header_right() {
 	$cart_url = $woocommerce->cart->get_cart_url();
 
 	// if multiple products in cart
-	if ( $qty > 1 ) {
-		echo '<div class="header-cart-items"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-shopping-cart fa-2x"> ' . $qty . '</span></a></div>';
+	if ( $qty > 0 ) {
+		echo '<div class="header-cart-items cart-items-red"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-shopping-cart fa-2x"> ' . $qty . '</span></a></div>';
 	} elseif ( $qty < 1 ) {
 		echo '<div class="header-cart-items"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-shopping-cart fa-2x"> 0</span></a></div>';
 	} elseif ( $qty = 1 ) {
-		echo '<div class="header-cart-items"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-shopping-cart fa-2x"> ' . $qty . '</span></a></div>';
+		echo '<div class="header-cart-items cart-items-red"><a class="header-cart-items" href="' . $cart_url . '"> <span class="fa fa-shopping-cart fa-2x"> ' . $qty . '</span></a></div>';
 	}
 }
 

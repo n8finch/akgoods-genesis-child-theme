@@ -89,7 +89,7 @@ div.footer-widgets-3 {
             padding-top: 0 !important;
             padding-bottom: 0 !important;
             border-bottom: none !important;
-            text-transform: uppercase !important;
+            //text-transform: lowercase !important;
             //font-family: "Lato", sans-serif !important;
           }
 
@@ -101,8 +101,8 @@ div.footer-widgets-3 {
 }
 
 div#footer-left-half {
-  max-width: 50%;
-  width: 50%;
+  max-width: 55%;
+  width: 55%;
   height: 200px;
   float: left;
   display: flex;
@@ -112,7 +112,7 @@ div#footer-left-half {
   #bottom-widget-1,
   #bottom-widget-2,
   #bottom-widget-3 {
-    max-width: 30%;
+    //max-width: 30%;
     //float: left;
     //margin: 0;
     flex: 1;
@@ -139,7 +139,7 @@ div#footer-left-half {
               padding-top: 0 !important;
               padding-bottom: 0 !important;
               border-bottom: none !important;
-              text-transform: uppercase !important;
+              text-transform: none !important;
               //font-family: "Lato", sans-serif !important;
             }
           }
@@ -148,11 +148,28 @@ div#footer-left-half {
     }
   }
 
+  #bottom-widget-3 {
+    flex-grow: 1.2;
+  }
 }
 
+
+#contact-us-footer {
+  a {
+
+    h4 {
+      font-size: 16px !important;
+      margin-bottom: 0;
+      font-family: 'Source Serif Pro', serif;
+      letter-spacing: inherit;
+    }
+  }
+}
+
+
 div#footer-right-half {
-  max-width: 50%;
-  width: 50%;
+  max-width: 45%;
+  width: 45%;
   float: right;
   display: flex;
   flex-wrap: wrap;
@@ -173,6 +190,7 @@ div#footer-right-half {
 
       h4 {
         border-bottom: none;
+        letter-spacing: inherit;
       }
 
     }
@@ -205,4 +223,11 @@ div#footer-right-half {
       flex: 1 1 40%;
     }
   }
+}
+
+#scroll-to-top-button-chevron {
+  background: #fff;
+  padding: 10px;
+  color: black;
+  opacity: .75;
 }
