@@ -195,11 +195,33 @@ a.reset_variations {
   }
 }
 
+#make-selection-text {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #eee;
+  margin-bottom: 5px;
+  border-bottom: 2px solid #157ec2;
+  font-family: "Playfair Display", serif;
+
+  .fa-info-circle {
+    color: #157EC2;
+  }
+}
+
 .knowledgeable-team-container {
   background-color: #eeeeee;
   border-bottom: 1px solid #cccccc;
   padding: 20px;
   text-align: center;
+  font-size: 18px;
+
+  .knowledgeable-team-phone {
+    margin-right: 10px;
+  }
+
+  .fa-envelope {
+    margin-left: 10px;
+  }
 }
 
 .single-product-custom-fields {
@@ -323,10 +345,13 @@ div.woocommerce-tabs.wc-tabs-wrapper {
     padding-top: 40px;
     top: 0;
 
+    border-top: none;
+
     h2 {
       position: relative;
-      width: 100%;
+      width: 280px;;
       margin: 0 auto;
+      border-bottom: 5px double #dddddd;
     }
 
   }

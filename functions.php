@@ -147,7 +147,7 @@ function jessica_load_scripts() {
 //	wp_enqueue_script( 'jquery-ui-local', CHILD_URL .'/lib/js/jquery-ui.min.js', array( 'jquery' ), '1.11.4', true );
 
 
-	wp_enqueue_script( 'customjs', CHILD_URL . '/lib/js/custom.js', array( 'jquery', 'wc-add-to-cart-variation' ), '1.0.5', true );
+	wp_enqueue_script( 'customjs', CHILD_URL . '/lib/js/custom.js', array( 'jquery', 'wc-add-to-cart-variation' ), '1.0.6', true );
 }
 
 // Structural Wrap

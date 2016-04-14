@@ -225,9 +225,10 @@ div#footer-right-half {
   }
 }
 
-#scroll-to-top-button-chevron {
+#scroll-to-top-button-chevron,
+#scroll-to-bottom-button-chevron {
   background: #fff;
-  padding: 10px;
+  padding: 10px 2px;
   color: black;
   opacity: .75;
 }
