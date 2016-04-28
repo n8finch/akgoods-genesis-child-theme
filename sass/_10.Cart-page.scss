@@ -5,3 +5,43 @@
 input#coupon_code.input-text {
   width: 105px;
 }
+
+.cart-wishlist-compare-section {
+  float: left;
+  max-width: 50%;
+
+  button {
+    font-size: 15px !important;
+    text-transform: none !important;
+    background-color: #20221d !important;
+    font-family: "Playfair Display", serif;
+    border-radius: 0 !important;
+  }
+
+  button:hover {
+    background-color: #fff !important;
+    color: #20221d !important;
+    border: 1px solid #20221d;
+
+  }
+}
+
+@media only screen and (max-width: 750px) {
+
+  tr.cart_item {
+    td.product-quantity {
+      min-height: 50px;
+      padding-right: 10px !important;
+      div.quantity {
+        input.input-text.qty.text {
+          float: right;
+        }
+      }
+    }
+  }
+
+  .cart-wishlist-compare-section {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}

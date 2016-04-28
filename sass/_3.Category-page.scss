@@ -27,17 +27,56 @@
 
   form.woocommerce-ordering {
     margin-left: 10px;
+    position: relative;
 
     select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
       background-color: white;
+      border-radius: 0;
+      padding: 0 10px;
+    }
+
+    &:before {
+      content: '\f107';
+      font-family: 'FontAwesome';
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      right: 7px;
+      @include calc(top, '50% - 20px');
+      font-size: 1.4em;
+      line-height: 1;
+      text-align: center;
+      z-index: 10;
     }
 
   }
 
   form.form-wppp-select.products-per-page {
+    position: relative;
 
     select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
       background-color: white;
+      border-radius: 0;
+      padding: 0 10px;
+      width: 190px;
+    }
+
+    &:before {
+      content: '\f107';
+      font-family: 'FontAwesome';
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      right: 7px;
+      @include calc(top, '50% - 20px');
+      font-size: 1.4em;
+      line-height: 1;
+      text-align: center;
+      z-index: 10;
     }
 
   }
@@ -393,7 +432,6 @@ ul.page-numbers {
   li.product-category.product.last {
     margin: 0 auto 20px !important;
     float: none !important;
-    float: none !important;
     width: 90% !important;
   }
 
@@ -420,13 +458,20 @@ ul.page-numbers {
   //  width: 300px;
   //}
 
-  ul.products.grid {
+  //ul.products.grid {
+  //
+  //  li {
+  //    float: left !important;
+  //    margin: 0 5% 20px !important;
+  //    width: 90% !important;
+  //  }
+  //}
 
-    li {
-      float: left !important;
-      margin: 0 5% 20px !important;
-      width: 90% !important;
-    }
+  body.woocommerce-page ul.products li.product {
+    float: left !important;
+    margin: 0 5% 20px !important;
+    width: 90% !important;
   }
 
 }
+

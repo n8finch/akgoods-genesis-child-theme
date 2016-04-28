@@ -34,9 +34,9 @@ function get_the_materials_columns_4() {
 			echo '<a href="' . $link .'"><button>' . $button_text . '</button></a>';
 			}
 
-			echo '<h3>' . $title . '</h3>';
+			echo '<a href="'.$link.'"><h3>' . $title . '</h3></a>';
 
-			echo $content;
+			echo '<a href="'.$link.'">' . $content . '</a>';
 
 			echo '</div>';// end materials-page-repeater-inner
 

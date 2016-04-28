@@ -17,5 +17,6 @@ wp-content/plugins/hello.php
 /license.txt
 
 .idea
-
 .sass-cache/
+bower_components
+node_modules

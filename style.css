@@ -3,7 +3,7 @@
 	Description: Jessica is a flexible WordPress eCommerce theme that lets you pick from three different eCommerce plugins. The theme is pre-styled for WooCommerce, iThemes Exchange, and WP e-Commerce. You pick the store plugin that's right for you! By Web Savvy Marketing on the <a href="http://web-savvy-marketing.com/go/studiopress/">Genesis framework</a>.
 	Author: Web Savvy Marketing
 	Author URI: http://www.web-savvy-marketing.com/
-	Version: 1.2.32123456
+	Version: 1.2.381
 	Template: genesis
 
 	Copyright 2014 - Web Savvy Marketing
@@ -6460,7 +6460,7 @@ picture {
 }
 
 .before-header {
-  background-color: #efefef;
+  background-color: #fafafa;
   color: black;
 }
 
@@ -6511,9 +6511,14 @@ span.fa.fa-cart-plus {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px 0;
+  padding: 12px 0;
   font-size: 16px;
   max-height: 100px;
+  font-family: "Playfair Display", serif;
+}
+.subheader-text-area img {
+  max-width: 227px;
+  max-height: 75px;
 }
 
 .genesis-nav-menu a {
@@ -7070,8 +7075,9 @@ h3.yellow-text {
   text-shadow: 1px 1px 1px #969696;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 110%;
   min-height: 100px;
+  border: 1px solid #ccc;
 }
 .discount-section h4 {
   color: #ffffff;
@@ -7111,6 +7117,7 @@ h3.yellow-text {
   text-shadow: 1px 1px 1px #969696;
   background-position: center;
   min-height: 100px;
+  border: 1px solid #ccc;
 }
 .shipping-section h4 {
   color: #ffffff;
@@ -7281,12 +7288,51 @@ blockquote.easy-testimonial {
 }
 .start_sorting_container form.woocommerce-ordering {
   margin-left: 10px;
+  position: relative;
 }
 .start_sorting_container form.woocommerce-ordering select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   background-color: white;
+  border-radius: 0;
+  padding: 0 10px;
+}
+.start_sorting_container form.woocommerce-ordering:before {
+  content: '\f107';
+  font-family: 'FontAwesome';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 7px;
+  top: calc(50% - 20px);
+  font-size: 1.4em;
+  line-height: 1;
+  text-align: center;
+  z-index: 10;
+}
+.start_sorting_container form.form-wppp-select.products-per-page {
+  position: relative;
 }
 .start_sorting_container form.form-wppp-select.products-per-page select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   background-color: white;
+  border-radius: 0;
+  padding: 0 10px;
+  width: 190px;
+}
+.start_sorting_container form.form-wppp-select.products-per-page:before {
+  content: '\f107';
+  font-family: 'FontAwesome';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 7px;
+  top: calc(50% - 20px);
+  font-size: 1.4em;
+  line-height: 1;
+  text-align: center;
+  z-index: 10;
 }
 
 .shop-sidebar {
@@ -7585,7 +7631,6 @@ ul.page-numbers {
   li.product-category.product.last {
     margin: 0 auto 20px !important;
     float: none !important;
-    float: none !important;
     width: 90% !important;
   }
 
@@ -7605,7 +7650,7 @@ ul.page-numbers {
     margin-bottom: 10px;
   }
 
-  ul.products.grid li {
+  body.woocommerce-page ul.products li.product {
     float: left !important;
     margin: 0 5% 20px !important;
     width: 90% !important;
@@ -7678,6 +7723,18 @@ body.woocommerce-page div.product div.images img, body.woocommerce-page #content
   margin: 10px;
   font-size: 20px;
 }
+.social-compare-wishlist-section .fa-facebook {
+  color: #43609C;
+}
+.social-compare-wishlist-section .fa-twitter {
+  color: #55ACEE;
+}
+.social-compare-wishlist-section .fa-pinterest {
+  color: #BB0F23;
+}
+.social-compare-wishlist-section .fa-google-plus {
+  color: #EA4335;
+}
 
 .variations_form.cart {
   margin-bottom: 20px !important;
@@ -7704,15 +7761,33 @@ td.value {
   line-height: 1em !important;
 }
 
-.woocommerce div.product form.cart .variations select {
+.woocommerce div.product form.cart .variations td.value {
+  position: relative;
+}
+.woocommerce div.product form.cart .variations td.value select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
   font-family: "Playfair Display", serif;
   min-width: 100% !important;
   background: none;
   border: none;
   margin-bottom: 0 !important;
 }
+.woocommerce div.product form.cart .variations td.value:before {
+  content: '\f107';
+  font-family: 'FontAwesome';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 7px;
+  top: calc(50% - 10px);
+  font-size: 1.4em;
+  line-height: 1;
+  text-align: center;
+  z-index: 10;
+}
 
-div.quantity {
+div.single_variation_wrap div.woocommerce-variation-add-to-cart.variations_button div.quantity {
   float: right !important;
   margin-right: 0 !important;
 }
@@ -7802,7 +7877,7 @@ a.reset_variations {
 .knowledgeable-team-container {
   background-color: #eeeeee;
   border-bottom: 1px solid #cccccc;
-  padding: 20px;
+  padding: 5px 20px;
   text-align: center;
   font-size: 18px;
 }
@@ -7954,6 +8029,16 @@ div.woocommerce-tabs.wc-tabs-wrapper {
     width: 100%;
   }
 
+  .woocommerce div.product form.cart .variations td.value {
+    width: 143px;
+  }
+  .woocommerce div.product form.cart .variations td.value select {
+    padding-left: 2px;
+  }
+  .woocommerce div.product form.cart .variations td.value:before {
+    right: 0;
+  }
+
   #upsell-product-space {
     width: 100%;
   }
@@ -7964,6 +8049,28 @@ div.woocommerce-tabs.wc-tabs-wrapper {
   .you-may-also-like-section .you-may-also-like-items .you-may-also-like-item {
     width: 100%;
     margin: 0;
+  }
+
+  div.woocommerce-variation-add-to-cart.variations_button {
+    text-align: center;
+    float: left;
+  }
+
+  div#wl-wrapper a.wl-add-to.wl-add-but.button {
+    float: left !important;
+    margin-left: 0 !important;
+  }
+
+  form.variations_form.cart a.compare.button {
+    float: left !important;
+    margin-top: 10px;
+    margin-left: 0 !important;
+  }
+}
+@media only screen and (max-width: 325px) {
+  div.woocommerce-variation-add-to-cart.variations_button {
+    text-align: center;
+    padding: 0 15px;
   }
 }
 .content .entry-title {
@@ -8516,6 +8623,37 @@ input#coupon_code.input-text {
   width: 105px;
 }
 
+.cart-wishlist-compare-section {
+  float: left;
+  max-width: 50%;
+}
+.cart-wishlist-compare-section button {
+  font-size: 15px !important;
+  text-transform: none !important;
+  background-color: #20221d !important;
+  font-family: "Playfair Display", serif;
+  border-radius: 0 !important;
+}
+.cart-wishlist-compare-section button:hover {
+  background-color: #fff !important;
+  color: #20221d !important;
+  border: 1px solid #20221d;
+}
+
+@media only screen and (max-width: 750px) {
+  tr.cart_item td.product-quantity {
+    min-height: 50px;
+    padding-right: 10px !important;
+  }
+  tr.cart_item td.product-quantity div.quantity input.input-text.qty.text {
+    float: right;
+  }
+
+  .cart-wishlist-compare-section {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
 .bottom-widgets {
   margin: 10px 0;
 }

@@ -216,8 +216,9 @@ h3.yellow-text {
   text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 110%;
   min-height: 100px;
+  border: 1px solid #ccc;
 
   h4 {
     color: #ffffff;
@@ -262,6 +263,8 @@ h3.yellow-text {
   text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
   background-position: center;
   min-height: 100px;
+  border: 1px solid #ccc;
+
 
   h4 {
     color: #ffffff;

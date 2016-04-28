@@ -1,3 +1,4 @@
+
 .subheader-area {
   display: flex;
   border: 1px solid #cdd1d2;
@@ -24,7 +25,7 @@
 }
 
 .before-header {
-  background-color: #efefef;
+  background-color: #fafafa;
   color: black;
 }
 
@@ -74,9 +75,15 @@ span.fa.fa-cart-plus {
   font-weight: 400;
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  padding: 12px 0;
   font-size: 16px;
   max-height: 100px;
+  font-family: "Playfair Display", serif;
+
+  img {
+    max-width: 227px;
+    max-height: 75px;
+  }
 }
 
 .genesis-nav-menu a {
