@@ -166,6 +166,24 @@ div#footer-left-half {
   }
 }
 
+.footer-logos-pss {
+  max-width: 175px;
+
+  #paypal-logo {
+
+  }
+
+  #ssl-logo {
+    margin-top: -5px;
+    margin-left: -2px;
+  }
+
+  #securi-logo {
+    margin-top: -7px;
+    margin-left: -3px;
+  }
+}
+
 
 div#footer-right-half {
   max-width: 45%;
@@ -223,6 +241,15 @@ div#footer-right-half {
       flex: 1 1 40%;
     }
   }
+
+  #contact-us-footer {
+    float: left;
+  }
+
+  .footer-logos-pss {
+    float: right;
+  }
+
 }
 
 #scroll-to-top-button-chevron,

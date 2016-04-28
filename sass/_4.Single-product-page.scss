@@ -315,7 +315,11 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
     margin: 0 auto;
 
     li {
-      width: 32%;
+      width: 294px;
+
+      h3 {
+        font-family: "Playfair Display", serif;
+      }
     }
   }
 }
@@ -344,15 +348,31 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
     .you-may-also-like-item {
       @include span-columns(4);
       margin: 0;
+      width: 294px;
 
       .you-may-also-like-images {
-        height: 200px;
-        width: 250px;
+        height: 255px;
+        width: 100%;
       }
+
+      h3 {
+        letter-spacing: 1px;
+      }
+    }
+
+    a:first-child > .you-may-also-like-item {
+      margin-left: 104px;
+      margin-right: 7px;
+    }
+
+    a:nth-child(2) > .you-may-also-like-item {
+      margin-right: 4.5px;
     }
 
   }
 }
+
+
 
 div.woocommerce-tabs.wc-tabs-wrapper {
   display: none;
@@ -380,7 +400,7 @@ div.woocommerce-tabs.wc-tabs-wrapper {
 
   .you-may-also-like-section .you-may-also-like-items .you-may-also-like-item {
     width: 50%;
-    margin: 0;
+    margin: 0 !important;
   }
 
   #upsell-product-space,

@@ -3,7 +3,7 @@
 	Description: Jessica is a flexible WordPress eCommerce theme that lets you pick from three different eCommerce plugins. The theme is pre-styled for WooCommerce, iThemes Exchange, and WP e-Commerce. You pick the store plugin that's right for you! By Web Savvy Marketing on the <a href="http://web-savvy-marketing.com/go/studiopress/">Genesis framework</a>.
 	Author: Web Savvy Marketing
 	Author URI: http://www.web-savvy-marketing.com/
-	Version: 1.2.381
+	Version: 1.2.381234
 	Template: genesis
 
 	Copyright 2014 - Web Savvy Marketing
@@ -7935,7 +7935,10 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
   margin: 0 auto;
 }
 #upsell-product-space ul.products li {
-  width: 32%;
+  width: 294px;
+}
+#upsell-product-space ul.products li h3 {
+  font-family: "Playfair Display", serif;
 }
 
 .you-may-also-like-section {
@@ -7971,13 +7974,24 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
   margin-right: 0.73174%;
   width: 32.84551%;
   margin: 0;
+  width: 294px;
 }
 .you-may-also-like-section .you-may-also-like-items .you-may-also-like-item:last-child {
   margin-right: 0;
 }
 .you-may-also-like-section .you-may-also-like-items .you-may-also-like-item .you-may-also-like-images {
-  height: 200px;
-  width: 250px;
+  height: 255px;
+  width: 100%;
+}
+.you-may-also-like-section .you-may-also-like-items .you-may-also-like-item h3 {
+  letter-spacing: 1px;
+}
+.you-may-also-like-section .you-may-also-like-items a:first-child > .you-may-also-like-item {
+  margin-left: 104px;
+  margin-right: 7px;
+}
+.you-may-also-like-section .you-may-also-like-items a:nth-child(2) > .you-may-also-like-item {
+  margin-right: 4.5px;
 }
 
 div.woocommerce-tabs.wc-tabs-wrapper {
@@ -7999,7 +8013,7 @@ div.woocommerce-tabs.wc-tabs-wrapper {
 
   .you-may-also-like-section .you-may-also-like-items .you-may-also-like-item {
     width: 50%;
-    margin: 0;
+    margin: 0 !important;
   }
 
   #upsell-product-space,
@@ -8800,6 +8814,18 @@ div#footer-left-half #bottom-widget-3 {
   letter-spacing: inherit;
 }
 
+.footer-logos-pss {
+  max-width: 175px;
+}
+.footer-logos-pss #ssl-logo {
+  margin-top: -5px;
+  margin-left: -2px;
+}
+.footer-logos-pss #securi-logo {
+  margin-top: -7px;
+  margin-left: -3px;
+}
+
 div#footer-right-half {
   max-width: 45%;
   width: 45%;
@@ -8856,6 +8882,14 @@ div#footer-right-half section.widget div.widget-wrap h4 {
     -webkit-flex: 1 1 40%;
         -ms-flex: 1 1 40%;
             flex: 1 1 40%;
+  }
+
+  #contact-us-footer {
+    float: left;
+  }
+
+  .footer-logos-pss {
+    float: right;
   }
 }
 #scroll-to-top-button-chevron,
