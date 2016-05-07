@@ -39,7 +39,7 @@ function ak_social_icon_footer() {
 	     '<a href="' . $google_plus . '" target="_blank"><span class="fa fa-google-plus"></span></a> ' .
 	     '<a href="' . $facebook . '" target="_blank"><span class="fa fa-facebook"></span></a> ' .
 	     '<a href="' . $twitter . '" target="_blank"><span class="fa fa-twitter"></span></a> ' .
-	     '<a href="' . $youtube . '" target="_blank"><span class="fa fa-youtube"></span></a>' .
+	     //	     '<a href="' . $youtube . '" target="_blank"><span class="fa fa-youtube"></span></a>' .
 	     '</div>';
 
 }
@@ -57,25 +57,40 @@ function ak_social_icon_footer() {
 //}
 
 
-add_action('genesis_before_footer', 'jessica_bottom_widgets', 5 );
+add_action( 'genesis_before_footer', 'jessica_bottom_widgets', 5 );
 function jessica_bottom_widgets() {
-	echo'<div class="bottom-widgets">';
-	echo'<div class="wrap">';
+	echo '<div class="bottom-widgets">';
+	echo '<div class="wrap">';
 
-	echo'<div id="footer-left-half">';
-	genesis_widget_area( 'bottom1', array( 'before' => '<div id="bottom-widget-1" class="bottom1 widget-area">', 'after' => '</div>') );
-	genesis_widget_area( 'bottom2', array( 'before' => '<div id="bottom-widget-2" class="bottom2 widget-area">', 'after' => '</div>') );
-	genesis_widget_area( 'bottom3', array( 'before' => '<div id="bottom-widget-3" class="bottom3 widget-area">', 'after' => '</div>') );
-	echo'</div>';
+	echo '<div id="footer-left-half">';
+	genesis_widget_area( 'bottom1', array(
+		'before' => '<div id="bottom-widget-1" class="bottom1 widget-area">',
+		'after'  => '</div>'
+	) );
+	genesis_widget_area( 'bottom2', array(
+		'before' => '<div id="bottom-widget-2" class="bottom2 widget-area">',
+		'after'  => '</div>'
+	) );
+	genesis_widget_area( 'bottom3', array(
+		'before' => '<div id="bottom-widget-3" class="bottom3 widget-area">',
+		'after'  => '</div>'
+	) );
+	echo '</div>';
 
 
-	echo'<div id="footer-right-half">';
-	genesis_widget_area( 'bottom4', array( 'before' => '<div id="bottom-widget-4" class="bottom4 widget-area">', 'after' => '</div>') );
-	genesis_widget_area( 'bottom5', array( 'before' => '<div id="bottom-widget-5" class="bottom5 widget-area">', 'after' => '</div>') );
-	echo'</div>';
+	echo '<div id="footer-right-half">';
+	genesis_widget_area( 'bottom4', array(
+		'before' => '<div id="bottom-widget-4" class="bottom4 widget-area">',
+		'after'  => '</div>'
+	) );
+	genesis_widget_area( 'bottom5', array(
+		'before' => '<div id="bottom-widget-5" class="bottom5 widget-area">',
+		'after'  => '</div>'
+	) );
+	echo '</div>';
 
-	echo'</div >';
-	echo'</div >';
+	echo '</div >';
+	echo '</div >';
 }
 
 
@@ -83,13 +98,13 @@ add_action( 'genesis_footer', 'jessica_do_footer' );
 function jessica_do_footer() {
 
 	$copyright = genesis_get_option( 'wsm_copyright', 'jessica-settings' );
-	$credit= genesis_get_option( 'wsm_credit', 'jessica-settings' );
+	$credit    = genesis_get_option( 'wsm_credit', 'jessica-settings' );
 
-	if ( !empty($credit ) ) {
+	if ( ! empty( $credit ) ) {
 		echo '<p class="wrap">' . do_shortcode( genesis_get_option( 'wsm_credit', 'jessica-settings' ) ) . '</p>';
 	}
 
-	if ( !empty( $copyright ) ) {
+	if ( ! empty( $copyright ) ) {
 		echo '<p class="wrap">' . do_shortcode( genesis_get_option( 'wsm_copyright', 'jessica-settings' ) ) . '</p>';
 	}
 
