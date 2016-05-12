@@ -184,7 +184,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 		if ( $wishlist_items_array !== 'a:0:{}' ) {
 
 			echo '<div class="cart-wishlist-compare-section">';
-			echo '<h2>Missing Something?</h2>';
+			echo '<h2>Check Out Your Favorites</h2>';
 			echo '<h3>Don\'t forget you Wishlist items!</h3>';
 			echo '<a href="/wishlist" target="_blank"><button>View My Wishlist</button></a>';
 			while ( $the_query->have_posts() ) {

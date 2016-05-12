@@ -1,9 +1,33 @@
+div.woocommerce-message::before {
+  display: none !important;
+}
+
+div.woocommerce-message {
+  border-color: #48AB44 !important;
+}
+
+p.cart-empty {
+  font-size: 1.2em;
+  font-family: "Playfair Display", serif;
+}
+
+a.button.wc-backward {
+  font-size: 1.2em !important;
+  font-family: "Playfair Display", serif !important;
+}
+
 .woocommerce-cart table.cart img {
   width: 90px !important;
 }
 
+tr.cart-item {
+  font-size: 1.2em !important;
+}
+
 input#coupon_code.input-text {
-  width: 105px;
+  width: 150px;
+  height: 34px;
+  border-radius: 0;
 }
 
 .cart-wishlist-compare-section {
@@ -26,6 +50,42 @@ input#coupon_code.input-text {
   }
 }
 
+div.coupon {
+  input.button {
+    background-color: #48AB44;
+  }
+}
+
+body.woocommerce-page input.button[name="update_cart"] {
+  background-color: #F0592A;
+}
+
+div.cart_totals {
+  table.shop_table {
+    width: 85%;
+    float: right;
+  }
+
+  div.wc-proceed-to-checkout {
+    width: 85%;
+    float: right;
+
+  }
+}
+
+tr.cart-subtotal,
+tr.shipping,
+tr.order-total {
+  th {
+    text-align: left !important;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+a.checkout-button.button.alt.wc-forward {
+  background-color: #F0592A;
+}
+
 @media only screen and (max-width: 750px) {
 
   tr.cart_item {
@@ -44,4 +104,30 @@ input#coupon_code.input-text {
     max-width: 100%;
     margin-bottom: 20px;
   }
+
+  input#coupon_code.input-text {
+    width: 175px;
+  }
+
+  input#place_order.button.alt {
+    width: 95%;
+    padding: 20px;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 699px) {
+
+  input#coupon_code.input-text {
+    width: 175px;
+  }
+
+  input#place_order.button.alt {
+    //margin-bottom: 0;
+    width: 95% !important;
+    padding: 20px;
+    margin: 10px;
+
+  }
+
 }

@@ -6,7 +6,17 @@ body.woocommerce-page div.product .product_title, body.woocommerce-page #content
 .woocommerce-breadcrumb {
   margin: 1em 0 !important;
   font-family: 'Playfair Display', serif;
+  display: inline-block;
 }
+
+.back-history {
+  float: right;
+  font-family: "Playfair Display", serif;
+  margin: 1em 0;
+  font-size: .92em;
+  color: #777;
+}
+
 
 .woocommerce div.product {
   margin-bottom: 0;
@@ -160,6 +170,13 @@ div.single_variation_wrap {
   }
 }
 
+form.cart {
+  div.quantity {
+    float: right !important;
+    margin-right: 0 !important;
+  }
+}
+
 .compare_and_wishlist_buttons {
   text-align: center;
   margin: 0 20px;
@@ -277,7 +294,7 @@ a.reset_variations {
 }
 
 body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt, body.woocommerce-page #respond input#submit.alt, body.woocommerce-page #content input.button.alt {
-  background-color: #333333;
+  background-color: #F0592A;
   padding: 5.5px 20px;
   float: right !important;
   margin-right: 13px;
@@ -347,8 +364,10 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
 
     .you-may-also-like-item {
       @include span-columns(4);
-      margin: 0;
-      width: 294px;
+      //margin: 0;
+      //width: 294px; for three columns
+      width: 24.5%;
+      margin-right: .5%;
 
       .you-may-also-like-images {
         height: 255px;
@@ -361,18 +380,22 @@ body.woocommerce-page button.button.alt, body.woocommerce-page input.button.alt,
     }
 
     a:first-child > .you-may-also-like-item {
-      margin-left: 104px;
-      margin-right: 7px;
+      //margin-left: 104px; for three columns
+      //margin-right: 7px; for three columns
+      //margin-right: 5px;
     }
 
     a:nth-child(2) > .you-may-also-like-item {
-      margin-right: 4.5px;
+      //margin-right: 4.5px;
     }
 
   }
 }
 
-
+//Take out if 4 columns is not needed
+.you-may-also-like-section .you-may-also-like-items .you-may-also-like-item:last-child {
+  margin-right: 5.5px;
+}
 
 div.woocommerce-tabs.wc-tabs-wrapper {
   display: none;
@@ -443,6 +466,7 @@ div.woocommerce-tabs.wc-tabs-wrapper {
 
       select {
         padding-left: 2px;
+        height: 50px;
       }
 
       &:before {
@@ -492,4 +516,20 @@ div.woocommerce-tabs.wc-tabs-wrapper {
     text-align: center;
     padding: 0 15px;
   }
+}
+
+
+
+
+.add-to-wishlist-popup {
+  //display:none;
+  content: "Thisthisthis";
+  position:absolute;
+  border:1px solid #000;
+  background-color: #333;
+  width:400px;
+  height:400px;
+  top: 200px;
+  left: 400px;
+  z-index: 99999999;
 }

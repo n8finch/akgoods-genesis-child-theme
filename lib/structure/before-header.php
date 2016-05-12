@@ -37,7 +37,7 @@ function jessica_do_before_header() {
 	//Left Header Info Section
 
 	echo '<div class="header-conact-left">' .
-	     '<span class="">Phone: </span> ' .
+	     '<span class="">P: </span> ' .
 	     $phone .
 	     '</div>';
 
