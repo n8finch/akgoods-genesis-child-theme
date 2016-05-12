@@ -3,7 +3,7 @@
 	Description: Jessica is a flexible WordPress eCommerce theme that lets you pick from three different eCommerce plugins. The theme is pre-styled for WooCommerce, iThemes Exchange, and WP e-Commerce. You pick the store plugin that's right for you! By Web Savvy Marketing on the <a href="http://web-savvy-marketing.com/go/studiopress/">Genesis framework</a>.
 	Author: Web Savvy Marketing
 	Author URI: http://www.web-savvy-marketing.com/
-	Version: 1.2.4123
+	Version: 1.2.412345678
 	Template: genesis
 
 	Copyright 2014 - Web Savvy Marketing
@@ -6613,6 +6613,11 @@ li#primary-search-box.nav-custom-search.menu-item {
   border-radius: 0;
 }
 
+p.leadtext-para {
+  margin-bottom: 0;
+  max-width: 210px;
+}
+
 .hover-tile-outer {
   background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
   background-position: top;
@@ -6694,7 +6699,16 @@ li#primary-search-box.nav-custom-search.menu-item {
 
   .header-conact-left,
   .header-social-right {
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  .header-social-right {
+    float: left;
+    margin-left: 10px;
+  }
+
+  span.fa-search {
+    color: #F0592A;
   }
 
   span.fa.fa-fax {
@@ -6723,6 +6737,11 @@ li#primary-search-box.nav-custom-search.menu-item {
     font-size: 18px;
     font-weight: 500;
     padding-bottom: 10px;
+  }
+
+  p.leadtext-para {
+    margin-bottom: 0;
+    max-width: 500px;
   }
 
   .subheader-area {
@@ -6791,7 +6810,6 @@ li#primary-search-box.nav-custom-search.menu-item {
 
   .header-conact-left {
     float: left;
-    font-size: 12px;
   }
 
   div.widget-area.header-widget-area {
@@ -6811,6 +6829,168 @@ li#primary-search-box.nav-custom-search.menu-item {
   }
   div.subheader-area.wrap .hover-tile-outer:last-of-type {
     margin-right: 4px;
+  }
+
+  .modal {
+    float: right;
+    margin-left: 10px;
+  }
+  .modal label {
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  .modal label img {
+    border-radius: 150px;
+    display: block;
+    max-width: 300px;
+  }
+  .modal .modal-state {
+    display: none;
+  }
+  .modal .modal-trigger {
+    padding: 0;
+  }
+  .modal .modal-fade-screen {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    padding-top: 0.6em;
+    text-align: left;
+    transition: opacity 0.25s ease;
+    visibility: hidden;
+    z-index: 99999999999;
+  }
+}
+@media only screen and (max-width: 699px) and (min-width: 53.75em) {
+  .modal .modal-fade-screen {
+    padding-top: 10em;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .modal .modal-fade-screen .modal-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  .modal .modal-close {
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+    height: 1.5em;
+    width: 1.5em;
+    background: #fff;
+    cursor: pointer;
+  }
+  .modal .modal-close::after, .modal .modal-close::before {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    bottom: 0;
+    left: 50%;
+    height: 1.5em;
+    width: 0.15em;
+    background: #ddd;
+    content: "";
+    display: block;
+    margin: -3px 0 0 -1px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .modal .modal-close:hover::after, .modal .modal-close:hover::before {
+    background: #c4c4c4;
+  }
+  .modal .modal-close::before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .modal .modal-inner {
+    background: #fff;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 0;
+    max-height: 95%;
+    overflow: auto;
+    padding: 1.5em;
+    position: relative;
+    transition: opacity 0.25s ease;
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 699px) and (min-width: 40em) {
+  .modal .modal-inner {
+    max-height: 70%;
+    padding: 3em;
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 699px) and (min-width: 53.75em) {
+  .modal .modal-inner {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .modal .modal-inner h1 {
+    color: #333;
+    text-align: left;
+    text-transform: capitalize;
+  }
+  .modal .modal-inner p {
+    color: #333;
+    line-height: 1.5;
+  }
+  .modal .modal-inner .modal-intro {
+    margin-bottom: 1em;
+  }
+  .modal .modal-inner .modal-content {
+    color: #333;
+  }
+}
+@media only screen and (max-width: 699px) and (min-width: 40em) {
+  .modal .modal-inner .modal-content {
+    -webkit-columns: 2 8em;
+       -moz-columns: 2 8em;
+            columns: 2 8em;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .modal .modal-inner a.cta {
+    color: #fff;
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-top: 1em;
+  }
+  .modal .modal-inner a.cta:last-child {
+    padding: 0 2em;
+  }
+  .modal .modal-state:checked + .modal-fade-screen {
+    opacity: 1;
+    visibility: visible;
+  }
+  .modal .modal-state:checked + .modal-fade-screen .modal-inner {
+    top: 0.5em;
+  }
+
+  .modal-open {
+    overflow: hidden;
+  }
+
+  div.modal-inner form.search-form input[type=search] {
+    width: 70%;
+    border-radius: 0;
+    height: 50px;
+    float: left;
+  }
+  div.modal-inner form.search-form input[type=submit] {
+    background-color: #48AB44;
+    font-size: 1.5em;
+    border-radius: 0;
   }
 }
 .home .site-inner {
@@ -8783,6 +8963,45 @@ a.checkout-button.button.alt.wc-forward {
     width: 95% !important;
     padding: 20px;
     margin: 10px;
+  }
+}
+div.archive-description {
+  text-align: center;
+  border-bottom: 5px double #ddd;
+  padding-bottom: 0;
+}
+div.archive-description h1.archive-title {
+  margin: 10px;
+}
+
+div.archive-description ~ article {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 5px;
+}
+div.archive-description ~ article header img {
+  float: left;
+}
+div.archive-description ~ article header h2 {
+  font-size: 20px;
+  margin: 25px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 699px) {
+  div.archive-description ~ article {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 5px;
+  }
+  div.archive-description ~ article header {
+    text-align: center;
+  }
+  div.archive-description ~ article header img {
+    float: none;
+  }
+  div.archive-description ~ article header h2 {
+    font-size: 20px;
+    margin: 25px;
+    display: inline-block;
   }
 }
 .bottom-widgets {

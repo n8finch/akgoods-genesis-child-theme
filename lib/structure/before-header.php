@@ -63,7 +63,25 @@ function jessica_do_before_header() {
 	echo '<div class="header-social-right" id="social-icons-header">' .
 	     '<a href="mailto:' . $email . '"><span class="fa fa-envelope"></span> ' .
 	     $email . '</a>' .
+
+	     '<div class="modal mobile-only">
+		  <label for="modal-1">
+		    <div class="modal-trigger"><span class="fa fa-search"></span></div>
+		  </label>
+		  <input class="modal-state" id="modal-1" type="checkbox" />
+		  <div class="modal-fade-screen">
+		    <div class="modal-inner">
+		      <div class="modal-close" for="modal-1"></div>';
+
+				get_search_form( true );
+
+	echo  '  </div>
+		  </div>
+		</div>' .
 	     '</div>';
+
+
+
 
 //	echo '<div class="header-social-right" id="social-icons-header">' .
 //	     '<a href="' . $pinterest . '" target="_blank"><span class="fa fa-pinterest"></span></a> ' .
@@ -170,7 +188,7 @@ function do_subheader_area() {
 	echo '<div class="wrap desktop-only"><div class="subheader-area wrap">';
 
 	echo '	<div class="subheader-text-area">' .
-	     $leadtext .
+	     '<p class="leadtext-para">'. $leadtext . '</p>'. 
 	     '</div>';
 
 	echo '<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url(' . $image1 . ');">

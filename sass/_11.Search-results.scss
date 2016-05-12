@@ -1,0 +1,51 @@
+div.archive-description {
+
+  text-align: center;
+  border-bottom: 5px double #ddd;
+  padding-bottom: 0;
+
+  h1.archive-title {
+    margin: 10px;
+  }
+}
+
+div.archive-description ~ article {
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 5px;
+
+  header {
+
+    img {
+      float: left;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin: 25px;
+      display: inline-block;
+    }
+  }
+}
+
+@media only screen and (max-width: 699px) {
+
+  div.archive-description ~ article {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 5px;
+
+    header {
+      text-align: center;
+
+      img {
+        float: none;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin: 25px;
+        display: inline-block;
+      }
+    }
+  }
+
+}
