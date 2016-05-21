@@ -116,7 +116,7 @@ function jessica_do_before_header() {
 }
 
 
-add_action( 'genesis_header_right', 'add_cart_to_header_right' );
+//add_action( 'genesis_header_right', 'add_cart_to_header_right' );
 function add_cart_to_header_right() {
 	//Right Header Cart and Social Media Icons
 
@@ -188,7 +188,7 @@ function do_subheader_area() {
 	echo '<div class="wrap desktop-only"><div class="subheader-area wrap">';
 
 	echo '	<div class="subheader-text-area">' .
-	     '<p class="leadtext-para">'. $leadtext . '</p>'. 
+	     '<p class="leadtext-para">'. $leadtext . '</p>'.
 	     '</div>';
 
 	echo '<div class="hover-tile-outer mainpage-hover-tile-top" style="background-image: url(' . $image1 . ');">

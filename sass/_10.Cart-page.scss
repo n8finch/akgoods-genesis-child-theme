@@ -2,8 +2,9 @@ div.woocommerce-message::before {
   display: none !important;
 }
 
-div.woocommerce-message {
-  border-color: #48AB44 !important;
+.woocommerce div.woocommerce-message {
+  border-color: #48AB44;
+  padding-left: 10px !important;
 }
 
 p.cart-empty {
@@ -16,6 +17,33 @@ a.button.wc-backward {
   font-family: "Playfair Display", serif !important;
 }
 
+.woocommerce table.shop_table {
+  font-size: 1.2em;
+}
+
+th.product-remove {
+  width: 45px;
+}
+
+.woocommerce table.shop_table th.product-name {
+  width: 480px;
+}
+
+.woocommerce table.shop_table th.product-price {
+  width: 150px;
+}
+
+.woocommerce table.shop_table th.product-quantity {
+  width: 100px;
+}
+
+.woocommerce table.shop_table th.product-subtotal,
+.woocommerce table.shop_table td.product-subtotal {
+  width: 150px;
+  text-align: right;
+  padding-right: 20px;
+}
+
 .woocommerce-cart table.cart img {
   width: 90px !important;
 }
@@ -26,7 +54,7 @@ tr.cart-item {
 
 input#coupon_code.input-text {
   width: 150px;
-  height: 34px;
+  height: 40px;
   border-radius: 0;
 }
 
@@ -61,6 +89,11 @@ body.woocommerce-page input.button[name="update_cart"] {
 }
 
 div.cart_totals {
+
+  h2 {
+    margin-left: 79px;
+  }
+
   table.shop_table {
     width: 85%;
     float: right;
@@ -84,6 +117,21 @@ tr.order-total {
 
 a.checkout-button.button.alt.wc-forward {
   background-color: #F0592A;
+}
+
+
+/**
+ * The Cart Popup
+ */
+
+td.festi-cart-product-delete {
+  width: 20px;
+}
+
+body div.festi-cart-pop-up-products-content table.festi-cart-list tr.festi-cart-item td.festi-cart-product-img a.festi-cart-img img {
+  min-width: 100%;
+  width: 250px;
+  height: 100px;
 }
 
 @media only screen and (max-width: 750px) {
@@ -118,8 +166,13 @@ a.checkout-button.button.alt.wc-forward {
 
 @media only screen and (max-width: 699px) {
 
+  .woocommerce table.shop_table td.product-subtotal {
+    width: 100%;
+    padding-right: 10px;
+  }
+
   input#coupon_code.input-text {
-    width: 175px;
+    width: 140px;
   }
 
   input#place_order.button.alt {
@@ -128,6 +181,10 @@ a.checkout-button.button.alt.wc-forward {
     padding: 20px;
     margin: 10px;
 
+  }
+
+  div.cart-wishlist-compare-section {
+    text-align: right;
   }
 
 }

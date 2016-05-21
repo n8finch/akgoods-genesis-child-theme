@@ -61,6 +61,17 @@
   margin-left: 15px;
 }
 
+a#festi-cart.festi-cart.festi-cart-customize.festi-cart-shortcode.festi-cart-hover.woocart-show {
+  position: relative;
+  background-color: transparent;
+  top: -7px;
+}
+
+body div.festi-cart-products-content table.festi-cart-list tr.festi-cart-item > td.festi-cart-product-img a.festi-cart-img img {
+  max-width: 100% !important;
+  width: 100px !important;
+}
+
 span.fa.fa-cart-plus {
   margin-left: 20px;
 }
@@ -71,6 +82,10 @@ span.fa.fa-cart-plus {
 
 .site-header .wrap {
   padding: 20px 22px 20px;
+}
+
+.site-header .widget-area {
+  max-height: 35px;
 }
 
 .subheader-text-area {
