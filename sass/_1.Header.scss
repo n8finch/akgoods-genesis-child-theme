@@ -160,6 +160,20 @@ span.fa.fa-cart-plus {
   }
 }
 
+.active-primary-menu-sale {
+  a {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+  }
+
+  ul.sub-menu {
+    a {
+      color: #ffffff !important;
+      font-weight: normal !important;
+    }
+  }
+}
+
 .sale-highlight {
   background-color: #C20000;
 }
@@ -517,6 +531,8 @@ p.leadtext-para {
       @include size(1.5em);
       background: $modal-background;
       cursor: pointer;
+      top: 5px;
+      right: 5px;
 
       &::after,
       &::before {

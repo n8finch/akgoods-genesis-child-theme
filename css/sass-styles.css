@@ -618,6 +618,15 @@ span.fa.fa-cart-plus {
   font-weight: normal !important;
 }
 
+.active-primary-menu-sale a {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+.active-primary-menu-sale ul.sub-menu a {
+  color: #ffffff !important;
+  font-weight: normal !important;
+}
+
 .sale-highlight {
   background-color: #C20000;
 }
@@ -937,6 +946,8 @@ p.leadtext-para {
     width: 1.5em;
     background: #fff;
     cursor: pointer;
+    top: 5px;
+    right: 5px;
   }
   .modal .modal-close::after, .modal .modal-close::before {
     position: absolute;

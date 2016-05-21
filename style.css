@@ -3,7 +3,7 @@
 	Description: Jessica is a flexible WordPress eCommerce theme that lets you pick from three different eCommerce plugins. The theme is pre-styled for WooCommerce, iThemes Exchange, and WP e-Commerce. You pick the store plugin that's right for you! By Web Savvy Marketing on the <a href="http://web-savvy-marketing.com/go/studiopress/">Genesis framework</a>.
 	Author: Web Savvy Marketing
 	Author URI: http://www.web-savvy-marketing.com/
-	Version: 1.2.441234567
+	Version: 1.2.45
 	Template: genesis
 
 	Copyright 2014 - Web Savvy Marketing
@@ -6583,6 +6583,15 @@ span.fa.fa-cart-plus {
   font-weight: normal !important;
 }
 
+.active-primary-menu-sale a {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+.active-primary-menu-sale ul.sub-menu a {
+  color: #ffffff !important;
+  font-weight: normal !important;
+}
+
 .sale-highlight {
   background-color: #C20000;
 }
@@ -6902,6 +6911,8 @@ p.leadtext-para {
     width: 1.5em;
     background: #fff;
     cursor: pointer;
+    top: 5px;
+    right: 5px;
   }
   .modal .modal-close::after, .modal .modal-close::before {
     position: absolute;
