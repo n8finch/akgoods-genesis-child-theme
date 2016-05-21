@@ -19,7 +19,7 @@ add_action( 'genesis_before_header', 'jessica_do_before_header' );
 
 function jessica_do_before_header() {
 
-	echo '<aside class="before-header"><div class="wrap">';
+	echo '<aside class="before-header"><div class="wrap">'; 
 
 	//	Adding Contact Values
 
