@@ -518,7 +518,9 @@ picture {
 .header-social-right a > * {
   color: black;
 }
-.header-social-right span.fa.fa-envelope {
+.header-social-right span.fa.fa-envelope,
+.header-social-right span.fa.fa-star,
+.header-social-right span.fa.fa.shopping-cart {
   color: #F0592A;
 }
 
@@ -756,14 +758,27 @@ p.leadtext-para {
     display: none !important;
   }
 
+  aside.before-header div.wrap {
+    padding: 10px 10px;
+  }
+
   .header-conact-left,
   .header-social-right {
     font-size: 14px;
   }
 
   .header-social-right {
-    float: left;
+    float: right;
     margin-left: 10px;
+  }
+  .header-social-right div.modal.mobile-only {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-social-right div.modal.mobile-only a span.fa.fa-shopping-cart {
+    margin-right: 13px;
+    color: #F0592A;
   }
 
   span.fa-search {
@@ -3154,6 +3169,48 @@ div.archive-description ~ article header h2 {
     display: inline-block;
   }
 }
+table.shop_table.cart.wl-table.manage thead tr th.product-quantity.ctr + th {
+  width: 160px;
+}
+table.shop_table.cart.wl-table.manage tbody tr.cart_table_item td.product-remove a.remove.wlconfirm {
+  display: none !important;
+}
+
+#wl-wrapper .wl-actions-table select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  max-width: 100%;
+  display: block;
+  height: 36px;
+  padding: 0 10px;
+  background: #fff;
+  overflow: hidden;
+  line-height: 22px;
+  font-size: 1em;
+  border-radius: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+  border: 1px solid #D5D5D5;
+  background-image: url(images/select-arrow.png);
+  background-position: 96% 50%;
+  background-repeat: no-repeat;
+}
+
+#wl-wrapper .wl-actions-table td {
+  vertical-align: top !important;
+}
+
+button.button.small.wl-but.wl-add-to.btn-apply {
+  border-radius: 0;
+  background: white;
+  border: 1px solid #ccc;
+}
+
+button.button.small.wl-but.wl-add-to.btn-apply:hover {
+  background-color: #F0592A;
+}
+
 .bottom-widgets {
   margin: 10px 0;
   min-height: 350px;

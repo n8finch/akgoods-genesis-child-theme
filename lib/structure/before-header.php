@@ -61,24 +61,25 @@ function jessica_do_before_header() {
 //	}
 
 	echo '<div class="header-social-right" id="social-icons-header">' .
-	     '<a href="mailto:' . $email . '"><span class="fa fa-envelope"></span> ' .
+	     '<a href="mailto:' . $email . '"><span class="fa fa-envelope"></span>' .
 	     $email . '</a>' .
+	     '<a href="/wishlist"> <span class="fa fa-star"></span>Wishlists</a>' .
 
-	     '<div class="modal mobile-only">
-		  <label for="modal-1">
-		    <div class="modal-trigger"><span class="fa fa-search"></span></div>
-		  </label>
-		  <input class="modal-state" id="modal-1" type="checkbox" />
+	     '<div class="modal mobile-only"><a href="/cart"> <span class="fa fa-shopping-cart"></span></a>
+			  <label for="modal-1">
+			    <div class="modal-trigger"><span class="fa fa-search"></span></div>
+			  </label>
+	        <input class="modal-state" id="modal-1" type="checkbox" />
 		  <div class="modal-fade-screen">
 		    <div class="modal-inner">
 		      <div class="modal-close" for="modal-1"></div>';
 
 				get_search_form( true );
 
-	echo  '  </div>
-		  </div>
-		</div>' .
-	     '</div>';
+	echo   '</div>
+		   </div> <!-- end modal-fade-screen -->
+		  </div>' . //<!-- end mobile only-->
+	     '</div>'; //<!-- end header right -->
 
 
 

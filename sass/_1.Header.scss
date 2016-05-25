@@ -50,7 +50,9 @@
     color: black;
   }
 
-  span.fa.fa-envelope {
+  span.fa.fa-envelope,
+  span.fa.fa-star,
+  span.fa.fa.shopping-cart {
     color: #F0592A;
   }
 
@@ -323,14 +325,32 @@ p.leadtext-para {
     display: none !important;
   }
 
+  aside.before-header {
+    div.wrap {
+      padding: 10px 10px;
+    }
+  }
+
   .header-conact-left,
   .header-social-right {
     font-size: 14px;
   }
 
   .header-social-right {
-    float: left;
+    float: right;
     margin-left: 10px;
+
+    div.modal.mobile-only {
+      display: flex;
+
+      a {
+
+        span.fa.fa-shopping-cart {
+          margin-right: 13px;
+          color: #F0592A;
+        }
+      }
+    }
   }
 
   span.fa-search {
