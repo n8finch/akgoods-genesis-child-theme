@@ -2,8 +2,19 @@ div.woocommerce-message::before {
   display: none !important;
 }
 
+body.woocommerce-page .woocommerce-message:before, body.woocommerce-page .woocommerce-info:before, body.woocommerce-page .woocommerce-error:before, body.woocommerce-page .woocommerce-message:before, body.woocommerce-page .woocommerce-info:before {
+  display: none !important;
+}
+
+
+
 .woocommerce div.woocommerce-message {
   border-color: #48AB44;
+  padding-left: 10px !important;
+}
+
+body.woocommerce-page .woocommerce-info {
+  border-color: #b7c9d0;
   padding-left: 10px !important;
 }
 
@@ -129,9 +140,9 @@ td.festi-cart-product-delete {
 }
 
 body div.festi-cart-pop-up-products-content table.festi-cart-list tr.festi-cart-item td.festi-cart-product-img a.festi-cart-img img {
-  min-width: 100%;
+  min-width: 50%;
   width: 250px;
-  height: 100px;
+  height: 75px;
 }
 
 @media only screen and (max-width: 750px) {

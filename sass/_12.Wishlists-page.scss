@@ -1,3 +1,13 @@
+.wl-list-pop {
+  border-radius: 0;
+}
+
+a.wl-add-to-single {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #F0592A;
+}
+
 table.shop_table.cart.wl-table.manage {
 
   thead {
@@ -47,6 +57,11 @@ table.shop_table.cart.wl-table.manage {
 
 #wl-wrapper .wl-actions-table td {
   vertical-align: top !important;
+}
+
+#wl-wrapper .wl-table .check-column, #wl-wrapper .wl-table .product-remove {
+  text-align: center;
+  width: 40px;
 }
 
 button.button.small.wl-but.wl-add-to.btn-apply {

@@ -28,6 +28,9 @@ function wsm_enqueue_assets() {
 //	wp_enqueue_style( 'jquery-ui-local', CHILD_URL .'/lib/js/jquery-ui.min.css');
 
 	wp_enqueue_style( 'jessica', get_stylesheet_uri() );
+
+	wp_enqueue_style( 'custom-css', CHILD_URL .'/css/custom.css' );
+
 	wp_style_add_data( 'jessica', 'rtl', 'replace' );
 
 //	wp_enqueue_script( 'jquery-ui-core' );

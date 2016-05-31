@@ -1,4 +1,3 @@
-
 .subheader-area {
   display: flex;
   border: 1px solid #cdd1d2;
@@ -46,6 +45,10 @@
   float: right;
   font-size: 16px;
 
+  #email-icon-desktop {
+    float: left;
+  }
+
   a > * {
     color: black;
   }
@@ -56,6 +59,10 @@
     color: #F0592A;
   }
 
+}
+
+.header-social-right > a:hover {
+  background-color: transparent !important;
 }
 
 .header-cart-items {
@@ -215,9 +222,12 @@ li#primary-search-box.nav-custom-search.menu-item {
 
   }
   input[type="search"] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
     margin-bottom: 0px;
     font-family: 'Playfair Display', serif;
-    border-radius: 0;
   }
 }
 
@@ -337,8 +347,13 @@ p.leadtext-para {
   }
 
   .header-social-right {
-    float: right;
-    margin-left: 10px;
+    float: left;
+    font-size: 14px;
+
+    #email-mobile-float-left,
+    #phone-mobile-float-left {
+      float: left !important;
+    }
 
     div.modal.mobile-only {
       display: flex;
@@ -351,6 +366,20 @@ p.leadtext-para {
         }
       }
     }
+  }
+
+  .header-social-right .fa {
+    font-size: 1.4em;
+    margin-left: 12px;
+  }
+
+  span.fa.fa-envelope {
+    margin-left: 5px;
+  }
+
+  span.fa.fa-star {
+    margin-left: 2px;
+    margin-right: 2px;
   }
 
   span.fa-search {
@@ -372,6 +401,11 @@ p.leadtext-para {
   nav.nav-primary,
   .menu-toggle {
     background-color: #aaaaaa;
+  }
+
+  .nav-primary .current-menu-item > a, .nav-primary .genesis-nav-menu .menu-item a:hover {
+    background-color: #ffffff;
+    color: #C20000;
   }
 
   .site-header {
@@ -401,6 +435,10 @@ p.leadtext-para {
     height: 50px;
 
     input[type=submit] {
+      -webkit-appearance: none !important;
+      -moz-appearance: none !important;
+      -webkit-border-radius: 0 !important;
+      border-radius: 0 !important;
       height: 50px;
     }
   }
@@ -652,8 +690,11 @@ p.leadtext-para {
   div.modal-inner {
     form.search-form {
       input[type=search] {
+        -webkit-appearance: none !important;
+        -moz-appearance: none !important;
+        -webkit-border-radius: 0 !important;
+        border-radius: 0 !important;
         width: 70%;
-        border-radius: 0;
         height: 50px;
         float: left;
       }

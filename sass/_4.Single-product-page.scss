@@ -17,7 +17,6 @@ body.woocommerce-page div.product .product_title, body.woocommerce-page #content
   color: #777;
 }
 
-
 .woocommerce div.product {
   margin-bottom: 0;
   position: relative;
@@ -116,7 +115,6 @@ h3.single-product-subtitle {
   letter-spacing: 0;
 }
 
-
 //Add to cart section
 .variations_form.cart {
   margin-bottom: 20px !important;
@@ -165,7 +163,7 @@ tr.spacer {
       background: #fff;
       overflow: hidden;
       line-height: 22px;
-      font-size: 13px;
+      font-size: 14px;
       -webkit-border-radius: 0;
       border-radius: 0;
       white-space: nowrap;
@@ -176,7 +174,6 @@ tr.spacer {
       background-position: 96% 50%;
       background-repeat: no-repeat;
     }
-
 
   }
 }
@@ -525,8 +522,31 @@ div.woocommerce-tabs.wc-tabs-wrapper {
     margin-right: 60px;
   }
 
+  //Single product, with variations
 
   //Single product, with variations
+
+  body.woocommerce-page div.product form.cart .variations, body.woocommerce-page #content div.product form.cart .variations {
+    margin-left: 15px;
+  }
+
+  .woocommerce-variation-price {
+    margin-left: 50px;
+  }
+
+  .woocommerce div.product form.cart .variations {
+
+    td.value {
+
+      position: relative;
+
+      select {
+        font-size: 17px;
+        width: 90%;
+      }
+    }
+  }
+
   form.variations_form.cart {
 
     margin-right: 10px;
@@ -555,9 +575,13 @@ div.woocommerce-tabs.wc-tabs-wrapper {
   }
 
   .woocommerce div.product form.cart .variations td.label {
-    width: 70px;
+    width: 40px;
   }
 
+}
+
+body.woocommerce-page .woocommerce-error {
+  border-color: #F0592A;
 }
 
 @media only screen and (max-width: 325px) {
@@ -567,17 +591,14 @@ div.woocommerce-tabs.wc-tabs-wrapper {
   }
 }
 
-
-
-
 .add-to-wishlist-popup {
   //display:none;
   content: "Thisthisthis";
-  position:absolute;
-  border:1px solid #000;
+  position: absolute;
+  border: 1px solid #000;
   background-color: #333;
-  width:400px;
-  height:400px;
+  width: 400px;
+  height: 400px;
   top: 200px;
   left: 400px;
   z-index: 99999999;

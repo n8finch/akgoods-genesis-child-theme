@@ -1,9 +1,9 @@
 /*!
 	Theme Name: Artisan Kraft
 	Description: Jessica is a flexible WordPress eCommerce theme that lets you pick from three different eCommerce plugins. The theme is pre-styled for WooCommerce, iThemes Exchange, and WP e-Commerce. You pick the store plugin that's right for you! By Web Savvy Marketing on the <a href="http://web-savvy-marketing.com/go/studiopress/">Genesis framework</a>.
-	Author: Web Savvy Marketing
-	Author URI: http://www.web-savvy-marketing.com/
-	Version: 1.2.45122
+	Author: Customized by Nate Finch, orignal child theme by Web Savvy Marketing
+	Author URI: https://n8finch.com , http://www.web-savvy-marketing.com/
+	Version: 1.3.1312345
 	Template: genesis
 
 	Copyright 2014 - Web Savvy Marketing
@@ -6480,6 +6480,9 @@ picture {
   float: right;
   font-size: 16px;
 }
+.header-social-right #email-icon-desktop {
+  float: left;
+}
 .header-social-right a > * {
   color: black;
 }
@@ -6487,6 +6490,10 @@ picture {
 .header-social-right span.fa.fa-star,
 .header-social-right span.fa.fa.shopping-cart {
   color: #F0592A;
+}
+
+.header-social-right > a:hover {
+  background-color: transparent !important;
 }
 
 .header-cart-items {
@@ -6634,9 +6641,11 @@ li#primary-search-box.nav-custom-search.menu-item {
   border-radius: 0;
 }
 .nav-custom-search > form input[type="search"] {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  border-radius: 0 !important;
   margin-bottom: 0px;
   font-family: 'Playfair Display', serif;
-  border-radius: 0;
 }
 
 p.leadtext-para {
@@ -6733,8 +6742,12 @@ p.leadtext-para {
   }
 
   .header-social-right {
-    float: right;
-    margin-left: 10px;
+    float: left;
+    font-size: 14px;
+  }
+  .header-social-right #email-mobile-float-left,
+  .header-social-right #phone-mobile-float-left {
+    float: left !important;
   }
   .header-social-right div.modal.mobile-only {
     display: -webkit-flex;
@@ -6744,6 +6757,20 @@ p.leadtext-para {
   .header-social-right div.modal.mobile-only a span.fa.fa-shopping-cart {
     margin-right: 13px;
     color: #F0592A;
+  }
+
+  .header-social-right .fa {
+    font-size: 1.4em;
+    margin-left: 12px;
+  }
+
+  span.fa.fa-envelope {
+    margin-left: 5px;
+  }
+
+  span.fa.fa-star {
+    margin-left: 2px;
+    margin-right: 2px;
   }
 
   span.fa-search {
@@ -6765,6 +6792,11 @@ p.leadtext-para {
   nav.nav-primary,
   .menu-toggle {
     background-color: #aaaaaa;
+  }
+
+  .nav-primary .current-menu-item > a, .nav-primary .genesis-nav-menu .menu-item a:hover {
+    background-color: #ffffff;
+    color: #C20000;
   }
 
   .site-header .wrap {
@@ -6794,6 +6826,9 @@ p.leadtext-para {
     height: 50px;
   }
   form.search-form input[type=submit] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    border-radius: 0 !important;
     height: 50px;
   }
 
@@ -7023,8 +7058,10 @@ p.leadtext-para {
   }
 
   div.modal-inner form.search-form input[type=search] {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    border-radius: 0 !important;
     width: 70%;
-    border-radius: 0;
     height: 50px;
     float: left;
   }
@@ -7499,6 +7536,8 @@ blockquote.easy-testimonial {
 nav.woocommerce-breadcrumb + h1.page-title {
   text-align: center;
   margin-left: 215px;
+  margin-bottom: 40px;
+  line-height: 0;
 }
 
 p.woocommerce-info::before {
@@ -7514,12 +7553,12 @@ p.woocommerce-info::before {
   min-width: 80%;
   max-width: 900px;
   width: 100%;
-  height: 40px;
+  height: 41px;
   text-align: right;
   float: right;
   margin: 0;
   margin-bottom: 10px;
-  padding: 6px;
+  padding: 7px;
   background-color: #4C4034;
   border: 1px solid #ffffff;
 }
@@ -8050,7 +8089,7 @@ tr.spacer {
   background: #fff;
   overflow: hidden;
   line-height: 22px;
-  font-size: 13px;
+  font-size: 14px;
   border-radius: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -8356,6 +8395,22 @@ div.woocommerce-tabs.wc-tabs-wrapper {
     margin-right: 60px;
   }
 
+  body.woocommerce-page div.product form.cart .variations, body.woocommerce-page #content div.product form.cart .variations {
+    margin-left: 15px;
+  }
+
+  .woocommerce-variation-price {
+    margin-left: 50px;
+  }
+
+  .woocommerce div.product form.cart .variations td.value {
+    position: relative;
+  }
+  .woocommerce div.product form.cart .variations td.value select {
+    font-size: 17px;
+    width: 90%;
+  }
+
   form.variations_form.cart {
     margin-right: 10px;
   }
@@ -8367,9 +8422,13 @@ div.woocommerce-tabs.wc-tabs-wrapper {
   }
 
   .woocommerce div.product form.cart .variations td.label {
-    width: 70px;
+    width: 40px;
   }
 }
+body.woocommerce-page .woocommerce-error {
+  border-color: #F0592A;
+}
+
 @media only screen and (max-width: 325px) {
   div.woocommerce-variation-add-to-cart.variations_button {
     text-align: center;
@@ -8934,8 +8993,17 @@ div.woocommerce-message::before {
   display: none !important;
 }
 
+body.woocommerce-page .woocommerce-message:before, body.woocommerce-page .woocommerce-info:before, body.woocommerce-page .woocommerce-error:before, body.woocommerce-page .woocommerce-message:before, body.woocommerce-page .woocommerce-info:before {
+  display: none !important;
+}
+
 .woocommerce div.woocommerce-message {
   border-color: #48AB44;
+  padding-left: 10px !important;
+}
+
+body.woocommerce-page .woocommerce-info {
+  border-color: #b7c9d0;
   padding-left: 10px !important;
 }
 
@@ -9046,9 +9114,9 @@ td.festi-cart-product-delete {
 }
 
 body div.festi-cart-pop-up-products-content table.festi-cart-list tr.festi-cart-item td.festi-cart-product-img a.festi-cart-img img {
-  min-width: 100%;
+  min-width: 50%;
   width: 250px;
-  height: 100px;
+  height: 75px;
 }
 
 @media only screen and (max-width: 750px) {
@@ -9134,6 +9202,16 @@ div.archive-description ~ article header h2 {
     display: inline-block;
   }
 }
+.wl-list-pop {
+  border-radius: 0;
+}
+
+a.wl-add-to-single {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #F0592A;
+}
+
 table.shop_table.cart.wl-table.manage thead tr th.product-quantity.ctr + th {
   width: 160px;
 }
@@ -9164,6 +9242,11 @@ table.shop_table.cart.wl-table.manage tbody tr.cart_table_item td.product-remove
 
 #wl-wrapper .wl-actions-table td {
   vertical-align: top !important;
+}
+
+#wl-wrapper .wl-table .check-column, #wl-wrapper .wl-table .product-remove {
+  text-align: center;
+  width: 40px;
 }
 
 button.button.small.wl-but.wl-add-to.btn-apply {

@@ -19,7 +19,7 @@ add_action( 'genesis_before_header', 'jessica_do_before_header' );
 
 function jessica_do_before_header() {
 
-	echo '<aside class="before-header"><div class="wrap">'; 
+	echo '<aside class="before-header"><div class="wrap">';
 
 	//	Adding Contact Values
 
@@ -37,8 +37,7 @@ function jessica_do_before_header() {
 	//Left Header Info Section
 
 	echo '<div class="header-conact-left">' .
-	     '<span class="">P: </span> ' .
-	     $phone .
+	     '<span class="desktop-only">P: ' . $phone . '</span> ' .
 	     '</div>';
 
 //	//Right Header Cart and Social Media Icons
@@ -61,8 +60,10 @@ function jessica_do_before_header() {
 //	}
 
 	echo '<div class="header-social-right" id="social-icons-header">' .
-	     '<a href="mailto:' . $email . '"><span class="fa fa-envelope"></span>' .
+	     '<span id="phone-mobile-float-left" class="mobile-only">P:' . $phone . '</span> ' .
+	     '<a href="mailto:' . $email . '" id="email-icon-desktop" class="desktop-only"><span class="fa fa-envelope"></span>' .
 	     $email . '</a>' .
+	     '<a href="mailto:' . $email . '" id="email-mobile-float-left" class="mobile-only"><span class="fa fa-envelope"></span>Email Us</a>' .
 	     '<a href="/wishlist"> <span class="fa fa-star"></span>Wishlists</a>' .
 
 	     '<div class="modal mobile-only"><a href="/cart"> <span class="fa fa-shopping-cart"></span></a>
@@ -117,7 +118,7 @@ function jessica_do_before_header() {
 }
 
 
-//add_action( 'genesis_header_right', 'add_cart_to_header_right' );
+add_action( 'genesis_header_right', 'add_cart_to_header_right' );
 function add_cart_to_header_right() {
 	//Right Header Cart and Social Media Icons
 
